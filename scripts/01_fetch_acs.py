@@ -4,6 +4,7 @@ Saves one parquet per table and vintage with every estimate (E) and margin of er
 plus the variable labels so measures are built from labels, not hand-typed line numbers."""
 import os, sys, time
 import pandas as pd, requests
+from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.expanduser("~/.claude/d4tp-process"))
 from d4tp_env import get_key, load_env  # noqa: E402
 sys.path.insert(0, os.path.dirname(__file__))
@@ -43,13 +44,16 @@ def main():
             frames = []
             tmp = out / "_state"
             tmp.mkdir(exist_ok=True)
-            for st in STATES:
+            def one(st):
                 c = tmp / f"{t}_{st}.parquet"
                 if not c.exists():
                     rows = get(base, {"get": f"NAME,group({t})", "for": "tract:*", "in": f"state:{st}", "key": KEY})
                     d = pd.DataFrame(rows[1:], columns=rows[0])
                     d.loc[:, ~d.columns.duplicated()].to_parquet(c, index=False)
-                frames.append(pd.read_parquet(c))
+                return c
+            with ThreadPoolExecutor(6) as ex:
+                files = list(ex.map(one, STATES))
+            frames = [pd.read_parquet(c) for c in files]
             df = pd.concat(frames, ignore_index=True)
             df = df.loc[:, ~df.columns.duplicated()]
             df["geoid"] = df["state"] + df["county"] + df["tract"]

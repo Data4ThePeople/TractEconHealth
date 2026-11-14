@@ -141,10 +141,12 @@ to track change in a place over time.
 **Coverage.** 50 states and DC. Tracts with fewer than 50 adults get no estimate. 40 measures in the release.
 Seven health-related social needs measures (food insecurity, loneliness, lack of social and emotional
 support, housing insecurity, utility shutoff threat, transportation barriers, SNAP receipt) come from an
-optional BRFSS module that only 39 states and DC ran. CDC says Kentucky and Pennsylvania have no estimates for
-measures based on 2023 BRFSS. Which states are missing each measure is counted from the data **(check)**.
-Tract geography is not stated on the method page; the census block counts are from 2020, and we confirm the
-tract IDs match 2020 tracts **(check)**.
+optional BRFSS module that only 39 states and DC ran. **Kentucky and Pennsylvania have only 5 of the 40 measures** in this release (the five based on 2022 BRFSS: all teeth
+lost, dental visits, mammograms, colorectal screening, short sleep), so both states have no health index and are
+left out of the tract analysis. The seven social-needs measures are also missing in Colorado, Florida, Oregon,
+South Dakota, Tennessee, Texas, Vermont, Washington and Wyoming. The file holds 83,522 tracts and 40 measures;
+83,508 of the tract IDs match 2020 ACS tracts, so the release uses 2020 tract boundaries. The other 14 do not
+appear in the ACS tract list.
 
 How the estimates are made, in plain words: CDC fits a model for each measure to individual BRFSS answers,
 using each person's age, sex, race and ethnicity, and education, plus the share of adults in their county
@@ -160,8 +162,8 @@ county death rates, which are counted rather than modeled.
 definition (always, usually or sometimes lonely); cervical cancer screening dropped. Before 2024, tracts with
 under 50 total people were dropped; now it is under 50 adults.
 
-**Suppressed, censored or masked values.** No estimate for tracts under 50 adults; footnote fields mark these
-**(check codes)**. These tracts are also removed by our population filter.
+**Suppressed, censored or masked values.** No estimate for tracts under 50 adults; those tracts are simply absent
+from the file (the footnote field is empty on every row). These tracts are also removed by our population filter.
 
 **Missing data.** Blank values for small tracts and for states that did not run the optional module.
 
@@ -183,6 +185,12 @@ mental distress.
 **License and attribution.** Public domain (U.S. government). Credit: CDC, PLACES: Local Data for Better
 Health, 2025 release.
 
+## Group quarters and population filters
+
+Applied in `scripts/10_build.py`, logged in `data/processed/filter_log.csv`: 84,401 tracts in 50 states and DC;
+83,344 with 500 or more people; 82,562 after dropping tracts where group quarters are half or more of the
+population; 77,919 with PLACES estimates (Kentucky and Pennsylvania drop here); 77,918 with both indexes.
+
 ## County Health Rankings, supplemental data release, March 25, 2026 (University of Wisconsin Population Health Institute)
 
 **What it is.** County measures compiled from federal sources. We use three that are counts of deaths, not
@@ -203,20 +211,57 @@ year of deaths than the 2025 annual release.
 **Changes over time.** Each release shifts the pooled years forward.
 
 **Suppressed, censored or masked values.** Counties with fewer than 10 deaths in the pooled period have no
-value. Overdose deaths are suppressed in many small rural counties **(check count)**, which tilts the check
-toward larger counties.
+value. Of the 2,949 counties with tracts in our analysis, overdose deaths are blank for 1,081,
+suicides for 676 and life expectancy for 78. These are mostly small rural counties, which tilts the overdose and
+suicide checks toward larger counties.
 
 **Missing data.** Blank for suppressed counties.
 
 **Revisions.** Pinned to this release.
 
-**Units and rounding.** Overdose deaths and suicides per 100,000 people (age-adjusted for overdose, per the
-codebook **(check)**); life expectancy in years.
+**Units and rounding.** Overdose deaths and suicides per 100,000 people; the supplemental codebook does not
+say whether they are age-adjusted **(check CHR technical documentation)**. Life expectancy in years.
 
-**Known quirks.** Connecticut's counties were replaced by planning regions in 2022 data; we check how the file
-handles them **(check)**.
+**Known quirks.** Connecticut's counties were replaced by planning regions in 2022. The supplement says
+Connecticut data may be reported by county or planning region depending on the measure. All 2,949 county codes in
+our tract data matched a row in the file.
 
 **Uncertainty.** Confidence intervals published per county.
 
 **License and attribution.** Free to use with credit: County Health Rankings & Roadmaps, University of
 Wisconsin Population Health Institute, 2026.
+
+## Method (how the measures and indexes are built)
+
+All in `scripts/10_build.py` and `scripts/20_analysis.py`.
+
+**Economic measures (ACS 2020-2024 unless noted).** Median household income (B19013). People above 200% of the
+poverty line: C17002 "2.00 and over" over the C17002 total. Prime-age labor force participation: B23001 people
+25-54 in the labor force (including armed forces) over all people 25-54, both sexes. Prime-age employment: the same
+base, with civilian employed plus armed forces on top. Unemployment rate: B23025 unemployed over civilian labor
+force. Labor force change: B23025 labor force for each tract family in 2020-2024 over the same family in
+2015-2019, minus one, blank when the family had under 100 people in the 2015-2019 labor force. Housing cost
+burden: B25140 "Over 30 Percent" for owners with a mortgage, owners without, and renters, over all occupied units
+minus "Not Calculated." Median rent as share of income: B25071. SNAP: B22003 households receiving over all
+households. Medicaid: C27007 people with Medicaid or means-tested coverage (all age and sex groups) over the total.
+Uninsured: B27010 "No health insurance coverage" (all age groups) over the total. Public assistance: B19057
+households with cash public assistance over all households. Gini (B19083) and income per person (B19301) are shown
+but not in the index.
+
+**Health measures (PLACES 2025, crude prevalence, % of adults).** Obesity, diabetes, high blood pressure, coronary
+heart disease, COPD, any disability, frequent physical distress, fair or poor health, depression, frequent mental
+distress, current smoking, binge drinking, no leisure-time physical activity, short sleep. Food insecurity,
+loneliness and lack of social and emotional support are shown but not in the index.
+
+**Indexes.** Each measure is turned into a national percentile rank across the tracts that pass the filters
+(0 to 100), flipped where lower is better so that higher always means better. The index is the plain average of a
+tract's ranks, and a tract needs at least 75% of the measures (9 of 12 economic, 11 of 14 health). Each index is
+then stretched so the lowest tract is 0 and the highest is 100.
+
+**Shape tests.** Binned medians: 50 equal-count groups along the economic index, with the 10th, 25th, 50th, 75th
+and 90th percentile of the health index in each. Broken-line fit: a continuous line with one bend, the bend tried
+at 91 points between the 5th and 95th percentile of the economic index, keeping the one with the smallest squared
+error; 200 bootstrap resamples give a range for the bend. Spread: interquartile range of the leftover distance from
+that line on each side of the bend. Rank (Spearman) correlations nationally, by state, below and above the bend,
+and within counties (each tract's values minus its county average). County check: population-weighted average of
+tract indexes in each county against County Health Rankings overdose deaths, suicides and life expectancy.
