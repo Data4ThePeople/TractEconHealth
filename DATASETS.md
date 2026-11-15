@@ -143,7 +143,8 @@ Seven health-related social needs measures (food insecurity, loneliness, lack of
 support, housing insecurity, utility shutoff threat, transportation barriers, SNAP receipt) come from an
 optional BRFSS module that only 39 states and DC ran. **Kentucky and Pennsylvania have only 5 of the 40 measures** in this release (the five based on 2022 BRFSS: all teeth
 lost, dental visits, mammograms, colorectal screening, short sleep), so both states have no health index and are
-left out of the tract analysis. The seven social-needs measures are also missing in Colorado, Florida, Oregon,
+left out of the tract analysis. We do not fill them from the 2024 release, which rests on 2022 survey data and an
+earlier model fit, because that would mix years in one comparison. The seven social-needs measures are also missing in Colorado, Florida, Oregon,
 South Dakota, Tennessee, Texas, Vermont, Washington and Wyoming. The file holds 83,522 tracts and 40 measures;
 83,508 of the tract IDs match 2020 ACS tracts, so the release uses 2020 tract boundaries. The other 14 do not
 appear in the ACS tract list.
@@ -256,7 +257,9 @@ loneliness and lack of social and emotional support are shown but not in the ind
 **Indexes.** Each measure is turned into a national percentile rank across the tracts that pass the filters
 (0 to 100), flipped where lower is better so that higher always means better. The index is the plain average of a
 tract's ranks, and a tract needs at least 75% of the measures (9 of 12 economic, 11 of 14 health). Each index is
-then stretched so the lowest tract is 0 and the highest is 100.
+then stretched so the lowest tract is 0 and the highest is 100. Housing cost burden, median rent share and labor force change stay in the
+economic index even though each relates only weakly to health, because the index was defined before the analysis
+and dropping measures after seeing their link to health would tune the result.
 
 **Shape tests.** Binned medians: 50 equal-count groups along the economic index, with the 10th, 25th, 50th, 75th
 and 90th percentile of the health index in each. Broken-line fit: a continuous line with one bend, the bend tried

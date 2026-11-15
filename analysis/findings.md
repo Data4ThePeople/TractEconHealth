@@ -70,11 +70,8 @@ County Health Rankings, March 2026 supplement, against the population-weighted c
 The life expectancy result says the overall link is not only a product of the PLACES model. Overdose and suicide
 deaths follow county economics much more loosely.
 
-## Open questions for Eric
+## Decisions (November 15, 2026, accepted by Eric)
 
-1. Kentucky and Pennsylvania are missing from PLACES 2025. Options: leave them out and say so, or fill them from
-   the 2024 release (2022 survey data), which mixes years.
-2. Housing cost burden and labor force change barely relate to health and pull the economic index toward noise.
-   Keep them in (the index then measures "economic health" as Eric defined it) or drop them from the index.
-3. The headline framing: the data support "steepest at the bottom, still rising at the top," not "correlation then
-   scatter."
+1. Kentucky and Pennsylvania stay out, and the post says so. No fill from the 2024 PLACES release.
+2. Housing cost burden, median rent share and labor force change stay in the economic index.
+3. Framing: "steepest at the bottom, still rising at the top."
