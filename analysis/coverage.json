@@ -83,15 +83,17 @@
  "acs_moe": {
   "median_household_income": {
    "unit": "MOE as % of the estimate",
-   "median_moe": 20.5,
-   "p90_moe": 40.1,
+   "median_moe": 20.6,
+   "p90_moe": 40.2,
    "median_by_income_fifth": {
     "lowest fifth": 27.4,
     "second": 21.4,
     "middle": 19.5,
     "fourth": 18.8,
-    "highest fifth": 17.6
-   }
+    "highest fifth": 18.0
+   },
+   "tracts_with_moe": 77167,
+   "cv_over_30_pct": 4.8
   },
   "pct_above_200fpl": {
    "unit": "percentage points",

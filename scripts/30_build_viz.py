@@ -9,13 +9,13 @@ from common import PROC, ROOT
 ECON = [  # key, label, unit, direction note, group
     ("med_hh_income", "Median household income", "$", "Higher is better", "Income"),
     ("econ_index", "Economic index", "idx", "0 to 100, higher is better; 12 measures", "Income"),
-    ("per_capita_income", "Income per person", "$", "Higher is better", "Income"),
-    ("pct_above_200fpl", "People above 200% of poverty line", "%", "Higher is better", "Income"),
+    ("per_capita_income", "Income per person", "$", "Higher is better; not in the index", "Income"),
+    ("pct_above_200fpl", "People at or above 200% of poverty line", "%", "Higher is better", "Income"),
     ("prime_lfpr", "Labor force participation, ages 25-54", "%", "Higher is better", "Work"),
     ("prime_epop", "Share employed, ages 25-54", "%", "Higher is better", "Work"),
     ("unemp_rate", "Unemployment rate", "%", "Lower is better", "Work"),
     ("lf_change", "Labor force change, 2015-19 to 2020-24", "%", "Higher is better", "Work"),
-    ("pct_cost_burdened", "Households paying 30%+ of income for housing", "%", "Lower is better", "Housing"),
+    ("pct_cost_burdened", "Households paying over 30% of income for housing", "%", "Lower is better", "Housing"),
     ("med_rent_pct_income", "Median rent as share of income", "%", "Lower is better", "Housing"),
     ("pct_snap", "Households receiving SNAP", "%", "Lower is better", "Assistance and coverage"),
     ("pct_medicaid", "People on Medicaid or other means-tested coverage", "%", "Lower is better", "Assistance and coverage"),
@@ -109,9 +109,10 @@ tracts are shown. In the county view, one county or county equivalent; {kept_c:,
 homes, are left out.</p>
 <p><b>Economic measures</b> come from the Census Bureau's American Community Survey, 2020-2024 five-year estimates,
 with the same definitions for tracts and counties. Labor force change compares 2015-2019 with 2020-2024, matching
-2010 and 2020 tract boundaries; it is blank for Connecticut's planning regions and two Alaska areas that did not
-exist in 2015-2019. The economic index averages each place's national percentile rank on the twelve measures from
-median household income through cash public assistance, each turned so that higher is better.</p>
+2010 and 2020 tract boundaries; it is blank for Connecticut's planning regions and two Alaska areas whose county
+codes are not in the 2015-2019 data. The economic index averages each place's national percentile rank on twelve
+measures, every economic measure in the list except income per person and the Gini index, each turned so that
+higher is better.</p>
 <p><b>Health measures</b> come from CDC PLACES, 2025 release, mostly based on the 2023 Behavioral Risk Factor
 Surveillance System. These are model estimates, not survey results for each place. CDC builds them from a national
 survey using each area's mix of age, sex, race and ethnicity, and education, along with county and tract poverty.

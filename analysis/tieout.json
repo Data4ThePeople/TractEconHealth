@@ -1,0 +1,760 @@
+{
+ "families": {
+  "families": 68562,
+  "one_to_one": 56496,
+  "same_tract_families": 56321,
+  "largest": 67
+ },
+ "places_tract_file": {
+  "tracts": 83522,
+  "measures": 40,
+  "rows_footnote_nonblank": 0,
+  "match_acs": 83508,
+  "ky_pa_measures": [
+   "COLON_SCREEN",
+   "DENTAL",
+   "MAMMOUSE",
+   "SLEEP",
+   "TEETHLOST"
+  ],
+  "foodinsecu_states": 40,
+  "social_needs_missing": [
+   "CO",
+   "FL",
+   "OR",
+   "SD",
+   "TN",
+   "TX",
+   "VT",
+   "WA",
+   "WY"
+  ]
+ },
+ "tract_filter_log": [
+  [
+   "all",
+   84401
+  ],
+  [
+   "pop 500+",
+   83344
+  ],
+  [
+   "gq under half",
+   82562
+  ],
+  [
+   "has any PLACES value",
+   82561
+  ],
+  [
+   "has PLACES obesity (2023-survey measures)",
+   77919
+  ],
+  [
+   "both indexes",
+   77918
+  ]
+ ],
+ "tract_compare": {
+  "pop": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "med_hh_income": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "pct_above_200fpl": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "prime_lfpr": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "prime_epop": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "unemp_rate": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "lf_change": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "pct_cost_burdened": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "med_rent_pct_income": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "pct_snap": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "pct_medicaid": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "pct_uninsured": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "pct_public_assist": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "gini": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "per_capita_income": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "obesity": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "diabetes": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "high_bp": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "chd": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "copd": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "disability": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "physical_distress": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "fair_poor_health": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "depression": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "mental_distress": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "smoking": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "binge_drinking": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "inactivity": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "short_sleep": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "food_insecurity": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "loneliness": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "no_emotional_support": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "econ_index": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "health_index": {
+   "max_abs_diff": 9.947598300641403e-14,
+   "blank_mismatch": 0,
+   "ok": true
+  }
+ },
+ "tract_ids_same": true,
+ "national": {
+  "k": 109799.15133333334,
+  "r2_hinge": 0.6709576006779125,
+  "r2_line": 0.6027420046273073,
+  "slope_below": 0.0006597399702553547,
+  "slope_above": 0.0001778537547181665,
+  "resid_iqr_below": 18.56829515365892,
+  "resid_iqr_above": 12.621692421799832,
+  "r2_log_line": 0.6520709678100242,
+  "spearman_below": 0.7078722534735171,
+  "spearman_above": 0.5648263107198418,
+  "n": 77708,
+  "spearman": 0.8164338508440664,
+  "spearman_econ_index": 0.7053125479738918
+ },
+ "within_county": {
+  "income": 0.7418987183923248,
+  "econ_index": 0.7860267003054792
+ },
+ "corr_with_health": {
+  "med_hh_income": 0.82,
+  "pct_above_200fpl": 0.8,
+  "prime_lfpr": 0.5,
+  "prime_epop": 0.53,
+  "unemp_rate": -0.26,
+  "lf_change": 0.1,
+  "pct_cost_burdened": -0.11,
+  "med_rent_pct_income": -0.1,
+  "pct_snap": -0.68,
+  "pct_medicaid": -0.69,
+  "pct_uninsured": -0.48,
+  "pct_public_assist": -0.21,
+  "per_capita_income": 0.82,
+  "gini": -0.15
+ },
+ "income_groups": [
+  {
+   "med_hh_income": 0,
+   "income_median": 30867.0,
+   "n": 3886,
+   "obesity": 45.8,
+   "diabetes": 20.2,
+   "smoking": 22.7,
+   "mental_distress": 21.8,
+   "hi_p10_p90": 28.44,
+   "ob_p10_p90": 18.4
+  },
+  {
+   "med_hh_income": 1,
+   "income_median": 41178.0,
+   "n": 3885,
+   "obesity": 42.1,
+   "diabetes": 17.1,
+   "smoking": 19.6,
+   "mental_distress": 20.3,
+   "hi_p10_p90": 30.69,
+   "ob_p10_p90": 15.0
+  },
+  {
+   "med_hh_income": 2,
+   "income_median": 47316.0,
+   "n": 3887,
+   "obesity": 40.1,
+   "diabetes": 15.7,
+   "smoking": 18.1,
+   "mental_distress": 19.5,
+   "hi_p10_p90": 32.99,
+   "ob_p10_p90": 13.6
+  },
+  {
+   "med_hh_income": 3,
+   "income_median": 52064.0,
+   "n": 3885,
+   "obesity": 39.0,
+   "diabetes": 15.0,
+   "smoking": 17.2,
+   "mental_distress": 19.0,
+   "hi_p10_p90": 35.34,
+   "ob_p10_p90": 13.1
+  },
+  {
+   "med_hh_income": 4,
+   "income_median": 56417.0,
+   "n": 3884,
+   "obesity": 38.2,
+   "diabetes": 14.2,
+   "smoking": 16.5,
+   "mental_distress": 18.5,
+   "hi_p10_p90": 36.11,
+   "ob_p10_p90": 12.6
+  },
+  {
+   "med_hh_income": 5,
+   "income_median": 60500.0,
+   "n": 3888,
+   "obesity": 37.3,
+   "diabetes": 13.7,
+   "smoking": 15.7,
+   "mental_distress": 18.1,
+   "hi_p10_p90": 36.74,
+   "ob_p10_p90": 12.5
+  },
+  {
+   "med_hh_income": 6,
+   "income_median": 64187.0,
+   "n": 3883,
+   "obesity": 36.9,
+   "diabetes": 13.4,
+   "smoking": 15.3,
+   "mental_distress": 17.9,
+   "hi_p10_p90": 38.06,
+   "ob_p10_p90": 12.6
+  },
+  {
+   "med_hh_income": 7,
+   "income_median": 68108.0,
+   "n": 3885,
+   "obesity": 36.0,
+   "diabetes": 12.9,
+   "smoking": 14.6,
+   "mental_distress": 17.4,
+   "hi_p10_p90": 38.03,
+   "ob_p10_p90": 12.8
+  },
+  {
+   "med_hh_income": 8,
+   "income_median": 72083.0,
+   "n": 3890,
+   "obesity": 35.3,
+   "diabetes": 12.5,
+   "smoking": 14.1,
+   "mental_distress": 17.2,
+   "hi_p10_p90": 39.53,
+   "ob_p10_p90": 12.5
+  },
+  {
+   "med_hh_income": 9,
+   "income_median": 75973.0,
+   "n": 3883,
+   "obesity": 34.6,
+   "diabetes": 12.1,
+   "smoking": 13.6,
+   "mental_distress": 17.0,
+   "hi_p10_p90": 38.78,
+   "ob_p10_p90": 12.78
+  },
+  {
+   "med_hh_income": 10,
+   "income_median": 80209.5,
+   "n": 3884,
+   "obesity": 34.0,
+   "diabetes": 11.8,
+   "smoking": 13.0,
+   "mental_distress": 16.6,
+   "hi_p10_p90": 38.74,
+   "ob_p10_p90": 13.2
+  },
+  {
+   "med_hh_income": 11,
+   "income_median": 84773.0,
+   "n": 3893,
+   "obesity": 33.3,
+   "diabetes": 11.5,
+   "smoking": 12.6,
+   "mental_distress": 16.4,
+   "hi_p10_p90": 37.85,
+   "ob_p10_p90": 13.3
+  },
+  {
+   "med_hh_income": 12,
+   "income_median": 89769.0,
+   "n": 3877,
+   "obesity": 32.7,
+   "diabetes": 11.2,
+   "smoking": 12.0,
+   "mental_distress": 16.2,
+   "hi_p10_p90": 37.14,
+   "ob_p10_p90": 13.3
+  },
+  {
+   "med_hh_income": 13,
+   "income_median": 95613.0,
+   "n": 3885,
+   "obesity": 31.7,
+   "diabetes": 10.9,
+   "smoking": 11.5,
+   "mental_distress": 16.0,
+   "hi_p10_p90": 36.39,
+   "ob_p10_p90": 12.86
+  },
+  {
+   "med_hh_income": 14,
+   "income_median": 102174.0,
+   "n": 3893,
+   "obesity": 30.7,
+   "diabetes": 10.5,
+   "smoking": 10.9,
+   "mental_distress": 15.6,
+   "hi_p10_p90": 33.79,
+   "ob_p10_p90": 13.2
+  },
+  {
+   "med_hh_income": 15,
+   "income_median": 109957.0,
+   "n": 3879,
+   "obesity": 30.0,
+   "diabetes": 10.2,
+   "smoking": 10.3,
+   "mental_distress": 15.2,
+   "hi_p10_p90": 31.7,
+   "ob_p10_p90": 12.8
+  },
+  {
+   "med_hh_income": 16,
+   "income_median": 120000.0,
+   "n": 3884,
+   "obesity": 29.1,
+   "diabetes": 9.8,
+   "smoking": 9.8,
+   "mental_distress": 14.9,
+   "hi_p10_p90": 29.0,
+   "ob_p10_p90": 12.5
+  },
+  {
+   "med_hh_income": 17,
+   "income_median": 132796.0,
+   "n": 3886,
+   "obesity": 28.0,
+   "diabetes": 9.6,
+   "smoking": 9.1,
+   "mental_distress": 14.4,
+   "hi_p10_p90": 26.43,
+   "ob_p10_p90": 12.5
+  },
+  {
+   "med_hh_income": 18,
+   "income_median": 153125.0,
+   "n": 3886,
+   "obesity": 26.5,
+   "diabetes": 9.1,
+   "smoking": 8.3,
+   "mental_distress": 13.7,
+   "hi_p10_p90": 22.47,
+   "ob_p10_p90": 12.3
+  },
+  {
+   "med_hh_income": 19,
+   "income_median": 197000.0,
+   "n": 3885,
+   "obesity": 23.6,
+   "diabetes": 8.6,
+   "smoking": 6.8,
+   "mental_distress": 12.5,
+   "hi_p10_p90": 16.73,
+   "ob_p10_p90": 11.3
+  }
+ ],
+ "states": {
+  "n_states": 49,
+  "min": [
+   "ND",
+   0.5489694210754138
+  ],
+  "max": [
+   "NJ",
+   0.8581918762352614
+  ],
+  "n_fit": 45,
+  "n_rising_above": 45,
+  "median_ratio": 0.28902158540924605,
+  "median_gain": 3.948854733417584,
+  "top_gain": [
+   [
+    "CT",
+    11.9
+   ],
+   [
+    "CO",
+    10.0
+   ],
+   [
+    "NJ",
+    9.8
+   ]
+  ],
+  "low_gain": [
+   [
+    "ND",
+    0.4
+   ],
+   [
+    "MS",
+    0.6
+   ],
+   [
+    "AR",
+    0.7
+   ]
+  ]
+ },
+ "tract_pop": {
+  "mean": 4035.989899638081,
+  "median": 3817.0
+ },
+ "places_county_file_counties": 3144,
+ "county_filter_log": [
+  [
+   "all",
+   3144
+  ],
+  [
+   "pop 500+",
+   3136
+  ],
+  [
+   "gq under half",
+   3135
+  ],
+  [
+   "has any PLACES value",
+   3135
+  ],
+  [
+   "has PLACES obesity",
+   2948
+  ],
+  [
+   "both indexes",
+   2948
+  ]
+ ],
+ "chr_all_match": true,
+ "chr_crude_test": {
+  "overdose_max_gap": 2.842170943040401e-14,
+  "suicide_median_gap": 0.7292779603162387
+ },
+ "county_compare": {
+  "pop": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "med_hh_income": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "lf_change": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "pct_uninsured": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "obesity": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "econ_index": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "health_index": {
+   "max_abs_diff": 8.526512829121202e-14,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "life_expectancy": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "overdose_rate": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  },
+  "suicide_rate": {
+   "max_abs_diff": 0.0,
+   "blank_mismatch": 0,
+   "ok": true
+  }
+ },
+ "county_corr": {
+  "health_index": {
+   "income": 0.817,
+   "econ_index": 0.704,
+   "blank": 0,
+   "blank_pop_pct": 0.0,
+   "median_pop_blank": null,
+   "median_pop_value": 25802.5
+  },
+  "life_expectancy": {
+   "income": 0.733,
+   "econ_index": 0.698,
+   "blank": 78,
+   "blank_pop_pct": 1.2,
+   "median_pop_blank": 1210.0,
+   "median_pop_value": 26730.0
+  },
+  "overdose_rate": {
+   "income": -0.25,
+   "econ_index": -0.327,
+   "blank": 1080,
+   "blank_pop_pct": 4.4,
+   "median_pop_blank": 8160.0,
+   "median_pop_value": 49431.5
+  },
+  "suicide_rate": {
+   "income": -0.31,
+   "econ_index": -0.156,
+   "blank": 675,
+   "blank_pop_pct": 2.4,
+   "median_pop_blank": 5498.0,
+   "median_pop_value": 37954.0
+  }
+ },
+ "coverage": {
+  "income_any_nat": 37.75801817976887,
+  "income_all_nat": 17.789816821870925,
+  "income_any_median": 37.42884840826618,
+  "income_any_by_fifth": [
+   41.3,
+   39.0,
+   37.7,
+   36.1,
+   33.9
+  ],
+  "B99231": {
+   "nat": 11.5,
+   "median": 10.4,
+   "by_fifth": [
+    10.9,
+    10.4,
+    10.3,
+    10.3,
+    10.0
+   ]
+  },
+  "B992701": {
+   "nat": 20.3,
+   "median": 19.5,
+   "by_fifth": [
+    18.9,
+    19.5,
+    19.8,
+    19.9,
+    19.3
+   ]
+  },
+  "B992518": {
+   "nat": 17.8,
+   "median": 15.6,
+   "by_fifth": [
+    16.2,
+    15.1,
+    15.3,
+    15.2,
+    16.0
+   ]
+  },
+  "B99221": {
+   "nat": 2.9,
+   "median": 2.3,
+   "by_fifth": [
+    2.6,
+    2.4,
+    2.3,
+    2.2,
+    2.1
+   ]
+  },
+  "emp_alloc_2019": 9.0,
+  "emp_alloc_2024": 11.5,
+  "income_moe_median": 20.6,
+  "income_moe_by_fifth": [
+   27.4,
+   21.4,
+   19.5,
+   18.8,
+   18.0
+  ],
+  "fpl200_moe_median": 8.7,
+  "unemp_moe_over_half_pct": 92.6,
+  "snap_moe_over_half_pct": 62.6,
+  "uninsured_moe_over_half_pct": 59.6,
+  "obesity_ci_median": 9.8,
+  "obesity_median": 34.1,
+  "rel_ci_range": [
+   19.0,
+   36.0
+  ]
+ },
+ "viz": {
+  "tract_page_rank_corr": {
+   "health_index~med_hh_income": 0.82,
+   "n_default_view": 77708
+  },
+  "tract": {
+   "n": 77918,
+   "n_cols": 33,
+   "worst_step_err": 0.5000000000017234,
+   "blank_mismatch": 0,
+   "econ": 15,
+   "health": 18
+  },
+  "county_page_rank_corr": {
+   "health_index~med_hh_income": 0.82,
+   "life_expectancy~med_hh_income": 0.73,
+   "overdose_rate~med_hh_income": -0.25,
+   "suicide_rate~med_hh_income": -0.31,
+   "n_default_view": 2947
+  },
+  "county": {
+   "n": 2948,
+   "n_cols": 36,
+   "worst_step_err": 0.5000000000052773,
+   "blank_mismatch": 0,
+   "econ": 15,
+   "health": 21
+  }
+ },
+ "viz_notes": "\n<p><b>What each dot is.</b> In the tract view, one census tract, a neighborhood of about 4,000 people; 77,918\ntracts are shown. In the county view, one county or county equivalent; 2,948 are shown. Places with fewer than\n500 people, or where half or more of residents live in group quarters such as prisons, dormitories or nursing\nhomes, are left out.</p>\n<p><b>Economic measures</b> come from the Census Bureau's American Community Survey, 2020-2024 five-year estimates,\nwith the same definitions for tracts and counties. Labor force change compares 2015-2019 with 2020-2024, matching\n2010 and 2020 tract boundaries; it is blank for Connecticut's planning regions and two Alaska areas whose county\ncodes are not in the 2015-2019 data. The economic index averages each place's national percentile rank on twelve\nmeasures, every economic measure in the list except income per person and the Gini index, each turned so that\nhigher is better.</p>\n<p><b>Health measures</b> come from CDC PLACES, 2025 release, mostly based on the 2023 Behavioral Risk Factor\nSurveillance System. These are model estimates, not survey results for each place. CDC builds them from a national\nsurvey using each area's mix of age, sex, race and ethnicity, and education, along with county and tract poverty.\nBecause of that, part of the link between a place's income and its health estimate is built into the estimate\nitself. County values are CDC's own county estimates. The health index averages the national percentile rank of the\nfourteen measures from obesity through short sleep, turned so that higher is better. Food insecurity, loneliness\nand emotional support are not in the index because CDC has them for only 39 states and DC.</p>\n<p><b>Counted deaths</b> (county view only) come from County Health Rankings &amp; Roadmaps, March 2026 release,\nbuilt from death certificates. They are not modeled. Counties with fewer than 10 deaths in the period have no\nvalue: more than 1 in 3 counties for overdose deaths and nearly 1 in 4 for suicides, mostly small rural counties.</p>\n<p><b>Kentucky and Pennsylvania are not shown.</b> The 2025 PLACES release has no estimates for these two states for\nmeasures based on 2023 survey data.</p>\n<p><b>Correlation is not cause.</b> The chart shows which places have both conditions. It does not show that one\ncauses the other. Every value is an estimate with a margin of error, larger in small tracts.</p>"
+}

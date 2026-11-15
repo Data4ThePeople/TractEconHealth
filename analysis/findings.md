@@ -2,7 +2,7 @@
 
 Every number here comes from `analysis/results.json`, `analysis/county_results.json`, `analysis/binned.csv`,
 `analysis/income_binned.csv`, `analysis/by_state.csv`, `analysis/corr_matrix.csv` and `analysis/coverage.json`.
-Not yet tied out.
+Tied out by Claude on November 15 (`TIEOUT.md`); independent tie-out pending.
 
 ## The theory
 
@@ -39,9 +39,9 @@ steady flattening and the bend is a summary of it, not a threshold.
 
 **4. Health keeps improving above the bend, and the spread narrows rather than widens.** This is where the data
 part from the theory. Above $110,000 the rank correlation is 0.57 (0.71 below). The spread around the line is
-smaller above the bend (middle half of tracts within 12.5 index points of the line, against 18.6 below). By
-income group, the health index spread between the 10th and 90th percentile tract is 26 points in the lowest group,
-about 40 points in the middle (around $79,000) and 13 points in the highest. Some of the narrowing at the top comes
+smaller above the bend (middle half of tracts within 12.5 index points of the line, against 18.6 below). Across
+the 20 income groups, the health index spread between the 10th and 90th percentile tract is 28 points in the lowest
+group, about 40 points in the middle (around $72,000) and 17 points in the highest. Some of the narrowing at the top comes
 from the index nearing its ceiling of 100. Obesity, which has no ceiling issue, shows the same thing: 18.4 points
 between the 10th and 90th percentile tract in the lowest income group, 11.3 in the highest.
 
@@ -51,7 +51,7 @@ the rate below it. The bend adds a median 3.9 points of explained variation, mos
 (10.0) and New Jersey (9.8), least in North Dakota (0.4), Mississippi (0.6) and Arkansas (0.7).
 
 **6. Which economic measures go with health.** Rank correlation with the health index: income per person 0.82,
-median household income 0.82, share above 200% of poverty 0.80, Medicaid share -0.69, SNAP share -0.68, uninsured
+median household income 0.82, share at or above 200% of poverty 0.80, Medicaid share -0.69, SNAP share -0.68, uninsured
 -0.48, prime-age participation 0.50. Weak: unemployment -0.26, public assistance -0.21, housing cost burden -0.11,
 median rent share -0.10, labor force change 0.10.
 
@@ -79,7 +79,7 @@ between income and health is built into the estimates. CDC's own methods staff s
 
 - Within counties, the rank correlation is 0.74 for income and 0.79 for the economic index. Within a county, the
   model's tract differences come only from those demographic and poverty inputs.
-- The economic measures most tied to poverty (income, share above 200% of poverty, SNAP, Medicaid) are the ones
+- The economic measures most tied to poverty (income, share at or above 200% of poverty, SNAP, Medicaid) are the ones
   most tied to the health estimates. Measures the model does not use (housing cost burden, labor force change) show
   little link.
 
@@ -91,7 +91,7 @@ The county life expectancy result is the check that the link is not only a produ
   points wide.
 - The Census Bureau filled in some or all income for 37.8% of households (41.3% in the lowest-income fifth of
   tracts, 33.9% in the highest).
-- The typical tract's income margin of error is 20.5% of the estimate (27.4% in the lowest-income fifth). Some of
+- The typical tract's income margin of error is 20.6% of the estimate (27.4% in the lowest-income fifth, 18.0% in the highest). Some of
   the spread among low-income tracts comes from this noise rather than from health.
 
 ## Published research

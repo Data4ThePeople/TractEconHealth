@@ -20,7 +20,7 @@ pulled for every county (`for=county:*`, one call per table) by `scripts/05_fetc
 tables for the coverage check (B99192, B99231, B992701, B99221, B992518) are pulled by
 `scripts/04_fetch_allocation.py`.
 
-**Version and vintage.** 2020-2024 5-year release (release date **(check)**). The Bureau does not revise a published ACS release.
+**Version and vintage.** 2020-2024 5-year release, published January 29, 2026 (moved from December 2025). The Bureau does not revise a published ACS release.
 
 **Coverage.** 50 states and DC on 2020 census tract boundaries and 2024 county boundaries, where Connecticut's
 nine planning regions replace its eight old counties. Puerto Rico is left out because PLACES does not
@@ -55,8 +55,9 @@ The C27007 Medicaid table counts the civilian noninstitutionalized population, a
 household tables.
 
 **Uncertainty.** Margins of error are published at 90% confidence. Margins for sums use the Bureau's root of
-summed squares; margins for shares use the Bureau's ratio formula. We flag tracts where a key measure's
-coefficient of variation passes 30% and report how many there are **(check)**.
+summed squares; margins for shares use the Bureau's ratio formula. For median household income, the
+coefficient of variation (margin of error divided by 1.645, over the estimate) passes 30% in 4.8% of the 77,167
+analysis tracts with a published margin; see the source coverage check for the other measures.
 
 **License and attribution.** Public domain. Credit: U.S. Census Bureau, American Community Survey 2020-2024
 5-year estimates.
@@ -120,8 +121,9 @@ Script: `scripts/02_crosswalk.py`.
 **Units and rounding.** Square meters.
 
 **Known quirks.** Boundary edits often create tiny slivers of overlap. We link a 2010 tract and a 2020 tract
-only when their shared land is at least 2% of either tract's land (water for all-water tracts), then group
-linked tracts into families. Of 68,562 families, 56,496 are a single tract that kept the same boundaries. The
+only when their shared land is at least 2% of either tract's land, or, when either tract is all water, their
+shared water is at least 2% of either tract's water, then group
+linked tracts into families. Families are built for 50 states and DC. Of 68,562 families, 56,496 pair one 2010 tract with one 2020 tract. The
 largest family chains 67 tracts together. Labor force change is computed for each family and given to each
 2020 tract in it. Ignoring slivers under 2% leaves a small mismatch at family edges.
 
@@ -215,12 +217,12 @@ codes.
 
 Applied in `scripts/10_build.py`, logged in `data/processed/filter_log.csv`: 84,401 tracts in 50 states and DC;
 83,344 with 500 or more people; 82,562 after dropping tracts where group quarters are half or more of the
-population; 77,919 with PLACES estimates (Kentucky and Pennsylvania drop here); 77,918 with both indexes. Of those,
+population; 77,919 with PLACES estimates for the measures based on 2023 survey data (Kentucky and Pennsylvania drop
+here); 77,918 with both indexes. Of those,
 77,708 have a published median household income, the headline economic measure.
 
 Counties, same filters, in `scripts/11_build_county.py`, logged in `data/processed/county_filter_log.csv`: 3,144
-counties; 3,136 with 500 or more people; 3,135 after the group quarters filter; 2,948 with PLACES estimates and
-both indexes.
+counties; 3,136 with 500 or more people; 3,135 after the group quarters filter; 2,948 with PLACES estimates for the measures based on 2023 survey data and both indexes.
 
 ## County Health Rankings, supplemental data release, March 25, 2026 (University of Wisconsin Population Health Institute)
 
@@ -298,7 +300,8 @@ Income is filled in more often in lower-income tracts; the other items differ li
 in 2020-2024, so the labor force change measure compares two periods with different shares of filled-in answers.
 
 **ACS sampling error is large at the tract level.** The typical tract's median household income has a 90% margin
-of error of 20.5% of the estimate (27.4% in the lowest-income fifth of tracts, 17.6% in the highest). The share above 200%
+of error of 20.6% of the estimate (27.4% in the lowest-income fifth of tracts, 18.0% in the highest), among the
+77,167 tracts with a published margin (top-coded and other annotated tracts have none). The share above 200%
 of poverty has a typical margin of 8.7 points. For the unemployment rate, the margin is more than half the
 estimate in 92.6% of tracts, for SNAP in 62.6% and for uninsured in 59.6%. Noisy measures show weaker links to
 anything, which is part of why unemployment relates only weakly to health here. Larger error at the low end also
@@ -317,7 +320,7 @@ Tracts in `scripts/10_build.py`, counties in `scripts/11_build_county.py`, tests
 economic measure, it holds up against counted life expectancy at the county level, and readers know what it means.
 The economic index stays in the viz as a second view.
 
-**Economic measures (ACS 2020-2024 unless noted).** Median household income (B19013). People above 200% of the
+**Economic measures (ACS 2020-2024 unless noted).** Median household income (B19013). People at or above 200% of the
 poverty line: C17002 "2.00 and over" over the C17002 total. Prime-age labor force participation: B23001 people
 25-54 in the labor force (including armed forces) over all people 25-54, both sexes. Prime-age employment: the same
 base, with civilian employed plus armed forces on top. Unemployment rate: B23025 unemployed over civilian labor

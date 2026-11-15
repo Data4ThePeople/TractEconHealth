@@ -77,9 +77,14 @@ def summ(m, est=None):
 
 moe = {}
 d, _ = b.table("B19013"); d = d.reindex(IDX)
-rel = d.B19013_001M / d.B19013_001E * 100
+# negative MOEs are Census annotation codes (for example top-coded or too few cases), not margins: drop them
+inc_moe = d.B19013_001M.where(d.B19013_001M >= 0)
+rel = inc_moe / d.B19013_001E * 100
+cv = inc_moe / 1.645 / d.B19013_001E * 100
 moe["median_household_income"] = {"unit": "MOE as % of the estimate", **summ(rel),
-                                  "median_by_income_fifth": by_q(rel)}
+                                  "median_by_income_fifth": by_q(rel),
+                                  "tracts_with_moe": int(rel.notna().sum()),
+                                  "cv_over_30_pct": pct((cv > 30).sum() / cv.notna().sum())}
 d, lab = b.table("C17002"); d = d.reindex(IDX)
 v = b.pick(lab, lambda p: p[-1] == "2.00 and over", 1)[0]
 m = prop_moe(d[v], d[v[:-1] + "M"], d.C17002_001E, d.C17002_001M)
