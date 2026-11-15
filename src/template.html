@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tract Economics and Health</title>
-<meta name="description" content="Every U.S. census tract plotted by economic health and by physical and mental health. Pick any economic measure and any health measure, nationally or by state.">
+<title>Income and Health</title>
+<meta name="description" content="Every U.S. census tract and county plotted by income and by physical and mental health. Pick any economic measure and any health measure, nationally or by state.">
 <style>
 :root{--bg:#ffffff;--fg:#1f2328;--muted:#5b6470;--line:#d8dde3;--panel:#f6f8fa;--dot:#2f6fb3;--dotbg:#c9d1da;--trend:#c2410c;--sel:#e8f0fa;--dota:1}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#181A1B;--fg:#e4e6e8;--muted:#a3a8ae;--line:#33373b;--panel:#202325;--dot:#6aa6e8;--dotbg:#3a3f44;--trend:#f08a4b;--sel:#22303f;--dota:1.8}}
@@ -38,9 +38,10 @@ details summary{cursor:pointer}
 </head>
 <body>
 <div id="app">
-  <h1>Economic health and physical and mental health, by census tract</h1>
-  <p class="sub">Each dot is one census tract. Pick an economic measure on the left and a health measure on the right. Both indexes run 0 to 100, where higher is better.</p>
+  <h1>Income and physical and mental health, by census tract and county</h1>
+  <p class="sub">Each dot is one census tract or county. Pick an economic measure on the left and a health measure on the right. The health index runs 0 to 100, where higher is better.</p>
   <div class="bar">
+    <label>Show <select id="geo"><option value="tract">Census tracts</option><option value="county">Counties</option></select></label>
     <label>Area <select id="state"></select></label>
     <label class="mob">Economic <select id="mx"></select></label>
     <label class="mob">Health <select id="my"></select></label>
@@ -66,20 +67,24 @@ const DATA = /*DATA*/null;
 (function(){
 if (window.self !== window.top) document.documentElement.setAttribute("data-theme","light");
 const $ = id => document.getElementById(id);
-const N = DATA.n;
 function dec(b64){const s=atob(b64),u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u.buffer}
-const cols = {};
-for (const c of DATA.cols){
-  const raw = new Uint16Array(dec(c.data)), v = new Float32Array(N);
-  for (let i=0;i<N;i++) v[i] = raw[i]===65535 ? NaN : c.min + raw[i]/65534*(c.max-c.min);
-  cols[c.key] = {...c, v};
+const GEOS = {};
+for (const [g, d] of Object.entries(DATA.geos)){
+  const n = d.n, cols = {};
+  for (const c of d.cols){
+    const raw = new Uint16Array(dec(c.data)), v = new Float32Array(n);
+    for (let i=0;i<n;i++) v[i] = raw[i]===65535 ? NaN : c.min + raw[i]/65534*(c.max-c.min);
+    cols[c.key] = {...c, v};
+  }
+  GEOS[g] = {n, cols, label: d.label, subs: d.subs, sub: d.sub ? new Uint16Array(dec(d.sub)) : null, state: new Uint8Array(dec(d.state)),
+    econKeys: d.cols.filter(c=>c.side==="econ").map(c=>c.key), healthKeys: d.cols.filter(c=>c.side==="health").map(c=>c.key)};
 }
-const state = new Uint8Array(dec(DATA.state)), county = new Uint16Array(dec(DATA.county));
-const tract = DATA.tract; // tract number strings
-const econKeys = DATA.cols.filter(c=>c.side==="econ").map(c=>c.key), healthKeys = DATA.cols.filter(c=>c.side==="health").map(c=>c.key);
-let X = "econ_index", Y = "health_index", ST = -1;
+let G = "tract", N, cols, state, econKeys, healthKeys;
+let X = "med_hh_income", Y = "health_index", ST = -1;
+const NOUN = {tract:["tract","tracts"], county:["county","counties"]};
 
 function sideList(el, keys, name, cur, onpick){
+  el.querySelectorAll("label,.grp").forEach(n=>n.remove());
   let grp = null;
   for (const k of keys){
     const c = cols[k];
@@ -90,14 +95,28 @@ function sideList(el, keys, name, cur, onpick){
     el.appendChild(l);
   }
 }
-function mobList(el, keys, cur){ for(const k of keys){const o=document.createElement("option");o.value=k;o.textContent=cols[k].label;if(k===cur)o.selected=true;el.appendChild(o);} }
-sideList($("sx"), econKeys, "x", X, k=>{X=k;sync();draw();});
-sideList($("sy"), healthKeys, "y", Y, k=>{Y=k;sync();draw();});
-mobList($("mx"), econKeys, X); mobList($("my"), healthKeys, Y);
+function mobList(el, keys, cur){ el.innerHTML=""; for(const k of keys){const o=document.createElement("option");o.value=k;o.textContent=cols[k].label;if(k===cur)o.selected=true;el.appendChild(o);} }
 $("mx").onchange = e=>{X=e.target.value;sync();draw();};
 $("my").onchange = e=>{Y=e.target.value;sync();draw();};
-const so = $("state"); so.innerHTML = `<option value="-1">United States</option>` + DATA.states.map((s,i)=>`<option value="${i}">${s}</option>`).join("");
+const so = $("state");
 so.onchange = e=>{ST=+e.target.value;draw();};
+function setGeo(g){
+  G = g; const d = GEOS[g]; N = d.n; cols = d.cols; state = d.state; econKeys = d.econKeys; healthKeys = d.healthKeys;
+  if (!cols[X]) X = "med_hh_income";
+  if (!cols[Y]) Y = "health_index";
+  sideList($("sx"), econKeys, "x", X, k=>{X=k;sync();draw();});
+  sideList($("sy"), healthKeys, "y", Y, k=>{Y=k;sync();draw();});
+  mobList($("mx"), econKeys, X); mobList($("my"), healthKeys, Y);
+  const present = new Set(state);  // only states with data in this view
+  so.innerHTML = `<option value="-1">United States</option>` + DATA.states.map((s,i)=>present.has(i)?`<option value="${i}">${s}</option>`:"").join("");
+  if (ST>=0 && !present.has(ST)) ST = -1;
+  so.value = String(ST);
+}
+$("geo").onchange = e=>{ setGeo(e.target.value); sync(); draw(); };
+// link options: #county opens the county view; &x=<key>&y=<key> pick the measures, e.g. #county&y=life_expectancy
+const hp = new URLSearchParams(location.hash.slice(1)), startGeo = hp.has("county") ? "county" : "tract";
+if (hp.get("x")) X = hp.get("x"); if (hp.get("y")) Y = hp.get("y");
+$("geo").value = startGeo; setGeo(startGeo);
 function sync(){
   document.querySelectorAll("#sx label,#sy label").forEach(l=>l.classList.toggle("on", l.dataset.k===X||l.dataset.k===Y));
   document.querySelectorAll('#sx input').forEach(i=>i.checked=i.value===X);
@@ -110,7 +129,7 @@ const cv = $("c"), ctx = cv.getContext("2d");
 let geom = null, idx = null;
 function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
 function nice(lo, hi, n){const span=hi-lo, step0=span/n, p=Math.pow(10,Math.floor(Math.log10(step0))), m=step0/p, step=(m<1.5?1:m<3?2:m<7?5:10)*p; const out=[]; for(let t=Math.ceil(lo/step)*step;t<=hi+1e-9;t+=step) out.push(+t.toFixed(10)); return out;}
-function fmt(c, v){ if (!isFinite(v)) return "n/a"; return c.unit==="$" ? "$"+Math.round(v).toLocaleString() : (c.unit==="%" ? v.toFixed(1)+"%" : v.toFixed(c.unit==="idx"?0:2)); }
+function fmt(c, v){ if (!isFinite(v)) return "n/a"; return c.unit==="$" ? "$"+Math.round(v).toLocaleString() : c.unit==="%" ? v.toFixed(1)+"%" : c.unit==="yr" ? v.toFixed(1) : c.unit==="r" ? v.toFixed(1) : v.toFixed(c.unit==="idx"?0:2); }
 function spearman(a, b){
   const n=a.length; if(n<3) return NaN;
   const rk = arr=>{const o=Array.from(arr.keys()).sort((i,j)=>arr[i]-arr[j]), r=new Float64Array(n); let i=0; while(i<n){let j=i; while(j+1<n && arr[o[j+1]]===arr[o[i]]) j++; const avg=(i+j)/2; for(let k=i;k<=j;k++) r[o[k]]=avg; i=j+1;} return r;};
@@ -128,12 +147,12 @@ function draw(){
   const px = v=>m.l+(v-x0)/(x1-x0)*pw, py = v=>m.t+ph-(v-y0)/(y1-y0)*ph;
   ctx.clearRect(0,0,W,H); ctx.fillStyle = css("--bg"); ctx.fillRect(0,0,W,H);
   ctx.strokeStyle = css("--line"); ctx.fillStyle = css("--muted"); ctx.font = "12px system-ui,sans-serif"; ctx.lineWidth = 1;
-  for (const t of nice(x0,x1,6)){ const x=px(t); ctx.beginPath(); ctx.moveTo(x,m.t); ctx.lineTo(x,m.t+ph); ctx.stroke(); ctx.textAlign="center"; ctx.fillText(fmt(cx,t).replace(/\.0%/,"%"), x, m.t+ph+16); }
-  for (const t of nice(y0,y1,6)){ const y=py(t); ctx.beginPath(); ctx.moveTo(m.l,y); ctx.lineTo(m.l+pw,y); ctx.stroke(); ctx.textAlign="right"; ctx.fillText(fmt(cy,t).replace(/\.0%/,"%"), m.l-6, y+4); }
+  for (const t of nice(x0,x1,6)){ const x=px(t); ctx.beginPath(); ctx.moveTo(x,m.t); ctx.lineTo(x,m.t+ph); ctx.stroke(); const lab=fmt(cx,t).replace(/\.0(%?)$/,"$1"), hw=ctx.measureText(lab).width/2; ctx.textAlign = x+hw>W-2 ? "right" : "center"; ctx.fillText(lab, x+hw>W-2 ? W-2 : x, m.t+ph+16); }
+  for (const t of nice(y0,y1,6)){ const y=py(t); ctx.beginPath(); ctx.moveTo(m.l,y); ctx.lineTo(m.l+pw,y); ctx.stroke(); ctx.textAlign="right"; ctx.fillText(fmt(cy,t).replace(/\.0(%?)$/,"$1"), m.l-6, y+4); }
   ctx.fillStyle = css("--fg"); ctx.textAlign="center"; ctx.fillText(cx.label, m.l+pw/2, H-6);
   ctx.save(); ctx.translate(13, m.t+ph/2); ctx.rotate(-Math.PI/2); ctx.fillText(cy.label, 0, 0); ctx.restore();
   ctx.save(); ctx.beginPath(); ctx.rect(m.l,m.t,pw,ph); ctx.clip();
-  const sel = [], r = Math.max(1, Math.min(2.2, W/500));
+  const sel = [], r = Math.max(1, Math.min(2.2, W/500)) * (G==="county" ? 1.8 : 1);
   const dotbg = css("--dotbg"), dot = css("--dot");
   const dota = parseFloat(css("--dota"))||1, alpha = Math.min(0.6, dota*(ST<0 ? Math.max(0.10, Math.min(0.35, 8000/N)) : 0.55));
   ctx.fillStyle = ST<0 ? dot : dotbg; ctx.globalAlpha = ST<0 ? alpha : 0.35;
@@ -150,16 +169,19 @@ function draw(){
   idx = new Map(); for (const i of sel){ const k = (Math.floor(px(xv[i])/8))+","+(Math.floor(py(yv[i])/8)); (idx.get(k)||idx.set(k,[]).get(k)).push(i); }
   const rho = spearman(Float64Array.from(sel,i=>xv[i]), Float64Array.from(sel,i=>yv[i]));
   const area = ST<0 ? "the United States" : DATA.states[ST];
-  $("stat").textContent = `${sel.length.toLocaleString()} tracts in ${area}. Rank correlation: ${isFinite(rho)?rho.toFixed(2):"n/a"}.`;
-  $("legend").innerHTML = `<span class="n">Blue dots</span> are tracts${ST>=0?` in ${DATA.states[ST]}; <span class="b">gray dots</span> are the rest of the country`:""}. The <span class="t">orange line</span> is the middle (median) tract at each step along the economic measure.`;
-  cv.setAttribute("aria-label", `Scatter plot of ${cy.label} against ${cx.label} for ${sel.length} census tracts in ${area}`);
+  const [one, many] = NOUN[G];
+  $("stat").textContent = `${sel.length.toLocaleString()} ${sel.length===1?one:many} in ${area}. Rank correlation: ${isFinite(rho)?rho.toFixed(2):"n/a"}.`;
+  $("legend").innerHTML = `<span class="n">Blue dots</span> are ${many}${ST>=0?` in ${DATA.states[ST]}; <span class="b">gray dots</span> are the rest of the country`:""}. The <span class="t">orange line</span> is the middle (median) ${one} at each step along the economic measure.`;
+  cv.setAttribute("aria-label", `Scatter plot of ${cy.label} against ${cx.label} for ${sel.length} ${G==="tract"?"census tracts":"counties"} in ${area}`);
 }
 cv.addEventListener("pointermove", e=>{
   if(!geom) return; const b=cv.getBoundingClientRect(), x=e.clientX-b.left, y=e.clientY-b.top;
   let best=-1, bd=100; const gx=Math.floor(x/8), gy=Math.floor(y/8);
   for(let dx=-1;dx<=1;dx++) for(let dy=-1;dy<=1;dy++){ const a=idx.get((gx+dx)+","+(gy+dy)); if(!a) continue; for(const i of a){ const d=(geom.px(geom.xv[i])-x)**2+(geom.py(geom.yv[i])-y)**2; if(d<bd){bd=d;best=i;} } }
   const t=$("tip"); if(best<0){t.style.display="none";return;}
-  t.innerHTML = `<b>Census Tract ${tract[best]}</b><br>${DATA.counties[county[best]]}<br>${cols[X].label}: ${fmt(cols[X],geom.xv[best])}<br>${cols[Y].label}: ${fmt(cols[Y],geom.yv[best])}`;
+  const gd = GEOS[G], nm = (G==="tract" ? "Census Tract " : "") + gd.label[best], sub = gd.sub ? gd.subs[gd.sub[best]] : "";
+  const esc = s=>s.replace(/[&<>]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  t.innerHTML = `<b>${esc(nm)}</b>${sub?"<br>"+esc(sub):""}<br>${cols[X].label}: ${fmt(cols[X],geom.xv[best])}<br>${cols[Y].label}: ${fmt(cols[Y],geom.yv[best])}`;
   t.style.display="block"; t.style.left=Math.min(x+12, b.width-270)+"px"; t.style.top=(y+12)+"px";
 });
 cv.addEventListener("pointerleave", ()=>$("tip").style.display="none");

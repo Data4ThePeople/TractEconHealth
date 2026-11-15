@@ -9,12 +9,12 @@
     "median": 37.4,
     "p90": 52.4
    },
-   "median_by_econ_fifth": {
-    "lowest fifth": 43.8,
-    "second": 40.2,
-    "middle": 37.5,
-    "fourth": 35.4,
-    "highest fifth": 32.5
+   "median_by_income_fifth": {
+    "lowest fifth": 41.3,
+    "second": 39.0,
+    "middle": 37.7,
+    "fourth": 36.1,
+    "highest fifth": 33.9
    }
   },
   "employment_status": {
@@ -24,12 +24,12 @@
     "median": 10.4,
     "p90": 18.9
    },
-   "median_by_econ_fifth": {
-    "lowest fifth": 11.9,
-    "second": 11.1,
-    "middle": 10.5,
-    "fourth": 9.9,
-    "highest fifth": 9.0
+   "median_by_income_fifth": {
+    "lowest fifth": 10.9,
+    "second": 10.4,
+    "middle": 10.3,
+    "fourth": 10.3,
+    "highest fifth": 10.0
    },
    "national_pct_2015_2019": 9.0,
    "national_pct_2020_2024_all_tracts": 11.5
@@ -41,12 +41,12 @@
     "median": 2.3,
     "p90": 6.1
    },
-   "median_by_econ_fifth": {
-    "lowest fifth": 2.7,
-    "second": 2.5,
+   "median_by_income_fifth": {
+    "lowest fifth": 2.6,
+    "second": 2.4,
     "middle": 2.3,
     "fourth": 2.2,
-    "highest fifth": 1.9
+    "highest fifth": 2.1
    }
   },
   "health_insurance": {
@@ -56,12 +56,12 @@
     "median": 19.5,
     "p90": 29.0
    },
-   "median_by_econ_fifth": {
-    "lowest fifth": 19.4,
-    "second": 20.1,
-    "middle": 20.1,
-    "fourth": 19.7,
-    "highest fifth": 18.3
+   "median_by_income_fifth": {
+    "lowest fifth": 18.9,
+    "second": 19.5,
+    "middle": 19.8,
+    "fourth": 19.9,
+    "highest fifth": 19.3
    }
   },
   "gross_rent": {
@@ -71,12 +71,12 @@
     "median": 15.6,
     "p90": 34.9
    },
-   "median_by_econ_fifth": {
-    "lowest fifth": 17.3,
-    "second": 15.9,
-    "middle": 15.5,
+   "median_by_income_fifth": {
+    "lowest fifth": 16.2,
+    "second": 15.1,
+    "middle": 15.3,
     "fourth": 15.2,
-    "highest fifth": 13.5
+    "highest fifth": 16.0
    }
   }
  },
@@ -85,24 +85,24 @@
    "unit": "MOE as % of the estimate",
    "median_moe": 20.5,
    "p90_moe": 40.1,
-   "median_by_econ_fifth": {
-    "lowest fifth": 26.9,
-    "second": 22.4,
-    "middle": 20.2,
-    "fourth": 18.4,
-    "highest fifth": 16.7
+   "median_by_income_fifth": {
+    "lowest fifth": 27.4,
+    "second": 21.4,
+    "middle": 19.5,
+    "fourth": 18.8,
+    "highest fifth": 17.6
    }
   },
   "pct_above_200fpl": {
    "unit": "percentage points",
    "median_moe": 8.7,
    "p90_moe": 14.9,
-   "median_by_econ_fifth": {
-    "lowest fifth": 10.5,
-    "second": 9.9,
-    "middle": 9.0,
-    "fourth": 7.8,
-    "highest fifth": 6.2
+   "median_by_income_fifth": {
+    "lowest fifth": 10.3,
+    "second": 9.6,
+    "middle": 8.9,
+    "fourth": 8.1,
+    "highest fifth": 6.4
    }
   },
   "pct_snap": {
@@ -267,27 +267,27 @@
   }
  },
  "chr": {
-  "counties": 2949,
+  "counties": 2948,
   "overdose_rate": {
-   "blank": 1081,
-   "blank_pct": 36.7,
+   "blank": 1080,
+   "blank_pct": 36.6,
    "pop_in_blank_counties_pct": 4.4,
-   "median_pop_blank": 8133,
-   "median_pop_with_value": 48605
+   "median_pop_blank": 8160,
+   "median_pop_with_value": 49431
   },
   "suicide_rate": {
-   "blank": 676,
+   "blank": 675,
    "blank_pct": 22.9,
    "pop_in_blank_counties_pct": 2.4,
-   "median_pop_blank": 5410,
-   "median_pop_with_value": 37875
+   "median_pop_blank": 5498,
+   "median_pop_with_value": 37954
   },
   "life_expectancy": {
    "blank": 78,
    "blank_pct": 2.6,
    "pop_in_blank_counties_pct": 1.2,
    "median_pop_blank": 1210,
-   "median_pop_with_value": 26552
+   "median_pop_with_value": 26730
   }
  }
 }

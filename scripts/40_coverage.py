@@ -13,7 +13,7 @@ b = importlib.util.module_from_spec(spec); spec.loader.exec_module(b)
 
 T = pd.read_parquet(PROC / "tracts.parquet")
 IDX = T.index
-Q = pd.qcut(T.econ_index, 5, labels=["lowest fifth", "second", "middle", "fourth", "highest fifth"])
+Q = pd.qcut(T.med_hh_income, 5, labels=["lowest fifth", "second", "middle", "fourth", "highest fifth"])
 out = {"tracts": int(len(T))}
 
 
@@ -39,7 +39,7 @@ acs["household_income"] = {
     "what": "households with some or all of their income filled in by the Census Bureau",
     "national_pct": pct((tot - none_).sum() / tot.sum()),
     "all_income_filled_pct": pct(d.B99192_008E.sum() / tot.sum()),
-    "tract": dist(share_any), "median_by_econ_fifth": by_q(share_any)}
+    "tract": dist(share_any), "median_by_income_fifth": by_q(share_any)}
 for t, name, what in [("B99231", "employment_status", "people 16+ whose employment status was filled in"),
                       ("B99221", "snap", "households whose SNAP receipt was filled in"),
                       ("B992701", "health_insurance", "people with one or more insurance answers filled in"),
@@ -47,7 +47,7 @@ for t, name, what in [("B99231", "employment_status", "people 16+ whose employme
     d, _ = b.table(t); d = d.reindex(IDX)
     s = d[f"{t}_002E"] / d[f"{t}_001E"] * 100
     acs[name] = {"what": what, "national_pct": pct(d[f"{t}_002E"].sum() / d[f"{t}_001E"].sum()),
-                 "tract": dist(s), "median_by_econ_fifth": by_q(s)}
+                 "tract": dist(s), "median_by_income_fifth": by_q(s)}
 # history: employment status allocation, 2015-2019 vs 2020-2024 (all tracts in 50 states + DC, each period)
 e = {}
 for y in (2019, 2024):
@@ -79,11 +79,11 @@ moe = {}
 d, _ = b.table("B19013"); d = d.reindex(IDX)
 rel = d.B19013_001M / d.B19013_001E * 100
 moe["median_household_income"] = {"unit": "MOE as % of the estimate", **summ(rel),
-                                  "median_by_econ_fifth": by_q(rel)}
+                                  "median_by_income_fifth": by_q(rel)}
 d, lab = b.table("C17002"); d = d.reindex(IDX)
 v = b.pick(lab, lambda p: p[-1] == "2.00 and over", 1)[0]
 m = prop_moe(d[v], d[v[:-1] + "M"], d.C17002_001E, d.C17002_001M)
-moe["pct_above_200fpl"] = {"unit": "percentage points", **summ(m), "median_by_econ_fifth": by_q(pd.Series(m, index=IDX))}
+moe["pct_above_200fpl"] = {"unit": "percentage points", **summ(m), "median_by_income_fifth": by_q(pd.Series(m, index=IDX))}
 d, _ = b.table("B22003"); d = d.reindex(IDX)
 m = prop_moe(d.B22003_002E, d.B22003_002M, d.B22003_001E, d.B22003_001M)
 moe["pct_snap"] = {"unit": "percentage points", **summ(m, T.pct_snap)}
@@ -118,7 +118,7 @@ for mid, g in p.groupby("measureid"):
 out["places"] = pl
 
 # ---------- County Health Rankings: counted deaths, blanked where under 10 ----------
-c = pd.read_csv(ROOT / "analysis" / "county.csv", dtype={"countyfips": str})
+c = pd.read_parquet(PROC / "counties.parquet")
 chr_ = {"counties": int(len(c))}
 for m in ["overdose_rate", "suicide_rate", "life_expectancy"]:
     miss = c[m].isna()

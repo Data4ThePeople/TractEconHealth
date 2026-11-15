@@ -1,6 +1,7 @@
 """Test the theory: does health track economics at the low end, then turn to scatter?
-Outputs analysis/results.json, analysis/binned.csv, analysis/by_state.csv, analysis/corr_matrix.csv,
-analysis/county.csv. All numbers in findings come from these files."""
+Headline economic measure: median household income. The economic index is kept as a second view.
+Outputs analysis/results.json, analysis/binned.csv (by income), analysis/by_state.csv, analysis/corr_matrix.csv,
+analysis/county_results.json. All numbers in findings come from these files."""
 import os, sys, json
 import numpy as np, pandas as pd
 from scipy import stats
@@ -18,7 +19,7 @@ def hinge_fit(x, y, grid):
     for k in grid:
         X = np.column_stack([X0, np.maximum(0, x - k)])
         coef, res, *_ = np.linalg.lstsq(X, y, rcond=None)
-        sse = ((y - X @ coef) ** 2).sum()
+        sse = ((y - (X * coef).sum(axis=1)) ** 2).sum()  # no BLAS matmul: numpy 2.0 on macOS raises false FP warnings
         if best is None or sse < best[1]:
             best = (k, sse, coef)
     k, sse, (a, b, c) = best
@@ -33,6 +34,9 @@ def describe(x, y, boot=200):
     sse_lin = ((y - np.polyval(lin, x)) ** 2).sum()
     f["r2_line"] = float(1 - sse_lin / ((y - y.mean()) ** 2).sum())
     f["r2_hinge"] = float(1 - f["sse"] / ((y - y.mean()) ** 2).sum())
+    if (x > 0).all():
+        ll = np.polyfit(np.log(x), y, 1)
+        f["r2_log_line"] = float(1 - ((y - np.polyval(ll, np.log(x))) ** 2).sum() / ((y - y.mean()) ** 2).sum())
     pred = f["intercept"] + f["slope_below"] * x + (f["slope_above"] - f["slope_below"]) * np.maximum(0, x - f["k"])
     res = y - pred
     b, a = x < f["k"], x >= f["k"]
@@ -62,30 +66,34 @@ def binned(df, xcol, ycol, nbins=50):
         "y_p75": g[ycol].quantile(0.75), "y_p90": g[ycol].quantile(0.90)})
 
 
+XH = "med_hh_income"  # headline economic measure
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     df = pd.read_parquet(PROC / "tracts.parquet")
-    x, y = df.econ_index.to_numpy(), df.health_index.to_numpy()
-    res = {"national": describe(x, y)}
-    b = binned(df, "econ_index", "health_index")
+    h = df[df[XH].notna()]
+    res = {"headline_x": XH, "tracts_with_income": int(len(h)),
+           "national": describe(h[XH].to_numpy(), h.health_index.to_numpy()),
+           "national_index": describe(df.econ_index.to_numpy(), df.health_index.to_numpy())}
+    b = binned(h, XH, "health_index")
     b["iqr"] = b.y_p75 - b.y_p25
     b["p10_p90"] = b.y_p90 - b.y_p10
     b.to_csv(OUT / "binned.csv")
 
-    # how much of the health index varies between counties vs within them
-    cm = df.groupby("countyfips").health_index.transform("mean")
-    res["health_var_share_between_counties"] = float(cm.var() / df.health_index.var())
+    cm = h.groupby("countyfips").health_index.transform("mean")
+    xm = h.groupby("countyfips")[XH].transform("mean")
+    res["health_var_share_between_counties"] = float(cm.var() / h.health_index.var())
+    res["spearman_within_county"] = float(stats.spearmanr(h[XH] - xm, h.health_index - cm)[0])
     em = df.groupby("countyfips").econ_index.transform("mean")
-    res["econ_var_share_between_counties"] = float(em.var() / df.econ_index.var())
-    # within-county relationship: demean both by county
-    res["spearman_within_county"] = float(stats.spearmanr(df.econ_index - em, df.health_index - cm)[0])
+    res["spearman_within_county_index"] = float(stats.spearmanr(df.econ_index - em, df.health_index - df.groupby("countyfips").health_index.transform("mean"))[0])
 
     rows = []
-    for st, g in df.groupby("stateabbr"):
+    for st, g in h.groupby("stateabbr"):
         if len(g) < 200:
-            d = {"n": len(g), "spearman_all": float(stats.spearmanr(g.econ_index, g.health_index)[0])}
+            d = {"n": len(g), "spearman_all": float(stats.spearmanr(g[XH], g.health_index)[0])}
         else:
-            d = describe(g.econ_index.to_numpy(), g.health_index.to_numpy(), boot=0)
+            d = describe(g[XH].to_numpy(), g.health_index.to_numpy(), boot=0)
         rows.append({"state": st, **d})
     pd.DataFrame(rows).to_csv(OUT / "by_state.csv", index=False)
 
@@ -97,26 +105,18 @@ def main():
               "food_insecurity", "loneliness", "no_emotional_support", "health_index"]
     df[econ + health].corr(method="spearman").loc[econ, health].round(3).to_csv(OUT / "corr_matrix.csv")
 
-    # county check against counted deaths (County Health Rankings supplement, March 2026)
-    chr_ = pd.read_csv(RAW / "chr" / "analytic_supplement_20260325.csv", dtype={"fipscode": str}, low_memory=False)
-    chr_ = chr_[chr_.countycode != "000"].set_index("fipscode")
-    c = df.groupby("countyfips").apply(lambda g: pd.Series({
-        "econ_index": np.average(g.econ_index, weights=g["pop"]),
-        "health_index": np.average(g.health_index, weights=g["pop"]),
-        "pop": g["pop"].sum(), "tracts": len(g), "state": g.stateabbr.iloc[0]}))
-    c["overdose_rate"] = pd.to_numeric(chr_.v138_rawvalue, errors="coerce").reindex(c.index)
-    c["suicide_rate"] = pd.to_numeric(chr_.v161_rawvalue, errors="coerce").reindex(c.index)
-    c["life_expectancy"] = pd.to_numeric(chr_.v147_rawvalue, errors="coerce").reindex(c.index)
-    c.to_csv(OUT / "county.csv")
-    res["county"] = {"counties": int(len(c)),
-                     "matched_to_chr": int(c.index.isin(chr_.index).sum())}
-    for m in ["overdose_rate", "suicide_rate", "life_expectancy", "health_index"]:
-        s = c.dropna(subset=[m])
-        res["county"][m] = describe(s.econ_index.to_numpy(), s[m].to_numpy(), boot=200) if len(s) > 200 else None
-        res["county"][m + "_n_missing"] = int(c[m].isna().sum())
-
+    # counties: ACS county income vs PLACES county health index and counted deaths (County Health Rankings)
+    c = pd.read_parquet(PROC / "counties.parquet")
+    cr = {"counties": int(len(c))}
+    for m in ["health_index", "life_expectancy", "overdose_rate", "suicide_rate"]:
+        for xk in [XH, "econ_index"]:
+            s = c.dropna(subset=[m, xk])
+            cr[f"{m}__{xk}"] = describe(s[xk].to_numpy(), s[m].to_numpy(), boot=200)
+        cr[m + "_n_missing"] = int(c[m].isna().sum())
+    (OUT / "county_results.json").write_text(json.dumps(cr, indent=2))
     (OUT / "results.json").write_text(json.dumps(res, indent=2))
-    print(json.dumps(res, indent=2))
+    print(json.dumps({k: v for k, v in res.items()}, indent=1))
+    print(json.dumps({k: {kk: v[kk] for kk in ["n", "spearman_all", "r2_line", "r2_log_line", "r2_hinge", "k"] if kk in v} if isinstance(v, dict) else v for k, v in cr.items()}, indent=1))
 
 
 if __name__ == "__main__":

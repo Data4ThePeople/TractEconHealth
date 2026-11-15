@@ -5,7 +5,7 @@ One section per dataset, written before any analysis and updated as the work tur
 
 ## American Community Survey, 2020-2024 5-year estimates (U.S. Census Bureau)
 
-**What it is.** Survey-based estimates for every census tract, pooled from responses collected January 2020
+**What it is.** Survey-based estimates for every census tract and county, pooled from responses collected January 2020
 through December 2024. Each value describes the five-year period, not any single year.
 
 **Where it comes from.** Census Data API, `https://api.census.gov/data/2024/acs/acs5`, one call per table and
@@ -15,11 +15,15 @@ poverty), B23001 (sex by age by employment status), B23025 (employment status), 
 income), B25071 (median gross rent as a share of income), B25140 (housing costs as a share of income, by
 tenure), B22003 (SNAP receipt), C27007 (Medicaid or means-tested coverage by sex and age), B27010 (health
 insurance by age), B19057 (public assistance income), B19083 (Gini index), B19301 (per capita income).
-Every estimate is saved with its margin of error, along with the table's variable labels.
+Every estimate is saved with its margin of error, along with the table's variable labels. The same tables are
+pulled for every county (`for=county:*`, one call per table) by `scripts/05_fetch_acs_county.py`. Allocation
+tables for the coverage check (B99192, B99231, B992701, B99221, B992518) are pulled by
+`scripts/04_fetch_allocation.py`.
 
 **Version and vintage.** 2020-2024 5-year release (release date **(check)**). The Bureau does not revise a published ACS release.
 
-**Coverage.** 50 states and DC on 2020 census tract boundaries. Puerto Rico is left out because PLACES does not
+**Coverage.** 50 states and DC on 2020 census tract boundaries and 2024 county boundaries, where Connecticut's
+nine planning regions replace its eight old counties. Puerto Rico is left out because PLACES does not
 cover it. Every value is an estimate from a sample of about 1 in 8 households over five years. The Bureau
 weights responses to match its own population estimates; values are not filled in for tracts with no sample.
 A blank median means the sample was too small to compute it.
@@ -62,11 +66,15 @@ coefficient of variation passes 30% and report how many there are **(check)**.
 **What it is.** The last five-year release before the 2020-2024 window, so the two periods do not overlap.
 Used for one measure only: change in the size of the labor force.
 
-**Where it comes from.** `https://api.census.gov/data/2019/acs/acs5`, table B23025, all tracts. Same script.
+**Where it comes from.** `https://api.census.gov/data/2019/acs/acs5`, table B23025, all tracts and all counties.
+Same scripts.
 
 **Version and vintage.** Published December 2020. Not revised.
 
-**Coverage.** 2010 census tract boundaries. Collected 2015 through 2019, before the pandemic.
+**Coverage.** 2010 census tract boundaries; 2019 county boundaries. Collected 2015 through 2019, before the
+pandemic. For counties, labor force change matches the same county code in both periods. It is blank for
+Connecticut's planning regions and for Alaska's Chugach (02063) and Copper River (02066) census areas, whose codes
+do not appear in the 2015-2019 county file.
 
 **Changes over time.** Tract boundaries differ from 2020-2024; handled by the tract families below. Population
 controls in 2015-2019 come from estimates built on the 2010 census; 2020-2024 controls come from the 2020
@@ -188,17 +196,38 @@ mental distress.
 **License and attribution.** Public domain (U.S. government). Credit: CDC, PLACES: Local Data for Better
 Health, 2025 release.
 
+## PLACES: Local Data for Better Health, county data, 2025 release (CDC)
+
+**What it is.** CDC's own county estimates from the same model and survey years as the tract release, for the
+same measures. Used for the county view's health measures and health index. These are not averages of tract
+values.
+
+**Where it comes from.** Socrata dataset `swc5-untb` on data.cdc.gov, crude prevalence. Script:
+`scripts/06_fetch_places_county.py`. Updated December 4, 2025.
+
+**Coverage.** 3,144 counties in the file. As with tracts, Kentucky and Pennsylvania lack the measures based on 2023
+survey data, so they drop out. Connecticut appears as its nine planning regions, which match the ACS 2024 county
+codes.
+
+**Everything else** (model, intervals, quirks, license) is as described for the tract release above.
+
 ## Group quarters and population filters
 
 Applied in `scripts/10_build.py`, logged in `data/processed/filter_log.csv`: 84,401 tracts in 50 states and DC;
 83,344 with 500 or more people; 82,562 after dropping tracts where group quarters are half or more of the
-population; 77,919 with PLACES estimates (Kentucky and Pennsylvania drop here); 77,918 with both indexes.
+population; 77,919 with PLACES estimates (Kentucky and Pennsylvania drop here); 77,918 with both indexes. Of those,
+77,708 have a published median household income, the headline economic measure.
+
+Counties, same filters, in `scripts/11_build_county.py`, logged in `data/processed/county_filter_log.csv`: 3,144
+counties; 3,136 with 500 or more people; 3,135 after the group quarters filter; 2,948 with PLACES estimates and
+both indexes.
 
 ## County Health Rankings, supplemental data release, March 25, 2026 (University of Wisconsin Population Health Institute)
 
 **What it is.** County measures compiled from federal sources. We use three that are counts of deaths, not
 model estimates: drug overdose deaths (measure 138, 2021-2023), suicides (measure 161, 2019-2023) and life
-expectancy (measure 147, 2021-2023). Used only for the county-level check, never placed on tracts.
+expectancy (measure 147, 2021-2023). Shown in the county view and used for the county check, never placed on
+tracts.
 
 **Where it comes from.**
 `https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_supplement_20260325%5B1%5D.csv`
@@ -214,8 +243,8 @@ year of deaths than the 2025 annual release.
 **Changes over time.** Each release shifts the pooled years forward.
 
 **Suppressed, censored or masked values.** Counties with fewer than 10 deaths in the pooled period have no
-value. Of the 2,949 counties with tracts in our analysis, overdose deaths are blank for 1,081,
-suicides for 676 and life expectancy for 78. These are mostly small rural counties, which tilts the overdose and
+value. Of the 2,948 counties in the county view, overdose deaths are blank for 1,080,
+suicides for 675 and life expectancy for 78. These are mostly small rural counties, which tilts the overdose and
 suicide checks toward larger counties.
 
 **Missing data.** Blank for suppressed counties.
@@ -228,8 +257,8 @@ rate), and suicide rates do not (median gap 0.7 per 100,000), which fits an age-
 partly reflect each county's age mix. Life expectancy in years.
 
 **Known quirks.** Connecticut's counties were replaced by planning regions in 2022. The supplement says
-Connecticut data may be reported by county or planning region depending on the measure. All 2,949 county codes in
-our tract data matched a row in the file.
+Connecticut data may be reported by county or planning region depending on the measure. All 2,948 county codes in
+the county view matched a row in the file.
 
 **Uncertainty.** Confidence intervals published per county.
 
@@ -256,33 +285,37 @@ modeled values apart, because no tract value is measured.
 or gives an answer that fails edits, the Bureau fills it in from a similar household nearby (hot-deck
 allocation). Shares of answers allocated, from the B99 tables:
 
-| Item | Nationally | Typical tract | Lowest fifth of tracts on the economic index | Highest fifth |
+| Item | Nationally | Typical tract | Lowest-income fifth of tracts | Highest-income fifth |
 |---|---|---|---|---|
-| Household income, some or all filled in | 37.8% | 37.4% | 43.8% | 32.5% |
+| Household income, some or all filled in | 37.8% | 37.4% | 41.3% | 33.9% |
 | Household income, all of it filled in | 17.8% | | | |
-| Employment status | 11.5% | 10.4% | 11.9% | 9.0% |
-| Any health insurance item | 20.3% | 19.5% | 19.4% | 18.3% |
-| Gross rent | 17.8% | 15.6% | 17.3% | 13.5% |
-| SNAP receipt | 2.9% | 2.3% | 2.7% | 1.9% |
+| Employment status | 11.5% | 10.4% | 10.9% | 10.0% |
+| Any health insurance item | 20.3% | 19.5% | 18.9% | 19.3% |
+| Gross rent | 17.8% | 15.6% | 16.2% | 16.0% |
+| SNAP receipt | 2.9% | 2.3% | 2.6% | 2.1% |
 
-Filling in is more common in lower-income tracts. Employment status allocation rose from 9.0% in 2015-2019 to 11.5%
+Income is filled in more often in lower-income tracts; the other items differ little by income. Employment status allocation rose from 9.0% in 2015-2019 to 11.5%
 in 2020-2024, so the labor force change measure compares two periods with different shares of filled-in answers.
 
 **ACS sampling error is large at the tract level.** The typical tract's median household income has a 90% margin
-of error of 20.5% of the estimate (26.9% in the lowest fifth of tracts, 16.7% in the highest). The share above 200%
+of error of 20.5% of the estimate (27.4% in the lowest-income fifth of tracts, 17.6% in the highest). The share above 200%
 of poverty has a typical margin of 8.7 points. For the unemployment rate, the margin is more than half the
 estimate in 92.6% of tracts, for SNAP in 62.6% and for uninsured in 59.6%. Noisy measures show weaker links to
 anything, which is part of why unemployment relates only weakly to health here. Larger error at the low end also
 adds some spread among low-income tracts that comes from measurement, not from health.
 
-**County Health Rankings: counted deaths, blanked when fewer than 10.** Overdose deaths are blank for 1,081 of
-2,949 counties (36.7%, holding 4.4% of the population in the analysis), suicides for 676 (22.9%, 2.4% of
-population) and life expectancy for 78 (2.6%, 1.2%). Blank counties are small: median population 8,133 for blank
-overdose counties against 48,605 for those with a value.
+**County Health Rankings: counted deaths, blanked when fewer than 10.** Overdose deaths are blank for 1,080 of
+2,948 counties (36.6%, holding 4.4% of the population in the county view), suicides for 675 (22.9%, 2.4% of
+population) and life expectancy for 78 (2.6%, 1.2%). Blank counties are small: median population 8,160 for blank
+overdose counties against 49,431 for those with a value.
 
 ## Method (how the measures and indexes are built)
 
-All in `scripts/10_build.py` and `scripts/20_analysis.py`.
+Tracts in `scripts/10_build.py`, counties in `scripts/11_build_county.py`, tests in `scripts/20_analysis.py`.
+
+**Headline economic measure: median household income.** It has the strongest link to the health index of any
+economic measure, it holds up against counted life expectancy at the county level, and readers know what it means.
+The economic index stays in the viz as a second view.
 
 **Economic measures (ACS 2020-2024 unless noted).** Median household income (B19013). People above 200% of the
 poverty line: C17002 "2.00 and over" over the C17002 total. Prime-age labor force participation: B23001 people
@@ -309,10 +342,15 @@ then stretched so the lowest tract is 0 and the highest is 100. Housing cost bur
 economic index even though each relates only weakly to health, because the index was defined before the analysis
 and dropping measures after seeing their link to health would tune the result.
 
-**Shape tests.** Binned medians: 50 equal-count groups along the economic index, with the 10th, 25th, 50th, 75th
+**Counties.** The same ACS definitions, applied to county tables. Health measures are PLACES county estimates.
+Both indexes are rebuilt with percentile ranks taken across counties.
+
+**Shape tests.** Run with median household income on the x-axis (and repeated for the economic index). Binned
+medians: 50 equal-count groups along income, with the 10th, 25th, 50th, 75th
 and 90th percentile of the health index in each. Broken-line fit: a continuous line with one bend, the bend tried
-at 91 points between the 5th and 95th percentile of the economic index, keeping the one with the smallest squared
-error; 200 bootstrap resamples give a range for the bend. Spread: interquartile range of the leftover distance from
+at 91 points between the 5th and 95th percentile of income, keeping the one with the smallest squared error;
+200 bootstrap resamples give a range for the bend. Also a straight line on the log of income, for comparison. Spread: interquartile range of the leftover distance from
 that line on each side of the bend. Rank (Spearman) correlations nationally, by state, below and above the bend,
-and within counties (each tract's values minus its county average). County check: population-weighted average of
-tract indexes in each county against County Health Rankings overdose deaths, suicides and life expectancy.
+and within counties (each tract's values minus its county average). County check: ACS county median household income
+(and the county economic index) against the PLACES county health index and against County Health Rankings life
+expectancy, overdose deaths and suicides.
