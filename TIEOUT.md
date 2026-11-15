@@ -102,3 +102,46 @@ for all-water tracts, and percentile ranks are taken after Kentucky and Pennsylv
 - The page in a browser (hover text, state filter, county switch, link options). The decoded data and the
   page's rank correlation were checked in Python.
 - The literature papers themselves, beyond the notes in `analysis/literature.md`.
+
+## Independent tie-out (fresh agent, November 15, 2026)
+
+The agent saw only `DATASETS.md`, `dist/index.html` and `README.md`, downloaded every source again, and rebuilt
+with its own code. Its working notes stay outside the repo.
+
+**Matched:**
+- Every embedded value and blank in both views (33 tract and 36 county columns, within half a storage step).
+- Both GEOID sets, every filter count and the family counts.
+- Every number in the source coverage check.
+- Every findings statistic it recomputed: correlations, bend fit, income groups, states, within-county results
+  and the county table.
+- The PLACES method claims, checked against CDC's pages.
+- The County Health Rankings years.
+
+**Differences found, and what was done:**
+
+| Item | Result |
+|---|---|
+| Tract tooltip showed "DoÃ±a Ana, NM" (PLACES name read with the wrong text encoding) | **fixed** in the viz build |
+| Rent share 51.0 and 9.0 are Census stand-ins for "50.0% or more" and "10.0% or less" (4,881 and 271 tracts) | **fixed**: tooltip shows the cap; viz notes and DATASETS say so |
+| 541 tracts at the $250,001 income cap not noted on the page | **fixed**: tooltip shows "$250,000 or more"; notes say so |
+| "Strongest link of any economic measure": income per person is 0.818 vs. 0.816 at tract level | **partly supported, fixed**: DATASETS now says tied at tract level, highest at county level; findings give both values |
+| Median line took the upper middle value for even groups; legend said "middle tract" | **fixed**: true median, legend reworded |
+| 49,431 should round to 49,432 | **fixed** |
+| "Moved from December 2025" not on the Census page | **removed** |
+| "Fewer than 10 deaths" cutoff not in the codebook (data fit it: smallest count shown is 10) | **partly supported, reworded** |
+| "One more year of deaths than the 2025 release" | **not supported, removed** |
+| "NCHS multiple cause of death files" (codebook: "NCHS - Mortality Files") | **reworded** |
+| "Before 2024, under 50 total people" | **could not check, removed** |
+| "Part of why unemployment relates weakly" | **reworded** to "may be part of why" |
+| "Mostly small rural counties" (small checked, rural not) | **reworded** to "small" (DATASETS and viz notes) |
+| Social-needs measure notes said "39 states" | **fixed** to "39 states and DC" |
+| "Counted deaths ... not modeled" (life expectancy is a life-table figure; suicides age-adjusted) | **reworded** in viz notes |
+| Gini index grouped under "Assistance and coverage" | **moved** to Income |
+| Method lines open to more than one reading: rank base, percentile formula, bend grid, state bend refit, "some or all filled in" | **clarified** in DATASETS |
+
+**The agent could not check:**
+- ACS background claims ("about 1 in 8 households," 2020 weighting, CPI-U-RS, the 2015-2019 release date).
+- The relationship file date and the CDC WONDER API limit.
+- The README's rebuild steps (it was not shown the scripts).
+- The page in a real browser. It ran the page's correlation and median-line code in Python instead, and those
+  worked as described.

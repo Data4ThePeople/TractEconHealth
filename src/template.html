@@ -129,7 +129,7 @@ const cv = $("c"), ctx = cv.getContext("2d");
 let geom = null, idx = null;
 function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
 function nice(lo, hi, n){const span=hi-lo, step0=span/n, p=Math.pow(10,Math.floor(Math.log10(step0))), m=step0/p, step=(m<1.5?1:m<3?2:m<7?5:10)*p; const out=[]; for(let t=Math.ceil(lo/step)*step;t<=hi+1e-9;t+=step) out.push(+t.toFixed(10)); return out;}
-function fmt(c, v){ if (!isFinite(v)) return "n/a"; return c.unit==="$" ? "$"+Math.round(v).toLocaleString() : c.unit==="%" ? v.toFixed(1)+"%" : c.unit==="yr" ? v.toFixed(1) : c.unit==="r" ? v.toFixed(1) : v.toFixed(c.unit==="idx"?0:2); }
+function fmt(c, v){ if (!isFinite(v)) return "n/a"; if (c.key==="med_hh_income" && c.max===250001 && v>=c.max-0.5) return "$250,000 or more"; if (c.key==="med_rent_pct_income" && c.max===51 && v>=c.max-1e-6) return "50.0% or more"; if (c.key==="med_rent_pct_income" && c.min===9 && v<=c.min+1e-6) return "10.0% or less"; return c.unit==="$" ? "$"+Math.round(v).toLocaleString() : c.unit==="%" ? v.toFixed(1)+"%" : c.unit==="yr" ? v.toFixed(1) : c.unit==="r" ? v.toFixed(1) : v.toFixed(c.unit==="idx"?0:2); }
 function spearman(a, b){
   const n=a.length; if(n<3) return NaN;
   const rk = arr=>{const o=Array.from(arr.keys()).sort((i,j)=>arr[i]-arr[j]), r=new Float64Array(n); let i=0; while(i<n){let j=i; while(j+1<n && arr[o[j+1]]===arr[o[i]]) j++; const avg=(i+j)/2; for(let k=i;k<=j;k++) r[o[k]]=avg; i=j+1;} return r;};
@@ -161,7 +161,7 @@ function draw(){
   ctx.globalAlpha = 1;
   // trend: median y in 20 equal-count bins of x, for the selected tracts
   const s = sel.slice().sort((a,b)=>xv[a]-xv[b]), nb = Math.min(20, Math.floor(s.length/15)), pts=[];
-  for (let b=0;b<nb;b++){ const part = s.slice(Math.floor(b*s.length/nb), Math.floor((b+1)*s.length/nb)); const xs=part.map(i=>xv[i]).sort((p,q)=>p-q), ys=part.map(i=>yv[i]).sort((p,q)=>p-q); pts.push([xs[xs.length>>1], ys[ys.length>>1]]); }
+  for (let b=0;b<nb;b++){ const part = s.slice(Math.floor(b*s.length/nb), Math.floor((b+1)*s.length/nb)); const xs=part.map(i=>xv[i]).sort((p,q)=>p-q), ys=part.map(i=>yv[i]).sort((p,q)=>p-q); const md=a=>a.length%2?a[a.length>>1]:(a[a.length/2-1]+a[a.length/2])/2; pts.push([md(xs), md(ys)]); }
   if (pts.length>1){ ctx.strokeStyle = css("--trend"); ctx.lineWidth = 3; ctx.beginPath(); pts.forEach((p,i)=>i?ctx.lineTo(px(p[0]),py(p[1])):ctx.moveTo(px(p[0]),py(p[1]))); ctx.stroke(); }
   ctx.restore();
   geom = {px,py,sel,xv,yv,W,H};
@@ -171,7 +171,7 @@ function draw(){
   const area = ST<0 ? "the United States" : DATA.states[ST];
   const [one, many] = NOUN[G];
   $("stat").textContent = `${sel.length.toLocaleString()} ${sel.length===1?one:many} in ${area}. Rank correlation: ${isFinite(rho)?rho.toFixed(2):"n/a"}.`;
-  $("legend").innerHTML = `<span class="n">Blue dots</span> are ${many}${ST>=0?` in ${DATA.states[ST]}; <span class="b">gray dots</span> are the rest of the country`:""}. The <span class="t">orange line</span> is the middle (median) ${one} at each step along the economic measure.`;
+  $("legend").innerHTML = `<span class="n">Blue dots</span> are ${many}${ST>=0?` in ${DATA.states[ST]}; <span class="b">gray dots</span> are the rest of the country`:""}. The <span class="t">orange line</span> splits the ${many} into 20 equal-size groups along the economic measure and joins each group's median values.`;
   cv.setAttribute("aria-label", `Scatter plot of ${cy.label} against ${cx.label} for ${sel.length} ${G==="tract"?"census tracts":"counties"} in ${area}`);
 }
 cv.addEventListener("pointermove", e=>{

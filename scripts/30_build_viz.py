@@ -21,7 +21,7 @@ ECON = [  # key, label, unit, direction note, group
     ("pct_medicaid", "People on Medicaid or other means-tested coverage", "%", "Lower is better", "Assistance and coverage"),
     ("pct_uninsured", "People without health insurance", "%", "Lower is better", "Assistance and coverage"),
     ("pct_public_assist", "Households with cash public assistance", "%", "Lower is better", "Assistance and coverage"),
-    ("gini", "Income inequality (Gini index)", "g", "Not in the index", "Assistance and coverage"),
+    ("gini", "Income inequality (Gini index)", "g", "Not in the index", "Income"),
 ]
 HEALTH = [
     ("health_index", "Health index", "idx", "0 to 100, higher is better", ""),
@@ -39,9 +39,9 @@ HEALTH = [
     ("binge_drinking", "Binge drinking", "%", "Share of adults", "Behaviors"),
     ("inactivity", "No leisure-time physical activity", "%", "Share of adults", "Behaviors"),
     ("short_sleep", "Short sleep (under 7 hours)", "%", "Share of adults", "Behaviors"),
-    ("food_insecurity", "Food insecurity", "%", "Share of adults; not in index; 39 states", "Social needs"),
-    ("loneliness", "Loneliness", "%", "Share of adults; not in index; 39 states", "Social needs"),
-    ("no_emotional_support", "Lack of social and emotional support", "%", "Share of adults; not in index; 39 states", "Social needs"),
+    ("food_insecurity", "Food insecurity", "%", "Share of adults; not in index; 39 states and DC", "Social needs"),
+    ("loneliness", "Loneliness", "%", "Share of adults; not in index; 39 states and DC", "Social needs"),
+    ("no_emotional_support", "Lack of social and emotional support", "%", "Share of adults; not in index; 39 states and DC", "Social needs"),
 ]
 COUNTY_ONLY = [  # counted deaths, County Health Rankings March 2026; counties only
     ("life_expectancy", "Life expectancy (years)", "yr", "2021-2023; counties only", "Counted deaths"),
@@ -95,7 +95,12 @@ def main():
     def tract_label(d):  # tract number; county name stored once and referenced by index
         t = d.index.str[5:]
         num = [f"{int(x[:4])}" + (f".{x[4:]}" if x[4:] != "00" else "") for x in t]
-        full = d.countyname + ", " + d.stateabbr
+        def fix(s):  # PLACES tract file has a few UTF-8 names read as Latin-1 (for example Dona Ana, NM)
+            try:
+                return s.encode("latin-1").decode("utf-8")
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                return s
+        full = d.countyname.map(fix) + ", " + d.stateabbr
         subs = sorted(full.unique())
         return num, subs, full.map({c: i for i, c in enumerate(subs)}).to_numpy()
 
@@ -121,12 +126,15 @@ itself. County values are CDC's own county estimates. The health index averages 
 fourteen measures from obesity through short sleep, turned so that higher is better. Food insecurity, loneliness
 and emotional support are not in the index because CDC has them for only 39 states and DC.</p>
 <p><b>Counted deaths</b> (county view only) come from County Health Rankings &amp; Roadmaps, March 2026 release,
-built from death certificates. They are not modeled. Counties with fewer than 10 deaths in the period have no
-value: more than 1 in 3 counties for overdose deaths and nearly 1 in 4 for suicides, mostly small rural counties.</p>
+built from death certificates, not from a survey model. Life expectancy is calculated from those deaths, and
+suicide rates appear to be age-adjusted; overdose rates are not. Counties with too few deaths have no value: more
+than 1 in 3 counties for overdose deaths and nearly 1 in 4 for suicides, mostly small counties.</p>
 <p><b>Kentucky and Pennsylvania are not shown.</b> The 2025 PLACES release has no estimates for these two states for
 measures based on 2023 survey data.</p>
 <p><b>Correlation is not cause.</b> The chart shows which places have both conditions. It does not show that one
-causes the other. Every value is an estimate with a margin of error, larger in small tracts.</p>"""
+causes the other. Every value is an estimate with a margin of error, larger in small tracts. The Census Bureau
+caps median household income at $250,000 or more (541 tracts) and median rent share at 50% or more (4,881 tracts)
+and 10% or less (271 tracts); those places show the cap.</p>"""
     data = {"states": list(STATE_NAMES.values()),
             "geos": {"tract": geo(df, HEALTH, tract_label), "county": geo(cf, HEALTH + COUNTY_ONLY, county_label)},
             "notes": notes}

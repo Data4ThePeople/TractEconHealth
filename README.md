@@ -3,7 +3,7 @@
 A Data 4 The People project that compares income and other economic measures with physical and mental health
 for U.S. census tracts and counties.
 
-The analysis is still in progress and has not been checked yet. There is no published post or public page yet.
+The analysis has been checked twice, once by an independent rebuild (`TIEOUT.md`). There is no published post or public page yet.
 
 ## What it shows
 

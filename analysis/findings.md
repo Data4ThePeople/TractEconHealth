@@ -2,7 +2,7 @@
 
 Every number here comes from `analysis/results.json`, `analysis/county_results.json`, `analysis/binned.csv`,
 `analysis/income_binned.csv`, `analysis/by_state.csv`, `analysis/corr_matrix.csv` and `analysis/coverage.json`.
-Tied out by Claude on November 15 (`TIEOUT.md`); independent tie-out pending.
+Tied out by Claude and by an independent agent on November 15 (`TIEOUT.md`).
 
 ## The theory
 
@@ -51,7 +51,7 @@ the rate below it. The bend adds a median 3.9 points of explained variation, mos
 (10.0) and New Jersey (9.8), least in North Dakota (0.4), Mississippi (0.6) and Arkansas (0.7).
 
 **6. Which economic measures go with health.** Rank correlation with the health index: income per person 0.82,
-median household income 0.82, share at or above 200% of poverty 0.80, Medicaid share -0.69, SNAP share -0.68, uninsured
+median household income 0.82 (0.818 and 0.816, so income per person is a hair higher at the tract level), share at or above 200% of poverty 0.80, Medicaid share -0.69, SNAP share -0.68, uninsured
 -0.48, prime-age participation 0.50. Weak: unemployment -0.26, public assistance -0.21, housing cost burden -0.11,
 median rent share -0.10, labor force change 0.10.
 
