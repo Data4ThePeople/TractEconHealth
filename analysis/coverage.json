@@ -1,0 +1,293 @@
+{
+ "tracts": 77918,
+ "acs_allocation": {
+  "household_income": {
+   "what": "households with some or all of their income filled in by the Census Bureau",
+   "national_pct": 37.8,
+   "all_income_filled_pct": 17.8,
+   "tract": {
+    "median": 37.4,
+    "p90": 52.4
+   },
+   "median_by_econ_fifth": {
+    "lowest fifth": 43.8,
+    "second": 40.2,
+    "middle": 37.5,
+    "fourth": 35.4,
+    "highest fifth": 32.5
+   }
+  },
+  "employment_status": {
+   "what": "people 16+ whose employment status was filled in",
+   "national_pct": 11.5,
+   "tract": {
+    "median": 10.4,
+    "p90": 18.9
+   },
+   "median_by_econ_fifth": {
+    "lowest fifth": 11.9,
+    "second": 11.1,
+    "middle": 10.5,
+    "fourth": 9.9,
+    "highest fifth": 9.0
+   },
+   "national_pct_2015_2019": 9.0,
+   "national_pct_2020_2024_all_tracts": 11.5
+  },
+  "snap": {
+   "what": "households whose SNAP receipt was filled in",
+   "national_pct": 2.9,
+   "tract": {
+    "median": 2.3,
+    "p90": 6.1
+   },
+   "median_by_econ_fifth": {
+    "lowest fifth": 2.7,
+    "second": 2.5,
+    "middle": 2.3,
+    "fourth": 2.2,
+    "highest fifth": 1.9
+   }
+  },
+  "health_insurance": {
+   "what": "people with one or more insurance answers filled in",
+   "national_pct": 20.3,
+   "tract": {
+    "median": 19.5,
+    "p90": 29.0
+   },
+   "median_by_econ_fifth": {
+    "lowest fifth": 19.4,
+    "second": 20.1,
+    "middle": 20.1,
+    "fourth": 19.7,
+    "highest fifth": 18.3
+   }
+  },
+  "gross_rent": {
+   "what": "renter units whose gross rent was filled in",
+   "national_pct": 17.8,
+   "tract": {
+    "median": 15.6,
+    "p90": 34.9
+   },
+   "median_by_econ_fifth": {
+    "lowest fifth": 17.3,
+    "second": 15.9,
+    "middle": 15.5,
+    "fourth": 15.2,
+    "highest fifth": 13.5
+   }
+  }
+ },
+ "acs_moe": {
+  "median_household_income": {
+   "unit": "MOE as % of the estimate",
+   "median_moe": 20.5,
+   "p90_moe": 40.1,
+   "median_by_econ_fifth": {
+    "lowest fifth": 26.9,
+    "second": 22.4,
+    "middle": 20.2,
+    "fourth": 18.4,
+    "highest fifth": 16.7
+   }
+  },
+  "pct_above_200fpl": {
+   "unit": "percentage points",
+   "median_moe": 8.7,
+   "p90_moe": 14.9,
+   "median_by_econ_fifth": {
+    "lowest fifth": 10.5,
+    "second": 9.9,
+    "middle": 9.0,
+    "fourth": 7.8,
+    "highest fifth": 6.2
+   }
+  },
+  "pct_snap": {
+   "unit": "percentage points",
+   "median_moe": 5.4,
+   "p90_moe": 11.1,
+   "share_moe_over_half_estimate_pct": 62.6
+  },
+  "unemp_rate": {
+   "unit": "percentage points",
+   "median_moe": 3.4,
+   "p90_moe": 7.6,
+   "share_moe_over_half_estimate_pct": 92.6
+  },
+  "pct_uninsured": {
+   "unit": "percentage points (multi-line numerator, MOEs combined as root sum of squares)",
+   "median_moe": 3.5,
+   "p90_moe": 7.2,
+   "share_moe_over_half_estimate_pct": 59.6
+  }
+ },
+ "places": {
+  "direct_measurement_pct": 0.0,
+  "note": "PLACES publishes no direct tract measurements; every value is predicted by CDC's small-area model.",
+  "measures": {
+   "binge_drinking": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 15.8,
+    "median_ci_width_pts": 5.1,
+    "p90_ci_width_pts": 6.3,
+    "median_ci_width_pct_of_value": 32.7
+   },
+   "high_bp": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 34.4,
+    "median_ci_width_pts": 6.6,
+    "p90_ci_width_pts": 8.7,
+    "median_ci_width_pct_of_value": 19.3
+   },
+   "chd": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 6.2,
+    "median_ci_width_pts": 1.6,
+    "p90_ci_width_pts": 2.2,
+    "median_ci_width_pct_of_value": 24.5
+   },
+   "copd": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 6.5,
+    "median_ci_width_pts": 2.1,
+    "p90_ci_width_pts": 3.2,
+    "median_ci_width_pct_of_value": 31.8
+   },
+   "smoking": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 13.0,
+    "median_ci_width_pts": 4.8,
+    "p90_ci_width_pts": 6.4,
+    "median_ci_width_pct_of_value": 36.1
+   },
+   "depression": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 22.0,
+    "median_ci_width_pts": 5.9,
+    "p90_ci_width_pts": 7.5,
+    "median_ci_width_pct_of_value": 27.4
+   },
+   "diabetes": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 11.9,
+    "median_ci_width_pts": 3.2,
+    "p90_ci_width_pts": 4.4,
+    "median_ci_width_pct_of_value": 27.2
+   },
+   "disability": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 30.8,
+    "median_ci_width_pts": 8.0,
+    "p90_ci_width_pts": 9.9,
+    "median_ci_width_pct_of_value": 25.9
+   },
+   "no_emotional_support": {
+    "core": false,
+    "tracts": 59699,
+    "median_value": 23.9,
+    "median_ci_width_pts": 6.9,
+    "p90_ci_width_pts": 8.2,
+    "median_ci_width_pct_of_value": 28.8
+   },
+   "food_insecurity": {
+    "core": false,
+    "tracts": 59699,
+    "median_value": 14.3,
+    "median_ci_width_pts": 5.4,
+    "p90_ci_width_pts": 9.8,
+    "median_ci_width_pct_of_value": 37.0
+   },
+   "fair_poor_health": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 19.4,
+    "median_ci_width_pts": 5.7,
+    "p90_ci_width_pts": 8.0,
+    "median_ci_width_pct_of_value": 29.1
+   },
+   "loneliness": {
+    "core": false,
+    "tracts": 59699,
+    "median_value": 33.8,
+    "median_ci_width_pts": 8.6,
+    "p90_ci_width_pts": 10.6,
+    "median_ci_width_pct_of_value": 25.5
+   },
+   "inactivity": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 25.1,
+    "median_ci_width_pts": 8.0,
+    "p90_ci_width_pts": 10.4,
+    "median_ci_width_pct_of_value": 31.9
+   },
+   "mental_distress": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 16.8,
+    "median_ci_width_pts": 4.1,
+    "p90_ci_width_pts": 4.9,
+    "median_ci_width_pct_of_value": 24.5
+   },
+   "obesity": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 34.1,
+    "median_ci_width_pts": 9.8,
+    "p90_ci_width_pts": 15.7,
+    "median_ci_width_pct_of_value": 30.0
+   },
+   "physical_distress": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 13.6,
+    "median_ci_width_pts": 3.6,
+    "p90_ci_width_pts": 4.6,
+    "median_ci_width_pct_of_value": 26.4
+   },
+   "short_sleep": {
+    "core": true,
+    "tracts": 77918,
+    "median_value": 36.2,
+    "median_ci_width_pts": 8.9,
+    "p90_ci_width_pts": 13.3,
+    "median_ci_width_pct_of_value": 24.7
+   }
+  }
+ },
+ "chr": {
+  "counties": 2949,
+  "overdose_rate": {
+   "blank": 1081,
+   "blank_pct": 36.7,
+   "pop_in_blank_counties_pct": 4.4,
+   "median_pop_blank": 8133,
+   "median_pop_with_value": 48605
+  },
+  "suicide_rate": {
+   "blank": 676,
+   "blank_pct": 22.9,
+   "pop_in_blank_counties_pct": 2.4,
+   "median_pop_blank": 5410,
+   "median_pop_with_value": 37875
+  },
+  "life_expectancy": {
+   "blank": 78,
+   "blank_pct": 2.6,
+   "pop_in_blank_counties_pct": 1.2,
+   "median_pop_blank": 1210,
+   "median_pop_with_value": 26552
+  }
+ }
+}

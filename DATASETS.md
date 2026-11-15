@@ -220,8 +220,10 @@ suicide checks toward larger counties.
 
 **Revisions.** Pinned to this release.
 
-**Units and rounding.** Overdose deaths and suicides per 100,000 people; the supplemental codebook does not
-say whether they are age-adjusted **(check CHR technical documentation)**. Life expectancy in years.
+**Units and rounding.** Overdose deaths and suicides per 100,000 people. The codebook does not say whether
+they are age-adjusted, so we tested it: every overdose rate equals deaths over population times 100,000 (a crude
+rate), and suicide rates do not (median gap 0.7 per 100,000), which fits an age-adjusted rate. Crude overdose rates
+partly reflect each county's age mix. Life expectancy in years.
 
 **Known quirks.** Connecticut's counties were replaced by planning regions in 2022. The supplement says
 Connecticut data may be reported by county or planning region depending on the measure. All 2,949 county codes in
@@ -231,6 +233,50 @@ our tract data matched a row in the file.
 
 **License and attribution.** Free to use with credit: County Health Rankings & Roadmaps, University of
 Wisconsin Population Health Institute, 2026.
+
+## Source coverage check (scripts/40_coverage.py, analysis/coverage.json)
+
+How much of what we use was measured directly, how much the publisher filled in or modeled, and how large the
+publisher's own uncertainty is. Run on the 77,918 tracts in the analysis.
+
+**PLACES: none of the tract values are direct measurements.** Every tract number is a prediction from CDC's
+model, which takes BRFSS survey answers (about 400,000 adults a year, nationwide), fits how each health measure
+varies with age, sex, race and ethnicity, education and county and tract poverty, and then applies that fit to
+each tract's population counts. A tract's value says what the model expects for people like the ones who live
+there, in that county, at that poverty level. It does not come from surveying that tract. The 95% intervals CDC
+publishes are wide: the typical tract's obesity interval spans 9.8 points around a value of 34.1%, and across the
+14 health index measures the median interval runs 19% to 36% of the value. Because tract poverty is a model input,
+part of the link between tract income and tract health is built into the estimates. The county life expectancy
+check (below) uses counted deaths and is the result to lean on for that reason. The viz cannot show measured and
+modeled values apart, because no tract value is measured.
+
+**ACS: a large share of income answers are filled in by the Census Bureau.** When a household skips a question
+or gives an answer that fails edits, the Bureau fills it in from a similar household nearby (hot-deck
+allocation). Shares of answers allocated, from the B99 tables:
+
+| Item | Nationally | Typical tract | Lowest fifth of tracts on the economic index | Highest fifth |
+|---|---|---|---|---|
+| Household income, some or all filled in | 37.8% | 37.4% | 43.8% | 32.5% |
+| Household income, all of it filled in | 17.8% | | | |
+| Employment status | 11.5% | 10.4% | 11.9% | 9.0% |
+| Any health insurance item | 20.3% | 19.5% | 19.4% | 18.3% |
+| Gross rent | 17.8% | 15.6% | 17.3% | 13.5% |
+| SNAP receipt | 2.9% | 2.3% | 2.7% | 1.9% |
+
+Filling in is more common in lower-income tracts. Employment status allocation rose from 9.0% in 2015-2019 to 11.5%
+in 2020-2024, so the labor force change measure compares two periods with different shares of filled-in answers.
+
+**ACS sampling error is large at the tract level.** The typical tract's median household income has a 90% margin
+of error of 20.5% of the estimate (26.9% in the lowest fifth of tracts, 16.7% in the highest). The share above 200%
+of poverty has a typical margin of 8.7 points. For the unemployment rate, the margin is more than half the
+estimate in 92.6% of tracts, for SNAP in 62.6% and for uninsured in 59.6%. Noisy measures show weaker links to
+anything, which is part of why unemployment relates only weakly to health here. Larger error at the low end also
+adds some spread among low-income tracts that comes from measurement, not from health.
+
+**County Health Rankings: counted deaths, blanked when fewer than 10.** Overdose deaths are blank for 1,081 of
+2,949 counties (36.7%, holding 4.4% of the population in the analysis), suicides for 676 (22.9%, 2.4% of
+population) and life expectancy for 78 (2.6%, 1.2%). Blank counties are small: median population 8,133 for blank
+overdose counties against 48,605 for those with a value.
 
 ## Method (how the measures and indexes are built)
 
