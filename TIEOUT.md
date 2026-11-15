@@ -92,7 +92,7 @@ for all-water tracts, and percentile ranks are taken after Kentucky and Pennsylv
 | "Kentucky and Pennsylvania are not shown" because no 2023-survey measures | viz notes | PLACES file | supported |
 | "Short sleep (under 7 hours)", "Depression (ever diagnosed)" | labels | PLACES measure definitions | supported |
 | Orange line "is the middle (median) [tract] at each step" | legend | page code: running median | supported |
-| Chetty et al. find the link steepest at low incomes and continuing up | findings | `analysis/literature.md` notes | partly supported: the paper reports the gain continuing at every income level; "steepest at low incomes" holds in dollars, not in income percentiles |
+| Chetty et al. find the link steepest at low incomes and continuing up | findings | `analysis/literature.md` notes | **partly supported, fixed**: "steepest at low incomes" holds per dollar, not per income percentile; reworded to "larger gains per dollar at lower incomes" |
 | Kong and Zhang 2020 say the link is partly built in | findings | literature notes | supported as noted; not re-read in this pass |
 | "steepest at the bottom, still rising at the top" | framing | findings 3-5 | supported |
 | "Correlation is not cause" | viz notes | | supported |

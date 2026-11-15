@@ -97,8 +97,8 @@ The county life expectancy result is the check that the link is not only a produ
 ## Published research
 
 See `analysis/literature.md`. No published tract-level correlation between income and PLACES was found. Chetty et
-al. (JAMA, 2016) find the income and life expectancy link is steepest at low incomes and continues all the way up,
-which matches finding 3 and 4 here.
+al. (JAMA, 2016) find life expectancy rises with income at every income level, with larger gains per dollar at
+lower incomes, which fits findings 3 and 4 here.
 
 ## Decisions (November 15, 2026, accepted by Eric)
 
