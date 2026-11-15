@@ -152,8 +152,10 @@ appear in the ACS tract list.
 How the estimates are made, in plain words: CDC fits a model for each measure to individual BRFSS answers,
 using each person's age, sex, race and ethnicity, and education, plus the share of adults in their county
 below 150% of the poverty line, with state and county effects. It then applies the model to the 2020 census
-count of people of each age, sex and race in every block and adds the blocks up to tracts. CDC's FAQ adds that
-tract poverty estimates are used at that prediction step. So tract-to-tract differences within a county come
+count of people of each age, sex and race in every block and adds the blocks up to tracts. CDC's FAQ (https://www.cdc.gov/places/faqs/index.html,
+December 11, 2025) adds: "In the prediction step of the modeling process, we do use census-tract poverty
+estimates." The methodology page and the 2022 PLACES paper (Greenlund et al.) name only the county poverty input,
+and none of these say which tract poverty table or vintage is used. So tract-to-tract differences within a county come
 from differences in who lives there (age, sex, race, education) and in tract poverty, not from asking people
 in that tract. **This matters for this project:** part of any link between a tract's economic measures and its
 PLACES health estimates is built in by the model. We disclose this, and we check the main result against
