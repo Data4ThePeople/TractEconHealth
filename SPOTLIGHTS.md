@@ -231,7 +231,7 @@ County life expectancy (Genesee County): 73.4 years.
 **Summary.** This is the Delta story: the end of sharecropping and a very long decline.
 - **1930:** 94% of Coahoma County's farmers were tenants.
 - **1944:** the first cotton crop grown and picked entirely by machine came from Hopson Plantation, just south of town.
-- **1967:** the Senate hunger tour ended here.
+- **April 11, 1967:** a U.S. Senate subcommittee's tour of Delta hunger ended here.
 - **1970:** white students left for Lee Academy as the schools desegregated.
 
 The county has lost 57% of its people since 1950. These tracts lost 36% since 1990. County life expectancy is 65.3 years, 19th lowest of 2,870 counties in our data.
@@ -252,7 +252,7 @@ Life expectancy, 2010-2015 (USALEEP): 71.3 years (U.S. 78.7).
 **Caveats:**
 - Clarksdale is a small city (USDA codes it "micropolitan"), not open country.
 - One historian argues that people leaving also pushed farms to mechanize, so "machines pushed people out" needs careful wording.
-- Plant closings and the hospital's history after 1970 still need local newspaper work.
+- The later factory record is thin. Cooper Tire's own federal securities filing shows it ended inner-tube work at its Clarksdale plant in November 2004 and cut about 129 of 159 jobs; the plant stayed open. The hospital's history still needs local newspaper work.
 
 ### 7. McDowell County coalfields, West Virginia (R007)
 
@@ -266,7 +266,7 @@ Life expectancy, 2010-2015 (USALEEP): 71.3 years (U.S. 78.7).
 
 **Summary.** McDowell was once the top coal-producing county in the U.S. It fell from 98,887 people in 1950 to 19,111 in 2020, an 81% drop. The cuts came one after another, and each has a county data series:
 - Mine mechanization in the 1950s.
-- U.S. Steel leaving its company town of Gary.
+- U.S. Steel closing its mines at Gary in 1982 and ending all operations there in 1984.
 - Floods in 2001 and 2002.
 - The pill wave, about 96 pain pills per resident per year from 2006 to 2012.
 - The Walmart in Kimball closing in 2016.
@@ -288,7 +288,7 @@ Life expectancy, 2010-2015 (USALEEP): 76.7 years (U.S. 78.7).
 
 **Caveats:**
 - Dropping the prison tract also drops downtown Welch and Kimball. The tracts left are outlying coal camps, and their tract life expectancy (76.7) is far higher than the county's. The history should be told with county data.
-- The year U.S. Steel left Gary still needs a primary source.
+- A widely repeated claim that county income fell by two-thirds in the 1980s does not match federal income data (the largest yearly drop was 12.7%), so the story does not use it.
 
 ### 8. Pine Ridge Reservation, Oglala Lakota Nation, South Dakota (R046)
 
@@ -458,14 +458,14 @@ Some Wikipedia entries reflect a shared web search limit the agents ran into, no
 | West Baltimore | 16 | 14 | 2 | 0 | after sourcing pass | 5 |
 | Woodlawn | 16 | 10 | 6 | 0 | after sourcing pass | 3 |
 | El Paso | 18 | 14 | 3 | 0 | after sourcing pass | 0 |
-| McDowell County | 16 | 11 | 4 | 1 | first pass only |  |
+| McDowell County | 17 | 13 | 3 | 1 | after sourcing pass | 1 |
 | Black Mesa | 15 | 11 | 3 | 1 | first pass only |  |
 | Butte | 15 | 11 | 2 | 2 | first pass only |  |
 | Grove Hall | 15 | 9 | 3 | 3 | first pass only |  |
 | Helena-Elaine | 15 | 2 | 10 | 3 | first pass only |  |
 | Nubian Square | 15 | 6 | 6 | 3 | first pass only |  |
 | Central Cleveland | 19 | 14 | 1 | 4 | first pass only |  |
-| Clarksdale | 15 | 3 | 7 | 5 | first pass only |  |
+| Clarksdale | 16 | 11 | 3 | 2 | after sourcing pass | 2 |
 | Rocky Ford | 17 | 5 | 4 | 8 | first pass only |  |
 | Austin, Ind. | 20 | 10 | 0 | 10 | first pass only |  |
 | Watts | 15 | 7 | 0 | 8 | first pass only |  |

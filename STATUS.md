@@ -58,3 +58,4 @@ None.
 - 2026-11-19 Sourcing pass started on all 10 picks (brief: analysis/spotlight/sourced/BRIEF.md; output sourced/<id>.md). Eric pulling Dayton Daily News items into analysis/spotlight/sources/dayton/.
 - 2026-11-19 Eric: OK to drop West Dayton if a redlining story with more credible sources is found. Deep research + sourcing launched on three redlining-centered candidates: North St. Louis/The Ville (U027, Shelley v. Kraemer), Woodlawn Chicago (U063, Hansberry v. Lee), West Baltimore (U039, 1910 ordinance). West Dayton sourcing pass still running.
 - 2026-11-19 Sourcing pass back for 8 of 10 (all with zero Wikipedia-only lines). Redlining research back: West Baltimore (14A/2B) replaces Milwaukee at #3; Woodlawn and North St. Louis become backups A and B; Milwaukee backup C. Clarksdale/McDowell sourcing still running.
+- 2026-11-19 Sourcing pass complete for all 10 (results in analysis/spotlight/sourced/). Combined pull list: analysis/spotlight/PULL_LIST.md.
