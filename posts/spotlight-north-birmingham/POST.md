@@ -1,0 +1,110 @@
+---
+title: "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going"
+subtitle: How three Black neighborhoods next to Birmingham's coke plants went from company housing and racial zones to an EPA cleanup site and one of the poorest and least healthy places in the country.
+slug: spotlight-north-birmingham
+date:
+time:
+section: Community Spotlight
+hero: images/spotlight-north-birmingham-hero-1680x1080.png
+hero_alt:
+meta_title:
+description:
+keywords:
+drop_cap: false
+heading_spacer: 20px
+---
+
+Here is how North Birmingham compares with the country today.
+
+![Table comparing North Birmingham with the United States. Economy: median household income $23,900 vs. $80,700; people in poverty 49% vs. 12%; unemployment 6% vs. 5%; households on SNAP 47% vs. 12%; homes vacant 21% vs. 10%. Health: life expectancy 67.5 vs. 78.7 years; adults in fair or poor health 43% vs. 20%; diabetes 30% vs. 12%; high blood pressure 60% vs. 34%; frequent mental distress 22% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
+
+::: dropcap
+North Birmingham is four census tracts just north of downtown Birmingham, Ala., with about 9,800 people. They take in Collegeville, Harriman Park and Fairmont, the three neighborhoods the EPA calls the 35th Avenue neighborhoods ([EPA, 2014](https://19january2021snapshot.epa.gov/sites/static/files/2014-09/documents/ns-35th-avenue-9-2-2014.pdf)). Median household income is about $23,900, 30% of the U.S. figure. About half the people here live below the poverty line. Life expectancy is 67.5 years, 11.2 years shorter than for the country as a whole.
+
+The homes here sit next to coke ovens and pipe plants. Over more than a century, North Birmingham took a long series of hits. This post walks through them in order, with a link to the source for each one.
+
+## Iron, coke and convict labor
+
+::: spacer 5px
+
+North Birmingham was incorporated as its own city in 1902 and was annexed into Birmingham in 1910 ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/)). Industry was there from the start. In 1900, the Sloss-Sheffield Steel & Iron Co. housed nearly 500 Black men and a few white men at its convict prison in North Birmingham. The men were leased from Alabama counties for $9 to $10 a month, and convicts made up nearly half of the Sloss workforce that year ([Facing South, 1984](https://www.facingsouth.org/1984/11/steel-workers-boom-town)).
+
+Construction of the ABC Coke plant began in 1918. A second coke plant, at 3500 35th Ave. N., has run on its site since 1920 ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/); [EPA TRI facility record](https://data.epa.gov/efservice/tri_facility/tri_facility_id/35207SLSSN35003/JSON)). Over the years it ran under the names Sloss, Walter Coke, ERP and Bluestone.
+
+## Zoned by race, graded D
+
+::: spacer 5px
+
+Birmingham's 1926 zoning law set racial zones. The 1944 city code made it unlawful for Black residents to live in areas zoned white, and the reverse. A 1949 ordinance made moving into such an area a crime. A federal court struck the ordinances down on Dec. 16, 1949, and an appeals court agreed in 1950 ([Monk v. City of Birmingham, 1949](https://case-law.vlex.com/vid/monk-v-city-of-890398921); [City of Birmingham v. Monk, 1950](https://case-law.vlex.com/vid/city-of-birmingham-v-885951209)). Researchers write that this kind of policy "kept the location racially segregated through zoning ordinances for decades," and that land use and zoning decisions left "isolated neighborhoods with limited amenities" ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/)).
+
+In the late 1930s, the federal Home Owners' Loan Corporation graded Birmingham's neighborhoods for mortgage risk. Areas graded D, shaded red, were labeled "hazardous." No part of the four tracts got an A or B grade, and 41% to 64% of each tract was graded D ([Mapping Inequality, University of Richmond](https://dsl.richmond.edu/panorama/redlining/)).
+
+The map below shows those grades with the four tracts in this story outlined.
+
+![Map of Birmingham's 1930s Home Owners' Loan Corporation grades, with North Birmingham's four census tracts outlined in white. Much of the land inside and around the outline is graded D, shown in red, with a few small C areas in yellow and no A or B areas. Gray areas are industrial or ungraded. Freeways, drawn in gray, cross the outline.](images/01-map.png)
+*The grades come from Mapping Inequality. Freeways are today's, from the Census Bureau.*
+
+## Smoke and a court order
+
+::: spacer 5px
+
+In 1971, the federal government went to court over Birmingham's air. During an air pollution emergency in mid-November 1971, federal Judge Sam Pointer signed an order, at the EPA's request, requiring 23 Birmingham industries to sharply cut their emissions ([Bham Now, 2017](https://bhamnow.com/2017/08/17/smoke-city-birmingham/)). The EPA says it was the only time it asked for a court order under that part of the Clean Air Act before 1977 ([EPA](https://www.epa.gov/sites/production/files/documents/guide-sec303-rpt.pdf)).
+
+Around the same time, Jim Walter Corp. bought Sloss in 1969, and Sloss's furnaces stopped making iron in 1970 or 1971. Those furnaces stand near downtown, not inside the four tracts ([Encyclopedia of Alabama](https://encyclopediaofalabama.org/?p=15223); [Facing South, 1984](https://www.facingsouth.org/1984/11/steel-workers-boom-town)).
+
+The coke plants kept running. In 1989, the 35th Avenue coke plant reported releasing 1,401,515 pounds of toxic chemicals into the air. In 1988, ABC Coke reported 881,136 pounds, about 850,000 of it benzene. By 2019, the two plants reported 25,180 and 49,104 pounds ([EPA Toxics Release Inventory, 35th Avenue plant](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35207SLSSN35003/tri_release_qty/JSON); [ABC Coke](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35217BCCKDRAILR/tri_release_qty/JSON)). Plants report these numbers themselves, and the rules for what they had to report changed over time, so part of the drop may come from how releases were counted.
+
+## People leave
+
+::: spacer 5px
+
+The chart below counts the people living inside today's four tract lines in each census since 1980. Earlier counts do not line up well enough with today's tracts to use.
+
+![Line chart of the number of people living in North Birmingham's four census tracts: 29,946 in 1980, 21,071 in 1990, 15,545 in 2000, 11,467 in 2010 and 9,820 in 2020-2024.](images/02-population.png)
+*Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
+
+In 2010, Mueller Water Products announced that its U.S. Pipe plant in North Birmingham would close by March 31, cutting about 260 jobs ([Mueller Water Products, 2010](https://ir.muellerwaterproducts.com/press-releases/archive/02-03-2010); [EPA TRI](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35207NTDST30003/tri_release_qty/JSON)). The chart below shows the share of people in poverty and the share of homes standing empty over the same decades.
+
+![Line chart of two shares in North Birmingham. People in poverty: 41% in 1980, 40% in 1990, 41% in 2000 and 49% in 2020-2024. Homes vacant: 13% in 1990, 15% in 2000, 24% in 2010 and 21% in 2020-2024.](images/03-poverty-vacancy.png)
+*The 2010 census did not ask about income, so poverty has no 2010 point.*
+
+## Poison in the yards
+
+::: spacer 5px
+
+In 2011, the EPA used emergency Superfund powers after it found contaminants leaving the coke plant site. In October 2012, it notified 2,049 homes that their soil needed testing ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/)). In September 2014, the EPA proposed the 35th Avenue site for its National Priorities List, the EPA's list of top-priority hazardous waste sites. The EPA found benzo(a)pyrene, arsenic and lead in yards in Collegeville, Fairmont and Harriman Park. It named the plant's 122 coke ovens, ABC Coke, U.S. Pipe and others as possible sources. The site covered more than 2,000 properties and more than 1,000 acres ([EPA, 2014](https://19january2021snapshot.epa.gov/sites/static/files/2014-09/documents/ns-35th-avenue-9-2-2014.pdf)).
+
+The site was never added to that list ([Southern Science, 2022](https://southern-science.com/2022/09/19/birminghams-pollution-master-class/)). The listing became the center of a federal bribery case. In 2018, a jury convicted a Drummond Co. vice president and a partner at the company's outside law firm of bribing a state legislator. The scheme paid about $360,000 to the legislator's foundation to oppose the EPA's plans for the site. Drummond's subsidiary, ABC Coke, had been named as one of the parties that could be held responsible for the cleanup. The legislator pleaded guilty and got 33 months in prison. The lawyer got five years and the executive got 2½ years. An appeals court upheld the convictions in 2021 ([United States v. Roberson, 2021](https://case-law.vlex.com/vid/united-states-v-roberson-889988842); [ABA Journal, 2018](https://www.abajournal.com/news/article/former_partner_is_sentenced_to_five_years_in_prison_for_scheme_to_bribe_law)).
+
+Cleanup went on under the EPA's emergency powers. As of January 2021, the EPA had sampled 1,910 of 2,034 properties. It found 645 that needed cleanup and had cleaned 533 ([EPA, 2021](https://semspub.epa.gov/work/04/11159163.pdf)). The EPA now says more than 650 properties have been cleaned ([EPA site profile](https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0410750)).
+
+## The coke plant closes
+
+::: spacer 5px
+
+The 35th Avenue coke plant changed hands twice more. ERP Compliant Coke bought it in February 2016, and Bluestone Resources bought it on Aug. 1, 2019, when it had about 210 workers ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/); [World Coal, 2019](https://www.worldcoal.com/coal/02082019/bluestone-resources-supports-hundreds-of-jobs-through-birmingham-coke-plant-purchase/)). In October 2021, the Jefferson County Department of Health filed an enforcement action against Bluestone Coke. By early December 2021, the plant had reportedly stopped all operations. The Southern Environmental Law Center, which represented a local clean air group in related cases, said the plant "had been violating its air pollution permit for over a decade" ([SELC, 2021](https://www.selc.org/?p=18293)).
+
+## Health
+
+::: spacer 5px
+
+The health numbers in the table at the top are today's. Studies of the plants and health in North Birmingham point in different directions, and none we found shows the plants caused the poor health here. In 2015, the federal Agency for Toxic Substances and Disease Registry (ATSDR) found that particle pollution from 1999 to 2012 "could have resulted in harmful effects in sensitive individuals," but that current levels were "unlikely to result in harmful effects" ([ATSDR, 2015](https://www.atsdr.cdc.gov/HAC/pha/NorthBirminghamAirSite/35th%20Avenue%20Site_PHA_Final_04-21-2015_508.pdf)). In 2017, the agency found that arsenic and lead in some yards "could harm people's health," and that long-term contact with other chemicals in some yards "increases the risk of cancer" ([ATSDR, 2017](https://www.atsdr.cdc.gov/HAC/pha/35thAvenueSite/35th_Ave_Site_Soil_HC_Final_01-18-2017_508.pdf)). The county health department found no significant difference in 2000-2009 death rates from cancer, asthma and COPD compared with the rest of the county ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/)).
+
+We do not have tract health data from earlier decades. The chart below compares Jefferson County's drug overdose death rate with the middle U.S. county.
+
+![Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. Jefferson County rises from 11 in 2003 to about 27 in 2017, then climbs to 41 in 2021. The middle U.S. county rises from about 7 to 25.](images/04-overdose.png)
+*These are CDC model estimates for the whole county, not North Birmingham alone.*
+
+::: divider
+
+## How we built this
+
+::: spacer 5px
+
+- **The neighborhood.** North Birmingham here is four 2020 census tracts in Jefferson County, Ala.: 01073000500, 01073000700, 01073000800 and 01073005500. All four are in the bottom 20% of U.S. tracts on both median household income and our health index. We left out nearby tracts that hold a state prison facility and the county jail, and two tracts that are separate neighborhoods.
+- **Then and now.** Census counts from 1980 to 2010 come from [NHGIS (IPUMS)](https://www.nhgis.org/) and are fitted to today's tract lines. The 1970 counts did not fit today's lines well enough to use. 2020-2024 numbers are from the Census Bureau's [American Community Survey](https://www.census.gov/programs-surveys/acs) five-year estimates.
+- **The table at the top.** Rates are computed from counts summed across the four tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
+- **The map.** Grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). The tract shares graded D are our own overlay of that map on 2020 tract lines.
+- **Toxic releases.** EPA [Toxics Release Inventory](https://www.epa.gov/toxics-release-inventory-tri-program), air releases as reported by each plant.
+- **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=01073). The middle U.S. county is the median of all county rates each year.

@@ -27,9 +27,9 @@ CFG = {
                  city="Dayton", state="OH", holc_year="1937", labels=[("Downtown", 39.7589, -84.1916)]),
     "U034": dict(slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
                  city="Birmingham", state="AL", holc_year="1930s", labels=[("Downtown", 33.5186, -86.8104)]),
-    "U039": dict(slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore",
+    "U039": dict(slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore", extra_roads=["US Hwy 40"],
                  city="Baltimore", state="MD", holc_year="1937", labels=[("Downtown", 39.2904, -76.6122)]),
-    "U028": dict(slug="spotlight-el-segundo-barrio", name="South El Paso", county="48141", county_name="El Paso County",
+    "U028": dict(slug="spotlight-el-segundo-barrio", name="El Segundo Barrio and Chamizal", county="48141", county_name="El Paso County",
                  city="El Paso", state="TX", holc_year="1936", labels=[("Downtown", 31.7587, -106.4869)]),
     "U013": dict(slug="spotlight-north-flint", name="North and East Flint", county="26049", county_name="Genesee County",
                  city="Flint", state="MI", holc_year="1937", labels=[("Downtown", 43.0125, -83.6875)]),
@@ -85,9 +85,15 @@ def build(cid):
             if len(sub): sub.plot(ax=ax, color=col, alpha=0.55, edgecolor=SURFACE, linewidth=0.6)
         other = holc[~holc.grade.isin(list(GC))]
         if len(other): other.plot(ax=ax, color=MUTED, alpha=0.25, edgecolor=SURFACE, linewidth=0.6)
-        roads[roads.MTFCC == "S1100"].plot(ax=ax, color=INK_DIM, linewidth=1.6)
-        p = 0.012
-        ax.set_xlim(minx - p - 0.03, maxx + p + 0.03); ax.set_ylim(miny - p, maxy + p)
+        roads[(roads.MTFCC == "S1100") | roads.FULLNAME.isin(C.get("extra_roads", []))].plot(ax=ax, color=INK_DIM, linewidth=1.6)
+        lx = [lo for _, la, lo in C["labels"]] + [minx, maxx]; ly = [la for _, la, lo in C["labels"]] + [miny, maxy]
+        p = 0.012; x0, x1, y0, y1 = min(lx) - p - 0.02, max(lx) + p + 0.02, min(ly) - p, max(ly) + p
+        k = np.cos(np.radians((y0 + y1) / 2)); asp = (y1 - y0) / ((x1 - x0) * k)
+        if asp < 0.62: d = (0.62 * (x1 - x0) * k - (y1 - y0)) / 2; y0, y1 = y0 - d, y1 + d
+        if asp > 1.0: d = ((y1 - y0) / k - (x1 - x0)) / 2; x0, x1 = x0 - d, x1 + d
+        ax.set_xlim(x0, x1); ax.set_ylim(y0, y1)
+        fig.set_size_inches(10, 10 * 0.76 * (y1 - y0) / ((x1 - x0) * k) + 2.2)
+        top_in, bot_in = 1.35, 1.25; H_ = fig.get_figheight(); fig.subplots_adjust(top=1 - top_in / H_, bottom=bot_in / H_)
         leg = [Patch(fc=GC[g], alpha=0.55, label=l) for g, l in
                [("A", "A, \"best\""), ("B", "B, \"still desirable\""), ("C", "C, \"declining\""), ("D", "D, \"hazardous\"")]]
         leg += [Line2D([], [], color=INK, lw=2.4, label=f"{C['name']} (this story)"), Line2D([], [], color=INK_DIM, lw=1.6, label="Freeways today")]
@@ -98,7 +104,8 @@ def build(cid):
         counties = sorted({t[:5] for t in tracts})
         cty = G20[G20.index.str[:5].isin(counties)].to_crs(4326)
         cty = cty.assign(c=cty.index.str[:5]).dissolve(by="c")
-        cty.plot(ax=ax, color="#22262A", edgecolor=MUTED, linewidth=1.0)
+        cty.plot(ax=ax, color="#22262A", edgecolor="none")
+        cty.boundary.plot(ax=ax, color=YELLOW, linewidth=1.0, linestyle=(0, (4, 3)))
         for c in counties:
             if c != C["county"]:
                 rr = gpd.read_file(RAW / "tiger" / "roads" / f"tl_2024_{c}_roads.shp").to_crs(4326) if (RAW / "tiger" / "roads" / f"tl_2024_{c}_roads.shp").exists() else None
@@ -108,9 +115,9 @@ def build(cid):
         G20.loc[tracts].to_crs(4326).plot(ax=ax, color=BLUE, alpha=0.35, edgecolor="none")
         cx0, cy0, cx1, cy1 = cty.total_bounds; px, py = (cx1 - cx0) * 0.06, (cy1 - cy0) * 0.06
         ax.set_xlim(cx0 - px, cx1 + px); ax.set_ylim(cy0 - py, cy1 + py)
-        leg = [Line2D([], [], color=INK, lw=2.4, label=f"{C['name']} (this story)"),
-               Line2D([], [], color=MUTED, lw=1.0, label="County line"), Line2D([], [], color=INK_DIM, lw=1.1, label="Main roads")]
-        title = f"Where {C['name']} is" if C["name"] != C["county_name"] else f"{C['name']}"
+        leg = [Line2D([], [], color=INK, lw=2.4, label="The tracts in this story"),
+               Line2D([], [], color=YELLOW, lw=1.0, ls=(0, (4, 3)), label="County line"), Line2D([], [], color=INK_DIM, lw=1.1, label="Main roads")]
+        title = f"Where {C['name']} is" if C["name"] != C["county_name"] else (f"{C['name']}: the tracts in this story")
         names = C["county_name"] + (" and parts of Bennett and Jackson counties" if len(counties) > 1 else "")
         sub = f"The {n} census tracts in this story, shaded and outlined, in {names}."
         src = "Source: U.S. Census Bureau TIGER/Line 2024 roads and 2020 census tracts."
@@ -121,7 +128,9 @@ def build(cid):
                     ha="center", va="bottom" if rural else "center",
                     bbox=dict(boxstyle="round,pad=0.25", fc=SURFACE, ec="none", alpha=0.8))
     ax.set_axis_off(); ax.set_aspect(1 / np.cos(np.radians((miny + maxy) / 2)))
-    ax.legend(handles=leg, loc="upper left" if rural else "lower left", frameon=True, facecolor=SURFACE, edgecolor=GRID, labelcolor=INK, fontsize=9.5)
+    lk = dict(handles=leg, frameon=True, facecolor=SURFACE, edgecolor=GRID, labelcolor=INK, fontsize=9.5)
+    if rural: fig.legend(loc="lower left", bbox_to_anchor=(0.03, 0.08), **lk)  # figure corner, clear of the county
+    else: fig.legend(loc="lower center", ncol=3, bbox_to_anchor=(0.5, 0.045), **lk)  # one band under the map, off the grades
     titleblock(fig, title, sub); credit(fig, src)
     fig.savefig(out / "01-map.png"); plt.close(fig)
 
@@ -141,7 +150,7 @@ def build(cid):
         pk = s.idxmax()
         for x in sorted({s.index[0], pk, s.index[-1]}):
             ax.annotate(f"{s[x]:,.0f}", (x, s[x]), xytext=(0, 11), textcoords="offset points", ha="center", color=INK, fontsize=10)
-        ax.set_ylim(0, s.max() * 1.18); ax.set_xticks(range(1900, 2021, 20))
+        ax.set_ylim(0, s.max() * 1.18); ax.set_xlim(s.index[0] - 4, 2024); ax.set_xticks([y for y in range(1900, 2021, 20) if y >= s.index[0]])
         ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:,.0f}")); axes_style(ax)
         if pk not in (s.index[-1],):
             t = f"{C['county_name']} peaked at {s[pk]:,.0f} people in {pk}"
@@ -171,16 +180,25 @@ def build(cid):
 
     # ---------- 03 poverty and vacancy ----------
     fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.83, top=0.8, bottom=0.16)
-    top, xs, got = 0, set(), {}
+    top, xs, got, ends, series = 0, set(), {}, {}, {}
     for m, col, lab in [("poverty_rate", MAGENTA, "In poverty"), ("vacancy_rate", YELLOW, "Homes vacant")]:
         d = h[h.measure == m].assign(x=lambda d: d.year.map(YX)).dropna(subset=["x"]).sort_values("x")
         got[m] = dict(zip(d.year, d.value.round(1)))
         ax.plot(d.x, d.value, color=col, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
-        for x, v in zip(d.x, d.value):
-            ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
-        ax.annotate(lab, (d.x.iloc[-1], d.value.iloc[-1]), xytext=(14, 0), textcoords="offset points", va="center", color=INK, fontsize=10.5)
+        series[m] = d
+        ends[m] = (d.x.iloc[-1], d.value.iloc[-1], lab)
         top = max(top, d.value.max()); xs |= set(d.x)
     ax.set_ylim(0, max(55, np.ceil(top / 10) * 10 + 10)); ax.set_xlim(min(xs) - 4, 2026); xlabels(ax, sorted(xs))
+    other = {"poverty_rate": "vacancy_rate", "vacancy_rate": "poverty_rate"}
+    for m, d in series.items():  # value labels above, unless the other line is close and higher at that year
+        o = series[other[m]].set_index("x").value
+        for x, v in zip(d.x, d.value):
+            below = x in o.index and abs(o[x] - v) < 6 and o[x] >= v and m == "vacancy_rate"
+            ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, -17 if below else 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
+    (xp, vp, lp), (xv, vv, lv) = ends["poverty_rate"], ends["vacancy_rate"]
+    sep = 0 if abs(vp - vv) >= 4 else 9
+    for (x, v, l), o in [((xp, vp, lp), sep if vp >= vv else -sep), ((xv, vv, lv), -sep if vp >= vv else sep)]:
+        ax.annotate(l, (x, v), xytext=(14, o), textcoords="offset points", va="center", color=INK, fontsize=10.5)
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); axes_style(ax)
     ax.legend(handles=[Line2D([], [], color=MAGENTA, lw=2, marker="o", label="People in poverty"),
                        Line2D([], [], color=YELLOW, lw=2, marker="o", label="Homes vacant")],
@@ -188,13 +206,13 @@ def build(cid):
     pv, vc = got["poverty_rate"], got["vacancy_rate"]
     pv_up = pv["2020-2024"] - list(pv.values())[0] >= 3; vc_up = vc["2020-2024"] - list(vc.values())[0] >= 3
     pv_down = list(pv.values())[0] - pv["2020-2024"] >= 3
-    t = ("Fewer people in poverty, more homes empty" if pv_down and vc_up and pv["2020-2024"] < 25 else
+    t = ("More homes empty" if pv_down and vc_up else
          "More people in poverty, more homes empty" if pv_up and vc_up else
          "More homes empty, and poverty still high" if vc_up else
          "Poverty is still high" if not pv_up else "More people in poverty")
     early = "vacancy before 1990 is not in our tract data" if min(xs) < 1990 else "our tract data starts in 1990"
     titleblock(fig, t, f"Share of people below the poverty line and share of homes vacant, {C['name']}. The 2010 census did not\nask about income, and {early}.")
-    credit(fig, "Source: NHGIS (IPUMS) decennial census, 1970-2010; ACS 2020-2024 five-year estimates.")
+    credit(fig, f"Source: NHGIS (IPUMS) decennial census, {int(min(xs))}-2010; ACS 2020-2024 five-year estimates.")
     fig.savefig(out / "03-poverty-vacancy.png"); plt.close(fig)
     info.update(poverty=pv, vacancy=vc)
 
@@ -209,7 +227,7 @@ def build(cid):
     for i, (d, lab) in enumerate(ends):
         off = 0 if gap > 0.12 else (14 if d.iloc[-1] >= ends[1 - i][0].iloc[-1] else -14)
         ax.annotate(f"{lab}\n{d.iloc[-1]:.0f} per 100,000", (d.index[-1], d.iloc[-1]), xytext=(10, off), textcoords="offset points", va="center", color=INK, fontsize=10)
-    ax.annotate(f"{here.iloc[0]:.0f}", (here.index[0], here.iloc[0]), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
+    ax.annotate(f"{here.iloc[0]:.0f}", (here.index[0], here.iloc[0]), xytext=(0, 10 if here.iloc[0] >= MID.iloc[0] else -16), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
     ax.set_ylim(0, max(here.max(), MID.max()) * 1.15); ax.set_xticks(range(2003, 2022, 3)); axes_style(ax)
     r = here.iloc[-1] / MID.iloc[-1]
     verb = ("rose far above the typical county" if r >= 1.5 else "rose above the typical county" if r >= 1.15 else
