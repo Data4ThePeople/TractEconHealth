@@ -7,10 +7,25 @@ time: 07:30:00-05:00
 section: Visualization
 hero: images/income-health-viz-hero-1680x1080.png
 hero_alt: Scatter plot titled Income and health, neighborhood by neighborhood. Each dot is one of 77,708 U.S. census tracts, with median household income across and a health index from 0 to 100 up. The dots climb steeply from lower left, and an orange line through the middle of the cloud bends and flattens above about $110,000 but keeps rising. Text at left: 0.82 rank correlation between income and a health index built from 14 CDC measures; above $110,000 the index rises about 27% as fast.
-meta_title:
-description:
-keywords:
+meta_title: Income and Health by Census Tract: Interactive Chart
+description: Free interactive chart of income and health for about 78,000 U.S. census tracts and 2,900 counties, from Census and CDC data, with county life expectancy.
+keywords: income and health by census tract, median household income and health, income and life expectancy by county, CDC PLACES census tract data, health and wealth gap, social determinants of health data, income and health inequality in the United States
 schema_type: dataset
+dataset_name: Income, economic measures and physical and mental health, U.S. census tracts and counties
+dataset_description: "Median household income and 14 other economic measures from the Census Bureau's American Community Survey, 2020-2024 five-year estimates, against 17 physical and mental health measures and a health index from CDC PLACES, 2025 release (model-based estimates), for 77,918 census tracts and 2,948 counties in 48 states and DC. County view adds life expectancy, drug overdose deaths and suicides from County Health Rankings & Roadmaps, March 2026 release. Kentucky and Pennsylvania are not included."
+temporal: 2020/2024
+spatial: United States
+measured: Median household income|USD; Economic index|index 0-100; Health index|index 0-100; Share of adults with each health condition or behavior|percent; Life expectancy at birth|years; Drug overdose deaths per 100,000|rate; Suicides per 100,000|rate
+sources: https://www.census.gov/programs-surveys/acs|https://www.cdc.gov/places/|https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation|https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html
+distribution: text/html|https://data4thepeople.github.io/TractEconHealth/dist/
+measurement_technique: Published ACS and CDC PLACES values joined by census tract and county, with no imputation. Places under 500 people or with half or more of residents in group quarters are left out. Each index averages national percentile ranks of its measures, flipped so higher is better, then rescaled to 0-100. Every value was rebuilt from the source files twice, once by an independent check.
+credit: Data 4 The People, from the U.S. Census Bureau, CDC and County Health Rankings & Roadmaps
+license: https://www.data4thepeople.com/terms-of-use
+app_url: https://data4thepeople.github.io/TractEconHealth/dist/
+app_name: "Income and Health, Neighborhood by Neighborhood: interactive chart"
+app_category: EducationalApplication
+app_description: Free interactive chart of income and other economic measures against physical and mental health for about 78,000 U.S. census tracts and about 2,900 counties.
+app_features: About 78,000 census tracts and 2,900 counties|15 economic measures and 18 health measures|County life expectancy, overdose deaths and suicides from death records|Any state against the rest of the country|Rank correlation for each view|Shareable links to any view
 drop_cap: false
 heading_spacer: 20px
 caption_spacer: 20px
