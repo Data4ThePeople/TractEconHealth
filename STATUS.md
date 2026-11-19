@@ -60,3 +60,4 @@ None.
 - 2026-11-19 Sourcing pass back for 8 of 10 (all with zero Wikipedia-only lines). Redlining research back: West Baltimore (14A/2B) replaces Milwaukee at #3; Woodlawn and North St. Louis become backups A and B; Milwaukee backup C. Clarksdale/McDowell sourcing still running.
 - 2026-11-19 Sourcing pass complete for all 10 (results in analysis/spotlight/sourced/). Combined pull list: analysis/spotlight/PULL_LIST.md.
 - 2026-11-19 Eric approved all 10 picks. Key measures table built (78_key_measures.py); own tie-out 88/89 pass, one difference explained (79_spotlight_tieout.py, TIEOUT.md). Independent tie-out agent next, then first post draft (West Dayton) for Eric's comments.
+- 2026-11-19: Independent tie-out back: 270 of 273 values match; 3 Owsley PLACES values differ by about 0.1 (weights). DATASETS.md fit wording fixed to overlap over union. West Dayton draft posted for Eric's comments.

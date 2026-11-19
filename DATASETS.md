@@ -432,7 +432,7 @@ The sources below are used to pick and document 10 neighborhood spotlights. The 
 ## Spotlight then-and-now tables (`scripts/74_history.py`, `analysis/spotlight/history_long.csv`)
 
 Census counts from each era are added up onto the same neighborhood. Rates are computed from the summed counts.
-- **1970 and 1980:** an old tract counts if half or more of its area is inside the neighborhood outline. "Fit" is the overlap of those tracts with the outline divided by their combined area. Years with fit under 0.8 are not shown in the spotlights.
+- **1970 and 1980:** an old tract counts if half or more of its area is inside the neighborhood outline. "Fit" is the area the old tracts and the outline share, divided by the area of the two together (overlap over union), so it drops if the old tracts spill outside the outline or leave part of it uncovered. Years with fit under 0.8 are not shown in the spotlights.
 - **1990 and 2000:** NHGIS crosswalks move each year's counts onto the neighborhood's 2010 tracts by population weight.
 - **2010 and 2020 census:** counts standardized to 2010 tracts.
 - **ACS:** 2008-2012 on 2010 tracts, and 2020-2024 on the neighborhood's own tracts.

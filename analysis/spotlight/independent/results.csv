@@ -1,0 +1,332 @@
+cand_id,measure,year,value,fit,note
+M016,median_household_income,2020-2024,36578.0,,B19001 linear interpolation
+M016,unemployment_rate,2020-2024,9.979,,
+M016,snap_households,2020-2024,28.03,,
+M016,homes_vacant,2020-2024,16.114,,
+M016,group_quarters_share,2020-2024,1.678,,
+U028,median_household_income,2020-2024,18350.0,,B19001 linear interpolation
+U028,unemployment_rate,2020-2024,10.567,,
+U028,snap_households,2020-2024,53.781,,
+U028,homes_vacant,2020-2024,13.602,,
+U028,group_quarters_share,2020-2024,1.032,,
+U013,median_household_income,2020-2024,25346.0,,B19001 linear interpolation
+U013,unemployment_rate,2020-2024,17.505,,
+U013,snap_households,2020-2024,48.506,,
+U013,homes_vacant,2020-2024,20.159,,
+U013,group_quarters_share,2020-2024,1.436,,
+R046,median_household_income,2020-2024,38678.0,,B19001 linear interpolation
+R046,unemployment_rate,2020-2024,15.39,,
+R046,snap_households,2020-2024,42.15,,
+R046,homes_vacant,2020-2024,16.13,,
+R046,group_quarters_share,2020-2024,2.538,,
+U034,median_household_income,2020-2024,23859.0,,B19001 linear interpolation
+U034,unemployment_rate,2020-2024,6.47,,
+U034,snap_households,2020-2024,47.238,,
+U034,homes_vacant,2020-2024,21.143,,
+U034,group_quarters_share,2020-2024,0.998,,
+R007,median_household_income,2020-2024,33337.0,,B19001 linear interpolation
+R007,unemployment_rate,2020-2024,6.034,,
+R007,snap_households,2020-2024,37.75,,
+R007,homes_vacant,2020-2024,32.757,,
+R007,group_quarters_share,2020-2024,1.509,,
+R004,median_household_income,2020-2024,23922.0,,B19001 linear interpolation
+R004,unemployment_rate,2020-2024,12.577,,
+R004,snap_households,2020-2024,37.843,,
+R004,homes_vacant,2020-2024,23.635,,
+R004,group_quarters_share,2020-2024,1.989,,
+M014,median_household_income,2020-2024,37546.0,,B19001 linear interpolation
+M014,unemployment_rate,2020-2024,4.177,,
+M014,snap_households,2020-2024,29.142,,
+M014,homes_vacant,2020-2024,23.087,,
+M014,group_quarters_share,2020-2024,4.371,,
+U047,median_household_income,2020-2024,29572.0,,B19001 linear interpolation
+U047,unemployment_rate,2020-2024,10.444,,
+U047,snap_households,2020-2024,41.089,,
+U047,homes_vacant,2020-2024,28.496,,
+U047,group_quarters_share,2020-2024,0.201,,
+U039,median_household_income,2020-2024,24798.0,,B19001 linear interpolation
+U039,unemployment_rate,2020-2024,12.848,,
+U039,snap_households,2020-2024,51.629,,
+U039,homes_vacant,2020-2024,24.031,,
+U039,group_quarters_share,2020-2024,1.768,,tracts with GQ>=10%: 24510160300 12%
+US,median_household_income,2020-2024,80734.0,,B19013 published
+US,median_household_income_interp,2020-2024,81202.0,,"B19001 interpolation, for comparison only"
+US,poverty_rate,2020-2024,12.454,,
+US,unemployment_rate,2020-2024,5.231,,
+US,snap_households,2020-2024,12.05,,
+US,homes_vacant,2020-2024,10.118,,
+M016,population,1990,23845.886,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 23,846, pct Black 62.5"
+M016,poverty_rate,1990,43.38,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 23,846, pct Black 62.5"
+M016,pct_black,1990,62.451,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 23,846, pct Black 62.5"
+U028,population,1990,24217.718,0.985,"crosswalk wt_pop; 13 source tracts; standardized check pop 24,218, pct Black 0.8"
+U028,poverty_rate,1990,63.983,0.985,"crosswalk wt_pop; 13 source tracts; standardized check pop 24,218, pct Black 0.8"
+U028,pct_black,1990,0.78,0.985,"crosswalk wt_pop; 13 source tracts; standardized check pop 24,218, pct Black 0.8"
+U013,population,1990,23592.0,0.999,"crosswalk wt_pop; 10 source tracts; standardized check pop 23,592, pct Black 32.2"
+U013,poverty_rate,1990,39.162,0.999,"crosswalk wt_pop; 10 source tracts; standardized check pop 23,592, pct Black 32.2"
+U013,pct_black,1990,32.179,0.999,"crosswalk wt_pop; 10 source tracts; standardized check pop 23,592, pct Black 32.2"
+R046,population,1990,13089.0,0.87,"crosswalk wt_pop; 4 source tracts; standardized check pop 13,089, pct Black 0.1"
+R046,poverty_rate,1990,59.453,0.87,"crosswalk wt_pop; 4 source tracts; standardized check pop 13,089, pct Black 0.1"
+R046,pct_black,1990,0.086,0.87,"crosswalk wt_pop; 4 source tracts; standardized check pop 13,089, pct Black 0.1"
+U034,population,1990,21071.0,0.945,"crosswalk wt_pop; 5 source tracts; standardized check pop 21,071, pct Black 94.8"
+U034,poverty_rate,1990,39.681,0.945,"crosswalk wt_pop; 5 source tracts; standardized check pop 21,071, pct Black 94.8"
+U034,pct_black,1990,94.802,0.945,"crosswalk wt_pop; 5 source tracts; standardized check pop 21,071, pct Black 94.8"
+R007,population,1990,21885.249,0.959,"crosswalk wt_pop; 8 source tracts; standardized check pop 21,885, pct Black 12.7"
+R007,poverty_rate,1990,37.888,0.959,"crosswalk wt_pop; 8 source tracts; standardized check pop 21,885, pct Black 12.7"
+R007,pct_black,1990,13.588,0.959,"crosswalk wt_pop; 8 source tracts; standardized check pop 21,885, pct Black 12.7"
+R004,population,1990,5036.0,1.0,"crosswalk wt_pop; 3 source tracts; standardized check pop 5,036, pct Black 0.3"
+R004,poverty_rate,1990,52.13,1.0,"crosswalk wt_pop; 3 source tracts; standardized check pop 5,036, pct Black 0.3"
+R004,pct_black,1990,0.278,1.0,"crosswalk wt_pop; 3 source tracts; standardized check pop 5,036, pct Black 0.3"
+M014,population,1990,6296.176,0.994,"crosswalk wt_pop; 4 source tracts; standardized check pop 6,296, pct Black 31.7"
+M014,poverty_rate,1990,28.608,0.994,"crosswalk wt_pop; 4 source tracts; standardized check pop 6,296, pct Black 31.7"
+M014,pct_black,1990,31.816,0.994,"crosswalk wt_pop; 4 source tracts; standardized check pop 6,296, pct Black 31.7"
+U047,population,1990,24929.212,0.864,"crosswalk wt_pop; 8 source tracts; standardized check pop 24,929, pct Black 88.9"
+U047,poverty_rate,1990,33.47,0.864,"crosswalk wt_pop; 8 source tracts; standardized check pop 24,929, pct Black 88.9"
+U047,pct_black,1990,88.942,0.864,"crosswalk wt_pop; 8 source tracts; standardized check pop 24,929, pct Black 88.9"
+U039,population,1990,35551.0,0.987,"crosswalk wt_pop; 12 source tracts; standardized check pop 35,551, pct Black 98.3"
+U039,poverty_rate,1990,48.473,0.987,"crosswalk wt_pop; 12 source tracts; standardized check pop 35,551, pct Black 98.3"
+U039,pct_black,1990,97.921,0.987,"crosswalk wt_pop; 12 source tracts; standardized check pop 35,551, pct Black 98.3"
+M016,population,2000,22710.874,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 22,711, pct Black 68.6"
+M016,poverty_rate,2000,36.335,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 22,711, pct Black 68.6"
+M016,pct_black,2000,68.553,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 22,711, pct Black 68.6"
+U028,population,2000,20461.053,0.998,"crosswalk wt_pop; 10 source tracts; standardized check pop 20,461, pct Black 0.7"
+U028,poverty_rate,2000,55.93,0.998,"crosswalk wt_pop; 10 source tracts; standardized check pop 20,461, pct Black 0.7"
+U028,pct_black,2000,0.752,0.998,"crosswalk wt_pop; 10 source tracts; standardized check pop 20,461, pct Black 0.7"
+U013,population,2000,20537.0,0.999,"crosswalk wt_pop; 9 source tracts; standardized check pop 20,537, pct Black 36.7"
+U013,poverty_rate,2000,34.553,0.999,"crosswalk wt_pop; 9 source tracts; standardized check pop 20,537, pct Black 36.7"
+U013,pct_black,2000,36.675,0.999,"crosswalk wt_pop; 9 source tracts; standardized check pop 20,537, pct Black 36.7"
+R046,population,2000,15994.0,1.0,"crosswalk wt_pop; 18 source tracts; standardized check pop 15,994, pct Black 0.1"
+R046,poverty_rate,2000,51.268,1.0,"crosswalk wt_pop; 18 source tracts; standardized check pop 15,994, pct Black 0.1"
+R046,pct_black,2000,0.081,1.0,"crosswalk wt_pop; 18 source tracts; standardized check pop 15,994, pct Black 0.1"
+U034,population,2000,15545.0,0.947,"crosswalk wt_pop; 4 source tracts; standardized check pop 15,545, pct Black 94.1"
+U034,poverty_rate,2000,41.135,0.947,"crosswalk wt_pop; 4 source tracts; standardized check pop 15,545, pct Black 94.1"
+U034,pct_black,2000,94.146,0.947,"crosswalk wt_pop; 4 source tracts; standardized check pop 15,545, pct Black 94.1"
+R007,population,2000,16824.149,0.962,"crosswalk wt_pop; 8 source tracts; standardized check pop 16,824, pct Black 10.5"
+R007,poverty_rate,2000,37.311,0.962,"crosswalk wt_pop; 8 source tracts; standardized check pop 16,824, pct Black 10.5"
+R007,pct_black,2000,11.329,0.962,"crosswalk wt_pop; 8 source tracts; standardized check pop 16,824, pct Black 10.5"
+R004,population,2000,4858.0,1.0,"crosswalk wt_pop; 2 source tracts; standardized check pop 4,858, pct Black 0.1"
+R004,poverty_rate,2000,45.38,1.0,"crosswalk wt_pop; 2 source tracts; standardized check pop 4,858, pct Black 0.1"
+R004,pct_black,2000,0.103,1.0,"crosswalk wt_pop; 2 source tracts; standardized check pop 4,858, pct Black 0.1"
+M014,population,2000,5916.0,1.0,"crosswalk wt_pop; 2 source tracts; standardized check pop 5,916, pct Black 31.9"
+M014,poverty_rate,2000,19.972,1.0,"crosswalk wt_pop; 2 source tracts; standardized check pop 5,916, pct Black 31.9"
+M014,pct_black,2000,31.897,1.0,"crosswalk wt_pop; 2 source tracts; standardized check pop 5,916, pct Black 31.9"
+U047,population,2000,20459.0,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 20,459, pct Black 89.6"
+U047,poverty_rate,2000,30.807,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 20,459, pct Black 89.6"
+U047,pct_black,2000,89.648,1.0,"crosswalk wt_pop; 7 source tracts; standardized check pop 20,459, pct Black 89.6"
+U039,population,2000,25420.0,0.983,"crosswalk wt_pop; 11 source tracts; standardized check pop 25,420, pct Black 97.4"
+U039,poverty_rate,2000,42.033,0.983,"crosswalk wt_pop; 11 source tracts; standardized check pop 25,420, pct Black 97.4"
+U039,pct_black,2000,96.655,0.983,"crosswalk wt_pop; 11 source tracts; standardized check pop 25,420, pct Black 97.4"
+M016,population,2010,19395.0,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+M016,poverty_rate,2010,40.009,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+M016,pct_black,2010,78.288,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+M016,population,2020 census,15850.0,1.0,2020 census standardized to 2010 tracts
+M016,pct_black,2020 census,81.054,1.0,2020 census standardized to 2010 tracts
+U028,population,2010,18009.0,1.0,2010 census on 6 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U028,poverty_rate,2010,54.59,1.0,2010 census on 6 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U028,pct_black,2010,0.761,1.0,2010 census on 6 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U028,population,2020 census,15195.0,1.0,2020 census standardized to 2010 tracts
+U028,pct_black,2020 census,0.842,1.0,2020 census standardized to 2010 tracts
+U013,population,2010,16483.0,1.0,2010 census on 8 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U013,poverty_rate,2010,47.242,1.0,2010 census on 8 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U013,pct_black,2010,44.082,1.0,2010 census on 8 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U013,population,2020 census,11704.0,1.0,2020 census standardized to 2010 tracts
+U013,pct_black,2020 census,46.787,1.0,2020 census standardized to 2010 tracts
+R046,population,2010,17211.0,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R046,poverty_rate,2010,46.668,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R046,pct_black,2010,0.046,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R046,population,2020 census,17327.21,1.0,2020 census standardized to 2010 tracts
+R046,pct_black,2020 census,0.185,1.0,2020 census standardized to 2010 tracts
+U034,population,2010,11467.0,0.947,2010 census on 4 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U034,poverty_rate,2010,38.761,0.947,2010 census on 4 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U034,pct_black,2010,92.736,0.947,2010 census on 4 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U034,population,2020 census,10538.0,0.947,2020 census standardized to 2010 tracts
+U034,pct_black,2020 census,87.844,0.947,2020 census standardized to 2010 tracts
+R007,population,2010,13613.0,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R007,poverty_rate,2010,34.963,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R007,pct_black,2010,8.653,1.0,2010 census on 5 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R007,population,2020 census,10469.0,1.0,2020 census standardized to 2010 tracts
+R007,pct_black,2020 census,7.068,1.0,2020 census standardized to 2010 tracts
+R004,population,2010,4755.0,1.0,2010 census on 2 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R004,poverty_rate,2010,36.379,1.0,2010 census on 2 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R004,pct_black,2010,0.273,1.0,2010 census on 2 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+R004,population,2020 census,4051.0,1.0,2020 census standardized to 2010 tracts
+R004,pct_black,2020 census,0.346,1.0,2020 census standardized to 2010 tracts
+M014,population,2010,4907.0,1.0,2010 census on 1 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+M014,poverty_rate,2010,23.131,1.0,2010 census on 1 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+M014,pct_black,2010,35.826,1.0,2010 census on 1 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+M014,population,2020 census,4367.0,1.0,2020 census standardized to 2010 tracts
+M014,pct_black,2020 census,32.906,1.0,2020 census standardized to 2010 tracts
+U047,population,2010,16017.0,1.0,2010 census on 6 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U047,poverty_rate,2010,39.912,1.0,2010 census on 6 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U047,pct_black,2010,88.425,1.0,2010 census on 6 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U047,population,2020 census,14032.0,1.0,2020 census standardized to 2010 tracts
+U047,pct_black,2020 census,85.048,1.0,2020 census standardized to 2010 tracts
+U039,population,2010,22609.0,0.997,2010 census on 10 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U039,poverty_rate,2010,42.395,0.997,2010 census on 10 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U039,pct_black,2010,95.559,0.997,2010 census on 10 2010 tracts; poverty ACS 2008-2012; fit = 2010-2020 land match
+U039,population,2020 census,17829.0,0.997,2020 census standardized to 2010 tracts
+U039,pct_black,2020 census,91.183,0.997,2020 census standardized to 2010 tracts
+M016,population,2020-2024,15195.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+M016,poverty_rate,2020-2024,37.746,1.0,"ACS on own 2020 tracts; B02001, B17001"
+M016,pct_black,2020-2024,78.611,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U028,population,2020-2024,14635.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U028,poverty_rate,2020-2024,58.181,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U028,pct_black,2020-2024,0.697,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U013,population,2020-2024,11767.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U013,poverty_rate,2020-2024,49.505,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U013,pct_black,2020-2024,45.968,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R046,population,2020-2024,17335.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R046,poverty_rate,2020-2024,54.73,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R046,pct_black,2020-2024,0.087,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U034,population,2020-2024,9820.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U034,poverty_rate,2020-2024,49.353,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U034,pct_black,2020-2024,85.835,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R007,population,2020-2024,9675.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R007,poverty_rate,2020-2024,32.926,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R007,pct_black,2020-2024,4.341,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R004,population,2020-2024,3971.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R004,poverty_rate,2020-2024,36.147,1.0,"ACS on own 2020 tracts; B02001, B17001"
+R004,pct_black,2020-2024,0.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+M014,population,2020-2024,4004.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+M014,poverty_rate,2020-2024,14.834,1.0,"ACS on own 2020 tracts; B02001, B17001"
+M014,pct_black,2020-2024,37.038,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U047,population,2020-2024,12915.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U047,poverty_rate,2020-2024,41.603,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U047,pct_black,2020-2024,79.853,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U039,population,2020-2024,18895.0,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U039,poverty_rate,2020-2024,37.503,1.0,"ACS on own 2020 tracts; B02001, B17001"
+U039,pct_black,2020-2024,90.749,1.0,"ACS on own 2020 tracts; B02001, B17001"
+M016,population,1970,,,no 1970 tracts here (area not tracted)
+M016,poverty_rate,1970,,,no 1970 tracts here (area not tracted)
+M016,pct_black,1970,,,no 1970 tracts here (area not tracted)
+U028,population,1970,34834.0,0.994,"6 tracts ['G48014100018', 'G48014100019', 'G48014100020', 'G48014100028', 'G48014100029', 'G48014100030']; they cover 95% of outline"
+U028,poverty_rate,1970,50.94,0.994,"6 tracts ['G48014100018', 'G48014100019', 'G48014100020', 'G48014100028', 'G48014100029', 'G48014100030']; they cover 95% of outline"
+U028,pct_black,1970,2.348,0.994,"6 tracts ['G48014100018', 'G48014100019', 'G48014100020', 'G48014100028', 'G48014100029', 'G48014100030']; they cover 95% of outline"
+U013,population,1970,36237.0,0.836,"10 tracts ['G26004900003', 'G26004900004', 'G26004900006', 'G26004900007', 'G26004900011', 'G26004900012', 'G26004900013', 'G26004900020', 'G26004900043', 'G26004900044']; they cover 94% of outline"
+U013,poverty_rate,1970,15.911,0.836,"10 tracts ['G26004900003', 'G26004900004', 'G26004900006', 'G26004900007', 'G26004900011', 'G26004900012', 'G26004900013', 'G26004900020', 'G26004900043', 'G26004900044']; they cover 94% of outline"
+U013,pct_black,1970,38.999,0.836,"10 tracts ['G26004900003', 'G26004900004', 'G26004900006', 'G26004900007', 'G26004900011', 'G26004900012', 'G26004900013', 'G26004900020', 'G26004900043', 'G26004900044']; they cover 94% of outline"
+R046,population,1970,,,no 1970 tract has half its area inside (best 0.00)
+R046,poverty_rate,1970,,,no 1970 tract has half its area inside (best 0.00)
+R046,pct_black,1970,,,no 1970 tract has half its area inside (best 0.00)
+U034,population,1970,34774.0,0.932,"6 tracts ['G01007300005', 'G01007300006', 'G01007300007', 'G01007300008', 'G01007300009', 'G01007300055']; they cover 71% of outline"
+U034,poverty_rate,1970,39.132,0.932,"6 tracts ['G01007300005', 'G01007300006', 'G01007300007', 'G01007300008', 'G01007300009', 'G01007300055']; they cover 71% of outline"
+U034,pct_black,1970,78.366,0.932,"6 tracts ['G01007300005', 'G01007300006', 'G01007300007', 'G01007300008', 'G01007300009', 'G01007300055']; they cover 71% of outline"
+R007,population,1970,,,no 1970 tracts here (area not tracted)
+R007,poverty_rate,1970,,,no 1970 tracts here (area not tracted)
+R007,pct_black,1970,,,no 1970 tracts here (area not tracted)
+R004,population,1970,,,no 1970 tracts here (area not tracted)
+R004,poverty_rate,1970,,,no 1970 tracts here (area not tracted)
+R004,pct_black,1970,,,no 1970 tracts here (area not tracted)
+M014,population,1970,,,no 1970 tracts here (area not tracted)
+M014,poverty_rate,1970,,,no 1970 tracts here (area not tracted)
+M014,pct_black,1970,,,no 1970 tracts here (area not tracted)
+U047,population,1970,49314.0,0.87,"11 tracts ['G39011300014', 'G39011300019', 'G39011300020', 'G39011300021', 'G39011300022', 'G39011300028', 'G39011300029', 'G39011300030', 'G39011300031', 'G39011300032', 'G39011300703']; they cover 97% of outline"
+U047,poverty_rate,1970,18.433,0.87,"11 tracts ['G39011300014', 'G39011300019', 'G39011300020', 'G39011300021', 'G39011300022', 'G39011300028', 'G39011300029', 'G39011300030', 'G39011300031', 'G39011300032', 'G39011300703']; they cover 97% of outline"
+U047,pct_black,1970,72.464,0.87,"11 tracts ['G39011300014', 'G39011300019', 'G39011300020', 'G39011300021', 'G39011300022', 'G39011300028', 'G39011300029', 'G39011300030', 'G39011300031', 'G39011300032', 'G39011300703']; they cover 97% of outline"
+U039,population,1970,46121.0,0.985,"10 tracts ['G24051001501', 'G24051001502', 'G24051001601', 'G24051001603', 'G24051001604', 'G24051001702', 'G24051001703', 'G24051001801', 'G24051001802', 'G24051001901']; they cover 93% of outline"
+U039,poverty_rate,1970,40.91,0.985,"10 tracts ['G24051001501', 'G24051001502', 'G24051001601', 'G24051001603', 'G24051001604', 'G24051001702', 'G24051001703', 'G24051001801', 'G24051001802', 'G24051001901']; they cover 93% of outline"
+U039,pct_black,1970,98.823,0.985,"10 tracts ['G24051001501', 'G24051001502', 'G24051001601', 'G24051001603', 'G24051001604', 'G24051001702', 'G24051001703', 'G24051001801', 'G24051001802', 'G24051001901']; they cover 93% of outline"
+M016,population,1980,,,no 1980 tracts here (area not tracted)
+M016,poverty_rate,1980,,,no 1980 tracts here (area not tracted)
+M016,pct_black,1980,,,no 1980 tracts here (area not tracted)
+U028,population,1980,26619.0,0.993,"6 tracts ['G48014100018', 'G48014100019', 'G48014100020', 'G48014100028', 'G48014100029', 'G48014100030']; they cover 95% of outline"
+U028,poverty_rate,1980,52.231,0.993,"6 tracts ['G48014100018', 'G48014100019', 'G48014100020', 'G48014100028', 'G48014100029', 'G48014100030']; they cover 95% of outline"
+U028,pct_black,1980,1.371,0.993,"6 tracts ['G48014100018', 'G48014100019', 'G48014100020', 'G48014100028', 'G48014100029', 'G48014100030']; they cover 95% of outline"
+U013,population,1980,28675.0,0.836,"10 tracts ['G26004900003', 'G26004900004', 'G26004900006', 'G26004900007', 'G26004900011', 'G26004900012', 'G26004900013', 'G26004900020', 'G26004900043', 'G26004900044']; they cover 94% of outline"
+U013,poverty_rate,1980,20.049,0.836,"10 tracts ['G26004900003', 'G26004900004', 'G26004900006', 'G26004900007', 'G26004900011', 'G26004900012', 'G26004900013', 'G26004900020', 'G26004900043', 'G26004900044']; they cover 94% of outline"
+U013,pct_black,1980,35.595,0.836,"10 tracts ['G26004900003', 'G26004900004', 'G26004900006', 'G26004900007', 'G26004900011', 'G26004900012', 'G26004900013', 'G26004900020', 'G26004900043', 'G26004900044']; they cover 94% of outline"
+R046,population,1980,,,no 1980 tract has half its area inside (best 0.00)
+R046,poverty_rate,1980,,,no 1980 tract has half its area inside (best 0.00)
+R046,pct_black,1980,,,no 1980 tract has half its area inside (best 0.00)
+U034,population,1980,29946.0,0.986,"6 tracts ['G01007300005', 'G01007300006', 'G01007300007', 'G01007300008', 'G01007300009', 'G01007300055']; they cover 95% of outline"
+U034,poverty_rate,1980,40.684,0.986,"6 tracts ['G01007300005', 'G01007300006', 'G01007300007', 'G01007300008', 'G01007300009', 'G01007300055']; they cover 95% of outline"
+U034,pct_black,1980,91.745,0.986,"6 tracts ['G01007300005', 'G01007300006', 'G01007300007', 'G01007300008', 'G01007300009', 'G01007300055']; they cover 95% of outline"
+R007,population,1980,,,no 1980 tracts here (area not tracted)
+R007,poverty_rate,1980,,,no 1980 tracts here (area not tracted)
+R007,pct_black,1980,,,no 1980 tracts here (area not tracted)
+R004,population,1980,,,no 1980 tracts here (area not tracted)
+R004,poverty_rate,1980,,,no 1980 tracts here (area not tracted)
+R004,pct_black,1980,,,no 1980 tracts here (area not tracted)
+M014,population,1980,,,no 1980 tracts here (area not tracted)
+M014,poverty_rate,1980,,,no 1980 tracts here (area not tracted)
+M014,pct_black,1980,,,no 1980 tracts here (area not tracted)
+U047,population,1980,30057.0,0.948,"11 tracts ['G3901130001402', 'G39011300019', 'G39011300020', 'G39011300021', 'G39011300022', 'G39011300028', 'G39011300029', 'G39011300030', 'G39011300031', 'G39011300032', 'G39011300703']; they cover 96% of outline"
+U047,poverty_rate,1980,30.938,0.948,"11 tracts ['G3901130001402', 'G39011300019', 'G39011300020', 'G39011300021', 'G39011300022', 'G39011300028', 'G39011300029', 'G39011300030', 'G39011300031', 'G39011300032', 'G39011300703']; they cover 96% of outline"
+U047,pct_black,1980,88.335,0.948,"11 tracts ['G3901130001402', 'G39011300019', 'G39011300020', 'G39011300021', 'G39011300022', 'G39011300028', 'G39011300029', 'G39011300030', 'G39011300031', 'G39011300032', 'G39011300703']; they cover 96% of outline"
+U039,population,1980,37579.0,0.985,"10 tracts ['G24051001501', 'G24051001502', 'G24051001601', 'G24051001603', 'G24051001604', 'G24051001702', 'G24051001703', 'G24051001801', 'G24051001802', 'G24051001901']; they cover 93% of outline"
+U039,poverty_rate,1980,47.8,0.985,"10 tracts ['G24051001501', 'G24051001502', 'G24051001601', 'G24051001603', 'G24051001604', 'G24051001702', 'G24051001703', 'G24051001801', 'G24051001802', 'G24051001901']; they cover 93% of outline"
+U039,pct_black,1980,98.994,0.985,"10 tracts ['G24051001501', 'G24051001502', 'G24051001601', 'G24051001603', 'G24051001604', 'G24051001702', 'G24051001703', 'G24051001801', 'G24051001802', 'G24051001901']; they cover 93% of outline"
+US,life_expectancy_chr,2021-2023,77.551,,CHR v147 fipscode 00000
+M016,life_expectancy_chr_main_county,2021-2023,65.306,,county 28027
+M016,life_expectancy_usaleep,2010-2015,71.286,1.0,5 of 5 2010 tracts with estimate
+M016,life_expectancy,key,71.286,1.0,USALEEP (coverage >= 80%)
+U028,life_expectancy_chr_main_county,2021-2023,77.669,,county 48141
+U028,life_expectancy_usaleep,2010-2015,76.709,1.0,6 of 6 2010 tracts with estimate
+U028,life_expectancy,key,76.709,1.0,USALEEP (coverage >= 80%)
+U013,life_expectancy_chr_main_county,2021-2023,73.412,,county 26049
+U013,life_expectancy_usaleep,2010-2015,69.867,0.884,7 of 8 2010 tracts with estimate
+U013,life_expectancy,key,69.867,0.884,USALEEP (coverage >= 80%)
+R046,life_expectancy_chr_main_county,2021-2023,58.372,,county 46102
+R046,life_expectancy_usaleep,2010-2015,72.551,0.211,2 of 5 2010 tracts with estimate
+R046,life_expectancy,key,58.372,0.211,CHR county 46102 (USALEEP coverage 21%)
+U034,life_expectancy_chr_main_county,2021-2023,72.745,,county 01073
+U034,life_expectancy_usaleep,2010-2015,67.451,1.0,4 of 4 2010 tracts with estimate
+U034,life_expectancy,key,67.451,1.0,USALEEP (coverage >= 80%)
+R007,life_expectancy_chr_main_county,2021-2023,65.545,,county 54047
+R007,life_expectancy_usaleep,2010-2015,76.695,1.0,5 of 5 2010 tracts with estimate
+R007,life_expectancy,key,76.695,1.0,USALEEP (coverage >= 80%)
+R004,life_expectancy_chr_main_county,2021-2023,64.929,,county 21189
+R004,life_expectancy_usaleep,2010-2015,72.433,1.0,2 of 2 2010 tracts with estimate
+R004,life_expectancy,key,72.433,1.0,USALEEP (coverage >= 80%)
+M014,life_expectancy_chr_main_county,2021-2023,70.585,,county 48387
+M014,life_expectancy_usaleep,2010-2015,71.3,1.0,1 of 1 2010 tracts with estimate
+M014,life_expectancy,key,71.3,1.0,USALEEP (coverage >= 80%)
+U047,life_expectancy_chr_main_county,2021-2023,73.816,,county 39113
+U047,life_expectancy_usaleep,2010-2015,69.343,1.0,6 of 6 2010 tracts with estimate
+U047,life_expectancy,key,69.343,1.0,USALEEP (coverage >= 80%)
+U039,life_expectancy_chr_main_county,2021-2023,71.437,,county 24510
+U039,life_expectancy_usaleep,2010-2015,68.914,1.0,10 of 10 2010 tracts with estimate
+U039,life_expectancy,key,68.914,1.0,USALEEP (coverage >= 80%)
+US,places_GHLTH,2025,20.15,,78815 tracts
+US,places_DIABETES,2025,11.991,,78815 tracts
+US,places_BPHIGH,2025,34.061,,78815 tracts
+US,places_MHLTH,2025,16.803,,78815 tracts
+M016,places_GHLTH,2025,35.728,,PLACES 2025
+M016,places_DIABETES,2025,23.251,,PLACES 2025
+M016,places_BPHIGH,2025,55.057,,PLACES 2025
+M016,places_MHLTH,2025,19.861,,PLACES 2025
+U028,places_GHLTH,2025,55.099,,PLACES 2025
+U028,places_DIABETES,2025,31.5,,PLACES 2025
+U028,places_BPHIGH,2025,48.674,,PLACES 2025
+U028,places_MHLTH,2025,21.989,,PLACES 2025
+U013,places_GHLTH,2025,39.555,,PLACES 2025
+U013,places_DIABETES,2025,20.269,,PLACES 2025
+U013,places_BPHIGH,2025,46.878,,PLACES 2025
+U013,places_MHLTH,2025,26.054,,PLACES 2025
+R046,places_GHLTH,2025,39.617,,PLACES 2025
+R046,places_DIABETES,2025,21.568,,PLACES 2025
+R046,places_BPHIGH,2025,39.514,,PLACES 2025
+R046,places_MHLTH,2025,25.273,,PLACES 2025
+U034,places_GHLTH,2025,43.367,,PLACES 2025
+U034,places_DIABETES,2025,29.888,,PLACES 2025
+U034,places_BPHIGH,2025,59.818,,PLACES 2025
+U034,places_MHLTH,2025,21.961,,PLACES 2025
+R007,places_GHLTH,2025,39.472,,PLACES 2025
+R007,places_DIABETES,2025,23.476,,PLACES 2025
+R007,places_BPHIGH,2025,52.986,,PLACES 2025
+R007,places_MHLTH,2025,24.776,,PLACES 2025
+R004,places_GHLTH,2024,33.317,,PLACES 2024
+R004,places_DIABETES,2024,18.245,,PLACES 2024
+R004,places_BPHIGH,2024,46.792,,PLACES 2024
+R004,places_MHLTH,2024,20.041,,PLACES 2024
+M014,places_GHLTH,2025,29.442,,PLACES 2025
+M014,places_DIABETES,2025,19.71,,PLACES 2025
+M014,places_BPHIGH,2025,48.781,,PLACES 2025
+M014,places_MHLTH,2025,18.168,,PLACES 2025
+U047,places_GHLTH,2025,41.917,,PLACES 2025
+U047,places_DIABETES,2025,29.005,,PLACES 2025
+U047,places_BPHIGH,2025,54.981,,PLACES 2025
+U047,places_MHLTH,2025,22.595,,PLACES 2025
+U039,places_GHLTH,2025,38.622,,PLACES 2025
+U039,places_DIABETES,2025,23.725,,PLACES 2025
+U039,places_BPHIGH,2025,53.463,,PLACES 2025
+U039,places_MHLTH,2025,22.686,,PLACES 2025

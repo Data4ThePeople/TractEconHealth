@@ -185,3 +185,15 @@ Script: `scripts/79_spotlight_tieout.py`, output `analysis/spotlight/tieout_spot
 | Pine Ridge life expectancy | USALEEP covers 21% of the area's 2010 population, under our 80% rule, so the table uses County Health Rankings for Oglala Lakota County: 58.37 vs. U.S. 77.55 | used county figure, labeled |
 | Population drop: West Dayton 74% since 1970, North Birmingham 67% since 1980, West Baltimore 59% since 1970, El Paso 58% since 1970, Flint 50% since 1990 | Recomputed from tables.md | match, all within 0.5 points |
 | Timeline facts, dates and quotes | Sourcing pass: each entry opened at its source and graded (`analysis/spotlight/sourced/<id>.md`) | about 160 entries, 3 still weak (Clarksdale 2, McDowell 1), pull list in `analysis/spotlight/PULL_LIST.md` |
+
+### Independent tie-out (fresh agent, blind to our numbers)
+
+Code and output: `analysis/spotlight/independent/check.py`, `results.csv` and `REPORT.md`. The agent worked only from DATASETS.md and the tract lists. It pulled the ACS, PLACES and USALEEP data again from the source.
+
+| Check | Result |
+|---|---|
+| Key measures table, 100 values (10 picks x 10 measures) plus U.S. values | 97 match to 0.05 or better (median income to the dollar). The 3 Owsley County (Kentucky) PLACES values differ by 0.07 to 0.11 points, because the agent weighted the 2024 file by adults and we weighted it by total population. That is under the 1 point tolerance and rounds the same in the post, except fair or poor health (33.4 vs. 33.3). |
+| Then-and-now history, 173 values (population, share Black, poverty, 1970 to 2020-2024) | all match |
+| 1970 and 1980 fit | Values match. The agent's fit is higher than ours for 10 pick-years because DATASETS.md described fit loosely. Our code uses overlap over union, which is stricter. DATASETS.md now says so. Under our rule, North Birmingham 1970 (0.67), Flint 1970 and 1980 (0.80, just under) and Clarksdale 1980 (0.77) stay hidden. |
+| Could not check | 1970 and 1980 for the 5 rural picks (no tracts then); margins of error; Pine Ridge tract life expectancy (21% coverage, county figure used by both). |
+| Flags raised | Clarksville TX: ACS poverty 23.1% (2008-2012) to 14.8% (2020-2024) while SNAP stays near 29%; the area has about 4,000 people, so the margin of error is likely wide. Two 9-byte NHGIS 1970 and 1980 crosswalk files in `data/raw/nhgis/` are failed downloads ("Not Found"), not crosswalks. |
