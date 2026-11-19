@@ -416,3 +416,24 @@ The sources below are used to pick and document 10 neighborhood spotlights. The 
   - 45 rural (at most 4 per state) and 15 micropolitan (at most 2 per state).
   - Plus the seed places Eric named, found by the nearest neighborhood to a point.
 - **Output:** `analysis/spotlight/clusters.csv` (all 4,053 neighborhoods) and `candidates.csv` (131).
+
+## U.S. Small-area Life Expectancy Estimates Project (USALEEP), 2010-2015 (NCHS, CDC)
+
+- **What:** life expectancy at birth for most 2010 census tracts, from 2010-2015 death records and the 2010 census. File `US_A.CSV` from ftp.cdc.gov.
+- **Use:** one life expectancy figure per spotlight, the average over the neighborhood's 2010 tracts weighted by 2010 population.
+- **Limits:** tracts with too few deaths have no estimate, and the "fit" column gives the share of population covered. NCHS publishes a standard error per tract, and small tracts carry wide ranges. It is a single period, not a trend.
+
+## ACS 5-year tract counts for history: 2008-2012 (2010 tracts) and 2020-2024 (2020 tracts)
+
+- **Source:** Census API (`scripts/73_fetch_history_extras.py`).
+- **Variables:** poverty (B17001), civilian labor force and unemployed (B23025), total and Black alone population (B02001), occupancy (B25002), tenure (B25003).
+- **Missing values:** negative annotation codes are set to missing.
+
+## Spotlight then-and-now tables (`scripts/74_history.py`, `analysis/spotlight/history_long.csv`)
+
+Census counts from each era are added up onto the same neighborhood. Rates are computed from the summed counts.
+- **1970 and 1980:** an old tract counts if half or more of its area is inside the neighborhood outline. "Fit" is the overlap of those tracts with the outline divided by their combined area. Years with fit under 0.8 are not shown in the spotlights.
+- **1990 and 2000:** NHGIS crosswalks move each year's counts onto the neighborhood's 2010 tracts by population weight.
+- **2010 and 2020 census:** counts standardized to 2010 tracts.
+- **ACS:** 2008-2012 on 2010 tracts, and 2020-2024 on the neighborhood's own tracts.
+- **Comparability:** census poverty and labor force questions moved from the long-form census (1970-2000) to the ACS, which is a sample with margins of error. Small neighborhoods carry wide ranges. Before 1980, "Black" means a single race; 2000 and later use Black alone.
