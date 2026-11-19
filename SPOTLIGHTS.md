@@ -30,12 +30,12 @@ Step 1 working file, 2026-11-19. Approve or reject each pick by number. Backups 
 
 **Where it ranks today:** income percentile 2.0; health percentile 1.1.
 
-**Sources:** 8 of 16 timeline entries rest on primary or scholarly sources (6) or established reference and news (2); 8 rest only on Wikipedia or a weak source.
+**Sources (after sourcing pass):** 16 of 16 timeline entries rest on primary or scholarly sources (12) or established reference and news (4); 1 item still needs a pull.
 
 **Summary.** West Dayton is the series anchor because it shows nearly every kind of cut on one timeline.
 - **1930s:** the federal mortgage maps graded its Black west side as a risk. Tract 1651 is 77% grade D.
 - **1966:** unrest broke out on West Fifth Street.
-- **US-35:** the freeway took 283 homes on one 1.4-mile stretch and split the area.
+- **US-35:** the freeway took homes and businesses and split the area. (A count of 283 homes on one stretch awaits a primary source.)
 - **2008-09:** Delphi, GM and NCR left the region.
 - **Overdoses:** the county overdose death rate rose from 22 to 82 per 100,000 at its peak.
 - **2018:** Good Samaritan Hospital closed.
@@ -58,7 +58,7 @@ Life expectancy, 2010-2015 (USALEEP): 69.3 years (U.S. 78.7).
 County life expectancy (Montgomery County): 73.8 years.
 
 **Caveats:**
-- **Sources need work.** Half of the timeline entries rest only on Wikipedia, partly because the Dayton Daily News blocked automated reads. Since West Dayton is in the series regardless, it gets a sourcing pass to replace each of those with the underlying record.
+- **Sources fixed.** After the sourcing pass, all 16 timeline entries rest on primary or scholarly records (12) or established news (4), including Census, SEC filings, the Kerner Commission report and CDC data. One item is still open: the count of 283 homes taken for US-35 needs the 1990-92 Dayton Daily News coverage or ODOT records. Until then the story says the freeway took many homes, without a count.
 - GM Moraine, NCR's headquarters and Good Samaritan sat outside these tracts, so those cuts show only in county data.
 - Several job counts are still unconfirmed, because the Dayton Daily News archive blocked automated reads.
 
