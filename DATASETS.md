@@ -466,3 +466,11 @@ Each spotlight post opens with 5 economic and 5 health measures for the neighbor
 - **One health chart per post, chosen for the story.** Overdose deaths where they are part of the story (Dayton, Baltimore, Flint, McDowell, Owsley). Otherwise: county life expectancy against the state and the U.S. (Clarksdale, Pine Ridge, Clarksville; County Health Rankings 2026 supplement, v147, 2021-2023), or one CDC PLACES 2025 measure for the neighborhood, county, state and U.S., each an adult-weighted average of its tracts (Birmingham: COPD; El Paso: diabetes).
 - **Drug overdose deaths:** CDC NCHS "Drug Poisoning Mortality by County," model-based death rates, 2003-2021 (data.cdc.gov dataset rpvx-m2md). The main county of each pick is shown next to the median of all county rates each year ("the middle U.S. county"). These are county-wide.
 - **Then-and-now charts** use `history_final.csv` and hide years with fit under 0.8, as the tables do. Poverty has no 2010 point because the 2010 census did not ask about income.
+
+### Below 200% of the poverty line (`scripts/83_below200.py`, `analysis/spotlight/below200.csv`)
+
+Share of people whose family income is under twice the federal poverty line, for each pick, its main county and state, and the U.S.
+- **1990 and 2000:** NHGIS time series C20, "Persons by Ratio of Income to Poverty Level [9]," nominal tracts and nation. Below 200% is the sum of the categories under 2.00; the universe is all nine. Moved onto each pick's 2010 tracts with the NHGIS 1990 and 2000 crosswalks (population weights), the same way as the poverty rate.
+- **2008-2012 and 2020-2024:** ACS table C17002 (ratio of income to poverty level), summed over the pick's 2010 or 2020 tracts. Below 200% is C17002_002 through _007; the universe is C17002_001.
+- **Not available:** 1970 and 1980 at the tract level. NHGIS's tract series for those years (C19) only splits at 0.75 and 1.25.
+- **Checks:** the under-100% share from the same C17002 pull matches the key measures poverty rate (B17001), and the under-100% share from C20 matches the 1990 and 2000 poverty rates in `history_final.csv`.
