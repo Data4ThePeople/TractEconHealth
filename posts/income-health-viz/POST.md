@@ -33,7 +33,19 @@ dividers: false
 
 ::: spacer 5px
 
-[Eric drafts the purpose section here.]
+<!-- Purpose: Claude's draft, November 19, for Eric to edit or replace. -->
+
+On Wednesday, in [Where JobsOhio's grant money landed in Ohio](https://www.data4thepeople.com/p/ohio-income-health), we asked a question: should economic development and public health be planned together? We gave a first look at the data behind that question for Ohio's 3,115 census tracts, and we promised to take it national on Friday. This is that chart.
+
+On instinct, the link seems obvious. Places with more money tend to be healthier. But how close is the link, and does it hold all the way up the income ladder? Our theory going in was that health would track income closely in the poorest neighborhoods, up to a point, and that above that point the link would fade into scatter. Past a certain level, more money would stop going with better health.
+
+The data only partly agreed. Health does improve fastest at the low end of income, and the gains slow down above about $110,000 in median household income. But they do not stop, and the dots do not scatter. In every state with enough neighborhoods to test, health keeps rising in the highest-income tracts, just more slowly. In short: steepest at the bottom, still rising at the top.
+
+You do not have to take our word for any of that. The chart puts about 78,000 census tracts and about 2,900 counties in one place. Pick any of 15 economic measures and 18 health measures, look at the whole country or one state, and hover over any dot to see the neighborhood or county behind it.
+
+One warning before you dig in. The health numbers are CDC estimates, and CDC uses poverty to build them, so part of the link between income and health in this chart is built into the numbers themselves. That is why we added life expectancy for counties, which comes from death records rather than a model. Income tracks it closely too.
+
+If income and health move together this closely, it is fair to ask whether decisions about where jobs and investment go should be made with health in view. That is the question we raised for Ohio. This chart lets anyone ask it of their own state.
 
 ::: blurb Read this first
 The health numbers are CDC model estimates, not surveys of each neighborhood. CDC builds them partly from each area's age, sex, race, education and poverty, so part of the link between a place's income and its health estimate is built into the estimate itself. Counts of deaths at the county level, which are not modeled, are the check on that. The chart shows which places have both conditions. It does not show that one causes the other.
