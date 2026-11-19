@@ -168,3 +168,5 @@ with its own code. Its working notes stay outside the repo.
 | Buffalo County range 48.8 to 57.1 | Common questions | v147_cilow 48.79, v147_cihigh 57.09 | match |
 | Obesity 45.8% and 23.6%, diabetes 20.2% and 8.6%, lowest and highest of 20 income groups (about $31,000 and $197,000) | Common questions | 45.8, 23.6; 20.2, 8.6; $30,867, $197,000 | match |
 | Fentanyl post is "An Interactive Map" by county | link text | its POST.md title | supported |
+| County life expectancy bend about $75,000; above it rises about 36% as fast | chart 01 label, post, email | county_results.json: k $75,228, slope ratio 0.364 | match |
+| No county tops about $182,000; 2,841 tracts do | post | county max $181,765; tracts above it 2,841 | match |

@@ -62,7 +62,7 @@ https://data4thepeople.github.io/TractEconHealth/dist/#county&y=life_expectancy
 Alt text:
 
 ```
-Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. An orange line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.
+Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. An orange line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. A dashed line at about $75,000 marks where gains slow: above it, life expectancy rises about 36% as fast, but keeps rising. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.
 ```
 
 ---
@@ -72,7 +72,7 @@ Scatter plot of 2,869 U.S. counties, median household income across and life exp
 ```
 The data only partly agreed. Health does improve fastest at the low end of income, and the gains slow down above about $110,000 in median household income. But they do not stop. In every state with enough neighborhoods to test, health keeps rising in the highest-income tracts, just more slowly.
 
-The chart above is the check that matters most. Life expectancy comes from death records, not a model, and across U.S. counties it climbs from 70.7 years in the lowest-income group to 80.8 years in the highest.
+The chart above is the check that matters most. Life expectancy comes from death records, not a model, and across U.S. counties it climbs from 70.7 years in the lowest-income group to 80.8 years in the highest. For counties, the slowdown comes at about $75,000 rather than $110,000, because a county blends many neighborhoods, rich and poor.
 
 You do not have to take our word for any of it. The full post puts about 78,000 census tracts and about 2,900 counties in one free, interactive chart. Pick any of 15 economic measures and 18 health measures, look at your own state, and see whether the question we asked for Ohio holds where you live.
 ```

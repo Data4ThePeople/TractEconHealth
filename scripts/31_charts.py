@@ -48,6 +48,15 @@ def chart_life_expectancy():
                 f"deaths. Its published range runs {lo:.0f} to {hi:.0f} years.",
                 (c.loc[top, "med_hh_income"] / 1000, c.loc[top, "life_expectancy"]), xytext=(8, 0),
                 textcoords="offset points", color=INK_DIM, fontsize=8.5, va="center")
+    # the county bend from the one-bend fit in scripts/20_analysis.py (analysis/county_results.json)
+    import json
+    fit = json.loads((ROOT / "analysis" / "county_results.json").read_text())["life_expectancy__med_hh_income"]
+    k, share = fit["k"], fit["slope_above"] / fit["slope_below"]
+    kr = round(k / 5000) * 5000
+    ax.axvline(k / 1000, color=INK_DIM, lw=1.2, ls=(0, (4, 4)), zorder=1)
+    ax.text(k / 1000 + 1.5, 55, f"Gains slow above about ${kr:,.0f}:\nabove it, life expectancy rises\nabout {share*100:.0f}% as fast, but keeps rising",
+            color=INK, fontsize=9.5, va="center", ha="left", path_effects=[pe.withStroke(linewidth=4, foreground=SURFACE)])
+    print("bend", round(k), round(share * 100))
     ax.set_xlim(20, np.ceil(x.max() / 10000) * 10 + 5)
     ax.set_ylim(50, 110)
     ax.xaxis.set_major_formatter(lambda v, _: f"${int(v)}k" if v else "$0")
