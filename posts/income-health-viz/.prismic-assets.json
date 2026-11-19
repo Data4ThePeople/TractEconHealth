@@ -1,0 +1,16 @@
+{
+  "images/01-county-life-expectancy.png": {
+    "id": "15ZgSpP3sGIZpvaT",
+    "width": 1600,
+    "height": 1056,
+    "url": "https://images.prismic.io/data4thepeople/15ZgSpP3sGIZpvaT_01-county-life-expectancy.png?auto=format,compress",
+    "stamp": "206613:1795101989"
+  },
+  "images/income-health-viz-hero-1680x1080.png": {
+    "id": "IUetCV2rIgOGvByx",
+    "width": 1680,
+    "height": 1080,
+    "url": "https://images.prismic.io/data4thepeople/IUetCV2rIgOGvByx_income-health-viz-hero-1680x1080.png?auto=format,compress",
+    "stamp": "610971:1795103707"
+  }
+}

@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: income-health-viz
-Step: 2b
+Step: 2f
 Since: 2026-11-19
 
 ## Steps
@@ -15,10 +15,10 @@ Since: 2026-11-19
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-19 | |
 | 2a | Draft with brackets resolved | 2026-11-19 | |
-| 2b | Eric's edit, Claude's look-over | | |
-| 2c | Slice markup | | |
-| 2d | Hero 1680x1080 + alt text | | |
-| 2e | SEO | | |
+| 2b | Eric's edit, Claude's look-over | 2026-11-19 | |
+| 2c | Slice markup | 2026-11-19 | |
+| 2d | Hero 1680x1080 + alt text | 2026-11-19 | |
+| 2e | SEO | 2026-11-19 | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 | 3  | Social posts | | |
@@ -41,3 +41,5 @@ None.
 - 2026-11-15 Independent tie-out done: all data values, counts and statistics match. Fixed its display and wording findings (county name encoding, Census caps on income and rent share, median line, eight wording items, method lines clarified). Next: Eric confirms Step 1.
 - 2026-11-19 Step 1 confirmed by Eric. Step 2a opened: slug income-health-viz, standard visualization post (layout of disease-vaccination-viz and substance-use-treatment-viz). Eric drafts Purpose; Claude drafted the other sections.
 - 2026-11-19 Step 2a confirmed by Eric (Purpose drafted by Claude at Eric's request; index section, life expectancy chart, Read this first box with checks and outside research; Dwyer-Lindgren 60% confirmed). Step 2b opened: Eric edits POST.md.
+- 2026-11-19 Steps 2b-2e confirmed by Eric (look-over edits 1-9; embed 940px; hero from the chart at hero scale; SEO fields, three FAQ answers, fentanyl link). Step 2f opened.
+- 2026-11-19 Pushed to Prismic as a draft in the Migration Release (document av8gzxEAACgAvhgm, 66 slices, 2 images). Tags and author empty. Awaiting Eric's check of 2f.
