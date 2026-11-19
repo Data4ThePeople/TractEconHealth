@@ -62,7 +62,7 @@ https://data4thepeople.github.io/TractEconHealth/dist/#county&y=life_expectancy
 Alt text:
 
 ```
-Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. An orange line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. A dashed line at about $75,000 marks where gains slow: above it, life expectancy rises about 36% as fast, but keeps rising. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.
+Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. An orange line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000. A dashed line at about $75,000 marks where gains slow: above it, life expectancy rises about 36% as fast, but keeps rising. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.
 ```
 
 ---
