@@ -14,10 +14,11 @@ For a neighborhood (a set of 2020 tracts) it adds up census counts from each era
 Rates are computed from summed counts (poverty = below poverty / poverty universe; unemployment = unemployed /
 civilian labor force; vacancy = vacant / all housing units; owners = owner-occupied / occupied units).
 
-Input:  analysis/spotlight/candidates.csv (or --file with a cand_id,tracts CSV)
-Output: analysis/spotlight/history_long.csv (cand_id, year, measure, value, fit, source)
+Input:  analysis/spotlight/candidates.csv (or --file with a cand_id,tracts[,stability_1990] CSV)
+Output: analysis/spotlight/history_long.csv (or --out <path>) (cand_id, year, measure, value, fit, source)
 """
 import sys, warnings
+from pathlib import Path
 import numpy as np, pandas as pd, geopandas as gpd
 warnings.filterwarnings("ignore")
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
@@ -25,7 +26,9 @@ from common import RAW, ROOT
 
 OUT = ROOT / "analysis" / "spotlight"
 NH = RAW / "nhgis" / "extract"
-cand = pd.read_csv(sys.argv[2] if len(sys.argv) > 2 and sys.argv[1] == "--file" else OUT / "candidates.csv", dtype={"tracts": str})
+args = dict(zip(sys.argv[1::2], sys.argv[2::2]))
+cand = pd.read_csv(args.get("--file", OUT / "candidates.csv"), dtype={"tracts": str})
+OUTFILE = Path(args.get("--out", OUT / "history_long.csv"))
 
 # ---------- inputs ----------
 nom = pd.read_csv(NH / "nhgis0010_csv" / "nhgis0010_ts_nominal_tract.csv", encoding="latin-1", dtype={f"GJOIN{y}": str for y in (1970, 1980, 1990, 2000, 2010, 2020)})
@@ -90,7 +93,8 @@ for r in cand.itertuples():
         c = cw[cw.tr2010ge.isin(s10)]
         if len(c):
             v = N[y].reindex(c[gj]).mul(c.wt_pop.to_numpy(), axis=0).sum(min_count=1).to_dict()
-            fit = cand_meta.loc[r.cand_id, "stability_1990"] if (y == 1990 and r.cand_id in cand_meta.index) else None
+            fit = (getattr(r, "stability_1990", None) if "stability_1990" in cand.columns
+                   else cand_meta.loc[r.cand_id, "stability_1990"] if r.cand_id in cand_meta.index else None) if y == 1990 else None
             add(r.cand_id, str(y), v, fit, f"NHGIS nominal tracts {y}, NHGIS crosswalk to 2010 tracts")
     sd = std.reindex(s10)
     for y in (1990, 2000, 2010, 2020):
@@ -118,5 +122,5 @@ for r in cand.itertuples():
 h = pd.DataFrame(rows)
 order = {"1970": 0, "1980": 1, "1990": 2, "2000": 3, "2008-2012": 4, "2010": 5, "2010-2015": 6, "2020": 7, "2020-2024": 8}
 h["o"] = h.year.map(order); h = h.sort_values(["cand_id", "measure", "o"]).drop(columns="o")
-h.to_csv(OUT / "history_long.csv", index=False)
+h.to_csv(OUTFILE, index=False)
 print(len(h), "rows for", h.cand_id.nunique(), "candidates")
