@@ -79,7 +79,7 @@ M016,health,Fair or poor health (%),35.7277258299734,20.150037636153836,CDC PLAC
 M016,health,Diabetes (%),23.251205284378486,11.991128575541463,CDC PLACES 2025
 M016,health,High blood pressure (%),55.0574333018787,34.06116369450669,CDC PLACES 2025
 M016,health,Frequent mental distress (%),19.86118212232993,16.80317337706538,CDC PLACES 2025
-R007,health,Life expectancy (years),76.7,78.7,USALEEP 2010-2015 tract estimates
+R007,health,Life expectancy (years),65.54454273187146,77.55068689793733,"County Health Rankings 2021-2023, McDowell County (tract estimate 76.7 conflicts with county figures)"
 R007,health,Fair or poor health (%),39.472319409734624,20.150037636153836,CDC PLACES 2025
 R007,health,Diabetes (%),23.476210877067714,11.991128575541463,CDC PLACES 2025
 R007,health,High blood pressure (%),52.986445317148636,34.06116369450669,CDC PLACES 2025

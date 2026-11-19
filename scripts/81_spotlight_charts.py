@@ -8,7 +8,9 @@ Rural picks:
 All picks:
   02-population.png       people living in the tracts, oldest reliable year to 2020-2024 (history_final.csv)
   03-poverty-vacancy.png  poverty rate and share of homes vacant over time (history_final.csv)
-  04-overdose.png         county drug overdose death rate vs. the middle U.S. county, 2003-2021 (CDC NCHS model rates)
+  04-overdose.png         county drug overdose death rate vs. the middle U.S. county, 2003-2021 (CDC NCHS model rates), or,
+                          where overdoses are not part of the story (health4 in CFG), one health chart that is:
+                          04-life-expectancy.png (county vs. state vs. U.S., CHR) or 04-<measure>.png (PLACES, neighborhood vs. county, state, U.S.)
 Years whose old-tract fit is under 0.8 are left out, as in the tables. Output: posts/<slug>/images/
 """
 import sys
@@ -25,23 +27,23 @@ from plot_style import use_house_style, titleblock, credit, INK, INK_DIM, MUTED,
 CFG = {
     "U047": dict(slug="spotlight-west-dayton", name="West Dayton", county="39113", county_name="Montgomery County",
                  city="Dayton", state="OH", holc_year="1937", labels=[("Downtown", 39.7589, -84.1916)]),
-    "U034": dict(slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
+    "U034": dict(health4="COPD", slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
                  city="Birmingham", state="AL", holc_year="1930s", labels=[("Downtown", 33.5186, -86.8104)]),
     "U039": dict(slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore", extra_roads=["US Hwy 40"],
                  city="Baltimore", state="MD", holc_year="1937", labels=[("Downtown", 39.2904, -76.6122)]),
-    "U028": dict(slug="spotlight-el-segundo-barrio", name="El Segundo Barrio and Chamizal", county="48141", county_name="El Paso County",
+    "U028": dict(health4="DIABETES", slug="spotlight-el-segundo-barrio", name="El Segundo Barrio and Chamizal", county="48141", county_name="El Paso County",
                  city="El Paso", state="TX", holc_year="1936", labels=[("Downtown", 31.7587, -106.4869)]),
     "U013": dict(slug="spotlight-north-flint", name="North and East Flint", county="26049", county_name="Genesee County",
                  city="Flint", state="MI", holc_year="1937", labels=[("Downtown", 43.0125, -83.6875)]),
-    "M016": dict(slug="spotlight-clarksdale", name="Clarksdale", county="28027", county_name="Coahoma County",
+    "M016": dict(health4="LE", slug="spotlight-clarksdale", name="Clarksdale", county="28027", county_name="Coahoma County",
                  labels=[("Clarksdale", 34.2001, -90.5709)]),
     "R007": dict(slug="spotlight-mcdowell-county", name="McDowell County", county="54047", county_name="McDowell County",
                  labels=[("Welch", 37.4329, -81.5848)]),
-    "R046": dict(slug="spotlight-pine-ridge", name="Pine Ridge", county="46102", od_fips="46113", county_name="Oglala Lakota County",
+    "R046": dict(health4="LE", slug="spotlight-pine-ridge", name="Pine Ridge", county="46102", od_fips="46113", county_name="Oglala Lakota County",
                  labels=[("Pine Ridge", 43.0255, -102.5563)]),
     "R004": dict(slug="spotlight-owsley-county", name="Owsley County", county="21189", county_name="Owsley County",
                  labels=[("Booneville", 37.4762, -83.6749)]),
-    "M014": dict(slug="spotlight-clarksville-texas", name="Clarksville", county="48387", county_name="Red River County",
+    "M014": dict(health4="LE", slug="spotlight-clarksville-texas", name="Clarksville", county="48387", county_name="Red River County",
                  labels=[("Clarksville", 33.6107, -95.0527)]),
 }
 YX = {"1970": 1970, "1980": 1980, "1990": 1990, "2000": 2000, "2010": 2010, "2020-2024": 2022}
@@ -216,6 +218,9 @@ def build(cid):
     fig.savefig(out / "03-poverty-vacancy.png"); plt.close(fig)
     info.update(poverty=pv, vacancy=vc)
 
+    if C.get("health4"):
+        health_bars(C, tracts, out, info); print(cid, C["slug"], info); return
+
     # ---------- 04 overdose ----------
     here = OD[OD.fips == C.get("od_fips", C["county"])].sort_values("year").set_index("year").r
     fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.8, top=0.8, bottom=0.16)
@@ -240,6 +245,48 @@ def build(cid):
     info["overdose"] = {int(k): round(v, 1) for k, v in here.items() if k in (2003, 2010, 2017, 2021)}
     info["overdose_mid_2021"] = round(MID.iloc[-1], 1)
     print(cid, C["slug"], info)
+
+
+STATE = {"01": "Alabama", "48": "Texas", "28": "Mississippi", "46": "South Dakota", "54": "West Virginia", "21": "Kentucky"}
+PNAME = {"COPD": ("COPD", "Adults who have ever been told they have COPD (chronic obstructive pulmonary disease)"),
+         "DIABETES": ("diabetes", "Adults who have ever been told they have diabetes")}
+
+
+def health_bars(C, tracts, out, info):
+    """04 health chart chosen per story: county life expectancy (CHR) or one PLACES measure, vs. state and U.S."""
+    st = C["county"][:2]
+    if C["health4"] == "LE":
+        chr_ = pd.read_csv(RAW / "chr" / "analytic_supplement_20260325.csv", dtype={"fipscode": str}, low_memory=False).set_index("fipscode")
+        le = pd.to_numeric(chr_["v147_rawvalue"], errors="coerce")
+        rows = [(C["county_name"], le[C["county"]]), (STATE[st], le[st + "000"]), ("United States", le["00000"])]
+        fmt = lambda v: f"{v:.1f} years"; fn = "04-life-expectancy.png"
+        title = f"Life expectancy in {C['county_name']} is {round(le['00000'], 1) - round(le[C['county']], 1):.1f} years below the U.S."
+        sub = f"Life expectancy at birth, 2021-2023, {C['county_name']}, {STATE[st]} and the United States."
+        src = "Source: County Health Rankings & Roadmaps, 2026 supplemental release (life expectancy, 2021-2023, from National Vital Statistics deaths)."
+    else:
+        m = C["health4"]
+        pl = pd.read_parquet(RAW / "places" / "places_tract_2025.parquet", columns=["locationname", "measureid", "data_value", "totalpop18plus"])
+        pl = pl[pl.measureid == m].copy(); pl["v"] = pd.to_numeric(pl.data_value, errors="coerce"); pl["w"] = pd.to_numeric(pl.totalpop18plus, errors="coerce")
+        def wa(d): d = d.dropna(subset=["v", "w"]); return float((d.v * d.w).sum() / d.w.sum())
+        rows = [(C["name"], wa(pl[pl.locationname.isin(tracts)])), (C["county_name"], wa(pl[pl.locationname.str[:5] == C["county"]])),
+                (STATE[st], wa(pl[pl.locationname.str[:2] == st])), ("United States", wa(pl))]
+        fmt = lambda v: f"{v:.0f}%"; fn = f"04-{PNAME[m][0].lower()}.png"
+        title = f"{PNAME[m][0][0].upper() + PNAME[m][0][1:]} is far more common in {C['name']}"
+        sub = f"{PNAME[m][1]}, CDC model estimates for 2023.\nEach area is the average of its census tracts, weighted by adult population."
+        src = "Source: CDC PLACES 2025 census tract estimates (adult crude prevalence), weighted by adult population."
+    fig, ax = plt.subplots(figsize=(10, 1.6 + 0.75 * len(rows) + 1.6)); H_ = fig.get_figheight()
+    fig.subplots_adjust(left=0.24, right=0.88, top=1 - 1.45 / H_, bottom=0.75 / H_)
+    ys = list(range(len(rows)))[::-1]
+    for y, (lab, v) in zip(ys, rows):
+        ax.barh(y, v, height=0.55, color=BLUE if y == ys[0] else MUTED)
+        ax.annotate(fmt(v), (v, y), xytext=(8, 0), textcoords="offset points", va="center", color=INK, fontsize=11, fontweight="bold" if y == ys[0] else "normal")
+    ax.set_yticks(ys); ax.set_yticklabels([r[0] for r in rows], color=INK, fontsize=11)
+    ax.set_xticks([]); ax.tick_params(length=0)
+    for sp in ("left", "bottom"): ax.spines[sp].set_visible(False)
+    ax.set_xlim(0, max(v for _, v in rows) * 1.18)
+    titleblock(fig, title, sub); credit(fig, src)
+    fig.savefig(out / fn); plt.close(fig)
+    info["health4"] = {lab: round(v, 1) for lab, v in rows}; info["health4_file"] = fn
 
 
 ids = list(CFG) if sys.argv[1:] == ["all"] else sys.argv[1:]

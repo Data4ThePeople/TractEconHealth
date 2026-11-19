@@ -13,6 +13,8 @@ Health:
   Life expectancy           USALEEP 2010-2015, tracts weighted by 2010 population (from history_final.csv);
                             U.S. 78.7. Where USALEEP covers under 80% of the 2010 population (Pine Ridge: 21%), the row uses County Health
                             Rankings 2021-2023 for Oglala Lakota County, with the U.S. value from the same source.
+                            McDowell (R007) also uses the county figure: its tract estimate (76.7, 2010-2015) is far
+                            above County Health Rankings (65.5) and IHME 2014 (men 67.0, women 73.8).
   Fair or poor health, diabetes, high blood pressure, frequent mental distress
                             CDC PLACES 2025 tract crude prevalence (adults), weighted by adult population;
                             Kentucky uses PLACES 2024 weighted by total population (2025 left Kentucky out).
@@ -93,14 +95,18 @@ h = pd.read_csv(OUT / "history_final.csv", dtype={"year": str})
 le = h[(h.measure == "life_expectancy") & (h.fit >= 0.8)].set_index("cand_id").value  # tract estimate must cover 80% of 2010 population
 chr_ = pd.read_csv(RAW / "chr" / "analytic_supplement_20260325.csv", dtype={"fipscode": str}, low_memory=False).set_index("fipscode")
 chr_le = pd.to_numeric(chr_["v147_rawvalue"], errors="coerce")
+# Picks whose table row uses the county figure instead of the tract estimate
+COUNTY_LE = {"R046": ("46102", "Oglala Lakota County (no tract estimate)"),
+             "R007": ("54047", "McDowell County (tract estimate 76.7 conflicts with county figures)")}
 for cid, r in sets.iterrows():
     tr = r.tracts.split(";")
-    if cid in le.index:
+    if cid in le.index and cid not in COUNTY_LE:
         rows.append(dict(cand_id=cid, side="health", measure="Life expectancy (years)", value=le[cid], us_value=78.7,
                          source="USALEEP 2010-2015 tract estimates"))
-    else:  # Pine Ridge: county figure
-        rows.append(dict(cand_id=cid, side="health", measure="Life expectancy (years)", value=chr_le["46102"],
-                         us_value=chr_le["00000"], source="County Health Rankings 2021-2023, Oglala Lakota County (no tract estimate)"))
+    else:  # county figure (Pine Ridge: no tract estimate; McDowell: Eric's call, Nov. 19, 2026)
+        f, why = COUNTY_LE[cid]
+        rows.append(dict(cand_id=cid, side="health", measure="Life expectancy (years)", value=chr_le[f],
+                         us_value=chr_le["00000"], source=f"County Health Rankings 2021-2023, {why}"))
     src = p24 if tr[0].startswith("21") else p25
     for m, lab in HM.items():
         d = src[(src.measureid == m) & src.locationname.isin(tr)]

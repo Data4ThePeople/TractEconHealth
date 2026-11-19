@@ -84,10 +84,10 @@ The chart below shows the share of people in poverty and the share of homes vaca
 
 In August 2014, East Texas Medical Center said it would not renew its lease on the Clarksville hospital. It said the emergency room averaged less than one patient an hour, and it cited cuts in Medicare and Medicaid payments ([KETR, 2014](https://www.ketr.org/news/2014-08-07/clarksville-could-lose-hospital)). The 30-bed hospital closed in 2014, with no services left ([Sheps Center, University of North Carolina](https://www.shepscenter.unc.edu/programs-projects/rural-health/rural-hospital-closures/)). A state record shows a new 12-bed hospital registered in Clarksville with a planned completion in October 2023 ([Texas Department of Licensing and Regulation](https://www.tdlr.texas.gov/TABS/Search/Print/TABS2022023485)). [Eric: we could not confirm whether the new hospital opened. A Texas health agency licensing record would settle it.]
 
-The chart below compares the county's overdose death rate with the middle U.S. county. Overdoses are not a large part of the story here.
+The chart below compares life expectancy in Red River County with Texas and the country.
 
-![Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. Red River County rises from about 6 to 22, close to the middle U.S. county, which rises from about 7 to 25.](images/04-overdose.png)
-*These are CDC model estimates for the whole county, not Clarksville alone.*
+![Bar chart of life expectancy at birth, 2021 to 2023: Red River County 70.6 years, Texas 77.2 years, United States 77.6 years.](images/04-life-expectancy.png)
+*Life expectancy from [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), based on death records, for the whole county, not Clarksville alone.*
 
 ## What has changed
 
@@ -105,4 +105,4 @@ The housing case ended with a settlement in 2003, after a federal judge found th
 - **Then and now.** Census tract counts from 1990 to 2010 come from [NHGIS (IPUMS)](https://www.nhgis.org/) and are fitted to today's tract lines. 2020-2024 numbers are from the Census Bureau's [American Community Survey](https://www.census.gov/programs-surveys/acs) five-year estimates. County counts from 1900 to 1990 are from the [Census Bureau's county file, as copied by NBER](https://data.nber.org/census/population/cencounts/cencounts.csv), and 2000 to 2020 from the Census API.
 - **Survey uncertainty.** With about 4,000 people, survey estimates here carry wide margins of error. The survey counts 1,692 people in tract 48387950502, while the 2020 census counted 2,178. Poverty fell from 23.1% in the 2008-2012 survey to 14.8% in 2020-2024 while SNAP use stayed near 29%. Read the poverty rate with care.
 - **The table at the top.** Rates are computed from counts summed across the two tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015, for the 2010 tract that the two tracts came from.
-- **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=48387). The middle U.S. county is the median of all county rates each year.
+- **County life expectancy.** [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), 2026 supplemental release, 2021-2023.

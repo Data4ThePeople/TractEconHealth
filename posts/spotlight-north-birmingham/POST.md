@@ -91,10 +91,10 @@ The 35th Avenue coke plant changed hands twice more. ERP Compliant Coke bought i
 
 The health numbers in the table at the top are today's. Studies of the plants and health in North Birmingham point in different directions, and none we found shows the plants caused the poor health here. In 2015, the federal Agency for Toxic Substances and Disease Registry (ATSDR) found that particle pollution from 1999 to 2012 "could have resulted in harmful effects in sensitive individuals," but that current levels were "unlikely to result in harmful effects" ([ATSDR, 2015](https://www.atsdr.cdc.gov/HAC/pha/NorthBirminghamAirSite/35th%20Avenue%20Site_PHA_Final_04-21-2015_508.pdf)). In 2017, the agency found that arsenic and lead in some yards "could harm people's health," and that long-term contact with other chemicals in some yards "increases the risk of cancer" ([ATSDR, 2017](https://www.atsdr.cdc.gov/HAC/pha/35thAvenueSite/35th_Ave_Site_Soil_HC_Final_01-18-2017_508.pdf)). The county health department found no significant difference in 2000-2009 death rates from cancer, asthma and COPD compared with the rest of the county ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/)).
 
-We do not have tract health data from earlier decades. The chart below compares Jefferson County's drug overdose death rate with the middle U.S. county.
+We do not have tract health data from earlier decades. Today, CDC estimates show that COPD, a long-term lung disease, is far more common in North Birmingham than in the county, the state or the country. The estimates do not show what causes it. The chart below compares the four areas.
 
-![Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. Jefferson County rises from 11 in 2003 to about 27 in 2017, then climbs to 41 in 2021. The middle U.S. county rises from about 7 to 25.](images/04-overdose.png)
-*These are CDC model estimates for the whole county, not North Birmingham alone.*
+![Bar chart of the share of adults who have been told they have COPD: North Birmingham 15%, Jefferson County 7%, Alabama 8%, United States 7%.](images/04-copd.png)
+*CDC PLACES model estimates for 2023, weighted by adult population.*
 
 ::: divider
 
@@ -107,4 +107,4 @@ We do not have tract health data from earlier decades. The chart below compares 
 - **The table at the top.** Rates are computed from counts summed across the four tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
 - **The map.** Grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). The tract shares graded D are our own overlay of that map on 2020 tract lines.
 - **Toxic releases.** EPA [Toxics Release Inventory](https://www.epa.gov/toxics-release-inventory-tri-program), air releases as reported by each plant.
-- **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=01073). The middle U.S. county is the median of all county rates each year.
+- **COPD.** [CDC PLACES](https://www.cdc.gov/places/) 2025 tract estimates. The county, state and U.S. values are averages of their tracts, weighted by adult population.

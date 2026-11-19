@@ -96,12 +96,10 @@ Over the same years, the share of homes standing empty rose. Poverty fell from 4
 
 ::: spacer 5px
 
-The health numbers in the table at the top are today's. We do not have tract health data from earlier decades, so we cannot show how health here changed over time. For the whole county, life expectancy for deaths in 2020 to 2022 was 65.3 years, against 71.9 for Mississippi and 77.1 for the U.S. ([County Health Rankings, 2025](https://www.countyhealthrankings.org)).
+The health numbers in the table at the top are today's. We do not have tract health data from earlier decades, so we cannot show how health here changed over time. For the whole county, we can compare life expectancy with the state and the country. The chart below shows it for 2021 to 2023.
 
-Drug overdose deaths are not a large part of this story. The chart below shows that Coahoma County's overdose death rate has stayed close to, and a little below, the middle U.S. county.
-
-![Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. Coahoma County rises from 6 in 2003 to 22 in 2021. The middle U.S. county rises from about 7 to 25.](images/04-overdose.png)
-*These are CDC model estimates for the whole county, not the five tracts alone.*
+![Bar chart of life expectancy at birth, 2021 to 2023: Coahoma County 65.3 years, Mississippi 72.5 years, United States 77.6 years.](images/04-life-expectancy.png)
+*Life expectancy from [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), based on death records.*
 
 ::: divider
 
@@ -112,5 +110,5 @@ Drug overdose deaths are not a large part of this story. The chart below shows t
 - **The neighborhood.** Clarksdale here is five 2020 census tracts in Coahoma County, Mississippi: 28027950300, 28027950400, 28027950500, 28027950600 and 28027950700. All five are in the bottom 20% of U.S. tracts on both median household income and our health index. Tract 28027950300 is the farmland south of town, including Hopson.
 - **Then and now.** Tract counts from 1990 to 2010 come from [NHGIS (IPUMS)](https://www.nhgis.org/) and are fitted to today's tract lines. Earlier tracts do not line up well enough to compare, so the long view uses county counts from the census, 1900-1990 ([NBER copy of the Census Bureau file](https://data.nber.org/census/population/cencounts/cencounts.csv)) and 2000-2020 ([Census API](https://api.census.gov/data/2020/dec/pl)). 2020-2024 numbers are from the Census Bureau's [American Community Survey](https://www.census.gov/programs-surveys/acs) five-year estimates.
 - **The table at the top.** Rates are computed from counts summed across the five tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
-- **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=28027). The middle U.S. county is the median of all county rates each year.
+- **County life expectancy.** [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), 2026 supplemental release, 2021-2023.
 - **City vs. tracts.** We use tracts and the county, not the city of Clarksdale, because the city's borders changed between 1990 and 2000.

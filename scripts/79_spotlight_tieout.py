@@ -57,7 +57,7 @@ for cid, r in sets.iterrows():
     p = rel[rel.GEOID_TRACT_20.isin(r.tracts.split(";"))]
     sh = p.groupby("GEOID_TRACT_10").AREALAND_PART.sum() / p.groupby("GEOID_TRACT_10").AREALAND_TRACT_10.first()
     s10 = sh.index[sh >= 0.5]; l = le.reindex(s10); w = std.CL8AA2010.reindex(s10); ok = l.notna() & w.notna()
-    if ok.any() and w[ok].sum() / w.sum() >= 0.8:
+    if ok.any() and w[ok].sum() / w.sum() >= 0.8 and cid != "R007":  # R007 uses the county figure by choice
         chk(cid, "Life expectancy (USALEEP direct)", km[(cid, "Life expectancy (years)")], float(np.average(l[ok], weights=w[ok])), 0.05)
 
 # narrative population changes in SPOTLIGHTS.md

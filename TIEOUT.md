@@ -197,3 +197,10 @@ Code and output: `analysis/spotlight/independent/check.py`, `results.csv` and `R
 | 1970 and 1980 fit | Values match. The agent's fit is higher than ours for 10 pick-years because DATASETS.md described fit loosely. Our code uses overlap over union, which is stricter. DATASETS.md now says so. Under our rule, North Birmingham 1970 (0.67), Flint 1970 and 1980 (0.80, just under) and Clarksdale 1980 (0.77) stay hidden. |
 | Could not check | 1970 and 1980 for the 5 rural picks (no tracts then); margins of error; Pine Ridge tract life expectancy (21% coverage, county figure used by both). |
 | Flags raised | Clarksville TX: ACS poverty 23.1% (2008-2012) to 14.8% (2020-2024) while SNAP stays near 29%; the area has about 4,000 people, so the margin of error is likely wide. Two 9-byte NHGIS 1970 and 1980 crosswalk files in `data/raw/nhgis/` are failed downloads ("Not Found"), not crosswalks. |
+
+### Changes after Eric's read (Nov. 19, 2026)
+
+| Change | Check | Result |
+|---|---|---|
+| McDowell life expectancy switched to the county figure | key_measures.csv R007 vs. CHR v147 fipscode 54047 | 65.54 = 65.54; U.S. 77.55. Own tie-out rerun: 87 of 88 pass (the USALEEP check now skips R007; the Clarksville gap is unchanged and explained) |
+| New health charts | values printed by 81_spotlight_charts.py vs. a separate PLACES and CHR read | Birmingham COPD 15.2 / 7.2 / 8.3 / 6.6; El Paso diabetes 31.5 / 16.2 / 12.9 / 12.0; life expectancy Coahoma 65.3, Mississippi 72.5; Oglala Lakota 58.4, South Dakota 77.4; Red River 70.6, Texas 77.2; U.S. 77.6. All match |

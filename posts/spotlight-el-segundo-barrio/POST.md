@@ -105,10 +105,10 @@ In 2006 and 2007, a downtown plan drawn up over two years by a private business 
 
 ::: spacer 5px
 
-The health numbers in the table at the top are today's, and we have no tract health data from earlier decades. The chronic illness rates are CDC model estimates, not counts. Drug overdoses are not a large part of this story. The chart below compares El Paso County's overdose death rate with the middle U.S. county.
+The health numbers in the table at the top are today's, and we have no tract health data from earlier decades. The chronic illness rates are CDC model estimates, not counts. Diabetes stands out. About 32% of adults here have been told they have diabetes, compared with 16% in El Paso County. The chart below compares the neighborhood with the county, Texas and the country.
 
-![Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. El Paso County rises from 5 in 2003 to 19 in 2021, below the middle U.S. county, which rises from about 7 to 25.](images/04-overdose.png)
-*These are CDC model estimates for the whole county, not these tracts alone.*
+![Bar chart of the share of adults who have been told they have diabetes: El Segundo Barrio and Chamizal 32%, El Paso County 16%, Texas 13%, United States 12%.](images/04-diabetes.png)
+*CDC PLACES model estimates for 2023, weighted by adult population.*
 
 ## Recognition
 
@@ -127,4 +127,4 @@ In February 2016, Preservation Texas named Segundo Barrio one of the 14 Most End
 - **The table at the top.** Rates are computed from counts summed across the six tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
 - **The map.** Grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). The map itself is undated; Mapping Inequality files it under 1936.
 - **Clothing jobs.** Bureau of Labor Statistics [Quarterly Census of Employment and Wages](https://www.bls.gov/cew/), El Paso County, private apparel manufacturing (NAICS 315), annual averages.
-- **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=48141). The middle U.S. county is the median of all county rates each year.
+- **Diabetes.** [CDC PLACES](https://www.cdc.gov/places/) 2025 tract estimates. The county, state and U.S. values are averages of their tracts, weighted by adult population.

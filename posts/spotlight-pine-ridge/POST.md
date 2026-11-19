@@ -96,10 +96,10 @@ Life expectancy in this county has been far below the U.S. figure for as long as
 
 The U.S. Commission on Civil Rights says Native American health care "has been chronically underfunded." In 2016, the Indian Health Service spent $2,834 per person on health care, compared with $9,990 per person for federal health spending nationwide, about 72% less. In 2017 the figures were $3,332 and $9,207 ([U.S. Commission on Civil Rights, Broken Promises, 2018, pp. 66-67](https://www.usccr.gov/files/pubs/2018/12-20-Broken-Promises.pdf)). The timing lines up with the gap in life expectancy, but neither source shows that one caused the other.
 
-Drug overdoses are not the main health story here. The chart below compares the county's overdose death rate with the middle U.S. county.
+The chart below compares life expectancy in Oglala Lakota County with South Dakota and the country.
 
-![Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. Oglala Lakota County rises from about 5 to 20, staying below the middle U.S. county, which rises from about 7 to 25.](images/04-overdose.png)
-*These are CDC model estimates for the whole county.*
+![Bar chart of life expectancy at birth, 2021 to 2023: Oglala Lakota County 58.4 years, South Dakota 77.4 years, United States 77.6 years.](images/04-life-expectancy.png)
+*Life expectancy from [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), based on death records, for the whole county.*
 
 ## What has changed
 
@@ -116,4 +116,3 @@ Some of the record has been contested and partly answered. The Supreme Court fou
 - **The area.** Pine Ridge here is five 2020 census tracts: 46102941000, 46102941100 and 46102941200 (all of Oglala Lakota County), 46071941200 (Jackson County, Wanblee) and 46007941200 (Bennett County, Allen). All five are on the Pine Ridge Reservation. Tracts on the nearby Rosebud Reservation, home of a separate nation, are left out. Bennett County's legal status has been decided both ways by the courts, as described above.
 - **Then and now.** Census tract counts from 1990 to 2010 come from [NHGIS (IPUMS)](https://www.nhgis.org/) and are fitted to today's tract lines. 2020-2024 numbers are from the Census Bureau's [American Community Survey](https://www.census.gov/programs-surveys/acs) five-year estimates. County counts from 1920 to 1990 are from the [Census Bureau's county file, as copied by NBER](https://data.nber.org/census/population/cencounts/cencounts.csv), and 2000 to 2020 from the Census API. Survey estimates for small areas here carry wide margins of error.
 - **The table at the top.** Rates are computed from counts summed across the five tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is for all of Oglala Lakota County, 2021-2023, from [County Health Rankings](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), with the U.S. figure from the same source. Tract estimates from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html) cover only about 21% of the people here, so we do not use them.
-- **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=46113). The county's code was 46113 before 2015. The middle U.S. county is the median of all county rates each year.
