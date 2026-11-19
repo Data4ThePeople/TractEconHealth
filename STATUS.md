@@ -43,3 +43,4 @@ None.
 - 2026-11-19 Step 2a confirmed by Eric (Purpose drafted by Claude at Eric's request; index section, life expectancy chart, Read this first box with checks and outside research; Dwyer-Lindgren 60% confirmed). Step 2b opened: Eric edits POST.md.
 - 2026-11-19 Steps 2b-2e confirmed by Eric (look-over edits 1-9; embed 940px; hero from the chart at hero scale; SEO fields, three FAQ answers, fentanyl link). Step 2f opened.
 - 2026-11-19 Pushed to Prismic as a draft in the Migration Release (document av8gzxEAACgAvhgm, 66 slices, 2 images). Tags and author empty. Awaiting Eric's check of 2f.
+- 2026-11-19 During 2g: life expectancy chart line recolored to the dashboard's orange, pointer sentence and direct link to the county life expectancy view added under it, email chart linked to that view. Prismic draft updated in place (same document).

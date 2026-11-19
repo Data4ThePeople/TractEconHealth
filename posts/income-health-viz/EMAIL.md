@@ -56,12 +56,13 @@ On instinct, the link seems obvious. Places with more money tend to be healthier
 
 ## 4. Chart
 
-`posts/income-health-viz/images/01-county-life-expectancy.png`, linked to the post.
+`posts/income-health-viz/images/01-county-life-expectancy.png`, linked to the interactive chart's county life expectancy view, so readers land on the same picture in the tool:
+https://data4thepeople.github.io/TractEconHealth/dist/#county&y=life_expectancy
 
 Alt text:
 
 ```
-Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. A yellow line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.
+Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. An orange line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.
 ```
 
 ---

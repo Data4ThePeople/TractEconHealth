@@ -108,8 +108,10 @@ At the county level, income tracks life expectancy, which comes from death recor
 
 The chart below shows that county check. Each dot is a county, and the line follows the middle county as income rises: from 70.7 years in the lowest-income group of counties to 80.8 years in the highest. It climbs fastest at the low end and keeps climbing at the top, the same shape as the health index.
 
-![Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. A yellow line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.](images/01-county-life-expectancy.png)
+![Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. An orange line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.](images/01-county-life-expectancy.png)
 *Life expectancy, 2021-2023: County Health Rankings & Roadmaps, March 2026 release. Income: U.S. Census Bureau, American Community Survey 2020-2024.*
+
+To see this in the chart above, switch Show to Counties and pick Life expectancy, or [open that view directly](https://data4thepeople.github.io/TractEconHealth/dist/#county&y=life_expectancy).
 
 ## What this page is
 

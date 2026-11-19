@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(__file__))
 from common import PROC, ROOT
+ORANGE = "#f08a4b"  # the interactive chart's dark-theme line color, so the two charts match
 from plot_style import BLUE, GRID, INK, INK_DIM, SURFACE, YELLOW, credit, titleblock, use_house_style
 
 use_house_style()
@@ -34,7 +35,7 @@ def chart_life_expectancy():
     fig, ax = plt.subplots(figsize=(10, 6.6))
     fig.subplots_adjust(top=0.80, bottom=0.17, left=0.08, right=0.95)
     ax.scatter(x / 1000, y, s=9, color=BLUE, alpha=0.45, linewidths=0)
-    ax.plot(line[:, 0] / 1000, line[:, 1], color=YELLOW, lw=2.5, solid_capstyle="round")
+    ax.plot(line[:, 0] / 1000, line[:, 1], color=ORANGE, lw=2.5, solid_capstyle="round")
     for (lx, ly), ha, dx in [(line[0], "right", -2), (line[-1], "left", 2)]:
         ax.text(lx / 1000 + dx, ly, f"{ly:.1f} years", color=INK, fontsize=10, ha=ha, va="center", fontweight="bold",
                 path_effects=[pe.withStroke(linewidth=4, foreground=SURFACE)])
@@ -56,7 +57,7 @@ def chart_life_expectancy():
     ax.tick_params(labelsize=9)
     titleblock(fig, "Life expectancy rises with county income",
                f"Each dot is one of {len(c):,} counties. Life expectancy is counted from death records, not modeled. "
-               f"The yellow line joins the\nmiddle county in each of 20 equal-size income groups. "
+               f"The orange line joins the\nmiddle county in each of 20 equal-size income groups. "
                f"Rank correlation with income: {rho:.2f}.")
     credit(fig, "Life expectancy, 2021-2023: County Health Rankings & Roadmaps, March 2026 release, from NCHS mortality "
                 "files. Income: U.S. Census Bureau,\nAmerican Community Survey 2020-2024. Counties under 500 people, mostly "
