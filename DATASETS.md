@@ -359,3 +359,60 @@ that state. Rank (Spearman) correlations nationally, by state, below and above t
 and within counties (each tract's values minus its county average). County check: ACS county median household income
 (and the county economic index) against the PLACES county health index and against County Health Rankings life
 expectancy, overdose deaths and suicides.
+
+---
+
+# Community spotlight series (follow-on posts)
+
+The sources below are used to pick and document 10 neighborhood spotlights. The income-health-viz post does not use them.
+
+## PLACES: Local Data for Better Health, census tract data, 2024 release (CDC), Kentucky and Pennsylvania only
+
+- **What:** the same model-based tract estimates as the 2025 release. Pulled from data.cdc.gov dataset ai6z-tcin by `scripts/71_fetch_places2024_kypa.py`.
+- **Vintage:** BRFSS 2022 for most measures (some 2021). The 2025 release has no health estimates for these two states.
+- **Use:** screening only. Each 2024 measure is placed in the national 2025 distribution. The index formula is then applied, and the result is placed in the national index distribution.
+- **Caveat:** a Kentucky or Pennsylvania tract is compared against other states' figures from a year later. That's close enough to screen with. Any number shown for those places names the 2024 release.
+- **Coverage:** 4,627 tracts after the same population and group quarters filters.
+
+## Rural-Urban Commuting Area codes, 2020 (USDA Economic Research Service)
+
+- **What:** a code from 1 to 10 for each 2020 tract, based on population density, urbanization and daily commuting (2020 census and ACS 2016-2020).
+- **Source:** `RUCA-codes-2020-tract.csv` from ers.usda.gov.
+- **Use:** codes 1-3 are urban, 4-6 micropolitan (small cities), 7-10 rural. Micropolitan places are assigned to a week by their story and flagged.
+- **Quirk:** 63 qualifying tracts have no code.
+- **Revision:** ERS revised the product on December 9, 2025, for a 1990 formatting error. The 2020 codes we use were not affected.
+
+## 2020 census tract boundaries, cartographic boundary file 1:500,000 (U.S. Census Bureau)
+
+- **What:** `cb_2020_us_tract_500k`. Used only to find tracts that share a border.
+- **Rule:** two tracts are neighbors if they share more than 50 meters of edge, in an equal-area projection (EPSG 5070). Corner touches don't count.
+- **Caveat:** the generalized lines are fine for adjacency. They are not used to measure area.
+
+## NHGIS tract time series and tract crosswalk, 1970-2020 (IPUMS NHGIS, University of Minnesota)
+
+- **Source:** extract nhgis0010, pulled by `scripts/70_fetch_nhgis.py` with the IPUMS API.
+- **Nominal tract series, 1970-2000 decennial:**
+  - Tables: total population (AV0, also 2010 and 2020), race (B18), persons below poverty (CL6) and poverty universe (AX6), median household income (B79, from 1980), median family income (AB2, from 1980), labor force and employment status (B84), and households by income (BS7).
+  - "Nominal" means each year is on its own tract lines, linked by tract code only. A code match does not prove the same area, so finalists get a map overlay.
+- **Standardized to 2010 tracts, 1990-2020:** population (CL8), race (CM1), occupancy (CM9), tenure (CN1). NHGIS standardized tables at tract level start in 1990 and cover only these census short-form items. Income, poverty and jobs are available only on each year's own tract lines.
+- **Tract maps:** 1970, 1980 and 1990 tracts on the 2008 TIGER/Line basis, and 2010 tracts.
+- **1990-2010 tract crosswalk** (`nhgis_tr1990_tr2010`): weights built from census blocks, giving the share of each 1990 tract's population that falls in each 2010 tract. NHGIS has no 1970 or 1980 tract crosswalk.
+- **Coverage gap:** in 1970 only metro areas had tracts. All counties were tracted by 1990. Most rural tracts therefore start in 1990, and rural history before that comes from county data.
+- **Citation:** Manson, Schroeder, Van Riper, Knowles, Kugler, Roberts and Ruggles. IPUMS NHGIS. Free for research with citation.
+
+## Spotlight screen (`scripts/72_screen.py`)
+
+- **Qualifying tract:** bottom 20% nationally on median household income and on the health index (ranks among the 77,708 published tracts; Kentucky and Pennsylvania placed as described above).
+- **Neighborhood:** qualifying tracts that share a border, grouped. Groups over 8 tracts are split by starting at the deepest tract and adding the deepest neighbors until there are 8.
+- **Depth:** the population-weighted average of the income and health percentiles. Lower is deeper.
+- **Boundary stability, 1990 to 2020:**
+  - The neighborhood's 2020 tracts are matched to 2010 tracts (each 2010 tract with half or more of its land in the neighborhood). Those are matched to 1990 tracts by population weight.
+  - Score: the smaller of (a) the share of the neighborhood's 1990 population that comes from 1990 tracts at least 80% inside it, and (b) the share of those tracts' population that is inside it. This is multiplied by the 2010-2020 land match.
+  - The neighborhood passes at 0.80.
+  - Population loss, demolition or turnover never disqualify a place. Only boundaries do.
+  - When the neighborhood is one piece of a larger old tract, it can be compared on the old tract's outline instead. That's a judgment call, recorded per spotlight.
+- **Candidate list:** the deepest neighborhoods of at least 1,500 people.
+  - 60 urban, at most 3 per urban area.
+  - 45 rural (at most 4 per state) and 15 micropolitan (at most 2 per state).
+  - Plus the seed places Eric named, found by the nearest neighborhood to a point.
+- **Output:** `analysis/spotlight/clusters.csv` (all 4,053 neighborhoods) and `candidates.csv` (131).

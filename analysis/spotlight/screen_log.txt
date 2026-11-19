@@ -1,0 +1,23 @@
+KY/PA tracts added from PLACES 2024: 4,627 (KY 1,284, PA 3,343)
+tracts screened: 82,335; qualifying (bottom 20% on both): 11,207
+qualifying by kind: {'urban': 7416, 'rural': 2075, 'micro': 1653, 'unknown': 63}
+neighborhoods (clusters of adjacent qualifying tracts, max 8): 4,053 from 2,709 connected groups
+1990 population for crosswalk weights: loaded
+oldest tract year (all clusters): {'1990': 1518, '1970': 1124, '': 844, '1980': 567}
+clusters by kind: {'urban': 2615, 'rural': 789, 'micro': 649} | stable share: 0.643
+seed West Dayton, OH: cluster 999 1.4 km away, 8 tracts, depth 1.9, stability 0.883
+seed Roxbury, Boston: cluster 2510 1.1 km away, 2 tracts, depth 7.4, stability 1.0
+seed Mattapan, Boston: cluster 3082 0.6 km away, 1 tracts, depth 15.5, stability 0.981
+seed Dorchester, Boston: cluster 2510 1.5 km away, 2 tracts, depth 7.4, stability 1.0
+seed Englewood, Chicago: cluster 665 0.8 km away, 8 tracts, depth 2.7, stability 0.997
+seed Woodlawn, Chicago: cluster 2223 1.4 km away, 5 tracts, depth 6.7, stability 1.0
+seed Garfield Park, Chicago: cluster 683 0.4 km away, 1 tracts, depth 13.9, stability 1.0
+seed Compton, CA: cluster 3296 0.5 km away, 1 tracts, depth 16.1, stability 0.0
+seed Watts, Los Angeles: cluster 3299 1.0 km away, 1 tracts, depth 5.1, stability 0.588
+seed Clarksdale, MS (Delta): cluster 56 1.9 km away, 5 tracts, depth 6.3, stability 1.0
+seed Sunflower County, MS (Delta): cluster 92 11.6 km away, 7 tracts, depth 8.6, stability 0.763
+seed Belzoni, MS (Delta): cluster 112 1.0 km away, 1 tracts, depth 8.0, stability 0.995
+seed Welch, McDowell County, WV (coal): cluster 543 8.8 km away, 8 tracts, depth 2.1, stability 0.999
+seed Pine Ridge, SD: cluster 1777 74.1 km away, 7 tracts, depth 5.7, stability 0.882
+seed Harlan County, KY (coal): cluster 538 12.0 km away, 8 tracts, depth 2.8, stability 0.984
+candidates: 131 {'urban': 67, 'rural': 48, 'micro': 16} | stable: 101
