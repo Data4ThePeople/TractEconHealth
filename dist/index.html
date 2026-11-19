@@ -29,7 +29,7 @@ canvas{display:block;width:100%;height:auto;touch-action:none}
 .stat{color:var(--muted);font-size:.86rem;margin-top:6px;min-height:1.3em}
 .legend .n{color:var(--dot);font-weight:600}.legend .t{color:var(--trend);font-weight:600}.legend .b{color:var(--muted)}
 #tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:6px 8px;font-size:.82rem;box-shadow:0 2px 8px rgba(0,0,0,.15);display:none;max-width:260px}
-.mob{display:none}
+.bar label{align-items:center;max-width:100%;white-space:nowrap}.bar label select{min-width:0;flex:0 1 auto}.bar .lt{flex:none;margin-right:6px}.mob{display:none}
 details{margin-top:14px;font-size:.86rem;color:var(--muted)}
 details summary{cursor:pointer}
 .credit{margin-top:10px;font-size:.8rem;color:var(--muted)}
@@ -43,8 +43,8 @@ details summary{cursor:pointer}
   <div class="bar">
     <label>Show <select id="geo"><option value="tract">Census tracts</option><option value="county">Counties</option></select></label>
     <label>Area <select id="state"></select></label>
-    <label class="mob">Economic <select id="mx"></select></label>
-    <label class="mob">Health <select id="my"></select></label>
+    <label class="mob"><span class="lt">Economic</span> <select id="mx"></select></label>
+    <label class="mob"><span class="lt">Health</span> <select id="my"></select></label>
   </div>
   <div class="grid">
     <div class="side" id="sx"><h2>Economic measures</h2></div>
