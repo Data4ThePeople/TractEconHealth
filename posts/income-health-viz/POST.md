@@ -87,6 +87,11 @@ The same pattern holds in each state with enough tracts to test. Rank correlatio
 
 At the county level, income tracks life expectancy, which comes from death records rather than a model, at a rank correlation of 0.73. Drug overdose deaths (-0.25) and suicides (-0.31) follow county income much more loosely.
 
+The chart below shows that county check. Each dot is a county, and the line follows the middle county as income rises: from 70.7 years in the lowest-income group of counties to 80.8 years in the highest. It climbs fastest at the low end and keeps climbing at the top, the same shape as the health index.
+
+![Scatter plot of 2,869 U.S. counties, median household income across and life expectancy up. Dots rise from lower left to upper right. A yellow line through the middle county in each of 20 equal-size income groups climbs from 70.7 years at about $41,000 to 80.8 years at about $113,000, steeper at the low end. Rank correlation 0.73. One outlier, Oliver County, North Dakota, shows 107.9 years from very few deaths.](images/01-county-life-expectancy.png)
+*Life expectancy, 2021-2023: County Health Rankings & Roadmaps, March 2026 release. Income: U.S. Census Bureau, American Community Survey 2020-2024.*
+
 ## What this page is
 
 ::: spacer 5px
