@@ -441,3 +441,12 @@ Census counts from each era are added up onto the same neighborhood. Rates are c
 ### Final tract sets (`scripts/75_final_sets.py`, `analysis/spotlight/final_sets.csv`, `history_final.csv`, `tables.md`)
 
 After deep research, each finalist uses a cleaned tract list instead of its screen cluster. Tracts are dropped where a prison, jail, shelter, college or single public housing complex would drive the numbers, or where a tract belongs to a different neighborhood, city, state or nation. A tract may be added where it is the other half of a split tract, so that the outline matches older tracts (Butte, Clarksville), or where the screen cluster had to be rebuilt (Watts, Pine Ridge, both Owsley County tracts, and Nubian Square in Boston). Stability is scored with the screen's rule. `74_history.py --file final_sets.csv --out history_final.csv` rebuilds the then-and-now tables on these sets, and `76_spotlight_tables.py` formats them for `SPOTLIGHTS.md`. Each set's current income and health rank is the median tract's national percentile.
+
+### Source grading (`scripts/77_source_quality.py`, `analysis/spotlight/source_quality.csv`)
+
+Each finalist's timeline entry is graded by its best source link:
+- **A:** government, court, law, academic, university archive, Mapping Inequality.
+- **B:** state history encyclopedias, newspapers, public radio, named nonprofits.
+- **Weak:** Wikipedia, blogs, wikis, or no link.
+
+An entry that points to a source "above" takes that source's grade. Finalists were ranked partly on the share of entries graded A or B, because each line of the published history will link to its source.
