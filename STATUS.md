@@ -5,15 +5,15 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: none yet
-Step: 1
-Since: 2026-11-14
+Post: income-health-viz
+Step: 2a
+Since: 2026-11-19
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
-| 1  | Exploration and analysis | | |
+| 1  | Exploration and analysis | 2026-11-19 | |
 | 2a | Draft with brackets resolved | | |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
@@ -39,3 +39,4 @@ None.
 - 2026-11-15 Source coverage check done (DATASETS.md). Literature notes in analysis/literature.md. Eric chose median household income as the headline economic measure and asked for a tract/county switch; county view built from ACS county tables, PLACES 2025 county release and County Health Rankings counted deaths. Findings rewritten around income. Next: Claude's tie-out, then independent tie-out.
 - 2026-11-15 Claude's tie-out done (TIEOUT.md, scripts/50_tieout.py): all built data and numbers match after fixes to one spread figure, the income margin of error (annotation codes had been counted) and nine wording items. ACS release date filled in (January 29, 2026). Next: independent tie-out.
 - 2026-11-15 Independent tie-out done: all data values, counts and statistics match. Fixed its display and wording findings (county name encoding, Census caps on income and rent share, median line, eight wording items, method lines clarified). Next: Eric confirms Step 1.
+- 2026-11-19 Step 1 confirmed by Eric. Step 2a opened: slug income-health-viz, standard visualization post (layout of disease-vaccination-viz and substance-use-treatment-viz). Eric drafts Purpose; Claude drafted the other sections.
