@@ -30,8 +30,13 @@ Found by a search agent that opened each source. Numbers are as reported by the 
   years (men), 10.1 (women). "There was no dividing line above or below which higher income was not associated
   with higher life expectancy." Concave in dollars.
 - **Dwyer-Lindgren L et al. JAMA Intern Med 2017;177(7):1003-1011.** doi:10.1001/jamainternmed.2017.0918.
-  Counties: socioeconomic and race factors explain 60% of variation in life expectancy. Single-variable R²:
-  log median household income 0.41, poverty share 0.47 (**unconfirmed**: read from a tool summary of Table 1).
+  Counties, life expectancy at birth in 2009. Confirmed November 19, 2026 from the JAMA full text (abstract,
+  Methods, Tables 1 and 2): "Socioeconomic and race/ethnicity factors, behavioral and metabolic risk factors, and
+  health care factors explained 60%, 74%, and 27% of county-level variation in life expectancy, respectively";
+  combined, 74%. The socioeconomic and race/ethnicity group is poverty share, log median household income, high
+  school and college graduates, unemployment, and Black, American Indian/Alaska Native/Native Hawaiian and Hispanic
+  population shares. Single-variable R² (Table 1): log median household income 0.41, poverty share 0.47. Most of
+  the socioeconomic association runs through behavioral and metabolic risk factors.
 
 ## Tract-level, 500 Cities
 
