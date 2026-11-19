@@ -64,10 +64,10 @@ The chart below counts the people living inside today's four tract lines in each
 ![Line chart of the number of people living in North Birmingham's four census tracts: 29,946 in 1980, 21,071 in 1990, 15,545 in 2000, 11,467 in 2010 and 9,820 in 2020-2024.](images/02-population.png)
 *Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
 
-In 2010, Mueller Water Products announced that its U.S. Pipe plant in North Birmingham would close by March 31, cutting about 260 jobs ([Mueller Water Products, 2010](https://ir.muellerwaterproducts.com/press-releases/archive/02-03-2010); [EPA TRI](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35207NTDST30003/tri_release_qty/JSON)). The chart below shows the share of people in poverty and the share of homes standing empty over the same decades.
+In 2010, Mueller Water Products announced that its U.S. Pipe plant in North Birmingham would close by March 31, cutting about 260 jobs ([Mueller Water Products, 2010](https://ir.muellerwaterproducts.com/press-releases/archive/02-03-2010); [EPA TRI](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35207NTDST30003/tri_release_qty/JSON)). The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty over the same decades. About three in four people here have low incomes, compared with 28% nationwide.
 
-![Line chart of two shares in North Birmingham. People in poverty: 41% in 1980, 40% in 1990, 41% in 2000 and 49% in 2020-2024. Homes vacant: 13% in 1990, 15% in 2000, 24% in 2010 and 21% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for North Birmingham. People below 200% of the poverty line: 71% in 1990, 66% in 2000, 71% in 2008-2012 and 74% in 2020-2024. Homes vacant: 13% in 1990, 15% in 2000, 24% in 2010 and 21% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 ## Poison in the yards
 

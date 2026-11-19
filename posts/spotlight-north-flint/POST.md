@@ -66,10 +66,10 @@ The chart below counts the people living inside today's eight tract lines in eac
 ![Line chart of the number of people living in North and East Flint's eight census tracts: 23,592 in 1990, 20,537 in 2000, 16,483 in 2010 and 11,767 in 2020-2024.](images/02-population.png)
 *Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
 
-Over the same years, more people fell into poverty and more homes stood empty. The chart below shows both shares.
+Over the same years, more people here had low incomes and more homes stood empty. The chart below shows the share of people below 200% of the poverty line, which rose from 60% in 1990 to 73% in 2020-2024, and the share of homes vacant.
 
-![Line chart of two shares in North and East Flint. People in poverty: 39% in 1990, 35% in 2000 and 50% in 2020-2024. Homes vacant: 9% in 1990, 14% in 2000, 24% in 2010 and 20% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for North and East Flint. People below 200% of the poverty line: 60% in 1990, 62% in 2000, 71% in 2008-2012 and 73% in 2020-2024. Homes vacant: 9% in 1990, 14% in 2000, 24% in 2010 and 20% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 Vacancy fell after 2010. We think that is mostly because empty houses were torn down, but we have not checked demolition counts by tract. Census and survey vacancy are also measured in different ways.
 

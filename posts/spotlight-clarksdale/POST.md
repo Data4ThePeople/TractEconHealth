@@ -87,10 +87,10 @@ The chart below counts the people living inside today's five tract lines in each
 ![Line chart of the number of people living in Clarksdale's five census tracts: 23,846 in 1990, 22,711 in 2000, 19,395 in 2010 and 15,195 in 2020-2024.](images/02-population.png)
 *Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
 
-Over the same years, the share of homes standing empty rose. Poverty fell from 43% in 1990 but is still far above the U.S. rate of 12%. The chart below shows both shares.
+Over the same years, the share of homes standing empty rose. The share of people with low incomes, meaning below 200% of the poverty line, stayed near 60%, compared with 28% nationwide. The chart below shows both shares.
 
-![Line chart of two shares in Clarksdale. People in poverty: 43% in 1990, 36% in 2000 and 38% in 2020-2024. Homes vacant: 6% in 1990, 7% in 2000, 11% in 2010 and 16% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for Clarksdale. People below 200% of the poverty line: 64% in 1990, 60% in 2000, 64% in 2008-2012 and 62% in 2020-2024. Homes vacant: 6% in 1990, 7% in 2000, 11% in 2010 and 16% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 ## Health
 

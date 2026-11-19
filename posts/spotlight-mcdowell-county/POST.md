@@ -71,10 +71,10 @@ The chart below counts the people living inside today's five tract lines in each
 ![Line chart of the number of people living in the five McDowell County census tracts in this story: 21,885 in 1990, 16,824 in 2000, 13,613 in 2010 and 9,675 in 2020-2024.](images/02-population.png)
 *Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
 
-Over the same years, the share of homes standing empty rose from 16% to 33%. Poverty eased a little but stayed far above the U.S. rate of 12%. The chart below shows both shares.
+Over the same years, the share of homes standing empty rose from 16% to 33%. The share of people with low incomes, meaning below 200% of the poverty line, stayed near two in three. The chart below shows both shares.
 
-![Line chart of two shares in the McDowell County tracts. People in poverty: 38% in 1990, 37% in 2000 and 33% in 2020-2024. Homes vacant: 16% in 1990, 18% in 2000, 18% in 2010 and 33% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for McDowell County tracts. People below 200% of the poverty line: 65% in 1990, 65% in 2000, 65% in 2008-2012 and 67% in 2020-2024. Homes vacant: 16% in 1990, 18% in 2000, 18% in 2010 and 33% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 ## Pills, a prison and a store
 

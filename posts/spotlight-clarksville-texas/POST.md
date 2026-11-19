@@ -73,10 +73,10 @@ The town of Clarksville peaked at 4,917 people in 1980. It had 2,857 in 2020, 42
 
 Enrollment in the Clarksville school district fell from 1,466 in 1990 to 522 in 2022, a drop of 64% ([National Center for Education Statistics, via the Urban Institute](https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2022/?leaid=4814190)).
 
-The chart below shows the share of people in poverty and the share of homes vacant. The vacancy rate rose. The poverty rate fell, but the latest point is the uncertain survey estimate described above.
+The poverty rate alone can miss what is happening here. The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes vacant. About 55% of people in these tracts have low incomes, compared with 28% nationwide, and that share has not moved since 2008-2012. The vacancy rate rose.
 
-![Line chart of two shares in the Clarksville tracts. People in poverty: 29% in 1990, 20% in 2000 and 15% in 2020-2024. Homes vacant: 13% in 1990, 15% in 2000, 21% in 2010 and 23% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for Clarksville tracts. People below 200% of the poverty line: 59% in 1990, 46% in 2000, 55% in 2008-2012 and 55% in 2020-2024. Homes vacant: 13% in 1990, 15% in 2000, 21% in 2010 and 23% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 ## The hospital
 

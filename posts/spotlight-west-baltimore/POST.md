@@ -74,10 +74,10 @@ The tracts lost about 19% of their people in the 1970s, the decade the highway w
 
 Starting in the late 1980s, the city, the community group BUILD and the Enterprise Foundation launched a rebuilding effort in Sandtown. It raised more than $130 million through 2000, and almost 600 public housing units in Gilmor Homes were modernized. Researchers who studied it found homeownership rose from under a quarter of families to more than 40% ([The Abell Report, 2013](https://abell.org/wp-content/uploads/2022/02/arn1113.pdf); [Urban Affairs Review, 2015](https://urbanaffairsreview.blogspot.com/2015/11/authors-blog-what-happened-in-sandtown.html)). In 1997, HUD awarded a $31.3 million grant to rebuild Murphy Homes and Julian Gardens ([HUD, 1999](https://archives.hud.gov/news/1999/pr99-182.html)).
 
-The chart below shows the share of people in poverty and the share of homes standing empty over the same decades.
+The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty over the same decades. The low-income share held near 70% from 1990 to 2008-2012, then fell to 62% in 2020-2024. The U.S. share was 28%.
 
-![Line chart of two shares in West Baltimore. People in poverty: 41% in 1970, 48% in 1980, 49% in 1990, 42% in 2000 and 38% in 2020-2024. Homes vacant: 18% in 1990, 24% in 2000, 30% in 2010 and 24% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for West Baltimore. People below 200% of the poverty line: 71% in 1990, 70% in 2000, 71% in 2008-2012 and 62% in 2020-2024. Homes vacant: 18% in 1990, 24% in 2000, 30% in 2010 and 24% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 ## A court finding
 

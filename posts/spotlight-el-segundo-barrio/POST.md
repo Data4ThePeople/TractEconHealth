@@ -88,10 +88,10 @@ Clothing jobs in El Paso County fell from 16,150 in 1990 to 1,310 in 2019, a dro
 
 These are county jobs. We do not know how many were held by people who lived in these tracts. The National Register nomination says many garment workers crossed daily from Juárez.
 
-The chart below shows the share of people in poverty and the share of homes standing empty in the six tracts.
+The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty in the six tracts. About 83% of people here have low incomes, compared with 28% nationwide.
 
-![Line chart of two shares in the six tracts. People in poverty: 51% in 1970, 52% in 1980, 64% in 1990, 56% in 2000 and 58% in 2020-2024. Homes vacant: 8% in 1990, 8% in 2000, 6% in 2010 and 14% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for six tracts. People below 200% of the poverty line: 90% in 1990, 85% in 2000, 84% in 2008-2012 and 83% in 2020-2024. Homes vacant: 8% in 1990, 8% in 2000, 6% in 2010 and 14% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 Poverty was already above 50% in 1970, the first year in our data. It peaked in 1990, before NAFTA, and was lower in 2000, while clothing jobs were falling fastest. The city's 2008 plan for Chamizal, using 2000 census figures, put 58.1% of Chamizal residents below the poverty line, compared with 22.2% for El Paso as a whole ([City of El Paso, Chamizal plan, 2008, p. 14](https://www.elpasotexas.gov/assets/Documents/CoEP/Community-Development/Neighborhood-Associations/Neighborhood-Revitalization/CHAMIZAL-NRS.pdf)).
 

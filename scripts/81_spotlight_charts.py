@@ -7,7 +7,8 @@ Rural picks:
   01b-county-population.png  county population, 1900-2020 (Census counts: NBER cencounts 1900-1990; Census API 2000-2020)
 All picks:
   02-population.png       people living in the tracts, oldest reliable year to 2020-2024 (history_final.csv)
-  03-poverty-vacancy.png  poverty rate and share of homes vacant over time (history_final.csv)
+  03-low-income-vacancy.png  share below 200% of the poverty line (below200.csv) and share of homes vacant, 1990 to 2020-2024,
+                          with the U.S. share below 200% as a dashed reference
   04-overdose.png         county drug overdose death rate vs. the middle U.S. county, 2003-2021 (CDC NCHS model rates), or,
                           where overdoses are not part of the story (health4 in CFG), one health chart that is:
                           04-life-expectancy.png (county vs. state vs. U.S., CHR) or 04-<measure>.png (PLACES, neighborhood vs. county, state, U.S.)
@@ -56,6 +57,7 @@ G20 = gpd.read_file(RAW / "tiger" / "cb_2020_us_tract_500k.shp").set_index("GEOI
 OD = pd.read_parquet(RAW / "cdc" / "overdose_county_model.parquet")
 OD["fips"] = OD.fips.astype(str).str.zfill(5); OD["year"] = OD.year.astype(int); OD["r"] = pd.to_numeric(OD.model_based_death_rate, errors="coerce")
 MID = OD.groupby("year").r.median()
+B200 = pd.read_csv(ROOT / "analysis/spotlight/below200.csv", dtype={"area": str})
 
 
 def axes_style(ax):
@@ -180,43 +182,45 @@ def build(cid):
     fig.savefig(out / "02-population.png"); plt.close(fig)
     info["pop"] = dict(zip(pop.year, pop.value.round(0))); info["pop_change"] = round(ch, 1)
 
-    # ---------- 03 poverty and vacancy ----------
-    fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.83, top=0.8, bottom=0.16)
-    top, xs, got, ends, series = 0, set(), {}, {}, {}
-    for m, col, lab in [("poverty_rate", MAGENTA, "In poverty"), ("vacancy_rate", YELLOW, "Homes vacant")]:
-        d = h[h.measure == m].assign(x=lambda d: d.year.map(YX)).dropna(subset=["x"]).sort_values("x")
-        got[m] = dict(zip(d.year, d.value.round(1)))
-        ax.plot(d.x, d.value, color=col, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
-        series[m] = d
-        ends[m] = (d.x.iloc[-1], d.value.iloc[-1], lab)
-        top = max(top, d.value.max()); xs |= set(d.x)
-    ax.set_ylim(0, max(55, np.ceil(top / 10) * 10 + 10)); ax.set_xlim(min(xs) - 4, 2026); xlabels(ax, sorted(xs))
-    other = {"poverty_rate": "vacancy_rate", "vacancy_rate": "poverty_rate"}
-    for m, d in series.items():  # value labels above, unless the other line is close and higher at that year
-        o = series[other[m]].set_index("x").value
-        for x, v in zip(d.x, d.value):
-            below = x in o.index and abs(o[x] - v) < 6 and o[x] >= v and m == "vacancy_rate"
-            ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, -17 if below else 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
-    (xp, vp, lp), (xv, vv, lv) = ends["poverty_rate"], ends["vacancy_rate"]
-    sep = 0 if abs(vp - vv) >= 4 else 9
-    for (x, v, l), o in [((xp, vp, lp), sep if vp >= vv else -sep), ((xv, vv, lv), -sep if vp >= vv else sep)]:
-        ax.annotate(l, (x, v), xytext=(14, o), textcoords="offset points", va="center", color=INK, fontsize=10.5)
+    # ---------- 03 low income and vacancy ----------
+    # Low income = below 200% of the poverty line (below200.csv: NHGIS C20 1990-2000, ACS C17002 after); U.S. as a dashed reference.
+    LX = {"1990": 1990, "2000": 2000, "2008-2012": 2010, "2010": 2010, "2020-2024": 2022}
+    lw = B200[B200.area == cid].assign(x=lambda d: d.year.map(LX)).sort_values("x")
+    us = B200[B200.area == "US"].assign(x=lambda d: d.year.map(LX)).sort_values("x")
+    vc_ = h[(h.measure == "vacancy_rate") & (h.year != "2008-2012")].assign(x=lambda d: d.year.map(LX)).dropna(subset=["x"]).sort_values("x")
+    fig, ax = plt.subplots(figsize=(10, 6.0)); fig.subplots_adjust(left=0.08, right=0.8, top=0.72, bottom=0.15)
+    ax.plot(lw.x, lw.value, color=MAGENTA, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
+    ax.plot(vc_.x, vc_.value, color=YELLOW, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
+    ax.plot(us.x, us.value, color=INK, lw=2, ls="--")
+    usv = us.set_index("x").value
+    for x, v in zip(lw.x, lw.value):
+        ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
+    for x, v in zip(vc_.x, vc_.value):  # below the marker when the U.S. line is close above it
+        dn = x in usv.index and 0 <= usv[x] - v < 7
+        ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, -17 if dn else 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
+    top = max(100, 0) if lw.value.max() > 80 else max(lw.value.max(), 60) + 10
+    ax.set_ylim(0, min(100, np.ceil(top / 10) * 10)); ax.set_xlim(1986, 2026)
+    ax.set_xticks([1990, 2000, 2010, 2022]); ax.set_xticklabels(["1990", "2000", "2010", "2020-24"])
+    # end labels, pushed apart so they never overlap
+    ends = sorted([(lw.value.iloc[-1], "Low income"), (vc_.value.iloc[-1], "Homes vacant"), (us.value.iloc[-1], "U.S., low income")])
+    gapu = ax.get_ylim()[1] * 0.06; pos = []
+    for v, l in ends:
+        y = v if not pos or v - pos[-1] >= gapu else pos[-1] + gapu; pos.append(y)
+        ax.annotate(l, (2022, v), xytext=(2026.5, y), textcoords="data", va="center", color=INK, fontsize=10.5, annotation_clip=False)
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); axes_style(ax)
-    ax.legend(handles=[Line2D([], [], color=MAGENTA, lw=2, marker="o", label="People in poverty"),
-                       Line2D([], [], color=YELLOW, lw=2, marker="o", label="Homes vacant")],
-              loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5)
-    pv, vc = got["poverty_rate"], got["vacancy_rate"]
-    pv_up = pv["2020-2024"] - list(pv.values())[0] >= 3; vc_up = vc["2020-2024"] - list(vc.values())[0] >= 3
-    pv_down = list(pv.values())[0] - pv["2020-2024"] >= 3
-    t = ("More homes empty" if pv_down and vc_up else
-         "More people in poverty, more homes empty" if pv_up and vc_up else
-         "More homes empty, and poverty still high" if vc_up else
-         "Poverty is still high" if not pv_up else "More people in poverty")
-    early = "vacancy before 1990 is not in our tract data" if min(xs) < 1990 else "our tract data starts in 1990"
-    titleblock(fig, t, f"Share of people below the poverty line and share of homes vacant, {C['name']}. The 2010 census did not\nask about income, and {early}.")
-    credit(fig, f"Source: NHGIS (IPUMS) decennial census, {int(min(xs))}-2010; ACS 2020-2024 five-year estimates.")
-    fig.savefig(out / "03-poverty-vacancy.png"); plt.close(fig)
-    info.update(poverty=pv, vacancy=vc)
+    ax.legend(handles=[Line2D([], [], color=MAGENTA, lw=2, marker="o", label="People below 200% of the poverty line"),
+                       Line2D([], [], color=YELLOW, lw=2, marker="o", label="Homes vacant"),
+                       Line2D([], [], color=INK, lw=2, ls="--", label="U.S., below 200% of the poverty line")],
+              loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5, ncol=3, bbox_to_anchor=(0, 1.11))
+    l0, l1 = lw.value.iloc[0], lw.value.iloc[-1]; v0, v1 = vc_.value.iloc[0], vc_.value.iloc[-1]
+    t = ("More people with low incomes, more homes empty" if l1 - l0 >= 5 and v1 - v0 >= 3 else
+         "Fewer people with low incomes than in 1990, but more homes empty" if l0 - l1 >= 5 and v1 - v0 >= 3 else
+         "Most people here have low incomes, and more homes are empty" if v1 - v0 >= 3 else
+         "Most people here have low incomes")
+    titleblock(fig, t, f"Share of people below 200% of the poverty line and share of homes vacant, {C['name']}, with the U.S. share\nbelow 200% for comparison. Income for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census.")
+    credit(fig, "Source: NHGIS (IPUMS) decennial census, 1990-2010; ACS 2008-2012 and 2020-2024 five-year estimates.")
+    fig.savefig(out / "03-low-income-vacancy.png"); plt.close(fig)
+    info.update(low_income=dict(zip(lw.year, lw.value.round(1))), vacancy=dict(zip(vc_.year, vc_.value.round(1))))
 
     if C.get("health4"):
         health_bars(C, tracts, out, info); print(cid, C["slug"], info); return

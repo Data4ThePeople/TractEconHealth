@@ -71,10 +71,10 @@ The county's two tracts make up the whole county, so the next two charts show th
 ![Line chart of the number of people living in Owsley County's two census tracts: 5,036 in 1990, 4,858 in 2000, 4,755 in 2010 and 3,971 in 2020-2024.](images/02-population.png)
 *2020-2024 is a five-year survey estimate.*
 
-The chart below shows the share of people in poverty and the share of homes vacant. Poverty has fallen since 1990 but is still far above the U.S. rate of 12%, and more homes stand empty.
+The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes vacant. Poverty alone has fallen since 1990, but about 70% of people still have low incomes, and more homes stand empty.
 
-![Line chart of two shares in Owsley County. People in poverty: 52% in 1990, 45% in 2000 and 36% in 2020-2024. Homes vacant: 14% in 1990, 16% in 2000, 18% in 2010 and 24% in 2020-2024.](images/03-poverty-vacancy.png)
-*The 2010 census did not ask about income, so poverty has no 2010 point.*
+![Line chart of three shares for Owsley County. People below 200% of the poverty line: 73% in 1990, 67% in 2000, 68% in 2008-2012 and 70% in 2020-2024. Homes vacant: 14% in 1990, 16% in 2000, 18% in 2010 and 24% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
 ## Health
 
