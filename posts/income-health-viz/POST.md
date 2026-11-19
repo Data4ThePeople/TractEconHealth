@@ -48,7 +48,7 @@ One warning before you dig in. The health numbers are CDC estimates, and CDC use
 If income and health move together this closely, it is fair to ask whether decisions about where jobs and investment go should be made with health in view. That is the question we raised for Ohio. This chart lets anyone ask it of their own state.
 
 ::: blurb Read this first
-The health numbers are CDC model estimates, not surveys of each neighborhood. CDC builds them partly from each area's age, sex, race, education and poverty, so part of the link between a place's income and its health estimate is built into the estimate itself. Counts of deaths at the county level, which are not modeled, are the check on that. The chart shows which places have both conditions. It does not show that one causes the other.
+The health numbers are CDC model estimates, not surveys of each neighborhood. CDC builds them partly from each area's age, sex, race, education and poverty, so part of the link between a place's income and its health estimate is built into the estimate itself. Within a county, differences between tracts come only from who lives there and from tract poverty, not from surveying each tract. Life expectancy for counties, which comes from death records rather than a model, is the check on that. Income tracks it closely too: the middle county in the lowest-income fifth of counties has a life expectancy of 71.8 years, against 78.8 in the highest-income fifth. The chart shows which places have both conditions. It does not show that one causes the other.
 :::
 
 ::: spacer
