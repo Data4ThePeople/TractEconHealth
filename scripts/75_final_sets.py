@@ -6,6 +6,8 @@ needs it. Rebuilt or merged sets:
   U062   Watts rebuilt from 8 tracts (Jordan Downs and Nickerson Gardens tracts left out)
   U062X  the same without tract 2431 (Imperial Courts is about a third of its homes), as a check
   R004   both Owsley County tracts, so the tracts equal the county and match county series
+  U027   North St. Louis, plus The Ville (1113) and Carr Square/Pruitt-Igoe (1275), which pass the screen on their own
+  U039   West Baltimore, plus tract 1502 (Presbury St), which passes the screen on its own
   BOS_NUBIAN  Roxbury tracts 803 and 804.01 (Nubian Square), the tracts in Boston's life expectancy gap reporting
 Backups with no deep research keep their screen tracts.
 Stability and the 2010-2020 land match use the screen's rules (scripts/72_screen.py).
@@ -26,6 +28,9 @@ cand = pd.read_csv(OUT / "candidates.csv", dtype={"tracts": str}).set_index("can
 sets = {k: v["keep_tracts"] for k, v in deep.items()}
 sets["U062X"] = [t for t in sets["U062"] if t != "06037243100"]
 sets["R004"] = ["21189930100", "21189930200"]
+# redlining candidates: adjacent tracts that pass the screen on their own and hold the places the story is about
+sets["U027"] = sets["U027"] + ["29510111300", "29510127500"]   # The Ville and Homer G. Phillips; Carr Square and the Pruitt-Igoe site
+sets["U039"] = sets["U039"] + ["24510150200"]                  # Sandtown block of Presbury St (Freddie Gray arrest site)
 sets.setdefault("BOS_NUBIAN", ["25025080300", "25025080401"])
 BACKUP = ["U043", "U039", "U027", "U017", "U032", "U063", "U011", "U020", "R015", "R019", "R027", "R021", "R035", "R047"]
 for b in BACKUP: sets.setdefault(b, cand.loc[b, "tracts"].split(";"))

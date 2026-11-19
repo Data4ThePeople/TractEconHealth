@@ -1,8 +1,8 @@
 # Community spotlight series: the top 10 for approval
 
-Step 1 working file, 2026-11-19. Approve or reject each pick by number. Backups are lettered A-I.
+Step 1 working file, 2026-11-19. Approve or reject each pick by number. Backups are lettered A-K.
 
-**Revised for source quality.** Each pick's timeline will be linked line by line in the post, so finalists were re-ranked on how well their history is sourced (table at the end). Englewood, New Orleans and Rocky Ford moved to backups. El Paso, Flint and Clarksville moved up.
+**Revised for source quality.** Each pick's timeline will be linked line by line in the post, so finalists were re-ranked on how well their history is sourced (table at the end). Englewood, New Orleans and Rocky Ford moved to backups. El Paso, Flint and Clarksville moved up. Then every pick got a sourcing pass that replaced Wikipedia citations with the records behind them. Three redlining candidates were researched with the same standard, and West Baltimore replaced Milwaukee.
 
 **How these were found.**
 - **Screen:** 4,053 neighborhoods (clusters of adjacent census tracts) sit in the bottom 20% nationally on both median household income and our CDC health index. From those, we screened 131 candidates: the deepest in each state, plus the seeds you named.
@@ -97,42 +97,45 @@ County life expectancy (Jefferson County): 72.7 years.
 
 **Caveat:** the official health studies cut against a simple "pollution caused it" story. ATSDR found current air exposures unlikely to cause harm. The county found 2000-2009 death rates from cancer, asthma and COPD no different from the rest of the county. The story should present this plainly.
 
-### 3. North Side Milwaukee, ZIP 53206 (U042)
+### 3. West Baltimore: Sandtown-Winchester, Harlem Park, Upton and Poppleton (U039)
 
 **Tracts:**
-- Four tracts: 55079004600, 55079004700, 55079006500 and 55079008800.
-- **Dropped:** four tracts that are not in ZIP 53206.
+- Nine tracts: 24510150100, 24510150200, 24510160100, 24510160300, 24510160400, 24510170200, 24510170300, 24510190100 and 24510280600.
+- Tract 1502 (the Presbury Street blocks) was added; it passes the screen on its own.
 
-**Where it ranks today:** income percentile 1.3; health percentile 1.1.
+**Where it ranks today:** income percentile 1.0; health percentile 2.7.
 
-**Sources:** 18 of 20 timeline entries rest on primary or scholarly sources (7) or established reference and news (11); 2 rest only on Wikipedia or a weak source.
+**Sources:** 16 of 16 timeline entries rest on primary or scholarly sources (14) or established news (2); 5 items still need a pull.
 
-**Summary.** This is the jobs-and-prison story.
-- **1930s:** the area was white and working class, and was graded "declining" (mostly C, not D).
-- **1960s:** freeway clearance in Bronzeville pushed Black families north into it. It went from 72% Black in 1970 to 95% in 1980.
-- **A.O. Smith:** the car frame plant stood inside tract 4700. A.O. Smith sold it to Tower Automotive in 1997. The former A.O. Smith plant went from a reported 10,000 jobs at its height to about 300 before it closed in 2006.
-- **Prison:** UW-Milwaukee researchers later called the ZIP "ground zero" for the imprisonment of Black men in Wisconsin.
+**Summary.** This is the redlining story, and almost every step of it has a public record.
+- **1910:** Baltimore passed the first residential segregation law of any U.S. city. The U.S. Department of Justice's 2016 report on the city's police opens its history with it.
+- **1930s:** in our overlay of the federal mortgage map, 87.5% of the area's land was graded D. Seven of the nine tracts are 98% to 100% D.
+- **Public housing:** a federal court in *Thompson v. HUD* (2005) found that public housing was placed in a segregated way across Baltimore. Its findings name Gilmor Homes, Murphy Homes and the Harlem Park scattered sites, all in this area.
+- **Highway:** the city's own count says 971 homes and 62 businesses were cleared for the US-40 expressway. The road was never connected to the interstate.
+- **1968:** unrest hit these blocks; the record is in a University of Baltimore archive.
+- **2015 and 2016:** Freddie Gray was arrested on Presbury Street in Sandtown and died of injuries in police custody. The next year, the Justice Department found a pattern of unconstitutional stops, searches and arrests by the city's police that fell hardest on Black neighborhoods.
 
-Poverty rose from 20% to 38%, and owners fell from 43% to 31% after 1990.
+The area has 59% fewer people than in 1970. City health department figures put life expectancy 4 to 5 years below the city's.
 
-**Main causes:** freeway displacement; a factory inside the neighborhood closing; mass incarceration.
+**Main causes:** segregation by law; redlining; segregated public housing; highway clearance; policing.
 
 | Measure | 1970 | 1980 | 1990 | 2000 | 2010 | 2020-2024 |
 |---|---:|---:|---:|---:|---:|---:|
-| People | 19,136 | 17,554 | 15,965 | 13,250 | 11,754 | 10,058 |
-| Black (%) | 72 | 95 | 97 | 96 | 95 | 92 |
-| In poverty (%) | 20 | 27 | 40 | 37 |  | 38 |
-| Unemployed (%) | 7 | 14 | 18 | 18 |  | 15 |
-| Homes vacant (%) |  |  | 9 | 12 | 17 | 21 |
-| Owner-occupied (%) |  |  | 43 | 43 | 39 | 31 |
+| People | 46,121 | 37,579 | 35,551 | 25,420 | 22,609 | 18,895 |
+| Black (%) | 99 | 99 | 98 | 97 | 96 | 91 |
+| In poverty (%) | 41 | 48 | 48 | 42 |  | 38 |
+| Unemployed (%) | 8 | 22 | 18 | 21 |  | 13 |
+| Homes vacant (%) |  |  | 18 | 24 | 30 | 24 |
+| Owner-occupied (%) |  |  | 19 | 25 | 25 | 26 |
 
-Life expectancy, 2010-2015 (USALEEP): 71.0 years (U.S. 78.7).
+Life expectancy, 2010-2015 (USALEEP): 68.9 years (U.S. 78.7).
 
-County life expectancy (Milwaukee County): 74.9 years.
+County life expectancy (Baltimore city): 71.4 years.
 
 **Caveats:**
-- The often-repeated claim that 53206 is "the most incarcerated ZIP in America" does not hold up. PolitiFact found it fourth in Wisconsin by rate.
-- The ZIP-level prison figures cover more ground than these four tracts.
+- The health department's neighborhood figures (life expectancy, lead, incarceration) are for areas larger than these tracts.
+- Poverty has eased since 1980 (48% to 38%) while population kept falling.
+- Two key books (Garrett Power on the 1910 law; Antero Pietila on blockbusting) were cited from other sources, not opened; they're on the pull list.
 
 ### 4. El Segundo Barrio and Chamizal, El Paso, Texas (U028)
 
@@ -402,34 +405,25 @@ County life expectancy (Red River County): 70.6 years.
 ## Backups
 
 **Urban**
-- **A. Englewood and Fuller Park, Chicago (7 tracts).**
-  - Why it's here: strong numbers. The neighborhood has 73% fewer people than in 1970, and life expectancy is 68.4. The story: stockyards closing, the Dan Ryan, a shopping street that emptied and four schools closed.
-  - Why it's a backup: 9 of 15 timeline entries rest only on Wikipedia. A sourcing pass could bring it back.
-- **B. Seventh Ward, St. Roch and Desire, New Orleans (6 tracts).**
-  - Why it's here: the layers before Katrina (canal, housing on dump land, homes on a landfill, I-10), with 44% of people gone before the storm.
-  - Why it's a backup: 10 of 15 entries rest on Wikipedia or have no link. The tract outline is also just under our 0.8 rule.
-- **C. Nubian Square, Roxbury, Boston (2 tracts).**
-  - Why it's here: it is the tract in the city's headline life expectancy gap (68.8 vs. 91.6 in Back Bay). 12 of 15 entries are well sourced.
-  - Why it's a backup: about two-thirds of homes are subsidized, and USALEEP puts it at 77.6 years.
-- **D. West Baltimore (U039, 8 tracts).**
-  - Why it's here: 59% fewer people since 1970, and life expectancy is 69.1.
-  - Why it's a backup: it had triage only, so its sources have not been graded.
+- **A. Woodlawn, Chicago (5 tracts).**
+  - Why it's here: the 1928 racial covenant behind *Hansberry v. Lee* (1940) covered exactly two of these tracts, and the Hansberry house at 6140 S. Rhodes is inside them. The 1939 federal map notes quote the Illinois ruling that upheld the covenant. University of Chicago records show it helped pay for the covenant's defense. All five tracts are 75% to 100% grade D. 16 of 16 entries are well sourced.
+  - Why it's a backup: the redlining slot went to Baltimore, whose population loss (59% vs. 52%) and life expectancy gap are larger. The university renewal, transit and Obama Center chapters sit just east of these tracts.
+- **B. North St. Louis: Greater Ville, JeffVanderLou, St. Louis Place, Carr Square (7 tracts).**
+  - Why it's here: the *Shelley v. Kraemer* house (1948) is inside the set. The neighborhood lost 84% of its people since 1970, the largest drop of any candidate. Pruitt-Igoe and Homer G. Phillips Hospital are in the set. 16 of 16 entries are well sourced.
+  - Why it's a backup: it would be a second redlining story. It is the strongest alternative if you would rather tell redlining through the Supreme Court case.
+- **C. North Side Milwaukee, ZIP 53206 (4 tracts).**
+  - Why it's here: the former A.O. Smith frame plant inside the area, and the incarceration research.
+  - Why it's a backup: it moved out to make room for Baltimore. It was rated "declining" (C), not redlined, and its factory chapter overlaps with West Dayton and Flint. 7 of 20 entries are tier A.
+- **D. Englewood and Fuller Park, Chicago.** Strong numbers, but 9 of 15 entries rest on Wikipedia. Not given a sourcing pass.
+- **E. Seventh Ward and Desire, New Orleans.** The layers before Katrina are there, but sources are weak, and the outline is just under our 0.8 rule.
+- **F. Nubian Square, Boston.** The city's headline life expectancy gap. About two-thirds of homes are subsidized.
 
 **Rural**
-- **E. Rocky Ford, Colorado (1 tract).**
-  - Why it's here: the clearest 1980s farm-town story. The sugar plant closed in 1979, the town's ditch water was sold to Aurora and farms dried up.
-  - Why it's a backup: 8 of 17 entries rest on Wikipedia or have no link, and the Aurora sale figures could not be confirmed.
-- **F. Helena-West Helena and Elaine, Arkansas Delta (7 tracts).**
-  - Why it's here: the 1919 Elaine massacre, then the steepest 2000s population loss of any metro or micro area. 12 of 15 entries are well sourced.
-  - Why it's a backup: it would repeat the Delta story.
-- **G. Black Mesa, Navajo Nation, Arizona (5 tracts).**
-  - Why it's here: coal, aquifer and land partition. 14 of 15 entries are well sourced.
-  - Why it's a backup: it would repeat both the tribal and the coal stories.
-- **H. Uptown Butte, Montana (2 tracts).**
-  - Why it's here: a copper company town beside the Berkeley Pit. 13 of 15 entries are well sourced.
-  - Why it's a backup: drawn to match its old tract, it no longer passes the health screen.
-- **I. Harlan County coal camps, Kentucky.**
-  - Why it's a backup: McDowell is deeper and better documented.
+- **G. Rocky Ford, Colorado.** The clearest 1980s farm-town story, but weak sources.
+- **H. Helena-West Helena and Elaine, Arkansas Delta.** It would repeat the Delta story.
+- **I. Black Mesa, Navajo Nation.** It would repeat the tribal and coal stories.
+- **J. Uptown Butte, Montana.** It no longer passes the health screen when drawn to match its old tract.
+- **K. Harlan County, Kentucky.** McDowell is deeper and better documented.
 
 ## Finalists dropped after deep research
 
@@ -451,34 +445,37 @@ Every timeline entry was graded by its best source:
 
 Some Wikipedia entries reflect a shared web search limit the agents ran into, not a lack of records. A sourcing pass can often replace them. Script: `scripts/77_source_quality.py`.
 
-| Finalist | Entries | A | B | Weak only | A or B (%) | Unconfirmed items |
-|---|---:|---:|---:|---:|---:|---:|
-| Clarksville | 15 | 10 | 5 | 0 | 100 | 4 |
-| McDowell County | 16 | 11 | 4 | 1 | 94 | 4 |
-| Black Mesa | 15 | 11 | 3 | 1 | 93 | 8 |
-| Milwaukee 53206 | 20 | 7 | 11 | 2 | 90 | 5 |
-| El Paso | 18 | 14 | 2 | 2 | 89 | 7 |
-| Butte | 15 | 11 | 2 | 2 | 87 | 4 |
-| Owsley County | 15 | 10 | 3 | 2 | 87 | 2 |
-| Grove Hall | 15 | 9 | 3 | 3 | 80 | 7 |
-| North Birmingham | 15 | 7 | 5 | 3 | 80 | 7 |
-| Nubian Square | 15 | 6 | 6 | 3 | 80 | 6 |
-| Helena-Elaine | 15 | 2 | 10 | 3 | 80 | 0 |
-| Central Cleveland | 19 | 14 | 1 | 4 | 79 | 7 |
-| Pine Ridge | 15 | 8 | 3 | 4 | 73 | 8 |
-| Flint | 16 | 10 | 1 | 5 | 69 | 6 |
-| Clarksdale | 15 | 3 | 7 | 5 | 67 | 0 |
-| Rocky Ford | 17 | 5 | 4 | 8 | 53 | 5 |
-| Austin, Ind. | 20 | 10 | 0 | 10 | 50 | 2 |
-| West Dayton | 16 | 6 | 2 | 8 | 50 | 9 |
-| Watts | 15 | 7 | 0 | 8 | 47 | 6 |
-| Englewood/Fuller Park | 15 | 3 | 3 | 9 | 40 | 6 |
-| New Orleans 7th Ward/Desire | 15 | 3 | 2 | 10 | 33 | 6 |
+| Finalist | Entries | A | B | Weak only | Graded | To pull |
+|---|---:|---:|---:|---:|---|---:|
+| West Dayton | 16 | 12 | 4 | 0 | after sourcing pass | 1 |
+| North Birmingham | 15 | 12 | 3 | 0 | after sourcing pass | 6 |
+| Milwaukee 53206 | 20 | 7 | 13 | 0 | after sourcing pass | 6 |
+| Flint | 16 | 16 | 0 | 0 | after sourcing pass | 1 |
+| Owsley County | 15 | 13 | 2 | 0 | after sourcing pass | 1 |
+| Pine Ridge | 15 | 10 | 5 | 0 | after sourcing pass | 1 |
+| Clarksville | 15 | 9 | 6 | 0 | after sourcing pass | 0 |
+| North St. Louis | 16 | 13 | 3 | 0 | after sourcing pass | 5 |
+| West Baltimore | 16 | 14 | 2 | 0 | after sourcing pass | 5 |
+| Woodlawn | 16 | 10 | 6 | 0 | after sourcing pass | 3 |
+| El Paso | 18 | 14 | 3 | 0 | after sourcing pass | 0 |
+| McDowell County | 16 | 11 | 4 | 1 | first pass only |  |
+| Black Mesa | 15 | 11 | 3 | 1 | first pass only |  |
+| Butte | 15 | 11 | 2 | 2 | first pass only |  |
+| Grove Hall | 15 | 9 | 3 | 3 | first pass only |  |
+| Helena-Elaine | 15 | 2 | 10 | 3 | first pass only |  |
+| Nubian Square | 15 | 6 | 6 | 3 | first pass only |  |
+| Central Cleveland | 19 | 14 | 1 | 4 | first pass only |  |
+| Clarksdale | 15 | 3 | 7 | 5 | first pass only |  |
+| Rocky Ford | 17 | 5 | 4 | 8 | first pass only |  |
+| Austin, Ind. | 20 | 10 | 0 | 10 | first pass only |  |
+| Watts | 15 | 7 | 0 | 8 | first pass only |  |
+| Englewood/Fuller Park | 15 | 3 | 3 | 9 | first pass only |  |
+| New Orleans 7th Ward/Desire | 15 | 3 | 2 | 10 | first pass only |  |
 
 ## Gaps across the set
 
 - **Manufacturing town that went dark (rural):** none held up. Austin did not. The factory story is carried by West Dayton and Milwaukee.
-- **Los Angeles and Chicago:** with Watts dropped and Englewood moved to backup on sources, neither city is in the top 10.
+- **Los Angeles and Chicago:** neither is in the top 10. Woodlawn (backup A) is the Chicago option.
 - **Farm town hit in the 1980s:** Clarksville's bank failures (1985-90) fall in the farm crisis years. Rocky Ford is the closer fit but has weaker sources.
 - **Still to do, after you approve the 10:**
   - County series back to 1900 for the rural picks: population, farms, coal jobs, and IHME life expectancy since 1980.
