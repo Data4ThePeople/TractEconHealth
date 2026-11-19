@@ -89,14 +89,14 @@ Link: https://www.data4thepeople.com/p/income-health-viz
 
 ---
 
-## 7. Below the call to action (Eric's text, verbatim)
+## 7. Below the call to action (Eric's text, edits 1-7 accepted)
 
 ```
 Giving your inbox a breather
 
-This relationship is so important, in our view, that we want to spend the next two weeks exploring Americans neighborhoods that, the data says, are suffering the most. What are their stories? How did they end up where they are? What can now do to help?
+This relationship is so important, in our view, that we want to spend the next two weeks exploring the American neighborhoods where, by this data, incomes are lowest and health is poorest. What are their stories? How did they end up where they are? What can we do now to help?
 
-This work will be published over the next two weeks, with Week 1 focused on urban neighborhoods and Week 2 focused on rural neighborhoods. It will be published on data4thepeople.com, as usual. Same bat time, same bat place. The only difference is we will spare your inbox from the play-by-play through the week, opting instead to just send a weekly summary email each Friday. We’ll see how engagement goes with this approach before deciding if we should still with a weekly frequency going forward.
+Week 1 will focus on urban neighborhoods and Week 2 on rural ones. Everything will be on data4thepeople.com, as usual. Same bat time, same bat place. The only difference is we will spare your inbox from the play-by-play through the week, sending just one summary email each Friday instead. We’ll see how engagement goes with this approach before deciding whether to stick with a weekly email going forward.
 
-Have thoughts to share on this? Do we email too much? Not enough (😂)? Reply to this email and let us know! We appreciate you reading our work and are always looking for feedback on how we can get better engagement on these important topics without nagging you so often!
+Have thoughts to share on this? Do we email too much? Not enough (😂)? Reply to this email and let us know! We appreciate you reading our work and are always looking for feedback on how we can get better engagement on these important topics without filling up your inbox!
 ```
