@@ -9,7 +9,7 @@ Post: income-health-viz (paused at 2g; resumes 2026-11-20 morning)
 Step: 2g
 Since: 2026-11-19
 
-Also open: Step 1 for the community spotlight series (10 neighborhoods: 5 urban, 5 rural)
+Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 confirmed 2026-11-19; now in 2a, drafting all 10 from the West Dayton model. Eric expects to reopen Step 1 for chart edits as he reads.
 
 ## Steps
 
@@ -60,4 +60,5 @@ None.
 - 2026-11-19 Sourcing pass back for 8 of 10 (all with zero Wikipedia-only lines). Redlining research back: West Baltimore (14A/2B) replaces Milwaukee at #3; Woodlawn and North St. Louis become backups A and B; Milwaukee backup C. Clarksdale/McDowell sourcing still running.
 - 2026-11-19 Sourcing pass complete for all 10 (results in analysis/spotlight/sourced/). Combined pull list: analysis/spotlight/PULL_LIST.md.
 - 2026-11-19 Eric approved all 10 picks. Key measures table built (78_key_measures.py); own tie-out 88/89 pass, one difference explained (79_spotlight_tieout.py, TIEOUT.md). Independent tie-out agent next, then first post draft (West Dayton) for Eric's comments.
-- 2026-11-19: Independent tie-out back: 270 of 273 values match; 3 Owsley PLACES values differ by about 0.1 (weights). DATASETS.md fit wording fixed to overlap over union. West Dayton draft posted for Eric's comments.
+- 2026-11-19 Independent tie-out back: 270 of 273 values match; 3 Owsley PLACES values differ by about 0.1 (weights). DATASETS.md fit wording fixed to overlap over union. West Dayton draft posted for Eric's comments.
+- 2026-11-19 Spotlight series: Eric confirmed Step 1 and called the West Dayton draft excellent. Drafting the other 9 in the same structure. HHS Good Sam finding: Eric to give the DDN date; US-35 date and count dropped from the post.
