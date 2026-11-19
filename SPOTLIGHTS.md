@@ -110,7 +110,7 @@ County life expectancy (Jefferson County): 72.7 years.
 **Summary.** This is the jobs-and-prison story.
 - **1930s:** the area was white and working class, and was graded "declining" (mostly C, not D).
 - **1960s:** freeway clearance in Bronzeville pushed Black families north into it. It went from 72% Black in 1970 to 95% in 1980.
-- **A.O. Smith:** the car frame plant stood inside tract 4700. It fell from a reported 10,000 jobs to about 300 when it closed in 2006.
+- **A.O. Smith:** the car frame plant stood inside tract 4700. A.O. Smith sold it to Tower Automotive in 1997. The former A.O. Smith plant went from a reported 10,000 jobs at its height to about 300 before it closed in 2006.
 - **Prison:** UW-Milwaukee researchers later called the ZIP "ground zero" for the imprisonment of Black men in Wisconsin.
 
 Poverty rose from 20% to 38%, and owners fell from 43% to 31% after 1990.
