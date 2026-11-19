@@ -145,3 +145,17 @@ with its own code. Its working notes stay outside the repo.
 - The README's rebuild steps (it was not shown the scripts).
 - The page in a real browser. It ran the page's correlation and median-line code in Python instead, and those
   worked as described.
+
+## Numbers added in the post (step 2a)
+
+| Claim | Where | Recomputed | Result |
+|---|---|---|---|
+| 2,869 counties with income and life expectancy; rank correlation 0.73 | chart 01, post | 2,869; 0.733 (`scripts/31_charts.py`, same as `county_results.json`) | match |
+| Middle county, lowest and highest of 20 income groups: 70.7 and 80.8 years, at about $41,000 and $113,000 | box, post, chart 01, alt text | 70.7, 80.8; $41,278, $112,816 | match |
+| Life expectancy steeper at the low end, still rising at the top | post | county bend fit: 0.21 years per $1,000 below about $75,000, 0.07 above | match |
+| Oliver County, N.D.: 1,839 people, 107.9 years, published range 79 to 137 | chart 01 label, alt text | CHR v147 107.92, 78.97 to 136.87; ACS population 1,839 | match |
+| Typical tract obesity 34%, coronary heart disease about 6% | index section | medians 34.1, 6.2 | match |
+| Every tract has all 14 health measures | index section | minimum health_n 14 | match |
+| Dwyer-Lindgren 2017: 60% (socioeconomic and race group), 41% (log income alone), 2009 | box | JAMA full text, abstract and Tables 1-2 | supported |
+| Chetty 2016: life expectancy rises with income at every level; tax records matched to death records | box | `analysis/literature.md` quote: "no dividing line above or below which higher income was not associated with higher life expectancy" | supported |
+

@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: income-health-viz
-Step: 2a
+Step: 2b
 Since: 2026-11-19
 
 ## Steps
@@ -14,7 +14,7 @@ Since: 2026-11-19
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-19 | |
-| 2a | Draft with brackets resolved | | |
+| 2a | Draft with brackets resolved | 2026-11-19 | |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -40,3 +40,4 @@ None.
 - 2026-11-15 Claude's tie-out done (TIEOUT.md, scripts/50_tieout.py): all built data and numbers match after fixes to one spread figure, the income margin of error (annotation codes had been counted) and nine wording items. ACS release date filled in (January 29, 2026). Next: independent tie-out.
 - 2026-11-15 Independent tie-out done: all data values, counts and statistics match. Fixed its display and wording findings (county name encoding, Census caps on income and rent share, median line, eight wording items, method lines clarified). Next: Eric confirms Step 1.
 - 2026-11-19 Step 1 confirmed by Eric. Step 2a opened: slug income-health-viz, standard visualization post (layout of disease-vaccination-viz and substance-use-treatment-viz). Eric drafts Purpose; Claude drafted the other sections.
+- 2026-11-19 Step 2a confirmed by Eric (Purpose drafted by Claude at Eric's request; index section, life expectancy chart, Read this first box with checks and outside research; Dwyer-Lindgren 60% confirmed). Step 2b opened: Eric edits POST.md.
