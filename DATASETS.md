@@ -450,3 +450,9 @@ Each finalist's timeline entry is graded by its best source link:
 - **Weak:** Wikipedia, blogs, wikis, or no link.
 
 An entry that points to a source "above" takes that source's grade. Finalists were ranked partly on the share of entries graded A or B, because each line of the published history will link to its source.
+
+### Key measures table (`scripts/78_key_measures.py`, `analysis/spotlight/key_measures.csv`)
+
+Each spotlight post opens with 5 economic and 5 health measures for the neighborhood, next to the U.S. value.
+- **Economic (ACS 2020-2024 five-year):** median household income, poverty rate, unemployment rate, households on SNAP, homes vacant. Counts are summed over the pick's tracts and the rate is computed from the sums. The neighborhood's median income is interpolated within the B19001 income bins, the Census Bureau's method for derived medians. The U.S. median is the Bureau's own national figure (B19013).
+- **Health:** life expectancy (USALEEP 2010-2015, tracts weighted by 2010 population, used only where estimates cover at least 80% of the population; otherwise County Health Rankings 2021-2023 for the county, with the U.S. value from the same source), and four CDC PLACES measures: fair or poor health, diabetes, high blood pressure, and frequent mental distress. PLACES values are 2025 crude prevalence, weighted by adult population; Kentucky uses PLACES 2024. The U.S. value is the same weighted average over all PLACES 2025 tracts, which do not include Kentucky or Pennsylvania.

@@ -170,3 +170,18 @@ with its own code. Its working notes stay outside the repo.
 | Fentanyl post is "An Interactive Map" by county | link text | its POST.md title | supported |
 | County life expectancy bend about $75,000; above it rises about 36% as fast | chart 01 label, post, email | county_results.json: k $75,228, slope ratio 0.364 | match |
 | No county tops about $182,000; 2,841 tracts do | post | county max $181,765; tracts above it 2,841 | match |
+
+
+## Community spotlight series: the 10 picks (Step 1)
+
+Script: `scripts/79_spotlight_tieout.py`, output `analysis/spotlight/tieout_spotlight.csv`. Every check recomputes a figure by a second path. 88 of 89 pass.
+
+| Check | Second path | Result |
+|---|---|---|
+| Poverty, unemployment, vacancy in the key measures table (10 picks, 30 values) | ACS 2020-2024 counts from the separate history pull, summed over the same tracts | match, all within 0.05 points |
+| Neighborhood median household income (interpolated from B19001 bins) | Must sit inside the range of its tracts' own published medians | inside for all 9 with tract medians (Owsley's Kentucky tracts are not in the screen file) |
+| Fair or poor health, diabetes, high blood pressure, mental distress (9 picks, 36 values) | Same PLACES values, weighted by ACS total population instead of PLACES adult population | 35 within 1 point. Clarksville fair or poor health 29.4 vs. 30.7: the two tracts differ (36.1 and 23.2), and PLACES counts 2,178 people in tract 9505.02 where the ACS counts 1,692, which shifts the weights. We keep the PLACES adult weights. |
+| Tract life expectancy (9 picks) | USALEEP US_A.CSV read directly, mapped to 2010 tracts, weighted by 2010 population | match, all within 0.05 years |
+| Pine Ridge life expectancy | USALEEP covers 21% of the area's 2010 population, under our 80% rule, so the table uses County Health Rankings for Oglala Lakota County: 58.37 vs. U.S. 77.55 | used county figure, labeled |
+| Population drop: West Dayton 74% since 1970, North Birmingham 67% since 1980, West Baltimore 59% since 1970, El Paso 58% since 1970, Flint 50% since 1990 | Recomputed from tables.md | match, all within 0.5 points |
+| Timeline facts, dates and quotes | Sourcing pass: each entry opened at its source and graded (`analysis/spotlight/sourced/<id>.md`) | about 160 entries, 3 still weak (Clarksdale 2, McDowell 1), pull list in `analysis/spotlight/PULL_LIST.md` |

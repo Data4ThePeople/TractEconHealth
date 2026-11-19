@@ -1,0 +1,90 @@
+cand_id,item,ours,check,tol,ok
+U047,Poverty rate (%),41.6,41.6,0.05,True
+U047,Unemployment rate (%),10.44,10.44,0.05,True
+U047,Homes vacant (%),28.5,28.5,0.05,True
+U047,Median income inside tract range,29572.0,"23,991-39,361",,True
+U047,Fair or poor health (%),41.92,41.93,1.0,True
+U047,Diabetes (%),29.0,29.0,1.0,True
+U047,High blood pressure (%),54.98,54.98,1.0,True
+U047,Frequent mental distress (%),22.59,22.61,1.0,True
+U034,Poverty rate (%),49.35,49.35,0.05,True
+U034,Unemployment rate (%),6.47,6.47,0.05,True
+U034,Homes vacant (%),21.14,21.14,0.05,True
+U034,Median income inside tract range,23859.0,"15,964-31,063",,True
+U034,Fair or poor health (%),43.37,43.99,1.0,True
+U034,Diabetes (%),29.89,29.82,1.0,True
+U034,High blood pressure (%),59.82,59.63,1.0,True
+U034,Frequent mental distress (%),21.96,22.45,1.0,True
+U039,Poverty rate (%),37.5,37.5,0.05,True
+U039,Unemployment rate (%),12.85,12.85,0.05,True
+U039,Homes vacant (%),24.03,24.03,0.05,True
+U039,Median income inside tract range,24798.0,"12,484-48,986",,True
+U039,Fair or poor health (%),38.62,38.73,1.0,True
+U039,Diabetes (%),23.72,23.84,1.0,True
+U039,High blood pressure (%),53.46,53.64,1.0,True
+U039,Frequent mental distress (%),22.69,22.61,1.0,True
+U028,Poverty rate (%),58.18,58.18,0.05,True
+U028,Unemployment rate (%),10.57,10.57,0.05,True
+U028,Homes vacant (%),13.6,13.6,0.05,True
+U028,Median income inside tract range,18350.0,"14,448-24,701",,True
+U028,Fair or poor health (%),55.1,54.77,1.0,True
+U028,Diabetes (%),31.5,31.18,1.0,True
+U028,High blood pressure (%),48.67,48.37,1.0,True
+U028,Frequent mental distress (%),21.99,22.0,1.0,True
+U013,Poverty rate (%),49.5,49.5,0.05,True
+U013,Unemployment rate (%),17.5,17.5,0.05,True
+U013,Homes vacant (%),20.16,20.16,0.05,True
+U013,Median income inside tract range,25346.0,"12,407-31,898",,True
+U013,Fair or poor health (%),39.56,40.05,1.0,True
+U013,Diabetes (%),20.27,20.45,1.0,True
+U013,High blood pressure (%),46.88,47.12,1.0,True
+U013,Frequent mental distress (%),26.05,26.29,1.0,True
+M016,Poverty rate (%),37.75,37.75,0.05,True
+M016,Unemployment rate (%),9.98,9.98,0.05,True
+M016,Homes vacant (%),16.11,16.11,0.05,True
+M016,Median income inside tract range,36578.0,"24,357-42,458",,True
+M016,Fair or poor health (%),35.73,35.7,1.0,True
+M016,Diabetes (%),23.25,23.14,1.0,True
+M016,High blood pressure (%),55.06,54.92,1.0,True
+M016,Frequent mental distress (%),19.86,19.91,1.0,True
+R007,Poverty rate (%),32.93,32.93,0.05,True
+R007,Unemployment rate (%),6.03,6.03,0.05,True
+R007,Homes vacant (%),32.76,32.76,0.05,True
+R007,Median income inside tract range,33337.0,"27,450-41,589",,True
+R007,Fair or poor health (%),39.47,39.21,1.0,True
+R007,Diabetes (%),23.48,23.43,1.0,True
+R007,High blood pressure (%),52.99,53.01,1.0,True
+R007,Frequent mental distress (%),24.78,24.6,1.0,True
+R046,Poverty rate (%),54.73,54.73,0.05,True
+R046,Unemployment rate (%),15.39,15.39,0.05,True
+R046,Homes vacant (%),16.13,16.13,0.05,True
+R046,Median income inside tract range,38678.0,"23,659-82,031",,True
+R046,Fair or poor health (%),39.62,39.62,1.0,True
+R046,Diabetes (%),21.57,21.55,1.0,True
+R046,High blood pressure (%),39.51,39.49,1.0,True
+R046,Frequent mental distress (%),25.27,25.27,1.0,True
+R004,Poverty rate (%),36.15,36.15,0.05,True
+R004,Unemployment rate (%),12.58,12.58,0.05,True
+R004,Homes vacant (%),23.64,23.64,0.05,True
+M014,Poverty rate (%),14.83,14.83,0.05,True
+M014,Unemployment rate (%),4.18,4.18,0.05,True
+M014,Homes vacant (%),23.09,23.09,0.05,True
+M014,Median income inside tract range,37546.0,"34,167-37,875",,True
+M014,Fair or poor health (%),29.44,30.65,1.0,False
+M014,Diabetes (%),19.71,20.23,1.0,True
+M014,High blood pressure (%),48.78,49.18,1.0,True
+M014,Frequent mental distress (%),18.17,18.64,1.0,True
+U047,Life expectancy (USALEEP direct),69.3,69.34,0.05,True
+U034,Life expectancy (USALEEP direct),67.5,67.45,0.05,True
+U039,Life expectancy (USALEEP direct),68.9,68.91,0.05,True
+U028,Life expectancy (USALEEP direct),76.7,76.71,0.05,True
+U013,Life expectancy (USALEEP direct),69.9,69.87,0.05,True
+M016,Life expectancy (USALEEP direct),71.3,71.29,0.05,True
+R007,Life expectancy (USALEEP direct),76.7,76.7,0.05,True
+R004,Life expectancy (USALEEP direct),72.4,72.43,0.05,True
+M014,Life expectancy (USALEEP direct),71.3,71.3,0.05,True
+U047,Population drop since 1970 (%),74.0,73.81,0.5,True
+U034,Population drop since 1980 (%),67.0,67.21,0.5,True
+U039,Population drop since 1970 (%),59.0,59.03,0.5,True
+U028,Population drop since 1970 (%),58.0,57.99,0.5,True
+U013,Population drop since 1990 (%),50.0,50.12,0.5,True
