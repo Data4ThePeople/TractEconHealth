@@ -437,3 +437,7 @@ Census counts from each era are added up onto the same neighborhood. Rates are c
 - **2010 and 2020 census:** counts standardized to 2010 tracts.
 - **ACS:** 2008-2012 on 2010 tracts, and 2020-2024 on the neighborhood's own tracts.
 - **Comparability:** census poverty and labor force questions moved from the long-form census (1970-2000) to the ACS, which is a sample with margins of error. Small neighborhoods carry wide ranges. Before 1980, "Black" means a single race; 2000 and later use Black alone.
+
+### Final tract sets (`scripts/75_final_sets.py`, `analysis/spotlight/final_sets.csv`, `history_final.csv`, `tables.md`)
+
+After deep research, each finalist uses a cleaned tract list instead of its screen cluster. Tracts are dropped where a prison, jail, shelter, college or single public housing complex would drive the numbers, or where a tract belongs to a different neighborhood, city, state or nation. A tract may be added where it is the other half of a split tract, so that the outline matches older tracts (Butte, Clarksville), or where the screen cluster had to be rebuilt (Watts, Pine Ridge, both Owsley County tracts, and Nubian Square in Boston). Stability is scored with the screen's rule. `74_history.py --file final_sets.csv --out history_final.csv` rebuilds the then-and-now tables on these sets, and `76_spotlight_tables.py` formats them for `SPOTLIGHTS.md`. Each set's current income and health rank is the median tract's national percentile.
