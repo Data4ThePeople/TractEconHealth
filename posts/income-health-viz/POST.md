@@ -33,19 +33,19 @@ dividers: false
 
 ::: spacer 5px
 
-<!-- Purpose: Claude's draft, November 19, for Eric to edit or replace. -->
+On Wednesday, in [Where JobsOhio's grant money landed in Ohio](https://www.data4thepeople.com/p/ohio-income-health), we asked a question: should economic development and public health be planned together? We provided a first look at the data behind that question for Ohio's 3,115 census tracts, and we promised to take it national on Friday.
 
-On Wednesday, in [Where JobsOhio's grant money landed in Ohio](https://www.data4thepeople.com/p/ohio-income-health), we asked a question: should economic development and public health be planned together? We gave a first look at the data behind that question for Ohio's 3,115 census tracts, and we promised to take it national on Friday. This is that chart.
+Today, we deliver on that promise.
 
 On instinct, the link seems obvious. Places with more money tend to be healthier. But how close is the link, and does it hold all the way up the income ladder? Our theory going in was that health would track income closely in the poorest neighborhoods, up to a point, and that above that point the link would fade into scatter. Past a certain level, more money would stop going with better health.
 
 The data only partly agreed. Health does improve fastest at the low end of income, and the gains slow down above about $110,000 in median household income. But they do not stop, and the dots do not scatter. In every state with enough neighborhoods to test, health keeps rising in the highest-income tracts, just more slowly. In short: steepest at the bottom, still rising at the top.
 
-You do not have to take our word for any of that. The chart puts about 78,000 census tracts and about 2,900 counties in one place. Pick any of 15 economic measures and 18 health measures, look at the whole country or one state, and hover over any dot to see the neighborhood or county behind it.
+You do not have to take our word for it, though. The chart puts about 78,000 census tracts and about 2,900 counties in one place. Pick any of 15 economic measures and 18 health measures, look at the whole country or one state, and hover over any dot to see the neighborhood or county behind it.
 
-Before you dig in, read the box below. In short: the trend is the point, not any single dot.
+Ultimately, here is the question we hope you take from this tool: if income and health move together this closely, it is fair to ask whether decisions about where jobs and investment go should be made with health in view. In other words, are economic development and improving public health part of the same initiative? That is the question we raised for Ohio. This chart lets anyone ask it of their own state.
 
-If income and health move together this closely, it is fair to ask whether decisions about where jobs and investment go should be made with health in view. That is the question we raised for Ohio. This chart lets anyone ask it of their own state.
+Before you dig in, read the box below. The short version: the trend is the point, not any single dot.
 
 ::: blurb Read this first
 **Look at the trend, not any single dot.** Every number in this chart is an estimate. Income comes from a Census Bureau survey, and in a small tract its margin of error can be large. The health numbers are CDC model estimates, built partly from each area's age, sex, race, education and poverty, so part of the link between income and health is built into them. Within a county, differences between tracts come only from who lives there and from tract poverty, not from surveying each tract. So do not lean hard on the exact number for any one tract or county.
@@ -138,7 +138,7 @@ The health index puts 14 CDC health measures into one number for each tract, fro
 
 For all 14, a lower share is better.
 
-**Step 2. Rank every tract on each measure.** The measures sit on very different scales. A typical tract has about 34% of adults with obesity but about 6% with coronary heart disease, so the raw shares cannot simply be added. Instead, each tract is ranked against the other 77,918 tracts in the chart, one measure at a time, and given a score from 0 to 100. The score is the share of tracts doing worse on that measure. A tract whose obesity rate is lower than 90% of tracts scores 90 on obesity. A tract in the middle scores about 50. Tracts with the same value share the same score.
+**Step 2. Rank every tract on each measure.** The measures sit on very different scales. A typical tract has about 34% of adults with obesity but about 6% with coronary heart disease, so the raw shares cannot simply be added. Instead, each tract is ranked against every other tract in the analysis, about 78,000 in all, one measure at a time, and given a score from 0 to 100. The score is the share of tracts doing worse on that measure. A tract whose obesity rate is lower than 90% of tracts scores 90 on obesity. A tract in the middle scores about 50. Tracts with the same value share the same score.
 
 **Step 3. Average the 14 scores.** Every measure counts the same. Smoking counts as much as diabetes, and depression as much as high blood pressure. A tract needs scores on at least 11 of the 14 measures to get an index.
 
@@ -158,7 +158,7 @@ For all 14, a lower share is better.
 
 These are the main limits. The full list is in [DATASETS.md](https://github.com/Data4ThePeople/TractEconHealth/blob/main/DATASETS.md) and under "Show notes and disclaimers" at the bottom of the chart.
 
-- **No tract health number is a direct measurement.** Each one is a CDC model estimate, and the ranges around them are wide: the typical tract's obesity estimate has a 95% range about 10 points wide. CDC asks users not to rank places with these estimates.
+- **No tract health number is a direct measurement.** Each one is a CDC model estimate, and the ranges around them are wide: the typical tract's obesity estimate has a 95% range about 10 points wide. CDC asks users not to rank places with these estimates. Our index uses ranks only to put 14 measures on one scale; it is not a ranking of places, and no single tract's score should be read as one.
 - **Part of the income link is built into the health estimates.** CDC's model uses county and tract poverty as inputs, so part of the link between income and the health estimates comes from the model itself. The county death measures do not depend on that model.
 - **Kentucky and Pennsylvania are not shown.** The 2025 PLACES release has no estimates for these two states for the measures based on 2023 survey data.
 - **Income numbers are estimates too.** The typical tract's median household income has a margin of error of about 21% of the estimate, and more in lower-income tracts. The Census Bureau filled in some or all of the income answer for 37.8% of households.
@@ -192,7 +192,7 @@ A small area the Census Bureau draws to hold about 4,000 people. Tracts are ofte
 
 ### Where does the health data come from?
 
-From CDC's PLACES project, 2025 release. CDC uses a national health survey and each area's population makeup to estimate how common each condition is in every tract and county. The numbers are estimates, not counts.
+From CDC's PLACES project, 2025 release. CDC uses a national health survey, each area's population makeup and its poverty level to estimate how common each condition is in every tract and county. The numbers are estimates, not counts.
 
 ### Why are Kentucky and Pennsylvania missing?
 
@@ -204,7 +204,7 @@ Yes. Switch Show to Counties, pick your state in the Area menu, and hover over t
 
 ### Does higher income cause better health?
 
-This chart does not test that. It shows which places have both higher incomes and better health estimates. Many other things, such as age, access to care and the CDC model itself, sit behind the pattern.
+This chart does not test that. It shows which places have both higher incomes and better health estimates. Many other things, such as age, access to care and the CDC model itself, may sit behind the pattern.
 
 ### Is the chart free to use?
 
