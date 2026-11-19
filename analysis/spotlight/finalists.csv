@@ -1,0 +1,21 @@
+cand_id,kind,working_name,story_angle,pair
+U047,urban,West Dayton,"Every cut on one timeline: HOLC grades, 1966 unrest, US-35, GM/Delphi and NCR exits, foreclosures, 2017 overdose peak, 2018 hospital closing",A
+U061,urban,Englewood and Fuller Park (Chicago South Side),"Stockyards closing (1971) and the Dan Ryan Expressway split the area while 63rd and Halsted emptied",A
+U064,urban,Grove Hall (Boston),"Lending, not a highway or plant: the B-BURG mortgage zone (1968-72) and the 1967 Blue Hill Avenue uprising; block-by-block life expectancy gaps",B
+U062,urban,Watts (Los Angeles),"Covenants, wartime public housing, 1965, South LA plant closures, the I-105, the crack era, 1992, and a Black-to-Latino shift",B
+U034,urban,North Birmingham,"Worker housing beside coke ovens and pipe plants that kept the pollution after the jobs left: the 35th Avenue Superfund site",C
+U012,urban,"Seventh Ward, St. Roch and Desire (New Orleans)","Hemmed in one layer at a time: the Industrial Canal, a dump turned housing site, the Florida and Desire projects, the I-10 over Claiborne; Katrina as the last cut",C
+U042,urban,North Side Milwaukee (53206),"Freeway clearance pushed families north as factory jobs vanished; the most studied case of male joblessness and incarceration",D
+U007,urban,"Central, Kinsman and Hough (Cleveland)","Birthplace of U.S. public housing on redlined land, then the 1966 Hough uprising and about 75% population loss",D
+U028,urban,El Segundo Barrio and Chamizal (El Paso),"A border front door cut by demolitions, Paisano Drive, I-10 and the Chamizal relocation, then the loss of El Paso apparel jobs",E
+U013,urban,North-central and east Flint,"Cleared for I-475 and Buick City, the plant closed in 1999, then the 2014 water crisis",E
+M016,rural,Clarksdale (Mississippi Delta),"Where cotton picking was first fully mechanized (1944), the end of the 1967 Senate hunger tour, 57% county population loss since 1950",F
+R030,rural,"Helena-West Helena and Elaine (Arkansas Delta)","The 1919 Elaine massacre of organizing sharecroppers, then 64% county population loss and the steepest 2000s decline of any metro or micro area",F
+R007,rural,McDowell County coalfields (W.Va.),"One-mineral, one-buyer county: mine mechanization, U.S. Steel's exit from Gary, floods, a prison and the lost grocery store; four-fifths of its people gone",G
+R004,rural,Owsley County (Ky.),"A farm and tobacco story: small burley farms lost their cash crop when the federal tobacco program ended; 55% population loss since 1940",G
+R046,rural,Pine Ridge Reservation (S.D.),"The 1868 treaty, the 1877 Black Hills seizure, the 1889 breakup and allotment; the lowest county life expectancy in IHME's series since 1980",H
+R008,rural,Black Mesa (Navajo Nation and Hopi),"Fifty years of Peabody coal funded tribal budgets while the federal land partition forced families to move; mines closed in 2005 and 2019",H
+R031,rural,Rocky Ford (Colo.),"A melon and sugar beet town: the sugar plant closed in 1979 and its ditch water was sold to Aurora in 1987, drying up farms by contract",I
+R039,rural,Austin (Ind.),"A cannery and factory town that lost its jobs and then had the 2015 HIV outbreak from injection drug use",I
+M002,rural,Uptown and South Central Butte (Mont.),"Anaconda's home neighborhood lost its company and half its people, then lived beside the Berkeley Pit through a 30-year Superfund cleanup",J
+M014,rural,Clarksville (Texas),"A federal court found federal housing money built segregation (Young v. Pierce), after a century of cotton collapse; the hospital closed in 2014",J
