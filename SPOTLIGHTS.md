@@ -183,8 +183,8 @@ County life expectancy (El Paso County): 77.7 years.
 
 **Summary.** This is the story of a city built around one company, with the water crisis as the last cut, not the first.
 - **1937:** Flint's federal mortgage map put Black residents in 3 of 50 districts, all graded D.
-- **1958-77:** the city bought and cleared the St. John Street neighborhood for I-475 and Buick's expansion. Black homeownership there fell from 50% to 15%.
-- **GM:** Flint jobs fell from about 80,000 at the peak to under 8,000.
+- **1958-77:** the St. John Street neighborhood was bought and cleared for I-475 and Buick's expansion. Black homeownership there fell from 32% to 15%, per historian Andrew Highsmith.
+- **GM:** Flint jobs fell from nearly 80,000 in 1954 to 33,000 in 1997 and 15,000 by 2002.
 - **1999:** Buick City closed.
 - **2002 and 2011:** the state took over the city's finances twice.
 - **2014:** the water source was switched.
@@ -208,7 +208,7 @@ County life expectancy (Genesee County): 73.4 years.
 
 **Caveats:**
 - The St. John core sits mostly just outside these tracts, so it is the first chapter, told as "next door."
-- The GM job counts rest on Wikipedia and need a primary source.
+- The homeownership figure comes from Highsmith's dissertation; his 2015 book still needs a check.
 - Our usable tract data starts in 1990.
 
 ---
