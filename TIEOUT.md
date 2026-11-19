@@ -159,3 +159,12 @@ with its own code. Its working notes stay outside the repo.
 | Dwyer-Lindgren 2017: 60% (socioeconomic and race group), 41% (log income alone), 2009 | box | JAMA full text, abstract and Tables 1-2 | supported |
 | Chetty 2016: life expectancy rises with income at every level; tax records matched to death records | box | `analysis/literature.md` quote: "no dividing line above or below which higher income was not associated with higher life expectancy" | supported |
 
+
+## Numbers added in the post (step 2e)
+
+| Claim | Where | Recomputed | Result |
+|---|---|---|---|
+| Five lowest life expectancy counties, all South Dakota: Buffalo 52.9, Dewey 57.3, Oglala Lakota 58.4, Corson 58.5, Todd 58.5 | Common questions | CHR v147 for the 2,948 chart counties: 52.94, 57.30, 58.37, 58.51, 58.55 | match |
+| Buffalo County range 48.8 to 57.1 | Common questions | v147_cilow 48.79, v147_cihigh 57.09 | match |
+| Obesity 45.8% and 23.6%, diabetes 20.2% and 8.6%, lowest and highest of 20 income groups (about $31,000 and $197,000) | Common questions | 45.8, 23.6; 20.2, 8.6; $30,867, $197,000 | match |
+| Fentanyl post is "An Interactive Map" by county | link text | its POST.md title | supported |

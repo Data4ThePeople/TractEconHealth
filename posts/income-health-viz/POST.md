@@ -9,7 +9,7 @@ hero: images/income-health-viz-hero-1680x1080.png
 hero_alt: Scatter plot titled Income and health, neighborhood by neighborhood. Each dot is one of 77,708 U.S. census tracts, with median household income across and a health index from 0 to 100 up. The dots climb steeply from lower left, and an orange line through the middle of the cloud bends and flattens above about $110,000 but keeps rising. Text at left: 0.82 rank correlation between income and a health index built from 14 CDC measures; above $110,000 the index rises about 27% as fast.
 meta_title: Income and Health by Census Tract: Interactive Chart
 description: Free interactive chart of income and health for about 78,000 U.S. census tracts and 2,900 counties, from Census and CDC data, with county life expectancy.
-keywords: income and health by census tract, median household income and health, income and life expectancy by county, CDC PLACES census tract data, health and wealth gap, social determinants of health data, income and health inequality in the United States
+keywords: income and health by census tract, median household income and health, income and life expectancy by county, CDC PLACES census tract data, health and wealth gap, social determinants of health data, income and health inequality in the United States, income and obesity by census tract
 schema_type: dataset
 dataset_name: Income, economic measures and physical and mental health, U.S. census tracts and counties
 dataset_description: "Median household income and 14 other economic measures from the Census Bureau's American Community Survey, 2020-2024 five-year estimates, against 17 physical and mental health measures and a health index from CDC PLACES, 2025 release (model-based estimates), for 77,918 census tracts and 2,948 counties in 48 states and DC. County view adds life expectancy, drug overdose deaths and suicides from County Health Rankings & Roadmaps, March 2026 release. Kentucky and Pennsylvania are not included."
@@ -104,7 +104,7 @@ Health improves fastest at the low end of income, and it keeps improving at the 
 
 The same pattern holds in each state with enough tracts to test. Rank correlations run from 0.55 in North Dakota to 0.86 in New Jersey.
 
-At the county level, income tracks life expectancy, which comes from death records rather than a model, at a rank correlation of 0.73. Drug overdose deaths (-0.25) and suicides (-0.31) follow county income much more loosely.
+At the county level, income tracks life expectancy, which comes from death records rather than a model, at a rank correlation of 0.73. Drug overdose deaths (-0.25) and suicides (-0.31) follow county income much more loosely. For more on overdose deaths by county, see our [map of fentanyl deaths by county](https://www.data4thepeople.com/p/fentanyl-deaths-by-county).
 
 The chart below shows that county check. Each dot is a county, and the line follows the middle county as income rises: from 70.7 years in the lowest-income group of counties to 80.8 years in the highest. It climbs fastest at the low end and keeps climbing at the top, the same shape as the health index.
 
@@ -123,7 +123,7 @@ Every chart we publish should be something you can check, question and rebuild y
 
 **American Community Survey, 2020-2024 five-year estimates, U.S. Census Bureau.** Every economic measure, for census tracts and counties. Labor force change also uses the 2015-2019 estimates.
 
-**PLACES: Local Data for Better Health, 2025 release, CDC.** Every physical and mental health measure, for census tracts and counties. Most are based on CDC's 2023 Behavioral Risk Factor Surveillance System survey.
+**PLACES: Local Data for Better Health, 2025 release, CDC.** Every physical and mental health measure, for census tracts and counties. Most are based on CDC's 2023 Behavioral Risk Factor Surveillance System survey. The chart is a free way to explore CDC PLACES census tract data alongside income.
 
 **County Health Rankings & Roadmaps, March 2026 release, University of Wisconsin Population Health Institute.** Life expectancy (2021-2023), drug overdose deaths (2021-2023) and suicides (2019-2023), built from death records.
 
@@ -200,6 +200,18 @@ In this data, closely. Across 77,708 census tracts, the rank correlation between
 ### Does health keep improving at higher incomes?
 
 Yes, in this data, though more slowly. Above about $110,000 in median household income, the health index rises about 27% as fast for each added dollar as it does below that level. It still rises in each of the 45 states with enough tracts to test.
+
+### Is life expectancy linked to income by county?
+
+Yes, closely. Life expectancy comes from death records, not a model, so it is the cleanest check in this chart. Split U.S. counties into 20 equal-size groups by median household income, and the middle county's life expectancy runs from 70.7 years in the lowest-income group to 80.8 years in the highest. The rank correlation is 0.73. A 2016 study that matched tax records to death records for millions of Americans found that life expectancy rises with income at every income level.
+
+### Which counties have the lowest life expectancy?
+
+Among the counties in this chart, the five lowest, for 2021 to 2023, are all in South Dakota: Buffalo County (52.9 years), Dewey County (57.3), Oglala Lakota County (58.4), Corson County (58.5) and Todd County (58.5). All five are small, so each figure has a wide range around it; Buffalo County's published range runs from 48.8 to 57.1 years.
+
+### Is income linked to obesity and diabetes?
+
+In CDC's estimates, yes. Split census tracts into 20 equal-size groups by median household income. In the lowest-income group (median income about $31,000), the middle tract has 45.8% of adults with obesity and 20.2% with diabetes. In the highest-income group (about $197,000), it is 23.6% and 8.6%. These are model estimates built partly from poverty, so part of the link is built in.
 
 ### What is a census tract?
 

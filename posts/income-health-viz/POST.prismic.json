@@ -5,7 +5,7 @@
   "updated_date": "2026-11-20",
   "meta_title": "Income and Health by Census Tract: Interactive Chart",
   "meta_description": "Free interactive chart of income and health for about 78,000 U.S. census tracts and 2,900 counties, from Census and CDC data, with county life expectancy.",
-  "meta_keywords": "income and health by census tract, median household income and health, income and life expectancy by county, CDC PLACES census tract data, health and wealth gap, social determinants of health data, income and health inequality in the United States",
+  "meta_keywords": "income and health by census tract, median household income and health, income and life expectancy by county, CDC PLACES census tract data, health and wealth gap, social determinants of health data, income and health inequality in the United States, income and obesity by census tract",
   "make_this_main_post": false,
   "slices": [
     {
@@ -498,8 +498,19 @@
           },
           {
             "type": "paragraph",
-            "text": "At the county level, income tracks life expectancy, which comes from death records rather than a model, at a rank correlation of 0.73. Drug overdose deaths (-0.25) and suicides (-0.31) follow county income much more loosely.",
-            "spans": [],
+            "text": "At the county level, income tracks life expectancy, which comes from death records rather than a model, at a rank correlation of 0.73. Drug overdose deaths (-0.25) and suicides (-0.31) follow county income much more loosely. For more on overdose deaths by county, see our map of fentanyl deaths by county.",
+            "spans": [
+              {
+                "start": 272,
+                "end": 304,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/fentanyl-deaths-by-county",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           },
           {
@@ -662,7 +673,7 @@
           },
           {
             "type": "paragraph",
-            "text": "PLACES: Local Data for Better Health, 2025 release, CDC. Every physical and mental health measure, for census tracts and counties. Most are based on CDC's 2023 Behavioral Risk Factor Surveillance System survey.",
+            "text": "PLACES: Local Data for Better Health, 2025 release, CDC. Every physical and mental health measure, for census tracts and counties. Most are based on CDC's 2023 Behavioral Risk Factor Surveillance System survey. The chart is a free way to explore CDC PLACES census tract data alongside income.",
             "spans": [
               {
                 "start": 0,
@@ -1324,6 +1335,105 @@
         "paragraph_text": [
           {
             "type": "heading3",
+            "text": "Is life expectancy linked to income by county?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Yes, closely. Life expectancy comes from death records, not a model, so it is the cleanest check in this chart. Split U.S. counties into 20 equal-size groups by median household income, and the middle county's life expectancy runs from 70.7 years in the lowest-income group to 80.8 years in the highest. The rank correlation is 0.73. A 2016 study that matched tax records to death records for millions of Americans found that life expectancy rises with income at every income level.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Which counties have the lowest life expectancy?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Among the counties in this chart, the five lowest, for 2021 to 2023, are all in South Dakota: Buffalo County (52.9 years), Dewey County (57.3), Oglala Lakota County (58.4), Corson County (58.5) and Todd County (58.5). All five are small, so each figure has a wide range around it; Buffalo County's published range runs from 48.8 to 57.1 years.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Is income linked to obesity and diabetes?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "In CDC's estimates, yes. Split census tracts into 20 equal-size groups by median household income. In the lowest-income group (median income about $31,000), the middle tract has 45.8% of adults with obesity and 20.2% with diabetes. In the highest-income group (about $197,000), it is 23.6% and 8.6%. These are model estimates built partly from poverty, so part of the link is built in.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
             "text": "What is a census tract?",
             "spans": [],
             "direction": "ltr"
@@ -1503,5 +1613,5 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Dataset\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#dataset\",\n      \"name\": \"Income, economic measures and physical and mental health, U.S. census tracts and counties\",\n      \"description\": \"Median household income and 14 other economic measures from the Census Bureau's American Community Survey, 2020-2024 five-year estimates, against 17 physical and mental health measures and a health index from CDC PLACES, 2025 release (model-based estimates), for 77,918 census tracts and 2,948 counties in 48 states and DC. County view adds life expectancy, drug overdose deaths and suicides from County Health Rankings & Roadmaps, March 2026 release. Kentucky and Pennsylvania are not included.\",\n      \"url\": \"https://www.data4thepeople.com/p/income-health-viz\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"isAccessibleForFree\": true,\n      \"creator\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"keywords\": [\n        \"income and health by census tract\",\n        \"median household income and health\",\n        \"income and life expectancy by county\",\n        \"CDC PLACES census tract data\",\n        \"health and wealth gap\",\n        \"social determinants of health data\",\n        \"income and health inequality in the United States\"\n      ],\n      \"datePublished\": \"2026-11-20T07:30:00-05:00\",\n      \"dateModified\": \"2026-11-20T07:30:00-05:00\",\n      \"temporalCoverage\": \"2020/2024\",\n      \"spatialCoverage\": {\n        \"@type\": \"Place\",\n        \"name\": \"United States\"\n      },\n      \"variableMeasured\": [\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Median household income\",\n          \"unitText\": \"USD\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Economic index\",\n          \"unitText\": \"index 0-100\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Health index\",\n          \"unitText\": \"index 0-100\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Share of adults with each health condition or behavior\",\n          \"unitText\": \"percent\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Life expectancy at birth\",\n          \"unitText\": \"years\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Drug overdose deaths per 100,000\",\n          \"unitText\": \"rate\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Suicides per 100,000\",\n          \"unitText\": \"rate\"\n        }\n      ],\n      \"isBasedOn\": [\n        \"https://www.census.gov/programs-surveys/acs\",\n        \"https://www.cdc.gov/places/\",\n        \"https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation\",\n        \"https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html\"\n      ],\n      \"distribution\": [\n        {\n          \"@type\": \"DataDownload\",\n          \"encodingFormat\": \"text/html\",\n          \"contentUrl\": \"https://data4thepeople.github.io/TractEconHealth/dist/\"\n        }\n      ],\n      \"measurementTechnique\": \"Published ACS and CDC PLACES values joined by census tract and county, with no imputation. Places under 500 people or with half or more of residents in group quarters are left out. Each index averages national percentile ranks of its measures, flipped so higher is better, then rescaled to 0-100. Every value was rebuilt from the source files twice, once by an independent check.\",\n      \"creditText\": \"Data 4 The People, from the U.S. Census Bureau, CDC and County Health Rankings & Roadmaps\"\n    },\n    {\n      \"@type\": \"WebPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz\",\n      \"url\": \"https://www.data4thepeople.com/p/income-health-viz\",\n      \"name\": \"Income and Health by Census Tract: Interactive Chart\",\n      \"description\": \"Free interactive chart of income and health for about 78,000 U.S. census tracts and 2,900 counties, from Census and CDC data, with county life expectancy.\",\n      \"isPartOf\": {\n        \"@type\": \"WebSite\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://www.data4thepeople.com\"\n      },\n      \"about\": {\n        \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#dataset\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"datePublished\": \"2026-11-20T07:30:00-05:00\",\n      \"dateModified\": \"2026-11-20T07:30:00-05:00\"\n    },\n    {\n      \"@type\": \"WebApplication\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#tool\",\n      \"name\": \"Income and Health, Neighborhood by Neighborhood: interactive chart\",\n      \"url\": \"https://data4thepeople.github.io/TractEconHealth/dist/\",\n      \"applicationCategory\": \"EducationalApplication\",\n      \"operatingSystem\": \"Web browser\",\n      \"browserRequirements\": \"Requires JavaScript\",\n      \"isAccessibleForFree\": true,\n      \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": \"0\",\n        \"priceCurrency\": \"USD\"\n      },\n      \"about\": {\n        \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#dataset\"\n      },\n      \"creator\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"featureList\": [\n        \"About 78,000 census tracts and 2,900 counties\",\n        \"15 economic measures and 18 health measures\",\n        \"County life expectancy, overdose deaths and suicides from death records\",\n        \"Any state against the rest of the country\",\n        \"Rank correlation for each view\",\n        \"Shareable links to any view\"\n      ],\n      \"description\": \"Free interactive chart of income and other economic measures against physical and mental health for about 78,000 U.S. census tracts and about 2,900 counties.\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is income linked to health in the United States?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In this data, closely. Across 77,708 census tracts, the rank correlation between median household income and a health index built from 14 CDC measures is 0.82. Part of that link is built into CDC's estimates, which use poverty as an input. At the county level, income also tracks life expectancy from death records, at 0.73.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Does health keep improving at higher incomes?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes, in this data, though more slowly. Above about $110,000 in median household income, the health index rises about 27% as fast for each added dollar as it does below that level. It still rises in each of the 45 states with enough tracts to test.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is a census tract?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"A small area the Census Bureau draws to hold about 4,000 people. Tracts are often used as a stand-in for neighborhoods.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Where does the health data come from?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"From CDC's PLACES project, 2025 release. CDC uses a national health survey, each area's population makeup and its poverty level to estimate how common each condition is in every tract and county. The numbers are estimates, not counts.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Why are Kentucky and Pennsylvania missing?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"CDC's 2025 PLACES release has no estimates for either state for the measures based on its 2023 survey, which covers 13 of the 14 measures in the health index.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Can I see my county?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. Switch Show to Counties, pick your state in the Area menu, and hover over the dots. In the tract view, each tract's box names its county.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Does higher income cause better health?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"This chart does not test that. It shows which places have both higher incomes and better health estimates. Many other things, such as age, access to care and the CDC model itself, may sit behind the pattern.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is the chart free to use?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. It is free to use and needs no sign-in.\"\n          }\n        }\n      ]\n    },\n    {\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://www.data4thepeople.com\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Income and Health, Neighborhood by Neighborhood: An Interactive Chart\",\n          \"item\": \"https://www.data4thepeople.com/p/income-health-viz\"\n        }\n      ]\n    }\n  ]\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Dataset\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#dataset\",\n      \"name\": \"Income, economic measures and physical and mental health, U.S. census tracts and counties\",\n      \"description\": \"Median household income and 14 other economic measures from the Census Bureau's American Community Survey, 2020-2024 five-year estimates, against 17 physical and mental health measures and a health index from CDC PLACES, 2025 release (model-based estimates), for 77,918 census tracts and 2,948 counties in 48 states and DC. County view adds life expectancy, drug overdose deaths and suicides from County Health Rankings & Roadmaps, March 2026 release. Kentucky and Pennsylvania are not included.\",\n      \"url\": \"https://www.data4thepeople.com/p/income-health-viz\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"isAccessibleForFree\": true,\n      \"creator\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"keywords\": [\n        \"income and health by census tract\",\n        \"median household income and health\",\n        \"income and life expectancy by county\",\n        \"CDC PLACES census tract data\",\n        \"health and wealth gap\",\n        \"social determinants of health data\",\n        \"income and health inequality in the United States\",\n        \"income and obesity by census tract\"\n      ],\n      \"datePublished\": \"2026-11-20T07:30:00-05:00\",\n      \"dateModified\": \"2026-11-20T07:30:00-05:00\",\n      \"temporalCoverage\": \"2020/2024\",\n      \"spatialCoverage\": {\n        \"@type\": \"Place\",\n        \"name\": \"United States\"\n      },\n      \"variableMeasured\": [\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Median household income\",\n          \"unitText\": \"USD\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Economic index\",\n          \"unitText\": \"index 0-100\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Health index\",\n          \"unitText\": \"index 0-100\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Share of adults with each health condition or behavior\",\n          \"unitText\": \"percent\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Life expectancy at birth\",\n          \"unitText\": \"years\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Drug overdose deaths per 100,000\",\n          \"unitText\": \"rate\"\n        },\n        {\n          \"@type\": \"PropertyValue\",\n          \"name\": \"Suicides per 100,000\",\n          \"unitText\": \"rate\"\n        }\n      ],\n      \"isBasedOn\": [\n        \"https://www.census.gov/programs-surveys/acs\",\n        \"https://www.cdc.gov/places/\",\n        \"https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation\",\n        \"https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html\"\n      ],\n      \"distribution\": [\n        {\n          \"@type\": \"DataDownload\",\n          \"encodingFormat\": \"text/html\",\n          \"contentUrl\": \"https://data4thepeople.github.io/TractEconHealth/dist/\"\n        }\n      ],\n      \"measurementTechnique\": \"Published ACS and CDC PLACES values joined by census tract and county, with no imputation. Places under 500 people or with half or more of residents in group quarters are left out. Each index averages national percentile ranks of its measures, flipped so higher is better, then rescaled to 0-100. Every value was rebuilt from the source files twice, once by an independent check.\",\n      \"creditText\": \"Data 4 The People, from the U.S. Census Bureau, CDC and County Health Rankings & Roadmaps\"\n    },\n    {\n      \"@type\": \"WebPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz\",\n      \"url\": \"https://www.data4thepeople.com/p/income-health-viz\",\n      \"name\": \"Income and Health by Census Tract: Interactive Chart\",\n      \"description\": \"Free interactive chart of income and health for about 78,000 U.S. census tracts and 2,900 counties, from Census and CDC data, with county life expectancy.\",\n      \"isPartOf\": {\n        \"@type\": \"WebSite\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://www.data4thepeople.com\"\n      },\n      \"about\": {\n        \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#dataset\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"datePublished\": \"2026-11-20T07:30:00-05:00\",\n      \"dateModified\": \"2026-11-20T07:30:00-05:00\"\n    },\n    {\n      \"@type\": \"WebApplication\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#tool\",\n      \"name\": \"Income and Health, Neighborhood by Neighborhood: interactive chart\",\n      \"url\": \"https://data4thepeople.github.io/TractEconHealth/dist/\",\n      \"applicationCategory\": \"EducationalApplication\",\n      \"operatingSystem\": \"Web browser\",\n      \"browserRequirements\": \"Requires JavaScript\",\n      \"isAccessibleForFree\": true,\n      \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": \"0\",\n        \"priceCurrency\": \"USD\"\n      },\n      \"about\": {\n        \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#dataset\"\n      },\n      \"creator\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"featureList\": [\n        \"About 78,000 census tracts and 2,900 counties\",\n        \"15 economic measures and 18 health measures\",\n        \"County life expectancy, overdose deaths and suicides from death records\",\n        \"Any state against the rest of the country\",\n        \"Rank correlation for each view\",\n        \"Shareable links to any view\"\n      ],\n      \"description\": \"Free interactive chart of income and other economic measures against physical and mental health for about 78,000 U.S. census tracts and about 2,900 counties.\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/income-health-viz#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is income linked to health in the United States?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In this data, closely. Across 77,708 census tracts, the rank correlation between median household income and a health index built from 14 CDC measures is 0.82. Part of that link is built into CDC's estimates, which use poverty as an input. At the county level, income also tracks life expectancy from death records, at 0.73.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Does health keep improving at higher incomes?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes, in this data, though more slowly. Above about $110,000 in median household income, the health index rises about 27% as fast for each added dollar as it does below that level. It still rises in each of the 45 states with enough tracts to test.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is life expectancy linked to income by county?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes, closely. Life expectancy comes from death records, not a model, so it is the cleanest check in this chart. Split U.S. counties into 20 equal-size groups by median household income, and the middle county's life expectancy runs from 70.7 years in the lowest-income group to 80.8 years in the highest. The rank correlation is 0.73. A 2016 study that matched tax records to death records for millions of Americans found that life expectancy rises with income at every income level.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Which counties have the lowest life expectancy?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Among the counties in this chart, the five lowest, for 2021 to 2023, are all in South Dakota: Buffalo County (52.9 years), Dewey County (57.3), Oglala Lakota County (58.4), Corson County (58.5) and Todd County (58.5). All five are small, so each figure has a wide range around it; Buffalo County's published range runs from 48.8 to 57.1 years.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is income linked to obesity and diabetes?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In CDC's estimates, yes. Split census tracts into 20 equal-size groups by median household income. In the lowest-income group (median income about $31,000), the middle tract has 45.8% of adults with obesity and 20.2% with diabetes. In the highest-income group (about $197,000), it is 23.6% and 8.6%. These are model estimates built partly from poverty, so part of the link is built in.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is a census tract?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"A small area the Census Bureau draws to hold about 4,000 people. Tracts are often used as a stand-in for neighborhoods.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Where does the health data come from?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"From CDC's PLACES project, 2025 release. CDC uses a national health survey, each area's population makeup and its poverty level to estimate how common each condition is in every tract and county. The numbers are estimates, not counts.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Why are Kentucky and Pennsylvania missing?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"CDC's 2025 PLACES release has no estimates for either state for the measures based on its 2023 survey, which covers 13 of the 14 measures in the health index.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Can I see my county?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. Switch Show to Counties, pick your state in the Area menu, and hover over the dots. In the tract view, each tract's box names its county.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Does higher income cause better health?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"This chart does not test that. It shows which places have both higher incomes and better health estimates. Many other things, such as age, access to care and the CDC model itself, may sit behind the pattern.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is the chart free to use?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. It is free to use and needs no sign-in.\"\n          }\n        }\n      ]\n    },\n    {\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://www.data4thepeople.com\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Income and Health, Neighborhood by Neighborhood: An Interactive Chart\",\n          \"item\": \"https://www.data4thepeople.com/p/income-health-viz\"\n        }\n      ]\n    }\n  ]\n}"
 }
