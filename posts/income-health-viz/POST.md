@@ -43,12 +43,16 @@ The data only partly agreed. Health does improve fastest at the low end of incom
 
 You do not have to take our word for any of that. The chart puts about 78,000 census tracts and about 2,900 counties in one place. Pick any of 15 economic measures and 18 health measures, look at the whole country or one state, and hover over any dot to see the neighborhood or county behind it.
 
-One warning before you dig in. The health numbers are CDC estimates, and CDC uses poverty to build them, so part of the link between income and health in this chart is built into the numbers themselves. That is why we added life expectancy for counties, which comes from death records rather than a model. Income tracks it closely too.
+Before you dig in, read the box below. In short: the trend is the point, not any single dot.
 
 If income and health move together this closely, it is fair to ask whether decisions about where jobs and investment go should be made with health in view. That is the question we raised for Ohio. This chart lets anyone ask it of their own state.
 
 ::: blurb Read this first
-The health numbers are CDC model estimates, not surveys of each neighborhood. CDC builds them partly from each area's age, sex, race, education and poverty, so part of the link between a place's income and its health estimate is built into the estimate itself. Within a county, differences between tracts come only from who lives there and from tract poverty, not from surveying each tract. Life expectancy for counties, which comes from death records rather than a model, is the check on that. Income tracks it closely too: splitting counties into 20 equal-size groups by income, the middle county's life expectancy runs from 70.7 years in the lowest-income group to 80.8 years in the highest. The chart shows which places have both conditions. It does not show that one causes the other.
+**Look at the trend, not any single dot.** Every number in this chart is an estimate. Income comes from a Census Bureau survey, and in a small tract its margin of error can be large. The health numbers are CDC model estimates, built partly from each area's age, sex, race, education and poverty, so part of the link between income and health is built into them. Within a county, differences between tracts come only from who lives there and from tract poverty, not from surveying each tract. So do not lean hard on the exact number for any one tract or county.
+
+**The overall link does not come from the model alone.** We checked it against life expectancy for counties, which is counted from death records, not modeled. Income tracks it closely: split counties into 20 equal-size groups by income, and the middle county's life expectancy runs from 70.7 years in the lowest-income group to 80.8 years in the highest. Other researchers, using other data, have found the same link. A 2016 study in JAMA matched tax records to death records for millions of Americans and found that life expectancy rises with income at every income level ([Chetty and others](https://doi.org/10.1001/jama.2016.4226)). A 2017 study found that income, poverty, education and other social and economic factors, together with race, explain 60% of the differences in life expectancy between U.S. counties ([Dwyer-Lindgren and others](https://doi.org/10.1001/jamainternmed.2017.0918)).
+
+**In our view, the trend strongly suggests a real connection between financial health and physical and mental health.** The chart shows that connection. It does not show which way it runs or what causes it.
 :::
 
 ::: spacer
