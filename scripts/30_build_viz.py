@@ -67,6 +67,9 @@ def pack(v):
     lo, hi = float(v[ok].min()), float(v[ok].max())
     q = np.full(len(v), 65535, dtype="<u2")
     q[ok] = np.round((v[ok] - lo) / (hi - lo if hi > lo else 1) * 65534).astype("<u2")
+    # only a value at the true maximum may land on the top step, so the page can tell a Census cap
+    # (e.g. income "$250,001") from a value just under it
+    q[ok & (v < hi) & (q == 65534)] = 65533
     return lo, hi, b64(q)
 
 
@@ -133,8 +136,9 @@ than 1 in 3 counties for overdose deaths and nearly 1 in 4 for suicides, mostly 
 measures based on 2023 survey data.</p>
 <p><b>Correlation is not cause.</b> The chart shows which places have both conditions. It does not show that one
 causes the other. Every value is an estimate with a margin of error, larger in small tracts. The Census Bureau
-caps median household income at $250,000 or more (541 tracts) and median rent share at 50% or more (4,881 tracts)
-and 10% or less (271 tracts); those places show the cap.</p>"""
+reports median household income above $250,000 only as "$250,000 or more" (541 tracts). Those tracts are not drawn,
+because they would all sit on one value, but they are counted in the rank correlation and the orange line. The Bureau
+also caps median rent share at 50% or more (4,881 tracts) and 10% or less (271 tracts); those places show the cap.</p>"""
     data = {"states": list(STATE_NAMES.values()),
             "geos": {"tract": geo(df, HEALTH, tract_label), "county": geo(cf, HEALTH + COUNTY_ONLY, county_label)},
             "notes": notes}

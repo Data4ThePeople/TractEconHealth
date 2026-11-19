@@ -152,12 +152,15 @@ function draw(){
   ctx.fillStyle = css("--fg"); ctx.textAlign="center"; ctx.fillText(cx.label, m.l+pw/2, H-6);
   ctx.save(); ctx.translate(13, m.t+ph/2); ctx.rotate(-Math.PI/2); ctx.fillText(cy.label, 0, 0); ctx.restore();
   ctx.save(); ctx.beginPath(); ctx.rect(m.l,m.t,pw,ph); ctx.clip();
+  // incomes above $250,000 are published only as $250,001; those places all sit on one value, so they are not drawn,
+  // but they stay in the correlation and the median line, where their rank is correct
+  const capped = i => cx.key==="med_hh_income" && cx.max===250001 && xv[i] >= cx.max-0.5;
   const sel = [], r = Math.max(1, Math.min(2.2, W/500)) * (G==="county" ? 1.8 : 1);
   const dotbg = css("--dotbg"), dot = css("--dot");
   const dota = parseFloat(css("--dota"))||1, alpha = Math.min(0.6, dota*(ST<0 ? Math.max(0.10, Math.min(0.35, 8000/N)) : 0.55));
   ctx.fillStyle = ST<0 ? dot : dotbg; ctx.globalAlpha = ST<0 ? alpha : 0.35;
-  for (let i=0;i<N;i++){ if(!isFinite(xv[i])||!isFinite(yv[i])) continue; if(ST<0 || state[i]===ST){ sel.push(i); if(ST>=0) continue; } ctx.fillRect(px(xv[i])-r/2, py(yv[i])-r/2, r, r); }
-  if (ST>=0){ ctx.fillStyle = dot; ctx.globalAlpha = Math.max(0.35, Math.min(0.8, 800/Math.max(1,sel.length))); const rr=r*1.6; for (const i of sel) ctx.fillRect(px(xv[i])-rr/2, py(yv[i])-rr/2, rr, rr); }
+  for (let i=0;i<N;i++){ if(!isFinite(xv[i])||!isFinite(yv[i])) continue; if(ST<0 || state[i]===ST){ sel.push(i); if(ST>=0) continue; } if(capped(i)) continue; ctx.fillRect(px(xv[i])-r/2, py(yv[i])-r/2, r, r); }
+  if (ST>=0){ ctx.fillStyle = dot; ctx.globalAlpha = Math.max(0.35, Math.min(0.8, 800/Math.max(1,sel.length))); const rr=r*1.6; for (const i of sel) if(!capped(i)) ctx.fillRect(px(xv[i])-rr/2, py(yv[i])-rr/2, rr, rr); }
   ctx.globalAlpha = 1;
   // trend: median y in 20 equal-count bins of x, for the selected tracts
   const s = sel.slice().sort((a,b)=>xv[a]-xv[b]), nb = Math.min(20, Math.floor(s.length/15)), pts=[];
@@ -166,12 +169,12 @@ function draw(){
   ctx.restore();
   geom = {px,py,sel,xv,yv,W,H};
   // grid index for hover
-  idx = new Map(); for (const i of sel){ const k = (Math.floor(px(xv[i])/8))+","+(Math.floor(py(yv[i])/8)); (idx.get(k)||idx.set(k,[]).get(k)).push(i); }
+  idx = new Map(); for (const i of sel){ if(capped(i)) continue; const k = (Math.floor(px(xv[i])/8))+","+(Math.floor(py(yv[i])/8)); (idx.get(k)||idx.set(k,[]).get(k)).push(i); }
   const rho = spearman(Float64Array.from(sel,i=>xv[i]), Float64Array.from(sel,i=>yv[i]));
   const area = ST<0 ? "the United States" : DATA.states[ST];
   const [one, many] = NOUN[G];
   $("stat").textContent = `${sel.length.toLocaleString()} ${sel.length===1?one:many} in ${area}. Rank correlation: ${isFinite(rho)?rho.toFixed(2):"n/a"}.`;
-  $("legend").innerHTML = `<span class="n">Blue dots</span> are ${many}${ST>=0?` in ${DATA.states[ST]}; <span class="b">gray dots</span> are the rest of the country`:""}. The <span class="t">orange line</span> splits the ${many} into 20 equal-size groups along the economic measure and joins each group's median values.`;
+  $("legend").innerHTML = `<span class="n">Blue dots</span> are ${many}${ST>=0?` in ${DATA.states[ST]}; <span class="b">gray dots</span> are the rest of the country`:""}. The <span class="t">orange line</span> splits the ${many} into 20 equal-size groups along the economic measure and joins each group's median values.${(()=>{const n=sel.filter(capped).length; return n?` The income axis ends at $250,000: the ${n.toLocaleString()} ${n===1?one:many} the Census Bureau reports only as $250,000 or more are not drawn, but they are counted in the correlation and the line.`:""})()}`;
   cv.setAttribute("aria-label", `Scatter plot of ${cy.label} against ${cx.label} for ${sel.length} ${G==="tract"?"census tracts":"counties"} in ${area}`);
 }
 cv.addEventListener("pointermove", e=>{

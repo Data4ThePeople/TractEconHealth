@@ -44,3 +44,5 @@ None.
 - 2026-11-19 Steps 2b-2e confirmed by Eric (look-over edits 1-9; embed 940px; hero from the chart at hero scale; SEO fields, three FAQ answers, fentanyl link). Step 2f opened.
 - 2026-11-19 Pushed to Prismic as a draft in the Migration Release (document av8gzxEAACgAvhgm, 66 slices, 2 images). Tags and author empty. Awaiting Eric's check of 2f.
 - 2026-11-19 During 2g: life expectancy chart line recolored to the dashboard's orange, pointer sentence and direct link to the county life expectancy view added under it, email chart linked to that view. Prismic draft updated in place (same document).
+
+- 2026-11-19 During 2g: the 541 tracts at the Census income cap ($250,001) are no longer drawn in the hero or the interactive chart when income is on the axis; both say so; they stay in the correlation and the median line. Prismic draft updated.

@@ -34,7 +34,7 @@ dividers: false
 
 # Income and Health, Neighborhood by Neighborhood: An Interactive Chart
 
-<iframe src="https://data4thepeople.github.io/TractEconHealth/dist/index.html?v=20261119a" width="100%" height="940" loading="lazy" style="border:0" title="Income and physical and mental health, by census tract and county: interactive chart"></iframe>
+<iframe src="https://data4thepeople.github.io/TractEconHealth/dist/index.html?v=20261119b" width="100%" height="940" loading="lazy" style="border:0" title="Income and physical and mental health, by census tract and county: interactive chart"></iframe>
 
 ::: spacer 40px
 
@@ -94,7 +94,7 @@ To share a view, add it to the page address. `#county` opens the county view, an
 - **The orange line follows the middle of the cloud.** It splits the places into 20 equal-size groups along the economic measure and joins each group's median values.
 - **The rank correlation under the chart** runs from -1 to 1. Near 1, places that rank higher on the economic measure also rank higher on the health measure. Near 0, there is no pattern. It uses ranks, so a few extreme places do not swing it.
 - **The health index runs from 0 to 100, and higher is better.** It averages each place's national rank on 14 health measures. The economic index works the same way for 12 economic measures.
-- **Some values are capped by the Census Bureau.** Median household income is shown as "$250,000 or more" for the highest-income tracts, and median rent share as "50.0% or more" or "10.0% or less" at its limits.
+- **Some values are capped by the Census Bureau.** It reports median household income above $250,000 only as "$250,000 or more." Those 541 tracts are not drawn, because they would all stack on one value, but they are counted in the rank correlation and the orange line. Median rent share shows as "50.0% or more" or "10.0% or less" at its limits.
 
 ### What it shows right now
 

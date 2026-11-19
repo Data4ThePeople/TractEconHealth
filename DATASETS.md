@@ -37,8 +37,9 @@ dollars, adjusted by the Bureau using CPI-U-RS.
 at $2,499; the API returns those bounds. Annotation codes in the margin of error fields (for example -555555555
 for "controlled, no sampling error", -222222222 for "too few cases to compute", -666666666 for "cannot be
 computed") are treated as missing for the estimate when they appear in the estimate field, and as a zero or
-unknown margin otherwise. Top-coded incomes stay as published; 541 analysis tracts sit at the $250,001 cap, and the viz shows them as
-"$250,000 or more" and says so in its notes.
+unknown margin otherwise. Top-coded incomes stay as published in every calculation; 541 analysis tracts sit at the $250,001 cap. The viz
+and the hero do not draw those tracts when income is on the axis, since they would stack on one value, and say so;
+they stay in the rank correlation and the median line.
 
 **Missing data.** Tracts with zero population return zeros or null medians. These tracts are dropped by the
 population filter (under 500 people).
