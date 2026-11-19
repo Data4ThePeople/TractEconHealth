@@ -99,9 +99,37 @@ Every chart we publish should be something you can check, question and rebuild y
 
 - **We use each publisher's numbers as published.** Nothing is filled in. When a source has no number, the place is left out of that chart.
 - **Some places are left out.** Places with fewer than 500 people, or where half or more of residents live in group quarters such as prisons, dormitories or nursing homes, are left out. So are Kentucky and Pennsylvania (see below).
-- **The two indexes.** Each measure is turned into a national rank from 0 to 100, flipped where lower is better so that higher always means better. The index is the average of a place's ranks. The economic index uses 12 measures and the health index uses 14. Each index was set before we looked at the results, and we did not drop measures after seeing how they related to health.
+- **The two indexes.** Built step by step as described in the next section. Each index was set before we looked at the results, and we did not drop measures after seeing how they related to health.
 - **Counties are not averages of tracts.** County values come straight from the county releases of each source.
 - **We check the numbers.** A script rebuilds every measure from the source files with separate code and compares the results with the chart. A separate check, written from scratch without our code, pulled the data again and compared its results with the chart. Both matched every value in the chart.
+
+## How we built the health index
+
+::: spacer 5px
+
+The health index puts 14 CDC health measures into one number for each tract, from 0 to 100, where higher means healthier. Here is every step.
+
+**Step 1. Start with 14 measures.** Each is CDC's estimate of the share of adults in the tract who have the condition or behavior:
+
+- **Physical health:** obesity, diabetes, high blood pressure, coronary heart disease, COPD, any disability, frequent physical distress (14 or more bad physical health days in the past month), and fair or poor general health.
+- **Mental health:** depression (ever told by a health professional) and frequent mental distress (14 or more bad mental health days in the past month).
+- **Behaviors:** current smoking, binge drinking, no physical activity outside of work, and short sleep (under 7 hours a night).
+
+For all 14, a lower share is better.
+
+**Step 2. Rank every tract on each measure.** The measures sit on very different scales. A typical tract has about 34% of adults with obesity but about 6% with coronary heart disease, so the raw shares cannot simply be added. Instead, each tract is ranked against the other 77,918 tracts in the chart, one measure at a time, and given a score from 0 to 100. The score is the share of tracts doing worse on that measure. A tract whose obesity rate is lower than 90% of tracts scores 90 on obesity. A tract in the middle scores about 50. Tracts with the same value share the same score.
+
+**Step 3. Average the 14 scores.** Every measure counts the same. Smoking counts as much as diabetes, and depression as much as high blood pressure. A tract needs scores on at least 11 of the 14 measures to get an index.
+
+**Step 4. Stretch the result to run from 0 to 100.** Averages of ranks bunch toward the middle, because few tracts are best or worst on every measure. So the averages are rescaled: the tract with the lowest average is set to 0, the highest to 100, and every other tract keeps its place in between.
+
+**What the index tells you, and what it does not.** It tells you where a tract stands compared with other U.S. tracts on these 14 measures together. It does not measure health in absolute terms. A score of 60 does not mean a tract is 60% healthy, and a gap of 10 points does not mean the same thing everywhere on the scale. Because it is built from CDC's model estimates, it carries the same limits as those estimates (see the notes below).
+
+**What is left out.** Food insecurity, loneliness and lack of emotional support are in the chart but not in the index, because CDC has them for only 39 states and DC.
+
+**Counties** follow the same four steps, using CDC's county estimates and ranking each county against the other counties.
+
+**The economic index** follows the same four steps with 12 economic measures, each turned so that higher is better: median household income; the share of people at or above 200% of the poverty line; labor force participation and the share employed, ages 25 to 54; the unemployment rate; labor force change since 2015-2019; the share of households paying over 30% of income for housing; median rent as a share of income; and the shares of households receiving SNAP or cash public assistance and of people on Medicaid or without health insurance. A tract needs at least 9 of the 12.
 
 ## Honest notes and limitations
 
