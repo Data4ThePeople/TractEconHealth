@@ -1,12 +1,17 @@
-"""Charts for one spotlight post. Usage: python scripts/81_spotlight_charts.py U047
+"""Charts for the spotlight posts. Usage: python scripts/81_spotlight_charts.py U047 [more ids]   (or "all")
 
-  01-map.png         the neighborhood outline on the 1930s HOLC map, with the freeways (TIGER primary roads)
-  02-population.png  people living in the neighborhood, 1970 to 2020-2024 (history_final.csv)
+Urban picks (HOLC map exists):
+  01-map.png              the neighborhood outline on the 1930s HOLC map, with today's freeways (TIGER S1100)
+Rural picks:
+  01-map.png              the neighborhood outline inside its county, with main roads (TIGER S1100, S1200) and the county seat
+  01b-county-population.png  county population, 1900-2020 (Census counts: NBER cencounts 1900-1990; Census API 2000-2020)
+All picks:
+  02-population.png       people living in the tracts, oldest reliable year to 2020-2024 (history_final.csv)
   03-poverty-vacancy.png  poverty rate and share of homes vacant over time (history_final.csv)
-  04-overdose.png    county drug overdose death rate vs. the middle U.S. county, 2003-2021 (CDC NCHS model rates)
+  04-overdose.png         county drug overdose death rate vs. the middle U.S. county, 2003-2021 (CDC NCHS model rates)
 Years whose old-tract fit is under 0.8 are left out, as in the tables. Output: posts/<slug>/images/
 """
-import json, sys
+import sys
 import numpy as np, pandas as pd, geopandas as gpd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
@@ -16,104 +21,209 @@ sys.path.insert(0, str(Path(__file__).parent))
 from common import RAW, ROOT
 from plot_style import use_house_style, titleblock, credit, INK, INK_DIM, MUTED, GRID, YELLOW, BLUE, MAGENTA, SURFACE
 
+# county = main county (overdose, county history); od_fips = the code CDC's file uses (Oglala Lakota was Shannon, 46113)
 CFG = {
     "U047": dict(slug="spotlight-west-dayton", name="West Dayton", county="39113", county_name="Montgomery County",
-                 city="Dayton", roads=["I- 75", "US Hwy 35", "I- 75 N", "I- 75 S", "US Hwy 35 E", "US Hwy 35 W"],
-                 labels=[("Downtown", 39.7589, -84.1916)], pad=0.012, holc_year="1937"),
+                 city="Dayton", state="OH", holc_year="1937", labels=[("Downtown", 39.7589, -84.1916)]),
+    "U034": dict(slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
+                 city="Birmingham", state="AL", holc_year="1930s", labels=[("Downtown", 33.5186, -86.8104)]),
+    "U039": dict(slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore",
+                 city="Baltimore", state="MD", holc_year="1937", labels=[("Downtown", 39.2904, -76.6122)]),
+    "U028": dict(slug="spotlight-el-segundo-barrio", name="South El Paso", county="48141", county_name="El Paso County",
+                 city="El Paso", state="TX", holc_year="1936", labels=[("Downtown", 31.7587, -106.4869)]),
+    "U013": dict(slug="spotlight-north-flint", name="North and East Flint", county="26049", county_name="Genesee County",
+                 city="Flint", state="MI", holc_year="1937", labels=[("Downtown", 43.0125, -83.6875)]),
+    "M016": dict(slug="spotlight-clarksdale", name="Clarksdale", county="28027", county_name="Coahoma County",
+                 labels=[("Clarksdale", 34.2001, -90.5709)]),
+    "R007": dict(slug="spotlight-mcdowell-county", name="McDowell County", county="54047", county_name="McDowell County",
+                 labels=[("Welch", 37.4329, -81.5848)]),
+    "R046": dict(slug="spotlight-pine-ridge", name="Pine Ridge", county="46102", od_fips="46113", county_name="Oglala Lakota County",
+                 labels=[("Pine Ridge", 43.0255, -102.5563)]),
+    "R004": dict(slug="spotlight-owsley-county", name="Owsley County", county="21189", county_name="Owsley County",
+                 labels=[("Booneville", 37.4762, -83.6749)]),
+    "M014": dict(slug="spotlight-clarksville-texas", name="Clarksville", county="48387", county_name="Red River County",
+                 labels=[("Clarksville", 33.6107, -95.0527)]),
 }
-cid = sys.argv[1]; C = CFG[cid]
-OUTD = ROOT / "posts" / C["slug"] / "images"; OUTD.mkdir(parents=True, exist_ok=True)
+YX = {"1970": 1970, "1980": 1980, "1990": 1990, "2000": 2000, "2010": 2010, "2020-2024": 2022}
+GC = {"A": "#5a9e6f", "B": "#4f8fc0", "C": "#c9a227", "D": "#c4554d"}
 use_house_style()
 sets = pd.read_csv(ROOT / "analysis/spotlight/final_sets.csv", dtype={"tracts": str}).set_index("cand_id")
-tracts = sets.loc[cid, "tracts"].split(";")
-h = pd.read_csv(ROOT / "analysis/spotlight/history_final.csv", dtype={"year": str})
-h = h[(h.cand_id == cid) & (h.fit.isna() | (h.fit >= 0.8))]
-YX = {"1970": 1970, "1980": 1980, "1990": 1990, "2000": 2000, "2010": 2010, "2020-2024": 2022}
+H = pd.read_csv(ROOT / "analysis/spotlight/history_final.csv", dtype={"year": str})
+H = H[H.fit.isna() | (H.fit >= 0.8)]
+G20 = gpd.read_file(RAW / "tiger" / "cb_2020_us_tract_500k.shp").set_index("GEOID")
+OD = pd.read_parquet(RAW / "cdc" / "overdose_county_model.parquet")
+OD["fips"] = OD.fips.astype(str).str.zfill(5); OD["year"] = OD.year.astype(int); OD["r"] = pd.to_numeric(OD.model_based_death_rate, errors="coerce")
+MID = OD.groupby("year").r.median()
+
 
 def axes_style(ax):
     ax.grid(axis="y", color=GRID, linewidth=0.6); ax.tick_params(length=0)
     for s in ("left", "bottom"): ax.spines[s].set_color(GRID)
 
-# ---------- 01 map ----------
-g20 = gpd.read_file(RAW / "tiger" / "cb_2020_us_tract_500k.shp").set_index("GEOID")
-hood = g20.loc[tracts].to_crs(4326)
-outline = hood.dissolve()
-minx, miny, maxx, maxy = outline.total_bounds; p = C["pad"]
-holc = gpd.read_file(RAW / "holc" / "mappinginequality.json", bbox=(minx - 0.08, miny - 0.06, maxx + 0.08, maxy + 0.06)).to_crs(4326)
-holc = holc[holc.city == C["city"]] if "city" in holc.columns else holc
-GC = {"A": "#5a9e6f", "B": "#4f8fc0", "C": "#c9a227", "D": "#c4554d"}
-roads = gpd.read_file(RAW / "tiger" / "roads" / f"tl_2024_{C['county']}_roads.shp").to_crs(4326)
-roads = roads[(roads.MTFCC == "S1100")]
-fig, ax = plt.subplots(figsize=(10, 8.6)); fig.subplots_adjust(left=0.03, right=0.97, top=0.84, bottom=0.08)
-for gr, col in GC.items():
-    sub = holc[holc.grade == gr]
-    if len(sub): sub.plot(ax=ax, color=col, alpha=0.55, edgecolor=SURFACE, linewidth=0.6)
-holc[~holc.grade.isin(GC)].plot(ax=ax, color=MUTED, alpha=0.25, edgecolor=SURFACE, linewidth=0.6)
-roads.plot(ax=ax, color=INK_DIM, linewidth=1.6)
-outline.boundary.plot(ax=ax, color=INK, linewidth=2.4)
-for lab, la, lo in C["labels"]:
-    ax.annotate(lab, (lo, la), color=INK, fontsize=10, ha="center", va="center",
-                bbox=dict(boxstyle="round,pad=0.25", fc=SURFACE, ec="none", alpha=0.8))
-ax.set_xlim(minx - p - 0.03, maxx + p + 0.03); ax.set_ylim(miny - p, maxy + p)
-ax.set_axis_off(); ax.set_aspect(1 / np.cos(np.radians((miny + maxy) / 2)))
-leg = [Patch(fc=GC[g], alpha=0.55, label=l) for g, l in
-       [("A", "A, \"best\""), ("B", "B, \"still desirable\""), ("C", "C, \"declining\""), ("D", "D, \"hazardous\"")]]
-leg += [Line2D([], [], color=INK, lw=2.4, label=f"{C['name']} (this story)"), Line2D([], [], color=INK_DIM, lw=1.6, label="Freeways today")]
-ax.legend(handles=leg, loc="lower left", frameon=True, facecolor=SURFACE, edgecolor=GRID, labelcolor=INK, fontsize=9.5)
-yr = C["holc_year"]  # Mapping Inequality city record for this city
-titleblock(fig, f"{C['name']} on the {yr} federal mortgage map",
-           f"Home Owners' Loan Corporation grades for {C['city']}, with the {len(tracts)} census tracts in this story outlined\nand today's freeways drawn in gray.")
-credit(fig, "Source: Mapping Inequality, University of Richmond Digital Scholarship Lab; U.S. Census Bureau TIGER/Line 2024 roads and 2020 tracts.")
-fig.savefig(OUTD / "01-map.png"); plt.close(fig)
 
-# ---------- 02 population ----------
-pop = h[h.measure == "population"].assign(x=lambda d: d.year.map(YX)).dropna(subset=["x"]).sort_values("x")
-fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.1, right=0.95, top=0.8, bottom=0.16)
-ax.plot(pop.x, pop.value, color=BLUE, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
-for x, v in zip(pop.x, pop.value):
-    ax.annotate(f"{v:,.0f}", (x, v), xytext=(0, 11), textcoords="offset points", ha="center", color=INK, fontsize=10)
-ax.set_ylim(0, pop.value.max() * 1.18); ax.set_xlim(1966, 2026)
-ax.set_xticks(list(pop.x)); ax.set_xticklabels([("2020-24" if x == 2022 else str(int(x))) for x in pop.x])
-ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:,.0f}")); axes_style(ax)
-first, last = pop.value.iloc[0], pop.value.iloc[-1]
-titleblock(fig, f"{C['name']} has {100 * (1 - last / first):.0f}% fewer people than in {int(pop.x.iloc[0])}",
-           f"People living in the {len(tracts)} census tracts, counted on today's tract lines.")
-credit(fig, "Source: NHGIS (IPUMS) decennial census tract counts, 1970-2010, matched to today's tracts; ACS 2020-2024 five-year estimates.")
-fig.savefig(OUTD / "02-population.png"); plt.close(fig)
+def xlabels(ax, xs):
+    ax.set_xticks(list(xs)); ax.set_xticklabels([("2020-24" if x == 2022 else str(int(x))) for x in xs])
 
-# ---------- 03 poverty and vacancy ----------
-fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.83, top=0.8, bottom=0.16)
-for m, col, lab in [("poverty_rate", MAGENTA, "In poverty"), ("vacancy_rate", YELLOW, "Homes vacant")]:
-    d = h[h.measure == m].assign(x=lambda d: d.year.map(YX)).dropna(subset=["x"]).sort_values("x")
-    ax.plot(d.x, d.value, color=col, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
-    for x, v in zip(d.x, d.value):
-        ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
-    ax.annotate(lab, (d.x.iloc[-1], d.value.iloc[-1]), xytext=(14, 0), textcoords="offset points", va="center", color=INK, fontsize=10.5)
-ax.set_ylim(0, 55); ax.set_xlim(1966, 2026)
-ax.set_xticks([1970, 1980, 1990, 2000, 2010, 2022]); ax.set_xticklabels(["1970", "1980", "1990", "2000", "2010", "2020-24"])
-ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); axes_style(ax)
-ax.legend(handles=[Line2D([], [], color=MAGENTA, lw=2, marker="o", label="People in poverty"),
-                   Line2D([], [], color=YELLOW, lw=2, marker="o", label="Homes vacant")],
-          loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5)
-titleblock(fig, "More people in poverty, more homes empty",
-           f"Share of people below the poverty line and share of homes vacant, {C['name']}. The 2010 census did not\nask about income, and vacancy before 1990 is not in our tract data.")
-credit(fig, "Source: NHGIS (IPUMS) decennial census, 1970-2010; ACS 2020-2024 five-year estimates.")
-fig.savefig(OUTD / "03-poverty-vacancy.png"); plt.close(fig)
 
-# ---------- 04 overdose ----------
-od = pd.read_parquet(RAW / "cdc" / "overdose_county_model.parquet")
-od["fips"] = od.fips.astype(str).str.zfill(5); od["year"] = od.year.astype(int); od["r"] = pd.to_numeric(od.model_based_death_rate, errors="coerce")
-here = od[od.fips == C["county"]].sort_values("year"); mid = od.groupby("year").r.median()
-fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.8, top=0.8, bottom=0.16)
-ax.plot(here.year, here.r, color=MAGENTA, lw=2, marker="o", ms=6, mec=SURFACE, mew=1.5)
-ax.plot(mid.index, mid.values, color=INK, lw=2, ls="--")
-for d, lab in [(here.set_index("year").r, C["county_name"]), (mid, "Middle U.S. county")]:
-    ax.annotate(f"{lab}\n{d.iloc[-1]:.0f} per 100,000", (d.index[-1], d.iloc[-1]), xytext=(10, 0), textcoords="offset points", va="center", color=INK, fontsize=10)
-for y in (2003, 2017):
-    v = here.set_index("year").r[y]; ax.annotate(f"{v:.0f}", (y, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
-ax.set_ylim(0, here.r.max() * 1.15); ax.set_xticks(range(2003, 2022, 3)); axes_style(ax)
-titleblock(fig, f"Overdose deaths in {C['county_name']} rose far above the typical county",
-           f"Drug overdose deaths per 100,000 people, CDC model estimates, {C['county_name']} and the middle U.S. county,\n2003-2021. County-wide, not {C['name']} alone.")
-credit(fig, "Source: CDC National Center for Health Statistics, Drug Poisoning Mortality by County (model-based rates), data.cdc.gov.")
-fig.savefig(OUTD / "04-overdose.png"); plt.close(fig)
-print("charts in", OUTD, "| HOLC year", yr, "| 2021 rates:", round(here.r.iloc[-1], 1), round(mid.iloc[-1], 1))
+def build(cid):
+    C = CFG[cid]; rural = "city" not in C
+    out = ROOT / "posts" / C["slug"] / "images"; out.mkdir(parents=True, exist_ok=True)
+    tracts = sets.loc[cid, "tracts"].split(";"); n = len(tracts)
+    h = H[H.cand_id == cid]
+    outline = G20.loc[tracts].to_crs(4326).dissolve()
+    minx, miny, maxx, maxy = outline.total_bounds
+    info = {}
+
+    # ---------- 01 map ----------
+    roads = gpd.read_file(RAW / "tiger" / "roads" / f"tl_2024_{C['county']}_roads.shp").to_crs(4326)
+    fig, ax = plt.subplots(figsize=(10, 8.6)); fig.subplots_adjust(left=0.03, right=0.97, top=0.84, bottom=0.08)
+    if not rural:
+        holc = gpd.read_file(RAW / "holc" / "mappinginequality.json", bbox=(minx - 0.1, miny - 0.08, maxx + 0.1, maxy + 0.08)).to_crs(4326)
+        holc = holc[(holc.city == C["city"]) & (holc.state == C["state"])]
+        for gr, col in GC.items():
+            sub = holc[holc.grade == gr]
+            if len(sub): sub.plot(ax=ax, color=col, alpha=0.55, edgecolor=SURFACE, linewidth=0.6)
+        other = holc[~holc.grade.isin(list(GC))]
+        if len(other): other.plot(ax=ax, color=MUTED, alpha=0.25, edgecolor=SURFACE, linewidth=0.6)
+        roads[roads.MTFCC == "S1100"].plot(ax=ax, color=INK_DIM, linewidth=1.6)
+        p = 0.012
+        ax.set_xlim(minx - p - 0.03, maxx + p + 0.03); ax.set_ylim(miny - p, maxy + p)
+        leg = [Patch(fc=GC[g], alpha=0.55, label=l) for g, l in
+               [("A", "A, \"best\""), ("B", "B, \"still desirable\""), ("C", "C, \"declining\""), ("D", "D, \"hazardous\"")]]
+        leg += [Line2D([], [], color=INK, lw=2.4, label=f"{C['name']} (this story)"), Line2D([], [], color=INK_DIM, lw=1.6, label="Freeways today")]
+        title = f"{C['name']} on the {C['holc_year']} federal mortgage map"
+        sub = f"Home Owners' Loan Corporation grades for {C['city']}, with the {n} census tracts in this story outlined\nand today's freeways drawn in gray."
+        src = "Source: Mapping Inequality, University of Richmond Digital Scholarship Lab; U.S. Census Bureau TIGER/Line 2024 roads and 2020 tracts."
+    else:
+        counties = sorted({t[:5] for t in tracts})
+        cty = G20[G20.index.str[:5].isin(counties)].to_crs(4326)
+        cty = cty.assign(c=cty.index.str[:5]).dissolve(by="c")
+        cty.plot(ax=ax, color="#22262A", edgecolor=MUTED, linewidth=1.0)
+        for c in counties:
+            if c != C["county"]:
+                rr = gpd.read_file(RAW / "tiger" / "roads" / f"tl_2024_{c}_roads.shp").to_crs(4326) if (RAW / "tiger" / "roads" / f"tl_2024_{c}_roads.shp").exists() else None
+                if rr is not None: roads = pd.concat([roads, rr])
+        big = roads[roads.MTFCC.isin(["S1100", "S1200"])]
+        big.plot(ax=ax, color=INK_DIM, linewidth=1.1)
+        G20.loc[tracts].to_crs(4326).plot(ax=ax, color=BLUE, alpha=0.35, edgecolor="none")
+        cx0, cy0, cx1, cy1 = cty.total_bounds; px, py = (cx1 - cx0) * 0.06, (cy1 - cy0) * 0.06
+        ax.set_xlim(cx0 - px, cx1 + px); ax.set_ylim(cy0 - py, cy1 + py)
+        leg = [Line2D([], [], color=INK, lw=2.4, label=f"{C['name']} (this story)"),
+               Line2D([], [], color=MUTED, lw=1.0, label="County line"), Line2D([], [], color=INK_DIM, lw=1.1, label="Main roads")]
+        title = f"Where {C['name']} is" if C["name"] != C["county_name"] else f"{C['name']}"
+        names = C["county_name"] + (" and parts of Bennett and Jackson counties" if len(counties) > 1 else "")
+        sub = f"The {n} census tracts in this story, shaded and outlined, in {names}."
+        src = "Source: U.S. Census Bureau TIGER/Line 2024 roads and 2020 census tracts."
+    outline.boundary.plot(ax=ax, color=INK, linewidth=2.4)
+    for lab, la, lo in C["labels"]:
+        ax.plot(lo, la, "o", color=INK, ms=4) if rural else None
+        ax.annotate(lab, (lo, la), xytext=(0, 10) if rural else (0, 0), textcoords="offset points", color=INK, fontsize=10,
+                    ha="center", va="bottom" if rural else "center",
+                    bbox=dict(boxstyle="round,pad=0.25", fc=SURFACE, ec="none", alpha=0.8))
+    ax.set_axis_off(); ax.set_aspect(1 / np.cos(np.radians((miny + maxy) / 2)))
+    ax.legend(handles=leg, loc="upper left" if rural else "lower left", frameon=True, facecolor=SURFACE, edgecolor=GRID, labelcolor=INK, fontsize=9.5)
+    titleblock(fig, title, sub); credit(fig, src)
+    fig.savefig(out / "01-map.png"); plt.close(fig)
+
+    # ---------- 01b county population (rural) ----------
+    if rural:
+        cc = pd.read_csv(RAW / "county_pop" / "cencounts.csv", dtype={"fips": str}, na_values=".")
+        cfips = C.get("od_fips", C["county"])  # Shannon County code before 2015
+        old = cc[cc.fips == cfips].iloc[0]
+        s = {int(k[3:]): old[k] for k in cc.columns if k.startswith("pop") and pd.notna(old[k])}
+        new = pd.read_csv(RAW / "county_pop" / "county_pop_2000_2020.csv", dtype={"fips": str})
+        for y in (2000, 2010, 2020):
+            v = new[(new.fips.isin([C["county"], cfips])) & (new.year == y)]["pop"]
+            if len(v): s[y] = int(v.iloc[0])
+        s = pd.Series(s).sort_index().astype(float)
+        fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.1, right=0.95, top=0.8, bottom=0.16)
+        ax.plot(s.index, s.values, color=BLUE, lw=2, marker="o", ms=7, mec=SURFACE, mew=2)
+        pk = s.idxmax()
+        for x in sorted({s.index[0], pk, s.index[-1]}):
+            ax.annotate(f"{s[x]:,.0f}", (x, s[x]), xytext=(0, 11), textcoords="offset points", ha="center", color=INK, fontsize=10)
+        ax.set_ylim(0, s.max() * 1.18); ax.set_xticks(range(1900, 2021, 20))
+        ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:,.0f}")); axes_style(ax)
+        if pk not in (s.index[-1],):
+            t = f"{C['county_name']} peaked at {s[pk]:,.0f} people in {pk}"
+        else:
+            t = f"{C['county_name']} has grown since {s.index[0]}"
+        titleblock(fig, t, f"People counted in each census, {s.index[0]}-2020, for the whole county.")
+        credit(fig, "Source: U.S. Census Bureau decennial census county counts (1900-1990 file via NBER; 2000-2020 Census API).")
+        fig.savefig(out / "01b-county-population.png"); plt.close(fig)
+        info["county_pop"] = s.round(0).astype(int).to_dict()
+
+    # ---------- 02 population ----------
+    pop = h[h.measure == "population"].assign(x=lambda d: d.year.map(YX)).dropna(subset=["x"]).sort_values("x")
+    fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.1, right=0.95, top=0.8, bottom=0.16)
+    ax.plot(pop.x, pop.value, color=BLUE, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
+    for x, v in zip(pop.x, pop.value):
+        ax.annotate(f"{v:,.0f}", (x, v), xytext=(0, 11), textcoords="offset points", ha="center", color=INK, fontsize=10)
+    ax.set_ylim(0, pop.value.max() * 1.18); ax.set_xlim(pop.x.min() - 4, 2026); xlabels(ax, pop.x)
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:,.0f}")); axes_style(ax)
+    first, last, y0 = pop.value.iloc[0], pop.value.iloc[-1], int(pop.x.iloc[0])
+    ch = 100 * (last / first - 1)
+    t = (f"{C['name']} has {abs(ch):.0f}% fewer people than in {y0}" if ch <= -5 else
+         f"{C['name']} has {ch:.0f}% more people than in {y0}" if ch >= 5 else f"{C['name']}'s population, {y0} to today")
+    titleblock(fig, t, f"People living in the {n} census tracts, counted on today's tract lines.")
+    credit(fig, f"Source: NHGIS (IPUMS) decennial census tract counts, {y0}-2010, matched to today's tracts; ACS 2020-2024 five-year estimates.")
+    fig.savefig(out / "02-population.png"); plt.close(fig)
+    info["pop"] = dict(zip(pop.year, pop.value.round(0))); info["pop_change"] = round(ch, 1)
+
+    # ---------- 03 poverty and vacancy ----------
+    fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.83, top=0.8, bottom=0.16)
+    top, xs, got = 0, set(), {}
+    for m, col, lab in [("poverty_rate", MAGENTA, "In poverty"), ("vacancy_rate", YELLOW, "Homes vacant")]:
+        d = h[h.measure == m].assign(x=lambda d: d.year.map(YX)).dropna(subset=["x"]).sort_values("x")
+        got[m] = dict(zip(d.year, d.value.round(1)))
+        ax.plot(d.x, d.value, color=col, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
+        for x, v in zip(d.x, d.value):
+            ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
+        ax.annotate(lab, (d.x.iloc[-1], d.value.iloc[-1]), xytext=(14, 0), textcoords="offset points", va="center", color=INK, fontsize=10.5)
+        top = max(top, d.value.max()); xs |= set(d.x)
+    ax.set_ylim(0, max(55, np.ceil(top / 10) * 10 + 10)); ax.set_xlim(min(xs) - 4, 2026); xlabels(ax, sorted(xs))
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); axes_style(ax)
+    ax.legend(handles=[Line2D([], [], color=MAGENTA, lw=2, marker="o", label="People in poverty"),
+                       Line2D([], [], color=YELLOW, lw=2, marker="o", label="Homes vacant")],
+              loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5)
+    pv, vc = got["poverty_rate"], got["vacancy_rate"]
+    pv_up = pv["2020-2024"] - list(pv.values())[0] >= 3; vc_up = vc["2020-2024"] - list(vc.values())[0] >= 3
+    pv_down = list(pv.values())[0] - pv["2020-2024"] >= 3
+    t = ("Fewer people in poverty, more homes empty" if pv_down and vc_up and pv["2020-2024"] < 25 else
+         "More people in poverty, more homes empty" if pv_up and vc_up else
+         "More homes empty, and poverty still high" if vc_up else
+         "Poverty is still high" if not pv_up else "More people in poverty")
+    early = "vacancy before 1990 is not in our tract data" if min(xs) < 1990 else "our tract data starts in 1990"
+    titleblock(fig, t, f"Share of people below the poverty line and share of homes vacant, {C['name']}. The 2010 census did not\nask about income, and {early}.")
+    credit(fig, "Source: NHGIS (IPUMS) decennial census, 1970-2010; ACS 2020-2024 five-year estimates.")
+    fig.savefig(out / "03-poverty-vacancy.png"); plt.close(fig)
+    info.update(poverty=pv, vacancy=vc)
+
+    # ---------- 04 overdose ----------
+    here = OD[OD.fips == C.get("od_fips", C["county"])].sort_values("year").set_index("year").r
+    fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.8, top=0.8, bottom=0.16)
+    ax.plot(here.index, here.values, color=MAGENTA, lw=2, marker="o", ms=6, mec=SURFACE, mew=1.5)
+    ax.plot(MID.index, MID.values, color=INK, lw=2, ls="--")
+    lab_here = C["county_name"] if not C["county_name"].endswith("Baltimore") else "Baltimore city"
+    ends = [(here, lab_here), (MID, "Middle U.S. county")]
+    gap = abs(here.iloc[-1] - MID.iloc[-1]) / max(here.max(), MID.max())
+    for i, (d, lab) in enumerate(ends):
+        off = 0 if gap > 0.12 else (14 if d.iloc[-1] >= ends[1 - i][0].iloc[-1] else -14)
+        ax.annotate(f"{lab}\n{d.iloc[-1]:.0f} per 100,000", (d.index[-1], d.iloc[-1]), xytext=(10, off), textcoords="offset points", va="center", color=INK, fontsize=10)
+    ax.annotate(f"{here.iloc[0]:.0f}", (here.index[0], here.iloc[0]), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
+    ax.set_ylim(0, max(here.max(), MID.max()) * 1.15); ax.set_xticks(range(2003, 2022, 3)); axes_style(ax)
+    r = here.iloc[-1] / MID.iloc[-1]
+    verb = ("rose far above the typical county" if r >= 1.5 else "rose above the typical county" if r >= 1.15 else
+            "stayed below the typical county" if r <= 0.85 else "tracked the typical county")
+    titleblock(fig, f"Overdose deaths in {lab_here} {verb}",
+               f"Drug overdose deaths per 100,000 people, CDC model estimates, {lab_here} and the middle U.S. county,\n2003-2021. County-wide, not {C['name']} alone." if C["name"] != C["county_name"] else
+               f"Drug overdose deaths per 100,000 people, CDC model estimates, {lab_here} and the middle U.S. county,\n2003-2021.")
+    credit(fig, "Source: CDC National Center for Health Statistics, Drug Poisoning Mortality by County (model-based rates), data.cdc.gov.")
+    fig.savefig(out / "04-overdose.png"); plt.close(fig)
+    info["overdose"] = {int(k): round(v, 1) for k, v in here.items() if k in (2003, 2010, 2017, 2021)}
+    info["overdose_mid_2021"] = round(MID.iloc[-1], 1)
+    print(cid, C["slug"], info)
+
+
+ids = list(CFG) if sys.argv[1:] == ["all"] else sys.argv[1:]
+for cid in ids:
+    build(cid)
