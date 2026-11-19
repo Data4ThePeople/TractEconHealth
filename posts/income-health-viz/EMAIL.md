@@ -24,12 +24,12 @@ Our theory was half right. Income and health in about 78,000 U.S. neighborhoods.
 
 ## 1. Hero image
 
-`posts/income-health-viz/images/income-health-viz-hero-email.jpg` (289 KB), linked to the post.
+`posts/income-health-viz/images/income-health-viz-hero-email.jpg` (283 KB), linked to the post.
 
 Alt text:
 
 ```
-Scatter plot titled Income and health, neighborhood by neighborhood. Each dot is one of 77,708 U.S. census tracts, with median household income across and a health index from 0 to 100 up. The dots climb steeply from lower left, and an orange line through the middle of the cloud bends and flattens above about $110,000 but keeps rising. Text at left: 0.82 rank correlation between income and a health index built from 14 CDC measures; above $110,000 the index rises about 27% as fast.
+Scatter plot titled Income and health, neighborhood by neighborhood. Each dot is a U.S. census tract, with median household income across, up to $250,000, and a health index from 0 to 100 up. The dots climb steeply from lower left, and an orange line through the middle bends and flattens above about $110,000 but keeps rising. Text at left: 0.82 rank correlation between income and a health index built from 14 CDC measures; above $110,000 the index rises about 27% as fast.
 ```
 
 *This is the post's own `hero_alt`.*

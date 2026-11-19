@@ -6,7 +6,7 @@ date: 2026-11-20
 time: 07:30:00-05:00
 section: Visualization
 hero: images/income-health-viz-hero-1680x1080.png
-hero_alt: Scatter plot titled Income and health, neighborhood by neighborhood. Each dot is one of 77,708 U.S. census tracts, with median household income across and a health index from 0 to 100 up. The dots climb steeply from lower left, and an orange line through the middle of the cloud bends and flattens above about $110,000 but keeps rising. Text at left: 0.82 rank correlation between income and a health index built from 14 CDC measures; above $110,000 the index rises about 27% as fast.
+hero_alt: Scatter plot titled Income and health, neighborhood by neighborhood. Each dot is a U.S. census tract, with median household income across, up to $250,000, and a health index from 0 to 100 up. The dots climb steeply from lower left, and an orange line through the middle bends and flattens above about $110,000 but keeps rising. Text at left: 0.82 rank correlation between income and a health index built from 14 CDC measures; above $110,000 the index rises about 27% as fast.
 meta_title: Income and Health by Census Tract: Interactive Chart
 description: Free interactive chart of income and health for about 78,000 U.S. census tracts and 2,900 counties, from Census and CDC data, with county life expectancy.
 keywords: income and health by census tract, median household income and health, income and life expectancy by county, CDC PLACES census tract data, health and wealth gap, social determinants of health data, income and health inequality in the United States, income and obesity by census tract

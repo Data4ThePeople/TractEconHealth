@@ -29,7 +29,11 @@ for b in range(20):
 
 bend = round(res["k"] / 10000) * 10000           # about $110,000
 ratio = res["slope_above"] / res["slope_below"]  # about 27%
-pts = np.column_stack([np.round(x).astype(int), np.round(y * 10).astype(int)]).ravel().tolist()
+# the Census Bureau reports incomes above $250,000 only as "$250,001" (250,000 or more); those tracts all sit on one
+# value, so they are not drawn. They stay in the correlation and the median line, where their rank is correct.
+cap = x >= 250001
+n_cap = int(cap.sum())
+pts = np.column_stack([np.round(x[~cap]).astype(int), np.round(y[~cap] * 10).astype(int)]).ravel().tolist()
 
 html = f"""<!doctype html><html><head><meta charset="utf-8"><style>
 *{{box-sizing:border-box;margin:0}}
@@ -41,17 +45,17 @@ h1{{position:absolute;left:90px;top:66px;font:700 54px/1.08 Georgia,serif;color:
 .l{{font-size:25px;line-height:1.35;margin:10px 0 44px}}
 .o{{color:#f08a4b;font-weight:700}}.b{{color:#6aa6e8;font-weight:700}}
 canvas{{position:absolute;left:520px;top:240px}}
-.foot{{position:absolute;left:90px;right:90px;bottom:40px;display:flex;justify-content:space-between;font-size:19px;color:#8A9098}}
+.foot{{position:absolute;left:90px;right:90px;bottom:36px;display:flex;justify-content:space-between;align-items:flex-end;font-size:19px;line-height:1.45;color:#8A9098}}
 .brand{{font-weight:700;color:#BBBDC0}}
 </style></head><body>
 <h1>Income and health, neighborhood by neighborhood</h1>
-<div class="sub"><span class="b">Each dot</span> is one of {len(x):,} U.S. census tracts. The <span class="o">orange line</span> follows the middle of the cloud.</div>
+<div class="sub"><span class="b">Each dot</span> is a U.S. census tract, {len(x):,} in all. The <span class="o">orange line</span> follows the middle of the cloud.</div>
 <div class="stats">
  <div class="n">{rho:.2f}</div><div class="l">rank correlation between median household income and a health index built from 14 CDC measures</div>
  <div class="n">${bend:,.0f}</div><div class="l">where gains slow: above it, the health index rises about {ratio*100:.0f}% as fast, but it keeps rising</div>
 </div>
 <canvas id="c" width="1090" height="700"></canvas>
-<div class="foot"><span>Income: Census Bureau, ACS 2020-2024. Health: CDC PLACES 2025, model estimates. Kentucky and Pennsylvania not shown.</span><span class="brand">Data 4 The People</span></div>
+<div class="foot"><span>Income: Census Bureau, ACS 2020-2024. Health: CDC PLACES 2025, model estimates. Kentucky and Pennsylvania not shown.<br>The income axis ends at $250,000. The {n_cap:,} tracts the Census Bureau reports only as $250,000 or more are not drawn but are counted in the figures.</span><span class="brand">Data 4 The People</span></div>
 <script>
 const P={json.dumps(pts)}, L={json.dumps(line)};
 const cv=document.getElementById('c'), g=cv.getContext('2d'), W=cv.width, H=cv.height;
@@ -75,4 +79,4 @@ png = OUT / "income-health-viz-hero-1680x1080.png"
 subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
                 "--window-size=1680,1080", "--virtual-time-budget=10000", f"--screenshot={png}", f"file://{src}"],
                check=True, capture_output=True)
-print(png, len(x), round(rho, 3), bend, round(ratio * 100))
+print(png, len(x), n_cap, round(rho, 3), bend, round(ratio * 100))
