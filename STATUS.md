@@ -62,3 +62,4 @@ None.
 - 2026-11-19 Eric approved all 10 picks. Key measures table built (78_key_measures.py); own tie-out 88/89 pass, one difference explained (79_spotlight_tieout.py, TIEOUT.md). Independent tie-out agent next, then first post draft (West Dayton) for Eric's comments.
 - 2026-11-19 Independent tie-out back: 270 of 273 values match; 3 Owsley PLACES values differ by about 0.1 (weights). DATASETS.md fit wording fixed to overlap over union. West Dayton draft posted for Eric's comments.
 - 2026-11-19 Spotlight series: Eric confirmed Step 1 and called the West Dayton draft excellent. Drafting the other 9 in the same structure. HHS Good Sam finding: Eric to give the DDN date; US-35 date and count dropped from the post.
+- 2026-11-19 Spotlight: all 10 drafts written (posts/spotlight-*/POST.md) with key measures as a PNG panel, charts rebuilt for all 10. Waiting on Eric's read; chart edits expected (Step 1 reopen).
