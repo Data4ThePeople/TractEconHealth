@@ -5,9 +5,11 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: income-health-viz
-Step: 2f
+Post: income-health-viz (paused at 2g; resumes 2026-11-20 morning)
+Step: 2g
 Since: 2026-11-19
+
+Also open: Step 1 for the community spotlight series (10 neighborhoods: 5 urban, 5 rural)
 
 ## Steps
 
@@ -19,7 +21,7 @@ Since: 2026-11-19
 | 2c | Slice markup | 2026-11-19 | |
 | 2d | Hero 1680x1080 + alt text | 2026-11-19 | |
 | 2e | SEO | 2026-11-19 | |
-| 2f | Pushed to Prismic (draft) | | |
+| 2f | Pushed to Prismic (draft) | 2026-11-19 | |
 | 2g | Mailchimp teaser | | |
 | 3  | Social posts | | |
 | 4a | Outreach list | | |
@@ -46,3 +48,5 @@ None.
 - 2026-11-19 During 2g: life expectancy chart line recolored to the dashboard's orange, pointer sentence and direct link to the county life expectancy view added under it, email chart linked to that view. Prismic draft updated in place (same document).
 
 - 2026-11-19 During 2g: the 541 tracts at the Census income cap ($250,001) are no longer drawn in the hero or the interactive chart when income is on the axis; both say so; they stay in the correlation and the median line. Prismic draft updated.
+- 2026-11-19 2f confirmed. 2g drafted (EMAIL.md), not yet confirmed.
+- 2026-11-19 Eric paused income-health-viz at 2g (2g, 3, 4 resume tomorrow morning) and opened Step 1 for a follow-on series: 10 community spotlights, low income and poor health, 5 urban (week 1) and 5 rural (week 2). Screen at least 100 candidates, research each with subagents, look for compounding causes with a distinct story each; West Dayton is a must. Drop places whose tracts changed too much to compare over time. Present a top 10 with backups.
