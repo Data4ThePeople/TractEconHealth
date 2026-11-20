@@ -137,7 +137,7 @@ function spearman(a, b){
   let sab=0,saa=0,sbb=0; for(let i=0;i<n;i++){const da=ra[i]-ma, db=rb[i]-mb; sab+=da*db; saa+=da*da; sbb+=db*db;} return sab/Math.sqrt(saa*sbb);
 }
 function draw(){
-  const W = cv.clientWidth || 760, H = Math.round(Math.min(560, Math.max(340, W*0.74))), dpr = window.devicePixelRatio||1;
+  const W = cv.clientWidth || 760, H = Math.round(Math.min(getComputedStyle(document.querySelector(".side")).display==="none" ? 460 : 560, Math.max(280, W*0.74))), dpr = window.devicePixelRatio||1;
   cv.width = W*dpr; cv.height = H*dpr; cv.style.height = H+"px"; ctx.setTransform(dpr,0,0,dpr,0,0);
   const cx = cols[X], cy = cols[Y], xv = cx.v, yv = cy.v;
   const m = {l:56, r:12, t:12, b:44}, pw = W-m.l-m.r, ph = H-m.t-m.b;

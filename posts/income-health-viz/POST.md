@@ -34,7 +34,7 @@ dividers: false
 
 # Income and Health, Neighborhood by Neighborhood: An Interactive Chart
 
-<iframe src="https://data4thepeople.github.io/TractEconHealth/dist/index.html?v=20261119b" width="100%" height="940" loading="lazy" style="border:0" title="Income and physical and mental health, by census tract and county: interactive chart"></iframe>
+<iframe src="https://data4thepeople.github.io/TractEconHealth/dist/index.html?v=20261120a" width="100%" height="860" loading="lazy" style="border:0" title="Income and physical and mental health, by census tract and county: interactive chart"></iframe>
 
 ::: spacer 40px
 
