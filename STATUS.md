@@ -65,3 +65,4 @@ None.
 - 2026-11-19 Spotlight: all 10 drafts written (posts/spotlight-*/POST.md) with key measures as a PNG panel, charts rebuilt for all 10. Waiting on Eric's read; chart edits expected (Step 1 reopen).
 - 2026-11-20 After publish: embed tightened. Chart height capped at 460px in the one-column layout and floor lowered to 280px on phones; iframe 940px to 860px (content measures 796-869px from 360px to 1280px wide). Prismic draft updated in place to 860px (Migration Release); Eric to republish.
 - 2026-11-20 Step 2g confirmed (email sent). Step 3 opened: SOCIAL.md and a GIF of the live chart.
+- 2026-11-20 Step 3 drafted: SOCIAL.md (X, Bluesky, LinkedIn) and social/income-health-measures.gif from scripts/90_social_gif.py. Awaiting Eric.
