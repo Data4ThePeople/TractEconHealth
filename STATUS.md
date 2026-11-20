@@ -5,8 +5,8 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: income-health-viz
-Step: 3
+Post: income-health-viz (paused at 4a; Eric resumes next week)
+Step: 4a
 Since: 2026-11-20
 
 Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 confirmed 2026-11-19; now in 2a, drafting all 10 from the West Dayton model. Eric expects to reopen Step 1 for chart edits as he reads.
@@ -23,7 +23,7 @@ Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 co
 | 2e | SEO | 2026-11-19 | |
 | 2f | Pushed to Prismic (draft) | 2026-11-19 | |
 | 2g | Mailchimp teaser | 2026-11-20 | sent |
-| 3  | Social posts | | |
+| 3  | Social posts | 2026-11-20 | |
 | 4a | Outreach list | | |
 | 4b | Outreach drafts in Gmail | | |
 
@@ -66,3 +66,4 @@ None.
 - 2026-11-20 After publish: embed tightened. Chart height capped at 460px in the one-column layout and floor lowered to 280px on phones; iframe 940px to 860px (content measures 796-869px from 360px to 1280px wide). Prismic draft updated in place to 860px (Migration Release); Eric to republish.
 - 2026-11-20 Step 2g confirmed (email sent). Step 3 opened: SOCIAL.md and a GIF of the live chart.
 - 2026-11-20 Step 3 drafted: SOCIAL.md (X, Bluesky, LinkedIn) and a GIF. Eric: tool screenshots too small for social; GIF rebuilt as four 1080x1080 headline charts (social/income-health.gif, scripts/90_social_gif.py). Awaiting Eric.
+- 2026-11-20 Step 3 confirmed. Step 4a opened and paused at Eric's request; outreach list not started. Eric picks it up next week.
