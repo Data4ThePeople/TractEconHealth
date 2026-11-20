@@ -6,12 +6,12 @@ Drawn from the post and the email. Every number here appears in the post.
 
 ## GIF
 
-`posts/income-health-viz/social/income-health-measures.gif` (1.0 MB, 7 frames, about 15 seconds a loop). Screenshots of the live chart in dark mode, one per view: tracts against the health index, obesity, diabetes, high blood pressure, depression and smoking, then counties against life expectancy, held for 5 seconds. Built by `scripts/90_social_gif.py`. Attach it to all three posts.
+`posts/income-health-viz/social/income-health.gif` (0.6 MB, 1080x1080, 4 frames, 3.2 seconds each with the last held 5, about 15 seconds a loop). Each frame is a chart in the house dark style with a headline stating the relationship: tracts against the health index (bend at about $110,000), obesity, diabetes, then counties against life expectancy. Every headline number is the orange line's end value and appears in the post. Built by `scripts/90_social_gif.py`, which also saves each frame as `frame-1.png` to `frame-4.png` for checking. Attach the GIF to all three posts.
 
-Alt text (473 characters):
+Alt text (459 characters):
 
 ```
-Animated screenshots of an interactive scatter chart. Each dot is a U.S. census tract, with median household income across. Frames step through health measures up the side: a health index, obesity, diabetes, high blood pressure, depression and smoking, each with an orange line following the middle of the dots as income rises. The last frame shows counties, where the line for life expectancy climbs from 70.7 years in the lowest-income group to 80.8 years in the highest.
+Four charts in turn, each a scatter of dots with an orange line through the middle and median household income across. First, U.S. census tracts against a health index: health rises with income, steepest at the bottom and slowing above about $110,000. Second, obesity falls from 45.8% to 23.6% of adults from the lowest-income tracts to the highest. Third, diabetes falls from 20.2% to 8.6%. Last, U.S. counties: life expectancy rises from 70.7 to 80.8 years.
 ```
 
 ## X
