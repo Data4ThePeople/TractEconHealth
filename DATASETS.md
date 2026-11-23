@@ -484,6 +484,10 @@ Stores today: USDA FNS SNAP retailer locator live feed (ArcGIS FeatureServer `sn
 
 Households with no vehicle: ACS 2020-2024 5-year B25044, owner (003) plus renter (010) no-vehicle households over all occupied (001), summed across the six tracts; Montgomery County and U.S. the same way, Census API. Lack of reliable transportation (LACKTRPT) and food insecurity (FOODINSECU): CDC PLACES 2025 release (data.cdc.gov cwsq-ngmh), 2023 survey year, crude prevalence for adults, averaged across the six tracts weighted by tract population. Comparison: all PLACES tracts with these measures (60,419 tracts in 40 states), weighted by tract population, via a SoQL sum. These are BRFSS social-needs questions, asked only in some states, so the comparison is not the whole U.S. Chart 05a: West Dayton vs. U.S. (vehicles) and vs. the 40-state figure (the two CDC measures), labeled "nationwide."
 
+### Jobs held by West Dayton residents (`scripts/94_lodes_westdayton.py`, `analysis/spotlight/lodes_westdayton.csv`)
+
+LEHD LODES 8 residence area characteristics (RAC), Ohio, all jobs (S000, JT00), years 2002, 2005, 2007, 2010, 2012, 2015, 2022, from https://lehd.ces.census.gov/data/lodes/LODES8/oh/rac/. C000 all jobs, CNS05 manufacturing (NAICS 31-33), summed over 2020 blocks in the six tracts (first 11 digits of h_geocode). LODES 8 is on 2020 blocks for all years, so the land is the same. Counts are jobs held by residents, not people, and say nothing about where the jobs were. Federal jobs are included only from 2010 on, which barely touches manufacturing. Population comparison (about 22% fewer people, 2000 to 2010) is from `history_final.csv` (20,459 to 16,017).
+
 ### Below 200% of the poverty line (`scripts/83_below200.py`, `analysis/spotlight/below200.csv`)
 
 Share of people whose family income is under twice the federal poverty line, for each pick, its main county and state, and the U.S.
