@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-west-dayton
-Step: 2e
+Step: 2f
 Since: 2026-11-23
 
 Also paused: income-health-viz at 4a (Eric resumes next week).
@@ -73,3 +73,4 @@ None.
 - 2026-11-23 spotlight-west-dayton: Eric confirmed 2b (detailed review done; he will read once more after publishing and may send small tweaks). Step 2c opened. Series blurb moved above the comparison table in all 10 posts, per Eric's "top of every post."
 - 2026-11-23 spotlight-west-dayton: Eric moved on to 2d (2c slice breakdown accepted). Hero: Wikimedia Commons photo of West Third Street Historic District (Wright-Dunbar) by Wdzinc, CC BY-SA 3.0, fitted to 1680x1080; credit in How we built this.
 - 2026-11-23 spotlight-west-dayton: Eric confirmed 2d (Commons hero). Step 2e opened: meta title, description, keywords drafted; Article schema with series isPartOf.
+- 2026-11-23 spotlight-west-dayton: Eric confirmed 2e (accepted SNAP map link, Ohio income-health link, Common questions). 2f: pushed to Prismic as draft awRDuBEAACcAiOhQ in the Migration Release (68 slices, 9 images, Article + FAQPage schema; tags and author empty).

@@ -1,0 +1,65 @@
+{
+  "images/00-key-measures.png": {
+    "id": "AR53iS8JOrQnU5Bo",
+    "width": 1760,
+    "height": 864,
+    "url": "https://images.prismic.io/data4thepeople/AR53iS8JOrQnU5Bo_00-key-measures.png?auto=format,compress",
+    "stamp": "135058:1795122122"
+  },
+  "images/01-map.png": {
+    "id": "JdvQS5vcHRxD3hTa",
+    "width": 1600,
+    "height": 1194,
+    "url": "https://images.prismic.io/data4thepeople/JdvQS5vcHRxD3hTa_01-map.png?auto=format,compress",
+    "stamp": "212804:1795438988"
+  },
+  "images/01c-then-now.png": {
+    "id": "cGXRst6bomRnMNfU",
+    "width": 1600,
+    "height": 928,
+    "url": "https://images.prismic.io/data4thepeople/cGXRst6bomRnMNfU_01c-then-now.png?auto=format,compress",
+    "stamp": "123938:1795437217"
+  },
+  "images/02-population.png": {
+    "id": "GHdYp8KPr3NZrBp9",
+    "width": 1600,
+    "height": 896,
+    "url": "https://images.prismic.io/data4thepeople/GHdYp8KPr3NZrBp9_02-population.png?auto=format,compress",
+    "stamp": "89989:1795438988"
+  },
+  "images/03-low-income-vacancy.png": {
+    "id": "nq_YdFYuQeMSrASb",
+    "width": 1600,
+    "height": 960,
+    "url": "https://images.prismic.io/data4thepeople/nq_YdFYuQeMSrASb_03-low-income-vacancy.png?auto=format,compress",
+    "stamp": "143840:1795438988"
+  },
+  "images/04-health-trend.png": {
+    "id": "ZFT4SjR6zvUcQjLw",
+    "width": 1600,
+    "height": 1184,
+    "url": "https://images.prismic.io/data4thepeople/ZFT4SjR6zvUcQjLw_04-health-trend.png?auto=format,compress",
+    "stamp": "182600:1795438988"
+  },
+  "images/05-food-map.png": {
+    "id": "l8u1zpBqBUhpuImZ",
+    "width": 1600,
+    "height": 1639,
+    "url": "https://images.prismic.io/data4thepeople/l8u1zpBqBUhpuImZ_05-food-map.png?auto=format,compress",
+    "stamp": "251446:1795439278"
+  },
+  "images/05a-transport.png": {
+    "id": "pDnLInyIt5EjkHuu",
+    "width": 1600,
+    "height": 992,
+    "url": "https://images.prismic.io/data4thepeople/pDnLInyIt5EjkHuu_05a-transport.png?auto=format,compress",
+    "stamp": "120534:1795439355"
+  },
+  "images/spotlight-west-dayton-hero-1680x1080.png": {
+    "id": "agYoxNSk6g64AADY",
+    "width": 1680,
+    "height": 1080,
+    "url": "https://images.prismic.io/data4thepeople/agYoxNSk6g64AADY_spotlight-west-dayton-hero-1680x1080.png?auto=format,compress",
+    "stamp": "2728758:1795441422"
+  }
+}
