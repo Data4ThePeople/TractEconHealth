@@ -22,7 +22,7 @@ Here is how West Dayton compares with the country today.
 ::: spacer 20px
 
 ::: dropcap
-West Dayton is six census tracts on the west side of Dayton, Ohio, with about 12,900 people. They run from Wright-Dunbar, next to downtown, out through Westwood and the Miami Chapel area to the city's edge with Trotwood. Most of the people who live here are Black, about 80% in the latest census survey. Median household income is about $29,600, 37% of the U.S. figure. Life expectancy is 69.3 years, 9.4 years shorter than for the country as a whole.
+West Dayton has no exact boundary that census data can follow. The City's 2019 plan describes it as 19 neighborhoods west of the Great Miami River and south of Wolf Creek ([West Dayton Neighborhoods Vision, 2019, p. 2](https://www.daytonohio.gov/DocumentCenter/View/6763/West-Dayton-Neighborhoods-Vision-document)). Census tracts do not line up with those neighborhoods, so this post uses six whole census tracts, with about 12,900 people, as a stand-in for the heart of West Dayton. They run from Wright-Dunbar, next to downtown, out through Westwood and the Miami Chapel area to the city's edge with Trotwood. Most of the people who live here are Black, about 80% in the latest census survey. Median household income is about $29,600, 37% of the U.S. figure. Life expectancy is 69.3 years, 9.4 years shorter than for the country as a whole.
 
 West Dayton took a long series of hits over almost 90 years. This post walks through them in order, with a link to the source for each one.
 
@@ -31,6 +31,8 @@ West Dayton took a long series of hits over almost 90 years. This post walks thr
 ::: spacer 5px
 
 In 1937, the federal Home Owners' Loan Corporation graded Dayton's neighborhoods for mortgage risk. Areas graded D, shaded red, were labeled "hazardous." None of the land in today's West Dayton tracts got an A or B grade. Most of the Wright-Dunbar tract was graded D, and so was about half of the Miami Chapel tract ([Mapping Inequality, University of Richmond](https://dsl.richmond.edu/panorama/redlining/map/OH/Dayton)).
+
+A low grade mattered because the federal government was building the modern home loan at the same time. The Federal Housing Administration's 1938 underwriting manual recommended deed rules barring a home from being lived in "except by the race for which they are intended" ([FHA Underwriting Manual, 1938, excerpt via Who Built America?](https://whobuiltamerica.org/item/a-government-guide-to-redlining)). Economists at the Federal Reserve Bank of Chicago compared blocks on either side of the map lines. They found that the maps led to lower home ownership, home values and rents, and more racial segregation, in the decades that followed. The gaps grew until about 1970 or 1980 and narrowed after that ([Aaronson, Hartley and Mazumder, 2021](https://doi.org/10.1257/pol.20190414)).
 
 The map below shows the 1937 grades with the six tracts in this story outlined.
 
@@ -108,7 +110,7 @@ The City's recent plans name the history directly. The 2025 Westwood plan calls 
 
 ::: spacer 5px
 
-- **The neighborhood.** West Dayton here is six 2020 census tracts in Montgomery County, Ohio: 39113165100, 39113003800, 39113003900, 39113004100, 39113000200 and 39113070300. All six are in the bottom 20% of U.S. tracts on both median household income and our health index. Tract 39113070300 is split about evenly between Dayton and Trotwood.
+- **The neighborhood.** West Dayton has no boundary that census tracts follow, so we use whole tracts as a stand-in. West Dayton here is six 2020 census tracts in Montgomery County, Ohio: 39113165100, 39113003800, 39113003900, 39113004100, 39113000200 and 39113070300. All six are in the bottom 20% of U.S. tracts on both median household income and our health index. Tract 39113070300 is split about evenly between Dayton and Trotwood.
 - **Then and now.** Census counts from 1970 to 2010 come from [NHGIS (IPUMS)](https://www.nhgis.org/) and are fitted to today's tract lines. 2020-2024 numbers are from the Census Bureau's [American Community Survey](https://www.census.gov/programs-surveys/acs) five-year estimates.
 - **The table at the top.** Rates are computed from counts summed across the six tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
 - **The map.** 1937 grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/map/OH/Dayton). The tract shares graded D are our own overlay of that map on 2020 tract lines.
