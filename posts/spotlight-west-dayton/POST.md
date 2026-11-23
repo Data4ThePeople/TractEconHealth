@@ -1,7 +1,7 @@
 ---
 title: "Redlined in 1937: West Dayton's Long Fall"
 prismic_label: "Redlined in 1937: West Dayton's Long Fall"
-subtitle: How a Black neighborhood on Dayton's west side went from a home for families shut out of the rest of the city to one of the poorest and least healthy places in the country, one cut at a time.
+subtitle: Ninety years of hits to a Black neighborhood on Dayton's west side, from a federal loan map to a grocery store that closed and was never replaced.
 slug: spotlight-west-dayton
 date: 2026-11-23
 time: 09:30:00-05:00
