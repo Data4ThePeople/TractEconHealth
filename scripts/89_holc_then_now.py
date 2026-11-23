@@ -105,3 +105,55 @@ print("\nWest Dayton footprint vs. rest of the 1940 tracted area\n", w.to_string
 for yr in ("1940", "2020-2024"):
     d, rest = w.loc[(yr, "West Dayton")], w.loc[(yr, "rest")]
     print(yr, f"own gap {d.own - rest.own:+.1f} | employed gap {d.employed - rest.employed:+.1f} | jobless gap {d.jobless - rest.jobless:+.1f} | value ratio {d.median_value / rest.median_value:.2f} | rent ratio {d.median_rent / rest.median_rent:.2f}")
+
+# ---- Three groups for the post: the west side D areas (D10, D11, the D areas that reach into West Dayton), the other
+# D areas (each 12% nonwhite or less in 1940), and the A-C areas. Same land in both years.
+WEST_D = ["D10", "D11"]
+HL = gpd.GeoDataFrame.from_features([f for f in g["features"] if f["properties"]["city"] == "Dayton" and f["properties"]["state"] == "OH"], crs=4326).to_crs(5070)
+HL = HL[HL.grade.isin(list("ABCD"))]
+HL["zone"] = np.where(HL.label.isin(WEST_D), "West side D areas", np.where(HL.grade == "D", "Other D areas", "A, B and C areas"))
+Z3 = HL.dissolve("zone").reset_index()[["zone", "geometry"]]
+rows = []
+for yr, tr, key in (("1940", s40, "GISJOIN"), ("2020-2024", s20, "GEOID")):
+    tr = tr.copy(); tr["ta"] = tr.area
+    x = gpd.overlay(tr, Z3, how="intersection", keep_geom_type=True); x["w"] = x.area / x.ta
+    best = x.sort_values("w").drop_duplicates(key, keep="last")
+    for zn in ("West side D areas", "Other D areas", "A, B and C areas"):
+        xx = x[x.zone == zn]; cnt = {c: (xx[c] * xx.w).sum() for c in ("own_n", "occ_n", "race_n", "pop_n")}
+        med = best[(best.zone == zn) & (best.w >= 0.3)]
+        rows.append(dict(year=yr, zone=zn, people=cnt["pop_n"], pct_black=100 * cnt["race_n"] / cnt["pop_n"],
+                         own=100 * cnt["own_n"] / cnt["occ_n"], median_value=med.value.median(), tracts=len(med),
+                         value_tracts=";".join(med[key].astype(str))))
+z = pd.DataFrame(rows)
+base = z[z.zone == "A, B and C areas"].set_index("year").median_value
+z["value_vs_ABC"] = 100 * z.median_value / z.year.map(base)
+z = z.round(1); z.to_csv(ROOT / "analysis/spotlight/holc_zones_then_now.csv", index=False)
+print(z.drop(columns="value_tracts").to_string(index=False))
+
+# ---- Chart for the West Dayton post: homeownership and people, 1940 and 2020-2024, by HOLC group ----
+import matplotlib.pyplot as plt
+from plot_style import use_house_style, titleblock, credit, INK, INK_DIM, MUTED, BLUE, SURFACE
+use_house_style()
+G = ["West side D areas", "Other D areas", "A, B and C areas"]
+LBL = {"West side D areas": "West side D areas\n(48% Black in 1940)", "Other D areas": "Other D areas\n(4% Black in 1940)", "A, B and C areas": "A, B and C areas\n(under 1% Black)"}
+zz = z.set_index(["zone", "year"])
+fig, axs = plt.subplots(1, 2, figsize=(10, 5.8)); fig.subplots_adjust(left=0.07, right=0.97, top=0.74, bottom=0.2, wspace=0.28)
+import numpy as np
+xs = np.arange(len(G)); bw = 0.36
+for ax, col, ttl, fmt in ((axs[0], "own", "Homes owned by the people living in them", lambda v: f"{v:.0f}%"),
+                          (axs[1], "people", "People living there", lambda v: f"{round(v, -2):,.0f}")):
+    for k, (yr, colr) in enumerate((("1940", MUTED), ("2020-2024", BLUE))):
+        vals = [zz.loc[(gg, yr), col] for gg in G]
+        bars = ax.bar(xs + (k - 0.5) * bw, vals, width=bw - 0.04, color=colr, label=yr)
+        for xb, v in zip(xs + (k - 0.5) * bw, vals):
+            ax.annotate(fmt(v), (xb, v), xytext=(0, 4), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
+    ax.set_xticks(xs); ax.set_xticklabels([LBL[gg] for gg in G], fontsize=9.5, color=INK)
+    ax.set_yticks([]); [ax.spines[s_].set_visible(False) for s_ in ("left",)]
+    ax.set_title(ttl, color=INK, fontsize=12, loc="left")
+    ax.set_ylim(0, max(zz[col]) * 1.18)
+axs[1].yaxis.set_visible(False)
+axs[0].legend(frameon=False, loc="upper left", fontsize=10, labelcolor=INK)
+titleblock(fig, "Homeownership rose far more in Dayton's other D areas than on the west side",
+           "Dayton's 1937 HOLC areas, same land in both years. The west side D areas (D10 and D11 on the HOLC map) held most of the\ncity's Black residents in 1940; the other D areas were mostly white.")
+credit(fig, "Sources: 1940 census tracts (NHGIS, IPUMS); Census Bureau, American Community Survey 2020-2024; HOLC map, Mapping Inequality.\nTract counts are split by the share of each tract's land in each area.")
+fig.savefig(ROOT / "posts/spotlight-west-dayton/images/01c-then-now.png"); plt.close(fig)

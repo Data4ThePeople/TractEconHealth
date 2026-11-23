@@ -472,6 +472,10 @@ Each spotlight post opens with 5 economic and 5 health measures for the neighbor
 
 NHGIS dataset 1940_tPH_Major (tracts in major cities): NT1 population, NT2 white and nonwhite population, NT27/NT28 occupied homes by tenure and race, NT36 median home value; 1940 tract boundaries us_tract_1940_tl2008. Montgomery County, Ohio has 54 tracts in 1940. Each tract is overlaid on Dayton's 1937 HOLC areas (Mapping Inequality) in an equal-area projection (EPSG 5070), and its counts are split by the share of its land in each graded area, assuming residents are spread evenly within a tract. Land outside any graded area is left out. The post says "Black" for nonwhite because 5,180 of the county's 5,192 nonwhite households were Black (NT28). Check: assigning each tract wholly to its largest grade.
 
+### Dayton 1940 and today, same land (`scripts/89_holc_then_now.py`, `analysis/spotlight/holc_zones_then_now.csv`, `analysis/spotlight/west_dayton_then_now.csv`)
+
+1940: NHGIS 1940_tPH_Major (NT2, NT22, NT27, NT36, NT39), 1940 tract lines. Today: ACS 2020-2024 5-year by tract (B25003 tenure, B25077 median home value, B25058 median contract rent, B23025 employment, B02001 Black alone, B01003 population), cb_2020 tract lines. Counts are split by each tract's share of land in each zone (EPSG 5070) and pooled; medians are the median of tract medians among tracts with the most land in the zone. Zones: (1) the land under West Dayton's six 2020 tracts against the rest of the 1940 tracted area; (2) Dayton's 1937 HOLC areas in three groups: west side D areas (D10, D11), other D areas, and A, B and C areas. Dollar medians are compared as a ratio to the comparison zone, so inflation drops out. Home values in the D groups rest on 4 to 5 tracts today with wide margins, so the post uses home value only for the West Dayton land. Check: assigning each tract wholly to the zone covering most of its land.
+
 ### Below 200% of the poverty line (`scripts/83_below200.py`, `analysis/spotlight/below200.csv`)
 
 Share of people whose family income is under twice the federal poverty line, for each pick, its main county and state, and the U.S.
