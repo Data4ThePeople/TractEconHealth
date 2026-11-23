@@ -1,0 +1,13 @@
+kind,where,n,names
+Full grocery store,inside,0,
+Full grocery store,within 1 mile,3,KROGER 836; Homefull Gettysburg Grocery; Save A Lot 30070
+Gem City Market,inside,0,
+Gem City Market,within 1 mile,1,Gem City Market Cooperative
+Smaller grocery store,inside,2,A & B Stoprite; Gettysburg Market
+Smaller grocery store,within 1 mile,8,Djs Internationational Market; Nabalis Iga; Main Street Food Market; Destine La Belle Fashion; Estridge Market; Solange International Market Llc; Stop N Save; Westside Supermarket
+Convenience or dollar store,inside,11,Smith's Carry Out; Dollar General 11852; Jackies Market; Save Foods; PS Sandhu Inc; Bingo Drive Through Na; Marathon Quick Mart; All In One Roaddog 109; Gnr Market Llc; Om Oil Trotwood; More For Less
+Convenience or dollar store,within 1 mile,31,AM PM W 3rd Market; Z's carry out and deli 1; Speedway 9365; Seven Bright Star; EXPRESS MART; Family Dollar 3687; Family Dollar 789; Univeristy Shell; DOLLAR GENERAL 14936; 3rd St Shell; Love's Travel Stop 427; Dollar General 16895; Free Pike Shell; Pick N Roll Drive Thru; Stop N Shop; Salem Marathon; Four Points 1023 Inc 1; Eagle Store; Quick Mart; G & G Mini Mart 1; S&S 574; Ecm Food Mart; Trotwood Carry Out; 1 Suite Gift Shop; QuikTrip 7096; Dearborn Market; Dayton  Bp 571; Giant Oil 572 - Salem Stop LLC; Downtown Stop LLC 2; Aman Food Market; Oxford Food Mart
+Fast food (OpenStreetMap),inside,2,McDonald's; Rally's
+Fast food (OpenStreetMap),within 1 mile,23,McDonald's; Penn Station East Coast Subs; Jimmy John's; Five Guys; Panera Bread; Chipotle; Submarine House; Hot Head Burritos; Ginger and Spice Asian Bistro; Subway; Subway; Jimmy John's; Donut & More; Papa John's; Playa Bowls; McDonald's; Arby's; Taco Bell; McDonald's; Wendy's; Rally's; Domino’s; Rally's
+Closed full grocery (USDA),inside,1,"KROGER  821 (900 N GETTYSBURG AVE, closed 2008)"
+Closed full grocery (USDA),within half a mile,2,"ALDI 61026 61026 (4303 W 3RD ST, closed 2022); TROTWOOD FOODTOWN (830 E MAIN ST, closed 2020)"
