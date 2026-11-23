@@ -8,9 +8,9 @@ section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-west-dayton-hero-1680x1080.png
 hero_alt: "A row of restored two-story brick storefronts on West Third Street in Dayton's Wright-Dunbar neighborhood, on a sunny day under a blue sky. The buildings have ornate cornices, bay windows and blue and red awnings, with old-style street lamps along a wide, empty street. An iron arch over a side walkway reads Wright Dunbar."
-meta_title:
-description:
-keywords:
+meta_title: "West Dayton: Redlining, Highways, Lost Jobs and Health"
+description: "How a 1937 loan map, the 1966 riot, two freeways and lost factory jobs shaped West Dayton, Ohio, where poverty rose from 18% to 42% since 1970."
+keywords: West Dayton history, Dayton redlining map, West Dayton food desert, Gem City Market, Dayton 1966 riot, Wright-Dunbar history, West Dayton health, Dayton Ohio poverty by neighborhood
 drop_cap: false
 heading_spacer: 20px
 ---
