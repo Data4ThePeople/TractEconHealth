@@ -5,3 +5,5 @@ __pycache__/
 .venv/
 .idea/
 analysis/spotlight/sources/**/*.pdf
+# Reporter project summary (unpublished work; keep out of the public repo)
+analysis/spotlight/sources/dayton/west-dayton-project-summary.md
