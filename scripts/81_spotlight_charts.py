@@ -193,12 +193,12 @@ def build(cid):
     fig, ax = plt.subplots(figsize=(10, 6.0)); fig.subplots_adjust(left=0.08, right=0.8, top=0.72, bottom=0.15)
     ax.plot(lw.x, lw.value, color=MAGENTA, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
     ax.plot(vc_.x, vc_.value, color=YELLOW, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
-    ax.plot(us.x, us.value, color=INK, lw=2, ls="--")
+    if not PL: ax.plot(us.x, us.value, color=INK, lw=2, ls="--")  # West Dayton drops the U.S. line to declutter
     if PL:
         ax.plot(pv.x, pv.value, color=BLUE, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
         for x, v in zip(pv.x, pv.value):
             ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
-    usv = us.set_index("x").value
+    usv = us.set_index("x").value if not PL else pd.Series(dtype=float)
     for x, v in zip(lw.x, lw.value):
         ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
     for x, v in zip(vc_.x, vc_.value):  # below the marker when the U.S. line is close above it
@@ -209,7 +209,7 @@ def build(cid):
     xt = ([1970, 1980] if PL else []) + [1990, 2000, 2010, 2022]
     ax.set_xticks(xt); ax.set_xticklabels([str(x) for x in xt[:-1]] + ["2020-24"])
     # end labels, pushed apart so they never overlap
-    ends = sorted([(lw.value.iloc[-1], "Low income"), (vc_.value.iloc[-1], "Homes vacant"), (us.value.iloc[-1], "U.S., low income")] + ([(pv.value.iloc[-1], "Poverty")] if PL else []))
+    ends = sorted([(lw.value.iloc[-1], "Low income"), (vc_.value.iloc[-1], "Homes vacant"), ] + ([(us.value.iloc[-1], "U.S., low income")] if not PL else [(pv.value.iloc[-1], "Poverty")]))
     gapu = ax.get_ylim()[1] * 0.06; pos = []
     for v, l in ends:
         y = v if not pos or v - pos[-1] >= gapu else pos[-1] + gapu; pos.append(y)
@@ -217,16 +217,16 @@ def build(cid):
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); axes_style(ax)
     ax.legend(handles=[Line2D([], [], color=MAGENTA, lw=2, marker="o", label="People below 200% of the poverty line"),
                        Line2D([], [], color=YELLOW, lw=2, marker="o", label="Homes vacant"),
-                       Line2D([], [], color=INK, lw=2, ls="--", label="U.S., below 200% of the poverty line")]
-                      + ([Line2D([], [], color=BLUE, lw=2, marker="o", label="People below the poverty line")] if PL else []),
-              loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5, ncol=2 if PL else 3, bbox_to_anchor=(0, 1.16 if PL else 1.11))
+                       ] + ([Line2D([], [], color=INK, lw=2, ls="--", label="U.S., below 200% of the poverty line")] if not PL else
+                            [Line2D([], [], color=BLUE, lw=2, marker="o", label="People below the poverty line")]),
+              loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5, ncol=3, bbox_to_anchor=(0, 1.11))
     l0, l1 = lw.value.iloc[0], lw.value.iloc[-1]; v0, v1 = vc_.value.iloc[0], vc_.value.iloc[-1]
     t = ("More people with low incomes, more homes empty" if l1 - l0 >= 5 and v1 - v0 >= 3 else
          "Fewer people with low incomes than in 1990, but more homes empty" if l0 - l1 >= 5 and v1 - v0 >= 3 else
          "Most people here have low incomes, and more homes are empty" if v1 - v0 >= 3 else
          "Most people here have low incomes")
     if PL: t = "Poverty here more than doubled since 1970, and more homes are empty"
-    sub = (f"Share of people below the poverty line (1970 on) and below 200% of it (1990 on), and share of homes vacant, {C['name']},\nwith the U.S. share below 200% for comparison. Income for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census." if PL else
+    sub = (f"Share of people below the poverty line (1970 on) and below 200% of it (1990 on), and share of homes vacant, {C['name']}.\nIncome for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census." if PL else
            f"Share of people below 200% of the poverty line and share of homes vacant, {C['name']}, with the U.S. share\nbelow 200% for comparison. Income for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census.")
     titleblock(fig, t, sub)
     credit(fig, "Source: NHGIS (IPUMS) decennial census, 1970-2010, fitted to today's tracts; ACS 2008-2012 and 2020-2024 five-year estimates." if PL else
