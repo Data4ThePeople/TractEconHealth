@@ -108,8 +108,8 @@ GM's Moraine plant, south of the city, employed 4,300 people at its peak. About 
 
 The Moraine plant and NCR's headquarters were not in West Dayton. The City's plan says Dayton lost thousands of factory jobs and businesses, and that West Dayton now has more poverty and joblessness than most of the rest of the city ([West Dayton Neighborhoods Vision, 2019, p. 2](https://www.daytonohio.gov/DocumentCenter/View/6763/West-Dayton-Neighborhoods-Vision-document)). The chart below shows the share of West Dayton residents with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty over the same decades. Two in three people here now have low incomes, compared with fewer than three in ten nationwide. Poverty alone, below 100% of the line, went from 18% in 1970 to 42% in 2020-2024.
 
-![Line chart of three shares for West Dayton. People below 200% of the poverty line: 58% in 1990, 56% in 2000, 66% in 2008-2012 and 67% in 2020-2024. Homes vacant: 11% in 1990, 15% in 2000, 25% in 2010 and 28% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
-*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
+![Line chart of four shares for West Dayton. People below the poverty line: 18% in 1970, 31% in 1980, 33% in 1990, 31% in 2000, 40% in 2008-2012 and 42% in 2020-2024. People below 200% of the poverty line: 58% in 1990, 56% in 2000, 66% in 2008-2012 and 67% in 2020-2024. Homes vacant: 11% in 1990, 15% in 2000, 25% in 2010 and 28% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+*Low income here means below 200% of the federal poverty line. Counts before 2010 are fitted to today's tract lines. Income for 2010 is from the 2008-2012 survey.*
 
 ## Health
 

@@ -26,7 +26,7 @@ from plot_style import use_house_style, titleblock, credit, INK, INK_DIM, MUTED,
 
 # county = main county (overdose, county history); od_fips = the code CDC's file uses (Oglala Lakota was Shannon, 46113)
 CFG = {
-    "U047": dict(health4="TREND", slug="spotlight-west-dayton", name="West Dayton", county="39113", county_name="Montgomery County",
+    "U047": dict(health4="TREND", pov_line=True, slug="spotlight-west-dayton", name="West Dayton", county="39113", county_name="Montgomery County",
                  city="Dayton", state="OH", holc_year="1937", labels=[("Downtown", 39.7589, -84.1916)]),
     "U034": dict(health4="COPD", slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
                  city="Birmingham", state="AL", holc_year="1930s", labels=[("Downtown", 33.5186, -86.8104)]),
@@ -184,7 +184,9 @@ def build(cid):
 
     # ---------- 03 low income and vacancy ----------
     # Low income = below 200% of the poverty line (below200.csv: NHGIS C20 1990-2000, ACS C17002 after); U.S. as a dashed reference.
-    LX = {"1990": 1990, "2000": 2000, "2008-2012": 2010, "2010": 2010, "2020-2024": 2022}
+    LX = {"1970": 1970, "1980": 1980, "1990": 1990, "2000": 2000, "2008-2012": 2010, "2010": 2010, "2020-2024": 2022}
+    PL = C.get("pov_line")  # also draw poverty (below 100% of the line), 1970 on, from history_final
+    pv = h[h.measure == "poverty_rate"].assign(x=lambda d: d.year.map(LX)).dropna(subset=["x"]).sort_values("x") if PL else None
     lw = B200[B200.area == cid].assign(x=lambda d: d.year.map(LX)).sort_values("x")
     us = B200[B200.area == "US"].assign(x=lambda d: d.year.map(LX)).sort_values("x")
     vc_ = h[(h.measure == "vacancy_rate") & (h.year != "2008-2012")].assign(x=lambda d: d.year.map(LX)).dropna(subset=["x"]).sort_values("x")
@@ -192,17 +194,22 @@ def build(cid):
     ax.plot(lw.x, lw.value, color=MAGENTA, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
     ax.plot(vc_.x, vc_.value, color=YELLOW, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
     ax.plot(us.x, us.value, color=INK, lw=2, ls="--")
+    if PL:
+        ax.plot(pv.x, pv.value, color=BLUE, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
+        for x, v in zip(pv.x, pv.value):
+            ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
     usv = us.set_index("x").value
     for x, v in zip(lw.x, lw.value):
         ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
     for x, v in zip(vc_.x, vc_.value):  # below the marker when the U.S. line is close above it
-        dn = x in usv.index and 0 <= usv[x] - v < 7
+        dn = PL or (x in usv.index and 0 <= usv[x] - v < 7)
         ax.annotate(f"{v:.0f}%", (x, v), xytext=(0, -17 if dn else 10), textcoords="offset points", ha="center", color=INK, fontsize=9.5)
     top = max(100, 0) if lw.value.max() > 80 else max(lw.value.max(), 60) + 10
-    ax.set_ylim(0, min(100, np.ceil(top / 10) * 10)); ax.set_xlim(1986, 2026)
-    ax.set_xticks([1990, 2000, 2010, 2022]); ax.set_xticklabels(["1990", "2000", "2010", "2020-24"])
+    ax.set_ylim(0, min(100, np.ceil(top / 10) * 10)); ax.set_xlim(1966 if PL else 1986, 2026)
+    xt = ([1970, 1980] if PL else []) + [1990, 2000, 2010, 2022]
+    ax.set_xticks(xt); ax.set_xticklabels([str(x) for x in xt[:-1]] + ["2020-24"])
     # end labels, pushed apart so they never overlap
-    ends = sorted([(lw.value.iloc[-1], "Low income"), (vc_.value.iloc[-1], "Homes vacant"), (us.value.iloc[-1], "U.S., low income")])
+    ends = sorted([(lw.value.iloc[-1], "Low income"), (vc_.value.iloc[-1], "Homes vacant"), (us.value.iloc[-1], "U.S., low income")] + ([(pv.value.iloc[-1], "Poverty")] if PL else []))
     gapu = ax.get_ylim()[1] * 0.06; pos = []
     for v, l in ends:
         y = v if not pos or v - pos[-1] >= gapu else pos[-1] + gapu; pos.append(y)
@@ -210,15 +217,20 @@ def build(cid):
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); axes_style(ax)
     ax.legend(handles=[Line2D([], [], color=MAGENTA, lw=2, marker="o", label="People below 200% of the poverty line"),
                        Line2D([], [], color=YELLOW, lw=2, marker="o", label="Homes vacant"),
-                       Line2D([], [], color=INK, lw=2, ls="--", label="U.S., below 200% of the poverty line")],
-              loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5, ncol=3, bbox_to_anchor=(0, 1.11))
+                       Line2D([], [], color=INK, lw=2, ls="--", label="U.S., below 200% of the poverty line")]
+                      + ([Line2D([], [], color=BLUE, lw=2, marker="o", label="People below the poverty line")] if PL else []),
+              loc="upper left", frameon=False, labelcolor=INK, fontsize=9.5, ncol=2 if PL else 3, bbox_to_anchor=(0, 1.16 if PL else 1.11))
     l0, l1 = lw.value.iloc[0], lw.value.iloc[-1]; v0, v1 = vc_.value.iloc[0], vc_.value.iloc[-1]
     t = ("More people with low incomes, more homes empty" if l1 - l0 >= 5 and v1 - v0 >= 3 else
          "Fewer people with low incomes than in 1990, but more homes empty" if l0 - l1 >= 5 and v1 - v0 >= 3 else
          "Most people here have low incomes, and more homes are empty" if v1 - v0 >= 3 else
          "Most people here have low incomes")
-    titleblock(fig, t, f"Share of people below 200% of the poverty line and share of homes vacant, {C['name']}, with the U.S. share\nbelow 200% for comparison. Income for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census.")
-    credit(fig, "Source: NHGIS (IPUMS) decennial census, 1990-2010; ACS 2008-2012 and 2020-2024 five-year estimates.")
+    if PL: t = "Poverty here more than doubled since 1970, and more homes are empty"
+    sub = (f"Share of people below the poverty line (1970 on) and below 200% of it (1990 on), and share of homes vacant, {C['name']},\nwith the U.S. share below 200% for comparison. Income for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census." if PL else
+           f"Share of people below 200% of the poverty line and share of homes vacant, {C['name']}, with the U.S. share\nbelow 200% for comparison. Income for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census.")
+    titleblock(fig, t, sub)
+    credit(fig, "Source: NHGIS (IPUMS) decennial census, 1970-2010, fitted to today's tracts; ACS 2008-2012 and 2020-2024 five-year estimates." if PL else
+           "Source: NHGIS (IPUMS) decennial census, 1990-2010; ACS 2008-2012 and 2020-2024 five-year estimates.")
     fig.savefig(out / "03-low-income-vacancy.png"); plt.close(fig)
     info.update(low_income=dict(zip(lw.year, lw.value.round(1))), vacancy=dict(zip(vc_.year, vc_.value.round(1))))
 
