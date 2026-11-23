@@ -15,13 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how West Dayton compares with the country today.
-
-![Table comparing West Dayton with the United States. Economy: median household income $29,600 vs. $80,700; people in poverty 42% vs. 12%; unemployment 10% vs. 5%; households on SNAP 41% vs. 12%; homes vacant 28% vs. 10%. Health: life expectancy 69.3 vs. 78.7 years; adults in fair or poor health 42% vs. 20%; diabetes 29% vs. 12%; high blood pressure 55% vs. 34%; frequent mental distress 23% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
-
-::: spacer 20px
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -36,7 +29,14 @@ Ask yourself one question: What would your life be like if you had grown up here
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
 
-::: spacer 5px
+::: spacer 20px
+
+Here is how West Dayton compares with the country today.
+
+![Table comparing West Dayton with the United States. Economy: median household income $29,600 vs. $80,700; people in poverty 42% vs. 12%; unemployment 10% vs. 5%; households on SNAP 41% vs. 12%; homes vacant 28% vs. 10%. Health: life expectancy 69.3 vs. 78.7 years; adults in fair or poor health 42% vs. 20%; diabetes 29% vs. 12%; high blood pressure 55% vs. 34%; frequent mental distress 23% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
+
+::: spacer 20px
 
 ::: dropcap
 West Dayton has no exact boundary that census data can follow. The City's 2019 plan describes it as 19 neighborhoods west of the Great Miami River and south of Wolf Creek ([West Dayton Neighborhoods Vision, 2019, p. 2](https://www.daytonohio.gov/DocumentCenter/View/6763/West-Dayton-Neighborhoods-Vision-document)). Census tracts do not line up with those neighborhoods, so this post uses six whole census tracts, with about 12,900 people, as a stand-in for the heart of West Dayton. They run from Wright-Dunbar, next to downtown, out through Westwood and the Miami Chapel area to the city's edge with Trotwood. Most of the people who live here are Black, about 80% in the latest census survey. Median household income is about $29,600, 37% of the U.S. figure. Life expectancy is 69.3 years, 9.4 years shorter than for the country as a whole.

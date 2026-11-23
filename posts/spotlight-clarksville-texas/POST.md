@@ -15,13 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how Clarksville compares with the country today.
-
-![Table comparing Clarksville with the United States. Economy: median household income $37,500 vs. $80,700; people in poverty 15% vs. 12%; unemployment 4% vs. 5%; households on SNAP 29% vs. 12%; homes vacant 23% vs. 10%. Health: life expectancy 71.3 vs. 78.7 years; adults in fair or poor health 29% vs. 20%; diabetes 20% vs. 12%; high blood pressure 49% vs. 34%; frequent mental distress 18% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
-
-::: spacer 20px
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -36,7 +29,14 @@ Ask yourself one question: What would your life be like if you had grown up here
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
 
-::: spacer 5px
+::: spacer 20px
+
+Here is how Clarksville compares with the country today.
+
+![Table comparing Clarksville with the United States. Economy: median household income $37,500 vs. $80,700; people in poverty 15% vs. 12%; unemployment 4% vs. 5%; households on SNAP 29% vs. 12%; homes vacant 23% vs. 10%. Health: life expectancy 71.3 vs. 78.7 years; adults in fair or poor health 29% vs. 20%; diabetes 20% vs. 12%; high blood pressure 49% vs. 34%; frequent mental distress 18% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
+
+::: spacer 20px
 
 ::: dropcap
 Clarksville is the county seat of Red River County, in the far northeast corner of Texas. The two census tracts in this story hold the town and the farm and timber land around it, with about 4,000 people. About 37% of them are Black. Life expectancy is 71.3 years, 7.4 years shorter than for the country as a whole, and the shortest of any tract in the county in 2010-2015 ([CDC, USALEEP](https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/NVSS/USALEEP/CSV/TX_A.CSV)). Nearly 3 in 10 households get SNAP food aid, and nearly half of adults have high blood pressure.

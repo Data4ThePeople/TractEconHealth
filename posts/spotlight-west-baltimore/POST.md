@@ -15,11 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how West Baltimore compares with the country today.
-
-![Table comparing West Baltimore with the United States. Economy: median household income $24,800 vs. $80,700; people in poverty 38% vs. 12%; unemployment 13% vs. 5%; households on SNAP 52% vs. 12%; homes vacant 24% vs. 10%. Health: life expectancy 68.9 vs. 78.7 years; adults in fair or poor health 39% vs. 20%; diabetes 24% vs. 12%; high blood pressure 53% vs. 34%; frequent mental distress 23% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -33,6 +28,13 @@ Ask yourself one question: What would your life be like if you had grown up here
 
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
+
+::: spacer 20px
+
+Here is how West Baltimore compares with the country today.
+
+![Table comparing West Baltimore with the United States. Economy: median household income $24,800 vs. $80,700; people in poverty 38% vs. 12%; unemployment 13% vs. 5%; households on SNAP 52% vs. 12%; homes vacant 24% vs. 10%. Health: life expectancy 68.9 vs. 78.7 years; adults in fair or poor health 39% vs. 20%; diabetes 24% vs. 12%; high blood pressure 53% vs. 34%; frequent mental distress 23% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
 
 ::: spacer 5px
 

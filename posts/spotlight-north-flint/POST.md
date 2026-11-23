@@ -15,13 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how North and East Flint compares with the country today.
-
-![Table comparing North and East Flint with the United States. Economy: median household income $25,300 vs. $80,700; people in poverty 50% vs. 12%; unemployment 18% vs. 5%; households on SNAP 49% vs. 12%; homes vacant 20% vs. 10%. Health: life expectancy 69.9 vs. 78.7 years; adults in fair or poor health 40% vs. 20%; diabetes 20% vs. 12%; high blood pressure 47% vs. 34%; frequent mental distress 26% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
-
-::: spacer 20px
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -36,7 +29,14 @@ Ask yourself one question: What would your life be like if you had grown up here
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
 
-::: spacer 5px
+::: spacer 20px
+
+Here is how North and East Flint compares with the country today.
+
+![Table comparing North and East Flint with the United States. Economy: median household income $25,300 vs. $80,700; people in poverty 50% vs. 12%; unemployment 18% vs. 5%; households on SNAP 49% vs. 12%; homes vacant 20% vs. 10%. Health: life expectancy 69.9 vs. 78.7 years; adults in fair or poor health 40% vs. 20%; diabetes 20% vs. 12%; high blood pressure 47% vs. 34%; frequent mental distress 26% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
+
+::: spacer 20px
 
 ::: dropcap
 North and East Flint is eight census tracts on Flint, Michigan's north and east sides, with about 11,800 people. They wrap around the land where General Motors' Buick City plant once stood and run east along the I-475 freeway toward Davison Road. About 46% of the people who live here are Black, up from 32% in 1990. Median household income is about $25,300, 31% of the U.S. figure. Life expectancy is 69.9 years, 8.8 years shorter than for the country as a whole.

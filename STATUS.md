@@ -5,11 +5,13 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: income-health-viz (paused at 4a; Eric resumes next week)
-Step: 4a
-Since: 2026-11-20
+Post: spotlight-west-dayton
+Step: 2c
+Since: 2026-11-23
 
-Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 confirmed 2026-11-19; all 10 drafted. 2026-11-23: Eric is focusing on spotlight-west-dayton to publish today; it is in 2a/2b (Eric's detailed review). Other 9 wait.
+Also paused: income-health-viz at 4a (Eric resumes next week).
+
+Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 confirmed 2026-11-19; all 10 drafted. 2026-11-23: Eric is focusing on spotlight-west-dayton to publish today; 2b confirmed 2026-11-23; now 2c. Other 9 wait.
 
 ## Steps
 
@@ -68,3 +70,4 @@ None.
 - 2026-11-20 Step 3 drafted: SOCIAL.md (X, Bluesky, LinkedIn) and a GIF. Eric: tool screenshots too small for social; GIF rebuilt as four 1080x1080 headline charts (social/income-health.gif, scripts/90_social_gif.py). Awaiting Eric.
 - 2026-11-20 Step 3 confirmed. Step 4a opened and paused at Eric's request; outreach list not started. Eric picks it up next week.
 - 2026-11-23 Eric moved to spotlight-west-dayton for publication today; income-health-viz stays paused at 4a. Open brackets in West Dayton: US-35 finish date and home count (left out), HHS finding on the Good Samaritan complaint.
+- 2026-11-23 spotlight-west-dayton: Eric confirmed 2b (detailed review done; he will read once more after publishing and may send small tweaks). Step 2c opened. Series blurb moved above the comparison table in all 10 posts, per Eric's "top of every post."

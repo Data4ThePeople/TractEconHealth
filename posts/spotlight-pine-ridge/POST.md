@@ -15,13 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how Pine Ridge compares with the country today.
-
-![Table comparing Pine Ridge with the United States. Economy: median household income $38,700 vs. $80,700; people in poverty 55% vs. 12%; unemployment 15% vs. 5%; households on SNAP 42% vs. 12%; homes vacant 16% vs. 10%. Health: life expectancy for the whole county 58.4 vs. 77.6 years; adults in fair or poor health 40% vs. 20%; diabetes 22% vs. 12%; high blood pressure 40% vs. 34%; frequent mental distress 25% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES and County Health Rankings. Life expectancy is for all of Oglala Lakota County, 2021-2023.*
-
-::: spacer 20px
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -36,7 +29,14 @@ Ask yourself one question: What would your life be like if you had grown up here
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
 
-::: spacer 5px
+::: spacer 20px
+
+Here is how Pine Ridge compares with the country today.
+
+![Table comparing Pine Ridge with the United States. Economy: median household income $38,700 vs. $80,700; people in poverty 55% vs. 12%; unemployment 15% vs. 5%; households on SNAP 42% vs. 12%; homes vacant 16% vs. 10%. Health: life expectancy for the whole county 58.4 vs. 77.6 years; adults in fair or poor health 40% vs. 20%; diabetes 22% vs. 12%; high blood pressure 40% vs. 34%; frequent mental distress 25% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and County Health Rankings. Life expectancy is for all of Oglala Lakota County, 2021-2023.*
+
+::: spacer 20px
 
 ::: dropcap
 Pine Ridge here is five census tracts on the Pine Ridge Reservation in southwestern South Dakota, with about 17,300 people. They cover all of Oglala Lakota County, including the village of Pine Ridge, the tribal seat, along with Wanblee in Jackson County and Allen in Bennett County. The Oglala Lakota Oyate, also called the Oglala Sioux Tribe, governs the reservation. More than half of the people in these tracts live below the poverty line. Life expectancy in Oglala Lakota County is 58.4 years, 19.2 years shorter than the U.S. figure from the same source. We use the county number because tract-level estimates cover only about a fifth of the people here.

@@ -15,13 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how Owsley County compares with the country today.
-
-![Table comparing Owsley County with the United States. Economy: median household income $23,900 vs. $80,700; people in poverty 36% vs. 12%; unemployment 13% vs. 5%; households on SNAP 38% vs. 12%; homes vacant 24% vs. 10%. Health: life expectancy 72.4 vs. 78.7 years; adults in fair or poor health 33% vs. 20%; diabetes 18% vs. 12%; high blood pressure 47% vs. 34%; frequent mental distress 20% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES 2024 and USALEEP. Health figures are model estimates for adults.*
-
-::: spacer 20px
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -36,7 +29,14 @@ Ask yourself one question: What would your life be like if you had grown up here
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
 
-::: spacer 5px
+::: spacer 20px
+
+Here is how Owsley County compares with the country today.
+
+![Table comparing Owsley County with the United States. Economy: median household income $23,900 vs. $80,700; people in poverty 36% vs. 12%; unemployment 13% vs. 5%; households on SNAP 38% vs. 12%; homes vacant 24% vs. 10%. Health: life expectancy 72.4 vs. 78.7 years; adults in fair or poor health 33% vs. 20%; diabetes 18% vs. 12%; high blood pressure 47% vs. 34%; frequent mental distress 20% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES 2024 and USALEEP. Health figures are model estimates for adults.*
+
+::: spacer 20px
 
 ::: dropcap
 Owsley County is in the hills of eastern Kentucky, along the South Fork of the Kentucky River. It has two census tracts and about 4,000 people, most of them in and around Booneville, the county seat. Median household income is about $23,900, 30% of the U.S. figure. Life expectancy is 72.4 years, 6.3 years shorter than for the country as a whole. In 2000, Owsley's median household income was the third lowest of 3,141 U.S. counties ([Census 2000, via the Census API](https://api.census.gov/data/2000/dec/sf3?get=NAME,P053001&for=county:*)).

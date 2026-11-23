@@ -15,13 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how McDowell County's coal camps compare with the country today.
-
-![Table comparing McDowell County's coal camps with the United States. Economy: median household income $33,300 vs. $80,700; people in poverty 33% vs. 12%; unemployment 6% vs. 5%; households on SNAP 38% vs. 12%; homes vacant 33% vs. 10%. Health: life expectancy for the whole county 65.5 vs. 77.6 years; adults in fair or poor health 39% vs. 20%; diabetes 23% vs. 12%; high blood pressure 53% vs. 34%; frequent mental distress 25% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
-
-::: spacer 20px
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -36,7 +29,14 @@ Ask yourself one question: What would your life be like if you had grown up here
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
 
-::: spacer 5px
+::: spacer 20px
+
+Here is how McDowell County's coal camps compare with the country today.
+
+![Table comparing McDowell County's coal camps with the United States. Economy: median household income $33,300 vs. $80,700; people in poverty 33% vs. 12%; unemployment 6% vs. 5%; households on SNAP 38% vs. 12%; homes vacant 33% vs. 10%. Health: life expectancy for the whole county 65.5 vs. 77.6 years; adults in fair or poor health 39% vs. 20%; diabetes 23% vs. 12%; high blood pressure 53% vs. 34%; frequent mental distress 25% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
+
+::: spacer 20px
 
 ::: dropcap
 McDowell County sits at the southern tip of West Virginia. This story covers five of its census tracts, the coal camps along Elkhorn Creek, the Tug Fork and Dry Fork: Northfork, Davy, War, Gary, Iaeger, Bradshaw and the towns around them. About 9,700 people live there. Median household income is about $33,300, 41% of the U.S. figure. A third of all homes stand empty.

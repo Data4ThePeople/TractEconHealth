@@ -15,13 +15,6 @@ drop_cap: false
 heading_spacer: 20px
 ---
 
-Here is how Clarksdale compares with the country today.
-
-![Table comparing Clarksdale with the United States. Economy: median household income $36,600 vs. $80,700; people in poverty 38% vs. 12%; unemployment 10% vs. 5%; households on SNAP 28% vs. 12%; homes vacant 16% vs. 10%. Health: life expectancy 71.3 vs. 78.7 years; adults in fair or poor health 36% vs. 20%; diabetes 23% vs. 12%; high blood pressure 55% vs. 34%; frequent mental distress 20% vs. 17%.](images/00-key-measures.png)
-*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
-
-::: spacer 20px
-
 ::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
@@ -36,7 +29,14 @@ Ask yourself one question: What would your life be like if you had grown up here
 Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
 :::
 
-::: spacer 5px
+::: spacer 20px
+
+Here is how Clarksdale compares with the country today.
+
+![Table comparing Clarksdale with the United States. Economy: median household income $36,600 vs. $80,700; people in poverty 38% vs. 12%; unemployment 10% vs. 5%; households on SNAP 28% vs. 12%; homes vacant 16% vs. 10%. Health: life expectancy 71.3 vs. 78.7 years; adults in fair or poor health 36% vs. 20%; diabetes 23% vs. 12%; high blood pressure 55% vs. 34%; frequent mental distress 20% vs. 17%.](images/00-key-measures.png)
+*Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
+
+::: spacer 20px
 
 ::: dropcap
 Clarksdale is the seat of Coahoma County, in the Mississippi Delta. This story covers five census tracts: the town itself and the farmland just south of it, around the old Hopson plantation. About 15,200 people live there. Most are Black, about 79% in the latest census survey. Median household income is about $36,600, 45% of the U.S. figure. Life expectancy is 71.3 years, 7.4 years shorter than for the country as a whole.
