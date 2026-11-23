@@ -30,7 +30,7 @@ CFG = {
                  city="Dayton", state="OH", holc_year="1937", labels=[("Downtown", 39.7589, -84.1916)]),
     "U034": dict(health4="COPD", slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
                  city="Birmingham", state="AL", holc_year="1930s", labels=[("Downtown", 33.5186, -86.8104)]),
-    "U039": dict(slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore", extra_roads=["US Hwy 40"],
+    "U039": dict(pov_line=True, pov_title="Poverty here has stayed between 38% and 48% since 1970", slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore", extra_roads=["US Hwy 40"],
                  city="Baltimore", state="MD", holc_year="1937", labels=[("Downtown", 39.2904, -76.6122)]),
     "U028": dict(health4="DIABETES", slug="spotlight-el-segundo-barrio", name="El Segundo Barrio and Chamizal", county="48141", county_name="El Paso County",
                  city="El Paso", state="TX", holc_year="1936", labels=[("Downtown", 31.7587, -106.4869)]),
@@ -225,7 +225,7 @@ def build(cid):
          "Fewer people with low incomes than in 1990, but more homes empty" if l0 - l1 >= 5 and v1 - v0 >= 3 else
          "Most people here have low incomes, and more homes are empty" if v1 - v0 >= 3 else
          "Most people here have low incomes")
-    if PL: t = "Poverty here more than doubled since 1970, and more homes are empty"
+    if PL: t = C.get("pov_title", "Poverty here more than doubled since 1970, and more homes are empty")
     sub = (f"Share of people below the poverty line (1970 on) and below 200% of it (1990 on), and share of homes vacant, {C['name']}.\nIncome for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census." if PL else
            f"Share of people below 200% of the poverty line and share of homes vacant, {C['name']}, with the U.S. share\nbelow 200% for comparison. Income for 2010 is from the 2008-2012 survey; vacancy is from the 2010 census.")
     titleblock(fig, t, sub)
