@@ -21,6 +21,22 @@ Here is how Clarksdale compares with the country today.
 
 ::: spacer 20px
 
+::: blurb About this series
+The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
+
+Maybe we do this because we rarely learn how communities end up in this position. This series tries to fill that gap. We selected 10 communities, out of thousands across the country with low incomes and poor health, five in cities and five in rural areas. And we have gone back over the past century to tell the story of how they got here.
+
+What we have found challenges the way you may think about America. If you tend to believe that people's circumstances are mostly the result of their own choices, this series may challenge that view. What you will see is that decisions made decades ago, some of them openly racist, set these communities on a path that has been very hard to leave. Just like a good investment can compound wealth over many years, a decision, like redlining a neighborhood or tying a county's jobs to a single industry, can compound the other way.
+
+When you read this series, try to put yourself in the shoes of people in these communities. If you don't live here, or in an area like this, you may not live in the shadow of past decisions. But people in these communities do.
+
+Ask yourself one question: What would your life be like if you had grown up here?
+
+Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
+:::
+
+::: spacer 5px
+
 ::: dropcap
 Clarksdale is the seat of Coahoma County, in the Mississippi Delta. This story covers five census tracts: the town itself and the farmland just south of it, around the old Hopson plantation. About 15,200 people live there. Most are Black, about 79% in the latest census survey. Median household income is about $36,600, 45% of the U.S. figure. Life expectancy is 71.3 years, 7.4 years shorter than for the country as a whole.
 

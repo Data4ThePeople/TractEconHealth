@@ -19,6 +19,22 @@ Here is how North Birmingham compares with the country today.
 ![Table comparing North Birmingham with the United States. Economy: median household income $23,900 vs. $80,700; people in poverty 49% vs. 12%; unemployment 6% vs. 5%; households on SNAP 47% vs. 12%; homes vacant 21% vs. 10%. Health: life expectancy 67.5 vs. 78.7 years; adults in fair or poor health 43% vs. 20%; diabetes 30% vs. 12%; high blood pressure 60% vs. 34%; frequent mental distress 22% vs. 17%.](images/00-key-measures.png)
 *Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
 
+::: blurb About this series
+The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
+
+Maybe we do this because we rarely learn how communities end up in this position. This series tries to fill that gap. We selected 10 communities, out of thousands across the country with low incomes and poor health, five in cities and five in rural areas. And we have gone back over the past century to tell the story of how they got here.
+
+What we have found challenges the way you may think about America. If you tend to believe that people's circumstances are mostly the result of their own choices, this series may challenge that view. What you will see is that decisions made decades ago, some of them openly racist, set these communities on a path that has been very hard to leave. Just like a good investment can compound wealth over many years, a decision, like redlining a neighborhood or tying a county's jobs to a single industry, can compound the other way.
+
+When you read this series, try to put yourself in the shoes of people in these communities. If you don't live here, or in an area like this, you may not live in the shadow of past decisions. But people in these communities do.
+
+Ask yourself one question: What would your life be like if you had grown up here?
+
+Then ask a second: Is it fair to ignore what this community faces now? Or should we do something about decisions made decades ago that held this community back?
+:::
+
+::: spacer 5px
+
 ::: dropcap
 North Birmingham is four census tracts just north of downtown Birmingham, Ala., with about 9,800 people. They take in Collegeville, Harriman Park and Fairmont, the three neighborhoods the EPA calls the 35th Avenue neighborhoods ([EPA, 2014](https://19january2021snapshot.epa.gov/sites/static/files/2014-09/documents/ns-35th-avenue-9-2-2014.pdf)). Median household income is about $23,900, 30% of the U.S. figure. About half the people here live below the poverty line. Life expectancy is 67.5 years, 11.2 years shorter than for the country as a whole.
 
