@@ -113,13 +113,13 @@ leg = [Line2D([], [], marker="*", color="none", markerfacecolor="#7fd18b", marke
        Line2D([], [], marker="s", color="none", markerfacecolor=YELLOW, alpha=0.7, markersize=6, label="Smaller grocery store"),
        Line2D([], [], marker="x", color=INK_DIM, markersize=8, lw=0, label="Full grocery store that closed since 2005"),
        Line2D([], [], marker="o", color="none", markerfacecolor=MAGENTA, markersize=7, label="Fast food"),
-       Line2D([], [], marker="o", color="none", markerfacecolor=INK_DIM, markersize=5, label="Convenience or dollar store"),
+       Line2D([], [], marker="o", color="none", markerfacecolor=INK_DIM, markersize=5, label="Convenience or dollar store (accepts SNAP)"),
        Line2D([], [], color=INK, lw=2.2, label="West Dayton (six tracts)")]
 fig.legend(handles=leg, loc="lower center", ncol=2, bbox_to_anchor=(0.5, 0.04), frameon=True, facecolor=SURFACE, edgecolor=GRID, labelcolor=INK, fontsize=9.5)
 ff_in = int(tab.query("kind == 'Fast food (OpenStreetMap)' and where == 'inside'").n.iloc[0])
 full_in = int(tab.query("kind == 'Full grocery store' and where == 'inside'").n.iloc[0])
 cv_in = int(tab.query("kind == 'Convenience or dollar store' and where == 'inside'").n.iloc[0])
 titleblock(fig, f"Inside West Dayton's six tracts: no full grocery store, and {cv_in} convenience and dollar stores",
-           "Where people in and around West Dayton can buy food today. The nearest full grocery store, a Save A Lot, sits just across\nGettysburg Avenue on the tracts' edge. X marks full grocery stores that closed since 2005.")
+           "Stores in and around West Dayton that accept SNAP today. The nearest full grocery store, a Save A Lot, sits just across\nGettysburg Avenue on the tracts' edge. X marks full grocery stores that closed since 2005.")
 credit(fig, "Sources: USDA SNAP retailer locator (stores today; closed stores from the 2005-2025 historical file); fast food from OpenStreetMap, which may miss places;\nU.S. Census Bureau TIGER/Line 2024 roads and 2020 tracts.")
 fig.savefig(ROOT / "posts/spotlight-west-dayton/images/05-food-map.png"); plt.close(fig)

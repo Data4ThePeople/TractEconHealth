@@ -1,0 +1,20 @@
+area,measure,value,n,total,year
+West Dayton,households_no_vehicle_pct,21.1,1228.0,5824.0,
+Montgomery County,households_no_vehicle_pct,8.5,19669.0,231319.0,
+United States,households_no_vehicle_pct,8.4,10793323.0,129227496.0,
+West Dayton,FOODINSECU,46.6,6.0,,2023
+tract 000200,FOODINSECU,42.1,,,2023
+tract 003900,FOODINSECU,49.6,,,2023
+tract 165100,FOODINSECU,49.8,,,2023
+tract 004100,FOODINSECU,49.7,,,2023
+tract 070300,FOODINSECU,44.4,,,2023
+tract 003800,FOODINSECU,44.5,,,2023
+West Dayton,LACKTRPT,23.9,6.0,,2023
+tract 000200,LACKTRPT,21.5,,,2023
+tract 003900,LACKTRPT,25.3,,,2023
+tract 070300,LACKTRPT,22.1,,,2023
+tract 165100,LACKTRPT,26.5,,,2023
+tract 004100,LACKTRPT,25.7,,,2023
+tract 003800,LACKTRPT,22.9,,,2023
+PLACES tracts (40 states),LACKTRPT,9.2,60419.0,,2023
+PLACES tracts (40 states),FOODINSECU,17.2,60419.0,,2023
