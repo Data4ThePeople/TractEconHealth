@@ -26,7 +26,7 @@ from plot_style import use_house_style, titleblock, credit, INK, INK_DIM, MUTED,
 
 # county = main county (overdose, county history); od_fips = the code CDC's file uses (Oglala Lakota was Shannon, 46113)
 CFG = {
-    "U047": dict(slug="spotlight-west-dayton", name="West Dayton", county="39113", county_name="Montgomery County",
+    "U047": dict(health4="TREND", slug="spotlight-west-dayton", name="West Dayton", county="39113", county_name="Montgomery County",
                  city="Dayton", state="OH", holc_year="1937", labels=[("Downtown", 39.7589, -84.1916)]),
     "U034": dict(health4="COPD", slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
                  city="Birmingham", state="AL", holc_year="1930s", labels=[("Downtown", 33.5186, -86.8104)]),
@@ -222,6 +222,8 @@ def build(cid):
     fig.savefig(out / "03-low-income-vacancy.png"); plt.close(fig)
     info.update(low_income=dict(zip(lw.year, lw.value.round(1))), vacancy=dict(zip(vc_.year, vc_.value.round(1))))
 
+    if C.get("health4") == "TREND":
+        health_trend(cid, C, out, info); print(cid, C["slug"], info); return
     if C.get("health4"):
         health_bars(C, tracts, out, info); print(cid, C["slug"], info); return
 
@@ -249,6 +251,42 @@ def build(cid):
     info["overdose"] = {int(k): round(v, 1) for k, v in here.items() if k in (2003, 2010, 2017, 2021)}
     info["overdose_mid_2021"] = round(MID.iloc[-1], 1)
     print(cid, C["slug"], info)
+
+
+TREND_M = [("DIABETES", "Diabetes"), ("COPD", "COPD"), ("BPHIGH", "High blood pressure"), ("MHLTH", "Frequent mental distress")]
+
+
+def health_trend(cid, C, out, info):
+    """04 for picks with health4="TREND": four tract health measures over every CDC release (scripts/84_health_trend.py),
+    the pick against the U.S. Survey years 2013/2014-2023; nothing at the tract level exists before that."""
+    d = pd.read_csv(ROOT / f"analysis/spotlight/health_trend_{cid}.csv")
+    # two releases can reuse a survey year (high blood pressure is asked every other year): keep the later release
+    d = d.sort_values("release", key=lambda r: r.str[-4:]).drop_duplicates(["measure", "area", "year"], keep="last")
+    fig, axs = plt.subplots(2, 2, figsize=(10, 7.4), sharex=True)
+    fig.subplots_adjust(left=0.07, right=0.88, top=0.79, bottom=0.1, hspace=0.42, wspace=0.42)
+    info["trend"] = {}
+    for ax, (m, lab) in zip(axs.flat, TREND_M):
+        here = d[(d.measure == m) & (d.area == cid)].sort_values("year"); us = d[(d.measure == m) & (d.area == "US")].sort_values("year")
+        ax.plot(here.year, here.value, color=BLUE, lw=2, marker="o", ms=5, mec=SURFACE, mew=1.2)
+        ax.plot(us.year, us.value, color=INK, lw=1.8, ls="--")
+        for dd, nm in ((here, C["name"]), (us, "U.S.")):
+            ax.annotate(f"{dd.value.iloc[-1]:.0f}%", (dd.year.iloc[-1], dd.value.iloc[-1]), xytext=(6, 0), textcoords="offset points", va="center", color=INK, fontsize=10, fontweight="bold" if nm != "U.S." else "normal")
+            ax.annotate(f"{dd.value.iloc[0]:.0f}%", (dd.year.iloc[0], dd.value.iloc[0]), xytext=(-6, 0), textcoords="offset points", va="center", ha="right", color=INK_DIM, fontsize=9.5)
+        ax.axvline(2017.5, color=GRID, lw=1.2)
+        ax.set_title(lab, color=INK, fontsize=12, loc="left", fontweight="bold")
+        ax.set_ylim(0, max(here.value.max(), us.value.max()) * 1.2); ax.set_xlim(2012.3, 2024.2)
+        ax.set_xticks([2014, 2017, 2020, 2023]); axes_style(ax)
+        ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0f}%")
+        info["trend"][m] = {"here": [(int(here.year.iloc[0]), round(here.value.iloc[0], 1)), (int(here.year.iloc[-1]), round(here.value.iloc[-1], 1))],
+                            "us": [(int(us.year.iloc[0]), round(us.value.iloc[0], 1)), (int(us.year.iloc[-1]), round(us.value.iloc[-1], 1))]}
+    axs[0, 1].annotate(C["name"], (1.02, 0.86), xycoords="axes fraction", color=BLUE, fontsize=10, fontweight="bold")
+    axs[0, 1].annotate("U.S., dashed", (1.02, 0.30), xycoords="axes fraction", color=INK, fontsize=10)
+    titleblock(fig, f"{C['name']} has been far less healthy than the U.S. since tract estimates began",
+               "Share of adults, CDC model estimates by survey year. The thin line marks CDC's switch from 500 Cities to PLACES.\n"
+               "Compare the two lines within each year: CDC says these estimates do not support tracking a tract's change over time.")
+    credit(fig, "Source: CDC 500 Cities (2016-2019 releases) and PLACES (2020-2025 releases), census tract estimates weighted by population.\n"
+                "U.S.: 500 Cities national figure (BRFSS) through 2017; average of all tracts, weighted by population, from 2018.")
+    fig.savefig(out / "04-health-trend.png"); plt.close(fig)
 
 
 STATE = {"01": "Alabama", "48": "Texas", "28": "Mississippi", "46": "South Dakota", "54": "West Virginia", "21": "Kentucky"}
