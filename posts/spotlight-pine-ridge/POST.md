@@ -1,5 +1,6 @@
 ---
 title: "Pine Ridge: Treaties, Taken Land and a Health Gap That Has Not Closed"
+prismic_label: "Pine Ridge: Treaties, Taken Land and a Health Gap That Has Not Closed"
 subtitle: On the Pine Ridge Reservation in South Dakota, home of the Oglala Lakota Oyate, the land base shrank step by step under acts of Congress, and life expectancy has stayed far below the U.S. figure for as long as county records go back.
 slug: spotlight-pine-ridge
 date:

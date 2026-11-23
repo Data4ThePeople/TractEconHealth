@@ -1,5 +1,6 @@
 ---
 title: "West Baltimore: A Segregation Law, a Loan Map, a Highway to Nowhere"
+prismic_label: "West Baltimore: A Segregation Law, a Loan Map, a Highway to Nowhere"
 subtitle: How Sandtown-Winchester, Harlem Park, Upton and their neighbors were shaped by a century of written rules, from a 1910 segregation ordinance to public housing placement, a half-built expressway and a federal court ruling.
 slug: spotlight-west-baltimore
 date:

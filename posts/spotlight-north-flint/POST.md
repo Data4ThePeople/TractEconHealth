@@ -1,5 +1,6 @@
 ---
 title: "North and East Flint: A Loan Map, a Freeway, Buick City and the Water"
+prismic_label: "North and East Flint: A Loan Map, a Freeway, Buick City and the Water"
 subtitle: How the neighborhoods around Flint's old Buick plants went from the edge of a booming car town to one of the poorest and least healthy places in the country, one cut at a time.
 slug: spotlight-north-flint
 date:

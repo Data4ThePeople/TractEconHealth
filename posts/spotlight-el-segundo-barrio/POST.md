@@ -1,5 +1,6 @@
 ---
 title: "El Segundo Barrio and Chamizal: A Century of Losing Ground on the Border"
+prismic_label: "El Segundo Barrio and Chamizal: A Century of Losing Ground on the Border"
 subtitle: How El Paso's oldest Mexican American neighborhoods lost homes and land to a 1916 cleanup, a road widening, an international treaty and code sweeps, while the city's garment jobs disappeared.
 slug: spotlight-el-segundo-barrio
 date:

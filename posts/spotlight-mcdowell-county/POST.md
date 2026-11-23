@@ -1,5 +1,6 @@
 ---
 title: "McDowell County: Coal, U.S. Steel, Floods and the Pills That Came After"
+prismic_label: "McDowell County: Coal, U.S. Steel, Floods and the Pills That Came After"
 subtitle: How the coal camps of McDowell County, West Virginia, went from the nation's leading coal-producing county to one of the poorest and least healthy places in the country, one cut at a time.
 slug: spotlight-mcdowell-county
 date:

@@ -1,5 +1,6 @@
 ---
 title: "Clarksdale: Sharecropping, the Cotton Picker and the Long Drain from the Delta"
+prismic_label: "Clarksdale: Sharecropping, the Cotton Picker and the Long Drain from the Delta"
 subtitle: How Clarksdale, Mississippi, and the farmland around it went from the center of the cotton economy to one of the poorest and least healthy places in the country, one cut at a time.
 slug: spotlight-clarksdale
 date:

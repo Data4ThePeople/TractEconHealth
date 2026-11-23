@@ -1,5 +1,6 @@
 ---
 title: "West Dayton: A Loan Map, a Riot, Two Freeways and the Jobs That Left"
+prismic_label: "West Dayton: A Loan Map, a Riot, Two Freeways and the Jobs That Left"
 subtitle: How a Black neighborhood on Dayton's west side went from a home for families shut out of the rest of the city to one of the poorest and least healthy places in the country, one cut at a time.
 slug: spotlight-west-dayton
 date:

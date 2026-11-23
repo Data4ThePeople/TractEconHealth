@@ -1,5 +1,6 @@
 ---
 title: "Clarksville, Texas: Cotton, a Housing Case, Failed Banks and a Closed Hospital"
+prismic_label: "Clarksville, Texas: Cotton, a Housing Case, Failed Banks and a Closed Hospital"
 subtitle: In a small East Texas county seat, the cotton economy faded, a federal judge found the public housing was kept segregated, three banks failed, and the hospital closed.
 slug: spotlight-clarksville-texas
 date:

@@ -1,5 +1,6 @@
 ---
 title: "Owsley County: Small Farms, a Tobacco Quota and Then No Tobacco at All"
+prismic_label: "Owsley County: Small Farms, a Tobacco Quota and Then No Tobacco at All"
 subtitle: In a small county in eastern Kentucky, people left after World War II, farms stopped making money, and the federal tobacco program that set each farm's crop for 66 years came to an end.
 slug: spotlight-owsley-county
 date:
