@@ -1,6 +1,8 @@
 {
   "page_title": "West Dayton: A Loan Map, a Riot, Two Freeways and the Jobs That Left",
   "page_subtitle": "How a Black neighborhood on Dayton's west side went from a home for families shut out of the rest of the city to one of the poorest and least healthy places in the country, one cut at a time.",
+  "published_date": "2026-11-23",
+  "updated_date": "2026-11-23",
   "meta_title": "West Dayton: Redlining, Highways, Lost Jobs and Health",
   "meta_description": "How a 1937 loan map, the 1966 riot, two freeways and lost factory jobs shaped West Dayton, Ohio, where poverty rose from 18% to 42% since 1970.",
   "meta_keywords": "West Dayton history, Dayton redlining map, West Dayton food desert, Gem City Market, Dayton 1966 riot, Wright-Dunbar history, West Dayton health, Dayton Ohio poverty by neighborhood",
@@ -100,8 +102,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "AR53iS8JOrQnU5Bo",
           "alt": "Table comparing West Dayton with the United States. Economy: median household income $29,600 vs. $80,700; people in poverty 42% vs. 12%; unemployment 10% vs. 5%; households on SNAP 41% vs. 12%; homes vacant 28% vs. 10%. Health: life expectancy 69.3 vs. 78.7 years; adults in fair or poor health 42% vs. 20%; diabetes 29% vs. 12%; high blood pressure 55% vs. 34%; frequent mental distress 23% vs. 17%.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1760,
+            "height": 864
+          }
         },
         "source_text": [
           {
@@ -347,8 +354,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "JdvQS5vcHRxD3hTa",
           "alt": "Map of Dayton's 1937 Home Owners' Loan Corporation grades, with West Dayton's six census tracts outlined in white. Most of the eastern part of the outline, near downtown, sits on areas graded D, shown in red. The western part was not graded. The I-75 and US-35 freeways, drawn in gray, run along and through the outline.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1600,
+            "height": 1194
+          }
         },
         "source_text": [
           {
@@ -451,8 +463,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "cGXRst6bomRnMNfU",
           "alt": "Two bar charts comparing 1940 with 2020-2024 on the same land. Homes owned by the people living in them: west side D areas, 48% Black in 1940, 31% then and 38% now; other D areas, 4% Black in 1940, 24% then and 44% now; A, B and C areas 52% then and 55% now. People living there: west side D areas 27,800 then and 5,600 now; other D areas 30,100 and 11,900; A, B and C areas 114,600 and 91,600.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1600,
+            "height": 928
+          }
         },
         "source_text": [
           {
@@ -759,8 +776,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "GHdYp8KPr3NZrBp9",
           "alt": "Line chart of the number of people living in West Dayton's six census tracts: 49,314 in 1970, 30,057 in 1980, 24,929 in 1990, 20,459 in 2000, 16,017 in 2010 and 12,915 in 2020-2024.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1600,
+            "height": 896
+          }
         },
         "source_text": [
           {
@@ -983,8 +1005,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "nq_YdFYuQeMSrASb",
           "alt": "Line chart of three shares for West Dayton. People below the poverty line: 18% in 1970, 31% in 1980, 33% in 1990, 31% in 2000, 40% in 2008-2012 and 42% in 2020-2024. People below 200% of the poverty line: 58% in 1990, 56% in 2000, 66% in 2008-2012 and 67% in 2020-2024. Homes vacant: 11% in 1990, 15% in 2000, 25% in 2010 and 28% in 2020-2024.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1600,
+            "height": 960
+          }
         },
         "source_text": [
           {
@@ -1085,8 +1112,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "ZFT4SjR6zvUcQjLw",
           "alt": "Four small line charts comparing West Dayton with the U.S., share of adults, from CDC estimates for 2013 or 2014 through 2023. Diabetes: West Dayton 25% to 29%, U.S. 10% to 12%. COPD: 13% to 15%, U.S. 7% both years. High blood pressure: 52% to 55%, U.S. 32% to 34%. Frequent mental distress: 19% to 23%, U.S. 12% to 17%. West Dayton is far above the U.S. on all four in every year.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1600,
+            "height": 1184
+          }
         },
         "source_text": [
           {
@@ -1214,8 +1246,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "l8u1zpBqBUhpuImZ",
           "alt": "Map of West Dayton's six census tracts and the stores around them. Inside the tracts there is no full grocery store, 2 smaller grocery stores, 11 convenience and dollar stores and 2 fast-food places. A Save A Lot sits just across Gettysburg Avenue on the edge. Gem City Market is about half a mile northeast, a Kroger about half a mile north and GG's about a mile south. X marks show the Kroger on Gettysburg Avenue that closed in 2008 and other closed stores nearby.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1600,
+            "height": 1639
+          }
         },
         "source_text": [
           {
@@ -1289,8 +1326,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "pDnLInyIt5EjkHuu",
           "alt": "Bar chart comparing West Dayton's six census tracts with the nation. Households with no vehicle: 21% in West Dayton, 8% in the U.S. Adults without reliable transportation at some point in the past year: 24% and 9%. Adults who were food insecure in the past year: 47% and 17%.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 1600,
+            "height": 992
+          }
         },
         "source_text": [
           {
@@ -1907,5 +1949,23 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"West Dayton: A Loan Map, a Riot, Two Freeways and the Jobs That Left\",\n      \"description\": \"How a 1937 loan map, the 1966 riot, two freeways and lost factory jobs shaped West Dayton, Ohio, where poverty rose from 18% to 42% since 1970.\",\n      \"articleSection\": \"Stories of a Forgotten American Community\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"isPartOf\": {\n        \"@type\": \"CreativeWorkSeries\",\n        \"name\": \"Stories of a Forgotten American Community\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"West Dayton history\",\n        \"Dayton redlining map\",\n        \"West Dayton food desert\",\n        \"Gem City Market\",\n        \"Dayton 1966 riot\",\n        \"Wright-Dunbar history\",\n        \"West Dayton health\",\n        \"Dayton Ohio poverty by neighborhood\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-dayton\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-dayton#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-dayton#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Was West Dayton redlined?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. On the federal Home Owners' Loan Corporation's 1937 map of Dayton, none of the land in today's West Dayton tracts got an A or B grade. Most of the Wright-Dunbar tract and about half of the Miami Chapel tract were graded D, \\\"hazardous.\\\"\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is West Dayton a food desert?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In 2019, the U.S. Department of Agriculture counted all six tracts as low income and five of the six as low access, meaning many people lived more than half a mile from a supermarket. Today there is no full grocery store inside the six tracts. Gem City Market, a co-op grocery that opened in 2021, is about half a mile outside them.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How many people live in West Dayton?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"The six census tracts in this post held 49,314 people in 1970 and about 12,900 in 2020-2024, 74% fewer.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
+  "featured_image": {
+    "id": "agYoxNSk6g64AADY",
+    "alt": "A row of restored two-story brick storefronts on West Third Street in Dayton's Wright-Dunbar neighborhood, on a sunny day under a blue sky. The buildings have ornate cornices, bay windows and blue and red awnings, with old-style street lamps along a wide, empty street. An iron arch over a side walkway reads Wright Dunbar.",
+    "copyright": null,
+    "dimensions": {
+      "width": 1680,
+      "height": 1080
+    }
+  },
+  "meta_image": {
+    "id": "agYoxNSk6g64AADY",
+    "alt": "A row of restored two-story brick storefronts on West Third Street in Dayton's Wright-Dunbar neighborhood, on a sunny day under a blue sky. The buildings have ornate cornices, bay windows and blue and red awnings, with old-style street lamps along a wide, empty street. An iron arch over a side walkway reads Wright Dunbar.",
+    "copyright": null,
+    "dimensions": {
+      "width": 1680,
+      "height": 1080
+    }
+  },
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"West Dayton: A Loan Map, a Riot, Two Freeways and the Jobs That Left\",\n      \"description\": \"How a 1937 loan map, the 1966 riot, two freeways and lost factory jobs shaped West Dayton, Ohio, where poverty rose from 18% to 42% since 1970.\",\n      \"image\": \"https://images.prismic.io/data4thepeople/agYoxNSk6g64AADY_spotlight-west-dayton-hero-1680x1080.png?auto=format,compress\",\n      \"datePublished\": \"2026-11-23T09:30:00-05:00\",\n      \"dateModified\": \"2026-11-23T09:30:00-05:00\",\n      \"articleSection\": \"Stories of a Forgotten American Community\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"isPartOf\": {\n        \"@type\": \"CreativeWorkSeries\",\n        \"name\": \"Stories of a Forgotten American Community\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"West Dayton history\",\n        \"Dayton redlining map\",\n        \"West Dayton food desert\",\n        \"Gem City Market\",\n        \"Dayton 1966 riot\",\n        \"Wright-Dunbar history\",\n        \"West Dayton health\",\n        \"Dayton Ohio poverty by neighborhood\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-dayton\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-dayton#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-dayton#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Was West Dayton redlined?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. On the federal Home Owners' Loan Corporation's 1937 map of Dayton, none of the land in today's West Dayton tracts got an A or B grade. Most of the Wright-Dunbar tract and about half of the Miami Chapel tract were graded D, \\\"hazardous.\\\"\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is West Dayton a food desert?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In 2019, the U.S. Department of Agriculture counted all six tracts as low income and five of the six as low access, meaning many people lived more than half a mile from a supermarket. Today there is no full grocery store inside the six tracts. Gem City Market, a co-op grocery that opened in 2021, is about half a mile outside them.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How many people live in West Dayton?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"The six census tracts in this post held 49,314 people in 1970 and about 12,900 in 2020-2024, 74% fewer.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
 }
