@@ -8,7 +8,7 @@ time: 09:30:00-05:00
 section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-west-baltimore-hero-1680x1080.png
-hero_alt:
+hero_alt: "Looking east from the Fulton Avenue overpass down the sunken U.S. Route 40 expressway in West Baltimore, known as the Highway to Nowhere. Two nearly empty roadways run between high concrete walls, with a strip of grass and young trees between them, under the Mount Street bridge. Rowhouses and trees line the top of the walls, and downtown Baltimore's skyline sits at the far end under a cloudy blue sky."
 meta_title:
 description:
 keywords:
@@ -148,3 +148,4 @@ In February 2023, the city got a $2 million federal grant to plan what to do wit
 - **City and report figures.** The Health Department, Justice Department and Justice Policy Institute figures cover city-defined neighborhood areas that are a little larger than our tracts.
 - **The map.** 1937 grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). Grade shares are our own overlay of that map on 2020 tract lines.
 - **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=24510). The middle U.S. county is the median of all county rates each year.
+- **Photo.** U.S. Route 40, the former Interstate 170, looking east from the North Fulton Avenue overpass, Aug. 25, 2019. Photo by Famartin, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2019-08-25_12_59_43_View_east_along_U.S._Route_40_(former_Interstate_170)_from_the_overpass_for_U.S._Route_1_northbound_(North_Fulton_Avenue)_in_Baltimore_City,_Maryland.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Cropped.
