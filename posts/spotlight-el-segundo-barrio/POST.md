@@ -4,7 +4,7 @@ subtitle: How El Paso's oldest Mexican American neighborhoods lost homes and lan
 slug: spotlight-el-segundo-barrio
 date:
 time:
-section: Community Spotlight
+section: Stories of a Forgotten American Community
 hero: images/spotlight-el-segundo-barrio-hero-1680x1080.png
 hero_alt:
 meta_title:
@@ -19,7 +19,7 @@ Here is how El Segundo Barrio and Chamizal compare with the country today.
 ![Table comparing El Segundo Barrio and Chamizal with the United States. Economy: median household income $18,300 vs. $80,700; people in poverty 58% vs. 12%; unemployment 11% vs. 5%; households on SNAP 54% vs. 12%; homes vacant 14% vs. 10%. Health: life expectancy 76.7 vs. 78.7 years; adults in fair or poor health 55% vs. 20%; diabetes 32% vs. 12%; high blood pressure 49% vs. 34%; frequent mental distress 22% vs. 17%.](images/00-key-measures.png)
 *Census Bureau, CDC PLACES and USALEEP. Health figures are model estimates for adults.*
 
-::: blurb About this series
+::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
 Maybe we do this because we rarely learn how communities end up in this position. This series tries to fill that gap. We selected 10 communities, out of thousands across the country with low incomes and poor health, five in cities and five in rural areas. And we have gone back over the past century to tell the story of how they got here.

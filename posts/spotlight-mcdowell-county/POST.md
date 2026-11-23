@@ -4,7 +4,7 @@ subtitle: How the coal camps of McDowell County, West Virginia, went from the na
 slug: spotlight-mcdowell-county
 date:
 time:
-section: Community Spotlight
+section: Stories of a Forgotten American Community
 hero: images/spotlight-mcdowell-county-hero-1680x1080.png
 hero_alt:
 meta_title:
@@ -21,7 +21,7 @@ Here is how McDowell County's coal camps compare with the country today.
 
 ::: spacer 20px
 
-::: blurb About this series
+::: blurb Stories of a Forgotten American Community
 The connection between a community's economy and its health seems logical, and our [recent work](https://www.data4thepeople.com/p/income-health-viz) shows the two are closely linked. Yet, in the policy world, we tend to treat a community's economy and its physical and mental health as separate goals.
 
 Maybe we do this because we rarely learn how communities end up in this position. This series tries to fill that gap. We selected 10 communities, out of thousands across the country with low incomes and poor health, five in cities and five in rural areas. And we have gone back over the past century to tell the story of how they got here.
