@@ -5,6 +5,7 @@ slug: spotlight-north-flint
 date:
 time:
 section: Stories of a Forgotten American Community
+series: Stories of a Forgotten American Community
 hero: images/spotlight-north-flint-hero-1680x1080.png
 hero_alt:
 meta_title:

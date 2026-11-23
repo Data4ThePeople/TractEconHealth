@@ -5,6 +5,7 @@ slug: spotlight-el-segundo-barrio
 date:
 time:
 section: Stories of a Forgotten American Community
+series: Stories of a Forgotten American Community
 hero: images/spotlight-el-segundo-barrio-hero-1680x1080.png
 hero_alt:
 meta_title:

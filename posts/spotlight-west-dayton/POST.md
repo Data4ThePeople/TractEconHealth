@@ -5,6 +5,7 @@ slug: spotlight-west-dayton
 date:
 time:
 section: Stories of a Forgotten American Community
+series: Stories of a Forgotten American Community
 hero: images/spotlight-west-dayton-hero-1680x1080.png
 hero_alt:
 meta_title:

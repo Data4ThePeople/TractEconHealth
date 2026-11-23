@@ -5,6 +5,7 @@ slug: spotlight-pine-ridge
 date:
 time:
 section: Stories of a Forgotten American Community
+series: Stories of a Forgotten American Community
 hero: images/spotlight-pine-ridge-hero-1680x1080.png
 hero_alt:
 meta_title:
