@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-west-dayton
-Step: 3 (not started; waiting for Eric)
+Step: 3
 Since: 2026-11-23
 
 Also paused: income-health-viz at 4a (Eric resumes next week).
@@ -75,3 +75,4 @@ None.
 - 2026-11-23 spotlight-west-dayton: Eric confirmed 2d (Commons hero). Step 2e opened: meta title, description, keywords drafted; Article schema with series isPartOf.
 - 2026-11-23 spotlight-west-dayton: Eric confirmed 2e (accepted SNAP map link, Ohio income-health link, Common questions). 2f: pushed to Prismic as draft awRDuBEAACcAiOhQ in the Migration Release (68 slices, 9 images, Article + FAQPage schema; tags and author empty).
 - 2026-11-23 spotlight-west-dayton: Eric confirmed 2f (draft awRDuBEAACcAiOhQ; title "Redlined in 1937: West Dayton's Long Fall"; subtitle option 3; publish 2026-11-23 9:30 a.m. ET). 2g skipped for this post by Eric: no single-post email. One email on Friday 2026-11-27 will summarize the five city spotlights (West Dayton, North Birmingham, West Baltimore, El Segundo Barrio, North and East Flint).
+- 2026-11-23 spotlight-west-dayton: Step 3 drafted: SOCIAL.md (X, Bluesky, LinkedIn + first comment) and social/poverty-since-1970.gif (scripts/95_social_gif_westdayton.py). Awaiting Eric.
