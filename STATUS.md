@@ -9,7 +9,7 @@ Post: income-health-viz (paused at 4a; Eric resumes next week)
 Step: 4a
 Since: 2026-11-20
 
-Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 confirmed 2026-11-19; now in 2a, drafting all 10 from the West Dayton model. Eric expects to reopen Step 1 for chart edits as he reads.
+Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 confirmed 2026-11-19; all 10 drafted. 2026-11-23: Eric is focusing on spotlight-west-dayton to publish today; it is in 2a/2b (Eric's detailed review). Other 9 wait.
 
 ## Steps
 
@@ -67,3 +67,4 @@ None.
 - 2026-11-20 Step 2g confirmed (email sent). Step 3 opened: SOCIAL.md and a GIF of the live chart.
 - 2026-11-20 Step 3 drafted: SOCIAL.md (X, Bluesky, LinkedIn) and a GIF. Eric: tool screenshots too small for social; GIF rebuilt as four 1080x1080 headline charts (social/income-health.gif, scripts/90_social_gif.py). Awaiting Eric.
 - 2026-11-20 Step 3 confirmed. Step 4a opened and paused at Eric's request; outreach list not started. Eric picks it up next week.
+- 2026-11-23 Eric moved to spotlight-west-dayton for publication today; income-health-viz stays paused at 4a. Open brackets in West Dayton: US-35 finish date and home count (left out), HHS finding on the Good Samaritan complaint.
