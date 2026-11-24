@@ -1379,6 +1379,60 @@
           },
           {
             "type": "paragraph",
+            "text": "The chart below compares Baltimore's drug overdose death rate with the middle U.S. county.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. Baltimore city rises from 33 in 2003 to about 81 in 2017, then climbs to 121 in 2021. The middle U.S. county rises from about 7 to 25.",
+          "copyright": null
+        },
+        "source_text": [
+          {
+            "type": "paragraph",
+            "text": "These are CDC model estimates for the whole city, not West Baltimore alone.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 75,
+                "type": "em"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
             "text": "Food. Food is one of the clearest places where a neighborhood's economy and its health meet. A full grocery store is where most families find fresh fruit, vegetables and other healthy food at a fair price. The U.S. Department of Agriculture says that limited access to food sources \"may make it harder for some people to eat a healthy diet\" (USDA Economic Research Service).",
             "spans": [
               {
@@ -1901,6 +1955,28 @@
                 "data": {
                   "link_type": "Web",
                   "url": "https://www.ers.usda.gov/data-products/food-access-research-atlas/",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "list-item",
+            "text": "Overdose deaths. CDC National Center for Health Statistics, Drug Poisoning Mortality by County. Baltimore city counts as its own county in federal data, so these are citywide rates. The middle U.S. county is the median of all county rates each year.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 16,
+                "type": "strong"
+              },
+              {
+                "start": 60,
+                "end": 94,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://data.cdc.gov/resource/rpvx-m2md.json?fips=24510",
                   "target": "_blank"
                 }
               }

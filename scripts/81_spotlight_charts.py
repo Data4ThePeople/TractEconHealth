@@ -261,7 +261,7 @@ def build(cid):
     verb = ("rose far above the typical county" if r >= 1.5 else "rose above the typical county" if r >= 1.15 else
             "stayed below the typical county" if r <= 0.85 else "tracked the typical county")
     titleblock(fig, f"Overdose deaths in {lab_here} {verb}",
-               f"Drug overdose deaths per 100,000 people, CDC model estimates, {lab_here} and the middle U.S. county,\n2003-2021. County-wide, not {C['name']} alone." if C["name"] != C["county_name"] else
+               f"Drug overdose deaths per 100,000 people, CDC model estimates, {lab_here} and the middle U.S. county,\n2003-2021. {'Citywide' if 'city' in lab_here.lower() else 'County-wide'}, not {C['name']} alone." if C["name"] != C["county_name"] else
                f"Drug overdose deaths per 100,000 people, CDC model estimates, {lab_here} and the middle U.S. county,\n2003-2021.")
     credit(fig, "Source: CDC National Center for Health Statistics, Drug Poisoning Mortality by County (model-based rates), data.cdc.gov.")
     fig.savefig(out / "04-overdose.png"); plt.close(fig)
