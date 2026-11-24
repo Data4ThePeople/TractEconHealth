@@ -1,7 +1,7 @@
 ---
-title: "West Baltimore: A Loan Map, a Highway to Nowhere and the Jobs That Left"
-prismic_label: "West Baltimore: A Loan Map, a Highway to Nowhere and the Jobs That Left"
-subtitle: How a 1910 segregation law, a 1937 loan map, public housing placed by race, a half-built expressway and lost factory jobs shaped Sandtown-Winchester, Harlem Park, Upton and their neighbors, and why a $130 million effort to rebuild fell short.
+title: "West Baltimore Wasn't Forgotten. It Was Fenced In, Redlined and Bulldozed."
+prismic_label: "West Baltimore Wasn't Forgotten. It Was Fenced In, Redlined and Bulldozed."
+subtitle: A segregation law, a redlining map, public housing placed by race and a Highway to Nowhere. Then the jobs left, and a $130 million effort to rebuild went mostly to the houses people could see, not to the lost jobs underneath.
 slug: spotlight-west-baltimore
 date: 2026-11-24
 time: 09:30:00-05:00
