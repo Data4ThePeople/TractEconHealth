@@ -105,12 +105,7 @@ The tracts held about 85,500 people in 1950, the most in any census we can match
 
 Baltimore was a factory city. In 1950, over 34% of its workers had manufacturing jobs. Between 1950 and 1995, the city lost 74.9% of those jobs, and by 1995 only 8% of the city's jobs were in manufacturing ([Federal Reserve Bank of Richmond, 2017, citing Marc Levine](https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/econ_focus/2017/q2/district_digest_article.pdf)). Sandtown once had steady paychecks from local employers like Schmidt's Bakery. By the 1990s, the bakery had closed ([The Abell Report, 2013, p. 1](https://abell.org/wp-content/uploads/2022/02/arn1113.pdf)).
 
-The chart below shows unemployment among people in the nine tracts who were working or looking for work.
-
-![Line chart of the unemployment rate in West Baltimore's nine census tracts: 8% in 1970, 22% in 1980, 18% in 1990, 21% in 2000, 26% in 2010 and 13% in 2020-2024.](images/02b-unemployment.png)
-*Earlier years are fitted to today's tract lines. The 2010 point is from the 2008-2012 survey.*
-
-Unemployment rose from 8% in 1970 to 22% in 1980, and it stayed near or above 18% until the 2020s.
+Unemployment in the nine tracts rose from 8% in 1970 to 22% in 1980, and it stayed near or above 18% until the 2020s.
 
 Unemployment counts only people who are looking for work, so it leaves out people who have stopped looking. The chart below shows two other measures back to 1940: the share of adults in the labor force, meaning working or looking for work, and the share of adults with a job.
 
