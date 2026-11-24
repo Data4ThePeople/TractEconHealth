@@ -145,6 +145,14 @@ DeLuca and Rosenblatt compared Sandtown with similar neighborhoods that got no s
 
 West Dayton got rebuilding money too, on a smaller scale, including more than 230 homes in Madden Hills and federal Model Cities homes in the 1970s. In both places, new houses went up and poverty stayed high.
 
+::: spacer 40px
+
+::: blurb A cautionary tale
+Sandtown is a cautionary tale for anyone trying to undo decades of disinvestment in a neighborhood. The problem people could see here was housing: empty, run-down homes. The sources point to deeper causes underneath it, mainly the loss of jobs and the distance between the neighborhood and the jobs that were left. The review written for the Enterprise Foundation said in 2001 that "jobs are moving from the inner city to the fringes of suburbia, which limits the effectiveness of interventions located solely in poor neighborhoods" ([Brown, Butler and Hamilton, 2001, p. 32](https://web.archive.org/web/20110112132605/http://www.aecf.org/upload/publicationfiles/sandtown-winchester.pdf)). DeLuca and Rosenblatt added that "despite significant federal and local investments, we rarely see community level or place-based policies held to the same empirical evaluation standards" as other programs ([The Abell Report, 2013, p. 11](https://abell.org/wp-content/uploads/2022/02/arn1113.pdf)). **The lesson for policymakers is to find the root cause driving a neighborhood's problems, not only treat the problems they can see, and to check whether the money is changing that root cause.**
+:::
+
+::: spacer 40px
+
 ## West Baltimore today
 
 ::: spacer 5px
