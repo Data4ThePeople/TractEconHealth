@@ -651,11 +651,11 @@
         "source_text": [
           {
             "type": "paragraph",
-            "text": "The western end of the expressway, where it stops short, in 2010. Photo by Adam Moss, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:I-170_western_stub_end.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).",
+            "text": "The western end of the expressway, where it stops short, in 2010. It appears to lie just west of the nine tracts in this story. Photo by Adam Moss, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:I-170_western_stub_end.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).",
             "spans": [
               {
                 "start": 0,
-                "end": 243,
+                "end": 305,
                 "type": "em"
               }
             ],
@@ -683,8 +683,35 @@
       "primary": {
         "paragraph_text": [
           {
+            "type": "heading2",
+            "text": "People leave",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "5px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
             "type": "paragraph",
-            "text": "The chart below counts the people living inside today's nine tract lines in each census.",
+            "text": "One way to see these decades together is to count the people who live here. The chart below counts the people living inside today's nine tract lines in each census.",
             "spans": [],
             "direction": "ltr"
           }
@@ -699,17 +726,17 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Line chart of the number of people living in West Baltimore's nine census tracts: 46,121 in 1970, 37,579 in 1980, 35,551 in 1990, 25,420 in 2000, 22,609 in 2010 and 18,895 in 2020-2024.",
+          "alt": "Line chart of the number of people living in West Baltimore's nine census tracts: 81,689 in 1940, 85,527 in 1950, 63,574 in 1960, 46,121 in 1970, 37,579 in 1980, 35,551 in 1990, 25,420 in 2000, 22,609 in 2010 and 18,895 in 2020-2024.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.",
+            "text": "Counts from 1940 to 2010 are fitted to today's tract lines. 2020-2024 is a five-year survey estimate. Census tract counts for 1910 and 1930 exist but do not line up closely enough with today's tracts to use.",
             "spans": [
               {
                 "start": 0,
-                "end": 91,
+                "end": 207,
                 "type": "em"
               }
             ],
@@ -738,25 +765,25 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "The tracts lost about 19% of their people in the 1970s, the decade the highway was cleared and built. Other things were happening at the same time. After Dr. Martin Luther King Jr. was killed in April 1968, looting began along Pennsylvania Avenue, two blocks of it inside these tracts. Across the city, six people died and there were 1,208 fires (University of Baltimore, Baltimore '68 timeline). And Baltimore as a whole had been losing people since 1950, when it peaked at about 950,000 (Federal Reserve Bank of Richmond, 2017). No source we found separates these causes. From 1970 to 2020-2024, the tracts went from 46,121 people to 18,895, a drop of 59%. West Dayton's tracts lost 74% over the same years.",
+            "text": "The tracts held about 85,500 people in 1950, the most in any census we can match to today's lines. They lost about a quarter of their people in the 1950s and more than a quarter of the rest in the 1960s, before most of the highway's homes came down. Baltimore as a whole peaked in 1950 too, at about 950,000 people (Federal Reserve Bank of Richmond, 2017). The tracts lost another 19% in the 1970s, the decade the highway was cleared and built. Other things were happening at the same time. After Dr. Martin Luther King Jr. was killed in April 1968, looting began along Pennsylvania Avenue, two blocks of it inside these tracts. Across the city, six people died and there were 1,208 fires (University of Baltimore, Baltimore '68 timeline). No source we found separates these causes. From 1950 to 2020-2024, the tracts went from 85,527 people to 18,895, a drop of 78%. Since 1970 alone they have lost 59%, compared with 74% in West Dayton's tracts.",
             "spans": [
               {
-                "start": 347,
-                "end": 394,
-                "type": "hyperlink",
-                "data": {
-                  "link_type": "Web",
-                  "url": "https://archives.ubalt.edu/bsr/timeline.htm",
-                  "target": "_blank"
-                }
-              },
-              {
-                "start": 490,
-                "end": 528,
+                "start": 316,
+                "end": 354,
                 "type": "hyperlink",
                 "data": {
                   "link_type": "Web",
                   "url": "https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/econ_focus/2017/q2/district_digest_article.pdf",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 690,
+                "end": 737,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://archives.ubalt.edu/bsr/timeline.htm",
                   "target": "_blank"
                 }
               }
@@ -840,7 +867,13 @@
           },
           {
             "type": "paragraph",
-            "text": "The chart below shows unemployment among people in the nine tracts who were working or looking for work.",
+            "text": "Unemployment in the nine tracts rose from 8% in 1970 to 22% in 1980, and it stayed near or above 18% until the 2020s.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Unemployment counts only people who are looking for work, so it leaves out people who have stopped looking. The chart below shows two other measures back to 1940: the share of adults in the labor force, meaning working or looking for work, and the share of adults with a job.",
             "spans": [],
             "direction": "ltr"
           }
@@ -855,17 +888,17 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Line chart of the unemployment rate in West Baltimore's nine census tracts: 8% in 1970, 22% in 1980, 18% in 1990, 21% in 2000, 26% in 2010 and 13% in 2020-2024.",
+          "alt": "Line chart of work in West Baltimore's nine census tracts, 1940 to 2020-2024. Share of adults in the labor force: 62% in 1940, 61% in 1950, 59% in 1960, 49% in 1970, 44% in 1980, 49% in 1990, 46% in 2000, 51% in 2010 and 49% in 2020-2024. Share with a job: 53%, 55%, 52%, 45%, 34%, 40%, 36%, 38% and 42%. Baltimore city, share with a job, dashed: 50% in 1940, 54% in 1950 and 1960, 56% in 1970, 51% in 1980 and 59% in 2020-2024.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "Earlier years are fitted to today's tract lines. The 2010 point is from the 2008-2012 survey.",
+            "text": "Adults are 14 and over through 1960 and 16 and over from 1970, following the census. Earlier years are fitted to today's tract lines. The 2010 point is from the 2008-2012 survey.",
             "spans": [
               {
                 "start": 0,
-                "end": 93,
+                "end": 178,
                 "type": "em"
               }
             ],
@@ -894,11 +927,34 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "Unemployment rose from 8% in 1970 to 22% in 1980, and it stayed near or above 18% until the 2020s. By 2002, the first year with this data, only 6% of the jobs held by people living here were in manufacturing, 494 of 8,769. By 2022, residents held 5,987 jobs in all (Census Bureau, LEHD Origin-Destination Employment Statistics).",
+            "text": "In 1950, 55% of adults here had a job, about the same as the 54% across Baltimore. By 1980, 34% did, compared with 51% citywide. The share in the labor force fell from 59% in 1960 to 44% in 1980, so many people were no longer working or looking for work at all.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "The gap holds for people in their main working years, 25 to 54. In 2020-2024, 59% of people that age here had a job, compared with 78% across Baltimore. Among men that age, it was 57% here and 78% citywide (Census Bureau, American Community Survey 2020-2024).",
             "spans": [
               {
-                "start": 266,
-                "end": 326,
+                "start": 207,
+                "end": 257,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://data.census.gov/table/ACSDT5Y2024.B23001",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "By 2002, the first year with this data, only 6% of the jobs held by people living here were in manufacturing, 494 of 8,769. By 2022, residents held 5,987 jobs in all (Census Bureau, LEHD Origin-Destination Employment Statistics).",
+            "spans": [
+              {
+                "start": 167,
+                "end": 227,
                 "type": "hyperlink",
                 "data": {
                   "link_type": "Web",
@@ -1172,7 +1228,61 @@
       "version": "initial",
       "items": [],
       "primary": {
-        "spacer_value": "20px"
+        "spacer_value": "40px"
+      }
+    },
+    {
+      "slice_type": "highlited_page_blurb",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "title": "A cautionary tale",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sandtown is a cautionary tale for anyone trying to undo decades of disinvestment in a neighborhood. The problem people could see here was housing: empty, run-down homes. The sources point to deeper causes underneath it, mainly the loss of jobs and the distance between the neighborhood and the jobs that were left. The review written for the Enterprise Foundation said in 2001 that \"jobs are moving from the inner city to the fringes of suburbia, which limits the effectiveness of interventions located solely in poor neighborhoods\" (Brown, Butler and Hamilton, 2001, p. 32). DeLuca and Rosenblatt added that \"despite significant federal and local investments, we rarely see community level or place-based policies held to the same empirical evaluation standards\" as other programs (The Abell Report, 2013, p. 11). The lesson for policymakers is to find the root cause driving a neighborhood's problems, not only treat the problems they can see, and to check whether the money is changing that root cause.",
+            "spans": [
+              {
+                "start": 534,
+                "end": 573,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://web.archive.org/web/20110112132605/http://www.aecf.org/upload/publicationfiles/sandtown-winchester.pdf",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 783,
+                "end": 812,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://abell.org/wp-content/uploads/2022/02/arn1113.pdf",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 815,
+                "end": 1005,
+                "type": "strong"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "40px"
       }
     },
     {
@@ -1393,7 +1503,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "Prison and police. In 2015, the Justice Policy Institute and the Prison Policy Initiative reported that in 2010, 458 people from the Sandtown-Winchester and Harlem Park area were in state prison, more than from any other Baltimore community, at a cost to the state of about $17 million a year. The report found the same community \"also faces the most concentrated challenges related to work, education, health, and housing,\" but it did not claim one causes the other (Justice Policy Institute and Prison Policy Initiative, 2015). On April 12, 2015, Freddie Gray, who lived in Sandtown-Winchester, was injured in police custody after his arrest on Presbury Street. He died a week later (Court of Appeals of Maryland, 2016; Baltimore Brew, 2015; Urban Affairs Review, 2015). In 2016, the Justice Department found that Baltimore police made about 44% of their stops in two small, mostly Black police districts that hold about 11% to 12% of the city's people. It described one man who was stopped 34 times in those two districts (DOJ, 2016, pp. 6 and 26). A court entered a consent decree to reform the department on April 7, 2017 (U.S. District Court for Maryland). In October 2026, the department was still under it (Baltimore Banner, 2026).",
+            "text": "Prison and police. In 2015, the Justice Policy Institute and the Prison Policy Initiative reported that in 2010, 458 people from the Sandtown-Winchester and Harlem Park area were in state prison, more than from any other Baltimore community, at a cost to the state of about $17 million a year. The report found the same community \"also faces the most concentrated challenges related to work, education, health, and housing,\" but it did not claim one causes the other (Justice Policy Institute and Prison Policy Initiative, 2015). On April 12, 2015, Freddie Gray, who lived in Sandtown-Winchester, was injured in police custody after his arrest on Presbury Street. He died a week later (Court of Appeals of Maryland, 2016; Baltimore Brew, 2015; Urban Affairs Review, 2015). In 2016, the Justice Department found that Baltimore police made about 44% of their stops in two small, mostly Black police districts that hold about 11% to 12% of the city's people. It described one man who was stopped 34 times in those two districts (DOJ, 2016, pp. 6 and 26). On April 7, 2017, a federal court approved a consent decree, a court-enforced agreement requiring the department to change how it polices (U.S. District Court for Maryland). The court oversees the department until it finds the department has fully met the agreement's terms. Nine years later, that has not happened. At an October 2026 hearing, the judge said the department had made progress but was still about 500 officers short of its staffing plan and had more than 900 misconduct cases waiting to be heard. The police commissioner said he hoped to end court oversight by the end of 2028 (Baltimore Banner, 2026).",
             "spans": [
               {
                 "start": 0,
@@ -1451,8 +1561,8 @@
                 }
               },
               {
-                "start": 1128,
-                "end": 1160,
+                "start": 1191,
+                "end": 1223,
                 "type": "hyperlink",
                 "data": {
                   "link_type": "Web",
@@ -1461,8 +1571,8 @@
                 }
               },
               {
-                "start": 1215,
-                "end": 1237,
+                "start": 1645,
+                "end": 1667,
                 "type": "hyperlink",
                 "data": {
                   "link_type": "Web",
@@ -1743,7 +1853,7 @@
           },
           {
             "type": "list-item",
-            "text": "Jobs. Unemployment is from the same census series as the other then-and-now numbers (1970 and 1980 fitted with 92% of population matched; 2010 from the 2008-2012 survey). Jobs held by residents are from the Census Bureau's LEHD Origin-Destination Employment Statistics (LODES 8), summed over the nine tracts; they count jobs, not people, and say nothing about where the jobs were.",
+            "text": "Jobs. Labor force and job shares are our sums of census tract counts: 1940 to 1980 by the same map overlay as the population counts, 1990 and 2000 by NHGIS crosswalks, and ACS tables B23025 and B23001 for 2008-2012 and 2020-2024. Adults are 14 and over through 1960 and 16 and over from 1970; \"with a job\" includes the armed forces, and in 1940 leaves out the 2.5% of adults here on public relief work. Ages 25 to 54 start in 2000, the first year tract tables split ages that way. Baltimore city figures sum every tract in the city. Unemployment is from the same census series as the other then-and-now numbers (1970 and 1980 fitted with 92% of population matched; 2010 from the 2008-2012 survey). Jobs held by residents are from the Census Bureau's LEHD Origin-Destination Employment Statistics (LODES 8), summed over the nine tracts; they count jobs, not people, and say nothing about where the jobs were.",
             "spans": [
               {
                 "start": 0,
@@ -1751,8 +1861,8 @@
                 "type": "strong"
               },
               {
-                "start": 223,
-                "end": 268,
+                "start": 750,
+                "end": 795,
                 "type": "hyperlink",
                 "data": {
                   "link_type": "Web",

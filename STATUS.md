@@ -5,9 +5,11 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: spotlight-west-dayton
-Step: 3
-Since: 2026-11-23
+Post: spotlight-west-baltimore
+Step: 2c
+Since: 2026-11-24
+
+Also waiting: spotlight-west-dayton step 3 (SOCIAL.md and GIF drafted, awaiting Eric).
 
 Also paused: income-health-viz at 4a (Eric resumes next week).
 
@@ -79,3 +81,4 @@ None.
 - 2026-11-23 spotlight-west-baltimore: set to publish 2026-11-24 9:30 a.m. ET (day 2). Source audit by three agents plus spot checks; fixes applied (map-quote attribution, page cites, Thompson link to CourtListener, 1966 source, rebuilding cites, 2010 prison year, Freddie Gray wording, lead wording, health profile links, $2M date, $85.5M award, Red Line 2026, consent decree 2026). Loan explanation added. Chart 03 with poverty line from 1970. Proposed for Eric: food section with chart 05a. Hero candidate: Famartin 2019 US 40 trench from Fulton Ave (CC BY-SA 4.0). Eric reads line by line 2026-11-24 morning.
 - 2026-11-24 spotlight-west-baltimore: Eric found the draft disjointed; rewritten around one spine (segregation law, loan map, public housing, highway, jobs leave, the $130M Sandtown effort and why it fell short, today, what comes next), with West Dayton comparisons. 1968 folded into the population passage; court finding into public housing; overdose chart dropped (citywide only). New: chart 02b unemployment, LODES jobs, Richmond Fed manufacturing loss, Abell/UAR/Brown-Butler-Hamilton/City Limits on the effort. Washington Post 2015 not quoted (only seen via reprint).
 - 2026-11-24 spotlight-west-baltimore: population chart back to 1940 (peak 85,527 in 1950; 1910 and 1930 fits too low). New labor chart 02c (labor force and share with a job, 1940-2024, with city comparison) and prime-age shares (2000 on). Eric's hunch confirmed: share with a job fell from 55% (1950) to 34% (1980).
+- 2026-11-24 spotlight-west-baltimore: 2b confirmed by Eric (line-by-line read done: cautionary-tale blurb, consent decree clarified, unemployment chart dropped for work chart 02c). Now 2c; importer convert-only run.
