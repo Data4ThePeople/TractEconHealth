@@ -30,7 +30,7 @@ CFG = {
                  city="Dayton", state="OH", holc_year="1937", labels=[("Downtown", 39.7589, -84.1916)]),
     "U034": dict(health4="COPD", slug="spotlight-north-birmingham", name="North Birmingham", county="01073", county_name="Jefferson County",
                  city="Birmingham", state="AL", holc_year="1930s", labels=[("Downtown", 33.5186, -86.8104)]),
-    "U039": dict(pov_line=True, pov_title="Poverty here has stayed between 38% and 48% since 1970", slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore", extra_roads=["US Hwy 40"],
+    "U039": dict(pop_early=True, pop_title="West Baltimore has 78% fewer people than at its 1950 peak", pov_line=True, pov_title="Poverty here has stayed between 38% and 48% since 1970", slug="spotlight-west-baltimore", name="West Baltimore", county="24510", county_name="Baltimore", extra_roads=["US Hwy 40"],
                  city="Baltimore", state="MD", holc_year="1937", labels=[("Downtown", 39.2904, -76.6122)]),
     "U028": dict(health4="DIABETES", slug="spotlight-el-segundo-barrio", name="El Segundo Barrio and Chamizal", county="48141", county_name="El Paso County",
                  city="El Paso", state="TX", holc_year="1936", labels=[("Downtown", 31.7587, -106.4869)]),
@@ -167,6 +167,10 @@ def build(cid):
 
     # ---------- 02 population ----------
     pop = h[h.measure == "population"].assign(x=lambda d: d.year.map(YX)).dropna(subset=["x"]).sort_values("x")
+    if C.get("pop_early"):  # 1940-1960 from scripts/98_population_early.py, same overlay rule, fit 0.8 or more only
+        e = pd.read_csv(ROOT / f"analysis/spotlight/population_early_{cid}.csv")
+        e = e[e.fit >= 0.8].rename(columns={"pop": "value"}).assign(x=lambda d: d.year.astype(float), year=lambda d: d.year.astype(str))[["year", "x", "value"]]
+        pop = pd.concat([e, pop[["year", "x", "value"]]]).sort_values("x")
     fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.1, right=0.95, top=0.8, bottom=0.16)
     ax.plot(pop.x, pop.value, color=BLUE, lw=2, marker="o", ms=8, mec=SURFACE, mew=2)
     for x, v in zip(pop.x, pop.value):
@@ -177,6 +181,7 @@ def build(cid):
     ch = 100 * (last / first - 1)
     t = (f"{C['name']} has {abs(ch):.0f}% fewer people than in {y0}" if ch <= -5 else
          f"{C['name']} has {ch:.0f}% more people than in {y0}" if ch >= 5 else f"{C['name']}'s population, {y0} to today")
+    t = C.get("pop_title", t)
     titleblock(fig, t, f"People living in the {n} census tracts, counted on today's tract lines.")
     credit(fig, f"Source: NHGIS (IPUMS) decennial census tract counts, {y0}-2010, matched to today's tracts; ACS 2020-2024 five-year estimates.")
     fig.savefig(out / "02-population.png"); plt.close(fig)
