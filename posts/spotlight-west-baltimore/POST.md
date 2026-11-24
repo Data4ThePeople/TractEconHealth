@@ -130,6 +130,19 @@ The chart below compares Baltimore's drug overdose death rate with the middle U.
 ![Line chart of drug overdose deaths per 100,000 people from 2003 to 2021. Baltimore city rises from 33 in 2003 to about 81 in 2017, then climbs to 121 in 2021. The middle U.S. county rises from about 7 to 25.](images/04-overdose.png)
 *These are CDC model estimates for the whole city, not West Baltimore alone.*
 
+## Food
+
+::: spacer 5px
+
+Food is one of the clearest places where a neighborhood's economy and its health meet. A full grocery store is where most families find fresh fruit, vegetables and other healthy food at a fair price. The U.S. Department of Agriculture says that limited access to food sources "may make it harder for some people to eat a healthy diet" ([USDA Economic Research Service](https://www.ers.usda.gov/data-products/food-access-research-atlas/)).
+
+In 2019, the USDA counted every tract here that it had data for as low income, and four of those eight as low access, meaning many people lived more than half a mile from a supermarket ([USDA Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/)). Today, of the stores inside the nine tracts that accept SNAP food benefits, one is a supermarket, a Save A Lot on Pennsylvania Avenue. Four are smaller grocery stores, and 20 are convenience stores ([USDA SNAP retailer list, November 2026](https://www.fns.usda.gov/snap/retailer-locator)).
+
+Getting to a store farther away is hard for many people here. In the nine tracts, 60% of households have no vehicle, compared with 27% in Baltimore as a whole and 8% nationwide ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B25044)). CDC estimates that 24% of adults here went without reliable transportation at some point in the past year, and 50% were food insecure, compared with 9% and 17% in the 40 states where CDC has these measures ([CDC PLACES](https://www.cdc.gov/places/)). The chart below puts these side by side.
+
+![Bar chart comparing West Baltimore's nine census tracts with the nation. Households with no vehicle: 60% in West Baltimore, 8% in the U.S. Adults without reliable transportation at some point in the past year: 24% and 9%. Adults who were food insecure in the past year: 50% and 17%.](images/05a-transport.png)
+*Vehicles from the Census Bureau, 2020-2024. Transportation and food are CDC model estimates for 2023; nationwide for these two means tracts in the 40 states CDC covers, weighted by population.*
+
 ## What the city plans now
 
 ::: spacer 5px
@@ -147,5 +160,6 @@ In February 2023, the city got a $2 million federal grant to plan what to do wit
 - **The table at the top.** Rates are computed from counts summed across the nine tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
 - **City and report figures.** The Health Department, Justice Department and Justice Policy Institute figures cover city-defined neighborhood areas that are a little larger than our tracts.
 - **The map.** 1937 grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). Grade shares are our own overlay of that map on 2020 tract lines.
+- **Food.** Low-income and low-access flags are from the USDA [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/), 2019, which uses 2010 tracts; eight of our nine tracts are in it (tract 24510280600 was created in 2020). Store counts are stores inside the nine tracts on USDA's live SNAP retailer list, pulled November 2026, by USDA store type; the list shows stores authorized to take SNAP and may include some that have closed. Vehicles are ACS 2020-2024 table B25044. Transportation and food insecurity are CDC PLACES 2025 release model estimates for 2023, weighted by tract population.
 - **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=24510). The middle U.S. county is the median of all county rates each year.
 - **Photo.** U.S. Route 40, the former Interstate 170, looking east from the North Fulton Avenue overpass, Aug. 25, 2019. Photo by Famartin, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2019-08-25_12_59_43_View_east_along_U.S._Route_40_(former_Interstate_170)_from_the_overpass_for_U.S._Route_1_northbound_(North_Fulton_Avenue)_in_Baltimore_City,_Maryland.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Cropped.
