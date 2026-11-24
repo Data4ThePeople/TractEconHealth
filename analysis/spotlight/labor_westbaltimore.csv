@@ -1,0 +1,63 @@
+year,area,measure,value,num,den,fit,note
+1940,West Baltimore,lfp,62.0,39377,63554,0.871,14+
+1940,West Baltimore,epop,53.1,33749,63554,0.871,14+; with a job excludes public emergency work
+1940,West Baltimore,epop_male,67.2,20144,29991,0.871,14+; with a job excludes public emergency work
+1940,West Baltimore,relief_work,2.5,1592,63554,0.871,14+; public emergency work
+1940,Baltimore city,lfp,56.3,388417,690435,,14+
+1940,Baltimore city,epop,50.5,348358,690435,,14+; with a job excludes public emergency work
+1940,Baltimore city,epop_male,72.0,243348,337951,,14+; with a job excludes public emergency work
+1940,Baltimore city,relief_work,1.1,7362,690435,,14+; public emergency work
+1950,West Baltimore,lfp,60.6,39023,64370,0.871,14+
+1950,West Baltimore,epop,55.0,35424,64370,0.871,14+
+1950,West Baltimore,epop_male,71.0,21656,30490,0.871,14+
+1950,Baltimore city,lfp,56.8,417755,736014,,14+
+1950,Baltimore city,epop,53.5,393548,736014,,14+
+1950,Baltimore city,epop_male,75.6,266958,353315,,14+
+1960,West Baltimore,lfp,59.0,25997,44076,0.871,14+
+1960,West Baltimore,epop,52.1,22968,44076,0.871,14+
+1960,West Baltimore,epop_male,66.3,13754,20740,0.871,14+
+1960,Baltimore city,lfp,57.4,391062,681205,,14+
+1960,Baltimore city,epop,53.8,366282,681205,,14+
+1960,Baltimore city,epop_male,72.4,234284,323559,,14+
+1970,West Baltimore,lfp,48.6,14507,29828,0.921,16+
+1970,West Baltimore,epop,44.6,13304,29828,0.921,16+
+1970,Baltimore city,lfp,58.8,373103,634728,,16+
+1970,Baltimore city,epop,56.1,355980,634728,,16+
+1980,West Baltimore,lfp,44.1,12263,27787,0.921,16+
+1980,West Baltimore,epop,34.3,9530,27787,0.921,16+
+1980,Baltimore city,lfp,57.0,344871,605314,,16+
+1980,Baltimore city,epop,50.9,307942,605314,,16+
+1990,West Baltimore,lfp,48.6,12402,25515,,16+
+1990,West Baltimore,epop,40.0,10211,25515,,16+
+1990,Baltimore city,lfp,60.7,347593,572963,,16+
+1990,Baltimore city,epop,55.1,315754,572963,,16+
+2000,West Baltimore,lfp,46.0,8590,18655,,16+
+2000,West Baltimore,epop,36.4,6793,18655,,16+
+2000,Baltimore city,lfp,56.6,287159,507534,,16+
+2000,Baltimore city,epop,50.5,256460,507534,,16+
+2008-2012,West Baltimore,lfp,51.0,9120,17886,,16+
+2008-2012,West Baltimore,epop,37.9,6782,17886,,16+
+2008-2012,West Baltimore,prime_lfp,64.8,5703,8798,,25-54
+2008-2012,West Baltimore,prime_epop,49.1,4321,8798,,25-54
+2008-2012,West Baltimore,prime_epop_male,45.7,1776,3883,,men 25-54
+2008-2012,Baltimore city,lfp,62.8,314932,501858,,16+
+2008-2012,Baltimore city,epop,54.2,271973,501858,,16+
+2008-2012,Baltimore city,prime_lfp,78.5,209704,267054,,25-54
+2008-2012,Baltimore city,prime_epop,69.2,184832,267054,,25-54
+2008-2012,Baltimore city,prime_epop_male,69.1,87867,127233,,men 25-54
+2020-2024,West Baltimore,lfp,48.7,7425,15232,,16+
+2020-2024,West Baltimore,epop,42.5,6471,15232,,16+
+2020-2024,West Baltimore,prime_lfp,65.6,4884,7440,,25-54
+2020-2024,West Baltimore,prime_epop,58.6,4362,7440,,25-54
+2020-2024,West Baltimore,prime_epop_male,57.2,1927,3370,,men 25-54
+2020-2024,Baltimore city,lfp,63.2,294777,466362,,16+
+2020-2024,Baltimore city,epop,59.1,275550,466362,,16+
+2020-2024,Baltimore city,prime_lfp,82.0,200302,244155,,25-54
+2020-2024,Baltimore city,prime_epop,77.6,189583,244155,,25-54
+2020-2024,Baltimore city,prime_epop_male,78.4,89517,114138,,men 25-54
+2000,West Baltimore,prime_lfp,59.7,5884,9861,,25-54
+2000,West Baltimore,prime_epop,48.8,4814,9861,,25-54
+2000,West Baltimore,prime_epop_male,47.9,2042,4267,,men 25-54
+2000,Baltimore city,prime_lfp,71.7,200148,279079,,25-54
+2000,Baltimore city,prime_epop,65.2,182074,279079,,25-54
+2000,Baltimore city,prime_epop_male,65.8,86928,132020,,men 25-54
