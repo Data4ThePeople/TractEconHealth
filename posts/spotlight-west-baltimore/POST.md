@@ -88,7 +88,11 @@ In 1966, the city began condemning property for the Franklin-Mulberry expressway
 ![The western dead end of Baltimore's unfinished expressway: a wide, empty slab of pavement stops at a low concrete barrier, with a grassy strip and rowhouses, trees and a water tower beyond it under a gray sky.](images/02a-highway-stub.jpg)
 *The western end of the expressway, where it stops short, in 2010. Photo by Adam Moss, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:I-170_western_stub_end.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).*
 
-The chart below counts the people living inside today's nine tract lines in each census.
+## People leave
+
+::: spacer 5px
+
+One way to see these decades together is to count the people who live here. The chart below counts the people living inside today's nine tract lines in each census.
 
 ![Line chart of the number of people living in West Baltimore's nine census tracts: 46,121 in 1970, 37,579 in 1980, 35,551 in 1990, 25,420 in 2000, 22,609 in 2010 and 18,895 in 2020-2024.](images/02-population.png)
 *Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
