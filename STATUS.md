@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-west-baltimore
-Step: 2d
+Step: 2e
 Since: 2026-11-24
 
 Also waiting: spotlight-west-dayton step 3 (SOCIAL.md and GIF drafted, awaiting Eric).
@@ -83,3 +83,4 @@ None.
 - 2026-11-24 spotlight-west-baltimore: population chart back to 1940 (peak 85,527 in 1950; 1910 and 1930 fits too low). New labor chart 02c (labor force and share with a job, 1940-2024, with city comparison) and prime-age shares (2000 on). Eric's hunch confirmed: share with a job fell from 55% (1950) to 34% (1980).
 - 2026-11-24 spotlight-west-baltimore: 2b confirmed by Eric (line-by-line read done: cautionary-tale blurb, consent decree clarified, unemployment chart dropped for work chart 02c). Now 2c; importer convert-only run.
 - 2026-11-24 spotlight-west-baltimore: 2c confirmed (overdose chart restored first; Baltimore city is its own county). Now 2d; hero check passes.
+- 2026-11-24 spotlight-west-baltimore: 2d confirmed. 2e applied (Eric accepted all 7): new title and subtitle, meta title, description, keywords, Common questions (4 FAQ entries in schema).

@@ -1,8 +1,11 @@
 {
-  "page_title": "West Baltimore: A Segregation Law, a Loan Map, a Highway to Nowhere",
-  "page_subtitle": "How Sandtown-Winchester, Harlem Park, Upton and their neighbors were shaped by a century of written rules, from a 1910 segregation ordinance to public housing placement, a half-built expressway and a federal court ruling.",
+  "page_title": "West Baltimore: A Loan Map, a Highway to Nowhere and the Jobs That Left",
+  "page_subtitle": "How a 1910 segregation law, a 1937 loan map, public housing placed by race, a half-built expressway and lost factory jobs shaped Sandtown-Winchester, Harlem Park, Upton and their neighbors, and why a $130 million effort to rebuild fell short.",
   "published_date": "2026-11-24",
   "updated_date": "2026-11-24",
+  "meta_title": "West Baltimore: Redlining, Highway to Nowhere, Lost Jobs",
+  "meta_description": "How a 1910 segregation law, a 1937 loan map, a half-built highway and lost jobs shaped West Baltimore, and why a $130 million effort to rebuild fell short.",
+  "meta_keywords": "West Baltimore history, Sandtown-Winchester history, Highway to Nowhere Baltimore, Baltimore redlining map, Baltimore 1910 segregation ordinance, Sandtown-Winchester revitalization, West Baltimore food desert, West Baltimore poverty",
   "make_this_main_post": false,
   "slices": [
     {
@@ -2049,7 +2052,166 @@
           }
         ]
       }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "Common questions",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "5px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Was West Baltimore redlined?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Yes. On the federal Home Owners' Loan Corporation's 1937 map of Baltimore, most of the land in the nine tracts in this post was graded D, the lowest grade, shaded red. One tract, in Harlem Park, was graded C.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "What is Baltimore's Highway to Nowhere?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "It is a sunken stretch of U.S. Route 40 in West Baltimore, built as the Franklin-Mulberry expressway. The city says 971 homes, 62 businesses and one school were torn down for it. It opened in 1979 but was never connected to I-70.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Why did the Sandtown-Winchester rebuilding effort fall short?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Reviews of the effort point to several reasons. It had no plan for jobs, most of the money went to houses, the 2008 housing crash hit the neighborhood hard, and the schools did not improve. One study found no effect on the neighborhood's poverty rate over the long run.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "How many people live in West Baltimore?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "The nine census tracts in this post held about 85,500 people in 1950 and about 18,900 in 2020-2024, 78% fewer.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"West Baltimore: A Segregation Law, a Loan Map, a Highway to Nowhere\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-11-24T09:30:00-05:00\",\n  \"dateModified\": \"2026-11-24T09:30:00-05:00\",\n  \"articleSection\": \"Stories of a Forgotten American Community\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"isPartOf\": {\n    \"@type\": \"CreativeWorkSeries\",\n    \"name\": \"Stories of a Forgotten American Community\"\n  },\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-baltimore\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"West Baltimore: A Loan Map, a Highway to Nowhere and the Jobs That Left\",\n      \"description\": \"How a 1910 segregation law, a 1937 loan map, a half-built highway and lost jobs shaped West Baltimore, and why a $130 million effort to rebuild fell short.\",\n      \"datePublished\": \"2026-11-24T09:30:00-05:00\",\n      \"dateModified\": \"2026-11-24T09:30:00-05:00\",\n      \"articleSection\": \"Stories of a Forgotten American Community\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"isPartOf\": {\n        \"@type\": \"CreativeWorkSeries\",\n        \"name\": \"Stories of a Forgotten American Community\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"West Baltimore history\",\n        \"Sandtown-Winchester history\",\n        \"Highway to Nowhere Baltimore\",\n        \"Baltimore redlining map\",\n        \"Baltimore 1910 segregation ordinance\",\n        \"Sandtown-Winchester revitalization\",\n        \"West Baltimore food desert\",\n        \"West Baltimore poverty\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-baltimore\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-baltimore#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-west-baltimore#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Was West Baltimore redlined?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. On the federal Home Owners' Loan Corporation's 1937 map of Baltimore, most of the land in the nine tracts in this post was graded D, the lowest grade, shaded red. One tract, in Harlem Park, was graded C.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is Baltimore's Highway to Nowhere?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"It is a sunken stretch of U.S. Route 40 in West Baltimore, built as the Franklin-Mulberry expressway. The city says 971 homes, 62 businesses and one school were torn down for it. It opened in 1979 but was never connected to I-70.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Why did the Sandtown-Winchester rebuilding effort fall short?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Reviews of the effort point to several reasons. It had no plan for jobs, most of the money went to houses, the 2008 housing crash hit the neighborhood hard, and the schools did not improve. One study found no effect on the neighborhood's poverty rate over the long run.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How many people live in West Baltimore?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"The nine census tracts in this post held about 85,500 people in 1950 and about 18,900 in 2020-2024, 78% fewer.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
 }

@@ -1,7 +1,7 @@
 ---
-title: "West Baltimore: A Segregation Law, a Loan Map, a Highway to Nowhere"
-prismic_label: "West Baltimore: A Segregation Law, a Loan Map, a Highway to Nowhere"
-subtitle: How Sandtown-Winchester, Harlem Park, Upton and their neighbors were shaped by a century of written rules, from a 1910 segregation ordinance to public housing placement, a half-built expressway and a federal court ruling.
+title: "West Baltimore: A Loan Map, a Highway to Nowhere and the Jobs That Left"
+prismic_label: "West Baltimore: A Loan Map, a Highway to Nowhere and the Jobs That Left"
+subtitle: How a 1910 segregation law, a 1937 loan map, public housing placed by race, a half-built expressway and lost factory jobs shaped Sandtown-Winchester, Harlem Park, Upton and their neighbors, and why a $130 million effort to rebuild fell short.
 slug: spotlight-west-baltimore
 date: 2026-11-24
 time: 09:30:00-05:00
@@ -9,9 +9,9 @@ section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-west-baltimore-hero-1680x1080.png
 hero_alt: "Looking east from the Fulton Avenue overpass down the sunken U.S. Route 40 expressway in West Baltimore, known as the Highway to Nowhere. Two nearly empty roadways run between high concrete walls, with a strip of grass and young trees between them, under the Mount Street bridge. Rowhouses and trees line the top of the walls, and downtown Baltimore's skyline sits at the far end under a cloudy blue sky."
-meta_title:
-description:
-keywords:
+meta_title: "West Baltimore: Redlining, Highway to Nowhere, Lost Jobs"
+description: "How a 1910 segregation law, a 1937 loan map, a half-built highway and lost jobs shaped West Baltimore, and why a $130 million effort to rebuild fell short."
+keywords: West Baltimore history, Sandtown-Winchester history, Highway to Nowhere Baltimore, Baltimore redlining map, Baltimore 1910 segregation ordinance, Sandtown-Winchester revitalization, West Baltimore food desert, West Baltimore poverty
 drop_cap: false
 heading_spacer: 20px
 ---
@@ -200,3 +200,23 @@ The highway is getting attention too. In February 2023, the city got a $2 millio
 - **Overdose deaths.** CDC National Center for Health Statistics, [Drug Poisoning Mortality by County](https://data.cdc.gov/resource/rpvx-m2md.json?fips=24510). Baltimore city counts as its own county in federal data, so these are citywide rates. The middle U.S. county is the median of all county rates each year.
 - **Photo.** U.S. Route 40, the former Interstate 170, looking east from the North Fulton Avenue overpass, Aug. 25, 2019. Photo by Famartin, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2019-08-25_12_59_43_View_east_along_U.S._Route_40_(former_Interstate_170)_from_the_overpass_for_U.S._Route_1_northbound_(North_Fulton_Avenue)_in_Baltimore_City,_Maryland.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Cropped.
 - **Highway photo.** The western end of former Interstate 170, April 17, 2010, by Adam Moss, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:I-170_western_stub_end.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+
+## Common questions
+
+::: spacer 5px
+
+### Was West Baltimore redlined?
+
+Yes. On the federal Home Owners' Loan Corporation's 1937 map of Baltimore, most of the land in the nine tracts in this post was graded D, the lowest grade, shaded red. One tract, in Harlem Park, was graded C.
+
+### What is Baltimore's Highway to Nowhere?
+
+It is a sunken stretch of U.S. Route 40 in West Baltimore, built as the Franklin-Mulberry expressway. The city says 971 homes, 62 businesses and one school were torn down for it. It opened in 1979 but was never connected to I-70.
+
+### Why did the Sandtown-Winchester rebuilding effort fall short?
+
+Reviews of the effort point to several reasons. It had no plan for jobs, most of the money went to houses, the 2008 housing crash hit the neighborhood hard, and the schools did not improve. One study found no effect on the neighborhood's poverty rate over the long run.
+
+### How many people live in West Baltimore?
+
+The nine census tracts in this post held about 85,500 people in 1950 and about 18,900 in 2020-2024, 78% fewer.
