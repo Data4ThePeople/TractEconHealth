@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-west-baltimore
-Step: 2e
+Step: 2f
 Since: 2026-11-24
 
 Also waiting: spotlight-west-dayton step 3 (SOCIAL.md and GIF drafted, awaiting Eric).
@@ -84,3 +84,4 @@ None.
 - 2026-11-24 spotlight-west-baltimore: 2b confirmed by Eric (line-by-line read done: cautionary-tale blurb, consent decree clarified, unemployment chart dropped for work chart 02c). Now 2c; importer convert-only run.
 - 2026-11-24 spotlight-west-baltimore: 2c confirmed (overdose chart restored first; Baltimore city is its own county). Now 2d; hero check passes.
 - 2026-11-24 spotlight-west-baltimore: 2d confirmed. 2e applied (Eric accepted all 7): new title and subtitle, meta title, description, keywords, Common questions (4 FAQ entries in schema).
+- 2026-11-24 spotlight-west-baltimore: 2e confirmed. 2f: pushed to Prismic as draft awWE2hEAACcAiv_U in the Migration Release (78 slices, 9 images), tags and author empty.

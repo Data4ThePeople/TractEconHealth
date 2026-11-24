@@ -1,0 +1,65 @@
+{
+  "images/00-key-measures.png": {
+    "id": "0QCtyi3cjWJiRNoy",
+    "width": 1760,
+    "height": 864,
+    "url": "https://images.prismic.io/data4thepeople/0QCtyi3cjWJiRNoy_00-key-measures.png?auto=format,compress",
+    "stamp": "136418:1795122122"
+  },
+  "images/01-map.png": {
+    "id": "U3-7ThSpsiLHtSNP",
+    "width": 1600,
+    "height": 1105,
+    "url": "https://images.prismic.io/data4thepeople/U3-7ThSpsiLHtSNP_01-map.png?auto=format,compress",
+    "stamp": "186971:1795523625"
+  },
+  "images/02a-highway-stub.jpg": {
+    "id": "ePJh0wEi7XpFvXJd",
+    "width": 1600,
+    "height": 1200,
+    "url": "https://images.prismic.io/data4thepeople/ePJh0wEi7XpFvXJd_02a-highway-stub.jpg?auto=format,compress",
+    "stamp": "260166:1795521567"
+  },
+  "images/02-population.png": {
+    "id": "zf_vpwujyKv5XI0X",
+    "width": 1600,
+    "height": 896,
+    "url": "https://images.prismic.io/data4thepeople/zf_vpwujyKv5XI0X_02-population.png?auto=format,compress",
+    "stamp": "102278:1795523625"
+  },
+  "images/02c-work.png": {
+    "id": "YHYyPi52yFgGLkUt",
+    "width": 1600,
+    "height": 1024,
+    "url": "https://images.prismic.io/data4thepeople/YHYyPi52yFgGLkUt_02c-work.png?auto=format,compress",
+    "stamp": "161386:1795522118"
+  },
+  "images/03-low-income-vacancy.png": {
+    "id": "Vs8rQ6FBi4jZpbWm",
+    "width": 1600,
+    "height": 960,
+    "url": "https://images.prismic.io/data4thepeople/Vs8rQ6FBi4jZpbWm_03-low-income-vacancy.png?auto=format,compress",
+    "stamp": "141496:1795523625"
+  },
+  "images/04-overdose.png": {
+    "id": "qtHF1DkzqNcjOLaq",
+    "width": 1600,
+    "height": 896,
+    "url": "https://images.prismic.io/data4thepeople/qtHF1DkzqNcjOLaq_04-overdose.png?auto=format,compress",
+    "stamp": "107279:1795523625"
+  },
+  "images/05a-transport.png": {
+    "id": "WN1tMzXejvs0kRDZ",
+    "width": 1600,
+    "height": 992,
+    "url": "https://images.prismic.io/data4thepeople/WN1tMzXejvs0kRDZ_05a-transport.png?auto=format,compress",
+    "stamp": "123110:1795473829"
+  },
+  "images/spotlight-west-baltimore-hero-1680x1080.png": {
+    "id": "xoEf1iNcsD5MUV0U",
+    "width": 1680,
+    "height": 1080,
+    "url": "https://images.prismic.io/data4thepeople/xoEf1iNcsD5MUV0U_spotlight-west-baltimore-hero-1680x1080.png?auto=format,compress",
+    "stamp": "2869837:1795474197"
+  }
+}
