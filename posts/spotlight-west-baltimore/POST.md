@@ -67,7 +67,7 @@ The map below shows the 1937 grades with the nine tracts in this story outlined.
 ![Map of Baltimore's 1937 Home Owners' Loan Corporation grades, with West Baltimore's nine census tracts outlined in white. Nearly all the land inside the outline is graded D, shown in red, except a strip on the west side graded C, in yellow. B areas, in blue, lie farther northwest. Freeways are drawn in gray, including US-40, which runs east-west across the southern part of the outline.](images/01-map.png)
 *The 1937 grades come from Mapping Inequality. Freeways are today's, from the Census Bureau.*
 
-The City of Baltimore draws the line forward itself. In a 2024 federal grant application, it wrote that residents of these areas "could not access credit" and that "these patterns of red lining are echoed in today's maps" ([City of Baltimore, 2024, p. 8](https://www.mdot.maryland.gov/OPCP/Narrative_2024_West_Baltimore_United_Phase_1_RCP_Construction.pdf)).
+The City of Baltimore makes the same connection. In a 2024 application for federal money to remove part of the highway, it wrote that residents of majority-Black neighborhoods along the corridor "could not access credit," and that "these patterns of red lining are echoed in today's maps of poverty, physical disrepair, crime, housing values, homeownership, and income" ([City of Baltimore, 2024, p. 8](https://www.mdot.maryland.gov/OPCP/Narrative_2024_West_Baltimore_United_Phase_1_RCP_Construction.pdf)).
 
 ## Public housing, placed by race
 
