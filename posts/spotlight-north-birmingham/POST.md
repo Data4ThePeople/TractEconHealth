@@ -1,5 +1,4 @@
--
---
+---
 title: "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going"
 prismic_label: "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going"
 subtitle: How three Black neighborhoods next to Birmingham's coke plants went from company housing and racial zones to an EPA cleanup site and one of the poorest and least healthy places in the country.
@@ -9,7 +8,7 @@ time:
 section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-north-birmingham-hero-1680x1080.png
-hero_alt:
+hero_alt: "Families gather on the porches of a row of two-story brick homes in North Birmingham in July 1972. A brown haze of industrial smog fills the air and hides the far end of the street, and the late-day light is dim and orange. Children and women lean on low brick porch walls, and shrubs and a strip of lawn line the walkway in front."
 meta_title:
 description:
 keywords:
@@ -165,5 +164,6 @@ Workers who live here have shorter commutes than most: 21 minutes on average, co
 - **Jobs.** Labor force, job and unemployment shares are sums of census tract counts: 1980 by map overlay, 1990 and 2000 by NHGIS crosswalks, and ACS tables B23025 and B23001 for 2008-2012 and 2020-2024. Manufacturing shares use census industry tables (ACS C24050). Jobs located in the tracts and who held them are from the Census Bureau's [LEHD Origin-Destination Employment Statistics](https://lehd.ces.census.gov/data/) (LODES 8) origin-destination files, all jobs, for workers who live in Alabama. Jefferson County figures sum every tract in the county.
 - **Home values.** Medians are estimated from the summed value distributions (1980 STF1, 1990 STF1, 2000 SF3, ACS B25075), the Census Bureau's method for combined areas. Our county figures match the Bureau's published medians. Dollars are adjusted with the CPI-U. Values are owners' own estimates.
 - **Food and getting around.** Stores are from USDA's live SNAP retailer list (pulled November 2026) and its 2005-2025 historical file; a full grocery store is USDA type Supermarket, Super Store or Large Grocery Store. Low-income and low-access flags are from the 2019 Food Access Research Atlas. Vehicles are ACS B25044, commutes ACS B08303 and B08013. Transportation and food insecurity are CDC PLACES 2025 release estimates for 2023, weighted by tract population.
+- **Photo.** "Day becomes night when industrial smog is heavy in North Birmingham. Adjacent to U.S. Pipe plant," July 1972, by LeRoy Woodson for the EPA's DOCUMERICA project, [National Archives](https://catalog.archives.gov/id/545397) via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:DAY_BECOMES_NIGHT_WHEN_INDUSTRIAL_SMOG_IS_HEAVY_IN_NORTH_BIRMINGHAM._ADJACENT_TO_U.S._PIPE_PLANT._THIS_IS_THE_MOST..._-_NARA_-_545397.jpg). Public domain. Cropped. The U.S. Pipe plant, at 3000 30th Ave. N., is inside one of the four tracts.
 - **Toxic releases.** EPA [Toxics Release Inventory](https://www.epa.gov/toxics-release-inventory-tri-program), air releases as reported by each plant.
 - **COPD.** [CDC PLACES](https://www.cdc.gov/places/) 2025 release tract estimates, for 2023. The county, state and U.S. values are averages of their tracts, weighted by adult population.
