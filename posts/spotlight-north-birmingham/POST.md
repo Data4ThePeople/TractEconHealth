@@ -56,7 +56,7 @@ Construction of the ABC Coke plant began in 1918. A second coke plant, at 3500 3
 
 ::: spacer 5px
 
-Birmingham's 1926 zoning law set racial zones. The 1944 city code made it unlawful for Black residents to live in areas zoned white, and the reverse. A 1949 ordinance made it a crime to move into an area long known as Black or as white. A federal court struck the ordinances down on Dec. 16, 1949, and an appeals court agreed in 1950 ([Monk v. City of Birmingham, 1949](https://case-law.vlex.com/vid/monk-v-city-of-890398921); [City of Birmingham v. Monk, 1950](https://case-law.vlex.com/vid/city-of-birmingham-v-885951209)). Researchers write that this kind of policy "kept the location racially segregated through zoning ordinances for decades," and that land use and zoning decisions left "isolated neighborhoods with limited amenities" ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/)).
+Birmingham's 1926 zoning law set racial zones. The 1944 city code made it unlawful for Black residents to live in areas zoned white, and the reverse. A 1949 ordinance made it a crime to move into an area long known as Black or as white. A federal court struck the ordinances down on Dec. 16, 1949, and an appeals court agreed in 1950 ([Monk v. City of Birmingham, 1949](https://case-law.vlex.com/vid/monk-v-city-of-890398921); [City of Birmingham v. Monk, 1950](https://case-law.vlex.com/vid/city-of-birmingham-v-885951209)). But the ordinances did long term damage. Researchers write that this kind of policy "kept the location racially segregated through zoning ordinances for decades," and that land use and zoning decisions left "isolated neighborhoods with limited amenities" ([Allen et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6617205/)).
 
 In the late 1930s, the federal Home Owners' Loan Corporation graded Birmingham's neighborhoods for mortgage risk. Areas graded D, shaded red, were labeled "hazardous." No part of the four tracts got an A or B grade, and 41% to 64% of each tract was graded D ([Mapping Inequality, University of Richmond](https://dsl.richmond.edu/panorama/redlining/)).
 
@@ -73,7 +73,7 @@ In 1971, the federal government went to court over Birmingham's air. During an a
 
 Jim Walter Corp. bought the Sloss furnace site in 1969, and the furnaces stopped making iron in 1970 or 1971 ([Encyclopedia of Alabama](https://encyclopediaofalabama.org/article/sloss-furnaces-national-historic-landmark/); [Facing South, 1984](https://www.facingsouth.org/1984/11/steel-workers-boom-town)). Those furnaces are near downtown, outside the four tracts. Sloss-Sheffield, by then part of U.S. Pipe, had built a large new blast furnace in North Birmingham in 1958. During the 1970s, rising environmental rules and energy shortages pushed costs up until the company closed its Alabama factories in 1980 ([Encyclopedia of Alabama](https://encyclopediaofalabama.org/article/sloss-furnaces/)).
 
-The coke plants kept running. Both sold coke to other companies rather than only feeding a furnace next door. ABC Coke's owner calls it the largest U.S. maker of foundry coke for sale, with customers in the auto, construction and other industries ([Drummond Co.](https://drummondco.com/?p=2138)). The 35th Avenue plant made coke for foundries and furnaces ([EPA](https://19january2025snapshot.epa.gov/enforcement/case-summary-environmental-concerns-addressed-walter-coke-facility-alabama)). In 1989, its highest year on record, the 35th Avenue coke plant reported releasing 1,401,515 pounds of toxic chemicals into the air. In 1988, its highest year, ABC Coke reported 881,136 pounds, about 850,000 of it benzene. By 2019, the two plants reported 25,180 and 49,104 pounds ([EPA Toxics Release Inventory, 35th Avenue plant](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35207SLSSN35003/tri_release_qty/JSON); [ABC Coke](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35217BCCKDRAILR/tri_release_qty/JSON)). Plants report these numbers themselves, and the rules for what they had to report changed over time, so part of the drop may come from how releases were counted.
+But the coke plants kept running. Both sold coke to other companies rather than only feeding a furnace next door. ABC Coke's owner calls it the largest U.S. maker of foundry coke for sale, with customers in the auto, construction and other industries ([Drummond Co.](https://drummondco.com/?p=2138)). The 35th Avenue plant made coke for foundries and furnaces ([EPA](https://19january2025snapshot.epa.gov/enforcement/case-summary-environmental-concerns-addressed-walter-coke-facility-alabama)). Each plant's worst year came in the late 1980s. The 35th Avenue plant reported releasing 1,401,515 pounds of toxic chemicals into the air in 1989, its highest year on record. ABC Coke reported 881,136 pounds in 1988, its highest year, about 850,000 of it benzene. By 2019, the two plants reported 25,180 and 49,104 pounds ([EPA Toxics Release Inventory, 35th Avenue plant](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35207SLSSN35003/tri_release_qty/JSON); [ABC Coke](https://data.epa.gov/efservice/tri_reporting_form/tri_facility_id/35217BCCKDRAILR/tri_release_qty/JSON)). Plants report these numbers themselves, and the rules for what they had to report changed over time, so part of the drop may come from how releases were counted.
 
 ## People leave
 
@@ -93,35 +93,46 @@ In March, we wrote that when a place's labor force shrinks far enough, "police s
 
 Schools closed as the population fell. In the 1986-87 school year, 10 public schools inside the four tracts taught about 4,400 students. In 2023-24, there were three, with about 1,500 students: Carver High, Hudson K-8 and i3 Academy, a charter school that moved here in 2022 ([NCES Common Core of Data](https://nces.ed.gov/ccd/)). The school board closed schools across the city to cut costs. When it closed North Birmingham Elementary in 2012, the superintendent said combining it with Lewis Elementary would save $300,000 ([WBRC](https://www.wbrc.com/story/18899939/birmingham-suprintendent-addresses-consolidation-concerns/)). Lewis closed in 2016. The North Birmingham Elementary building still sat empty in 2025. "We have a vacant building that's been vacant nearly ten years, and no one's been told anything," Sandra Brown, the neighborhood president, told [ABC 33/40](https://abc3340.com/news/abc-3340-news-iteam/north-birmingham-school-elementary-3-million-dollars-federal-funding-2022-congresswoman-terri-sewell-mayor-randall-woodfin-community-development-affordable-housing-update).
 
-In 2010, Mueller Water Products announced that its U.S. Pipe plant in North Birmingham would close by March 31, cutting about 260 jobs ([Mueller Water Products, 2010](https://ir.muellerwaterproducts.com/press-releases/archive/02-03-2010)). Even the jobs that stayed mostly went to people from somewhere else.
-
 ## The jobs next door
 
 ::: spacer 5px
 
-From the start, the hardest work at the plants fell to Black men. A study of the 1900 city directory found that 437 of the 579 Sloss-Sheffield workers it identified were Black men, and that the company's managers were all white ([Facing South, 1984](https://www.facingsouth.org/1984/11/steel-workers-boom-town)). Racial zoning and redlining later limited where Black workers could live. ProPublica reported that one Sloss-Sheffield worker and three of his brothers moved to Collegeville, "a short walk from the coke plant," because it was one of the few places they could ([ProPublica, 2022](https://www.propublica.org/article/bluestone-jim-justice-north-birmingham)). Inside the tracts, at the American Cast Iron Pipe Co., a federal judge found in 1972 that most Black workers were still in the company's lowest pay groups and that "The defendant has never had a black foreman" ([Pettway v. American Cast Iron Pipe Co., 1972](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/131790.pdf)). We found no source that explains why so few people living here held the jobs next door in later years.
+Our last two posts ([West Dayton](https://www.data4thepeople.com/p/spotlight-west-dayton) and [West Baltimore](https://www.data4thepeople.com/p/spotlight-west-baltimore)) cataloged the decline in jobs as manufacturing left the areas. But North Birmingham seems different. It still had these coke plants spewing toxic chemicals into the air for the residents to breathe. So, at the very least, they must have been providing jobs to these residents? 
 
-The chart below uses Census Bureau records that match each job's workplace with the worker's home.
+They were not.
+
+The chart below uses Census Bureau records that match each job's workplace with the worker's home. The gray bars are the jobs located in North Birmingham's four tracts. The blue bars are how many of those jobs were held by people who live in the four tracts, with the share in parentheses.
 
 ![Bar chart of jobs located inside North Birmingham's four census tracts and how many were held by people living in them: 10,211 and 346 (3.4%) in 2002, 9,943 and 294 (3.0%) in 2008, 7,437 and 188 (2.5%) in 2015, and 6,617 and 128 (1.9%) in 2022.](images/02d-jobs-here.png)
 *Counts are jobs, not people, and include only workers who live in Alabama. These records begin in 2002.*
 
-In 2002, the four tracts held about 10,200 jobs. About half were in manufacturing, compared with 9% of jobs across Jefferson County. People living in the four tracts held 346 of those 10,200 jobs, or 3.4%. By 2022, they held 128 of about 6,600, or 1.9%. The records do not say why so few residents held these jobs ([Census Bureau, LODES](https://lehd.ces.census.gov/data/)).
+In 2002, the four tracts held about 10,200 jobs. About half were in manufacturing, compared with 9% of jobs across Jefferson County. People living in the four tracts held 346 of those 10,200 jobs, or 3.4%. By 2022, they held 128 of about 6,600, or 1.9%. The records do not say why so few residents held these jobs ([Census Bureau, LODES](https://lehd.ces.census.gov/data/)), but this fact is nonetheless striking.
 
-Factory work was also fading for the people who lived here. In 1980, 26% of employed residents worked in manufacturing, compared with 18% across the county. In 2020-2024, it was 10% here and 9% in the county ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.C24050)).
+## Fewer than half of adults have a job
 
-The chart below shows two measures of work: the share of adults in the labor force, meaning working or looking for work, and the share of adults with a job.
+::: spacer 5px
+
+We are not trying to list every reason the jobs here disappeared. But the damage shows up in who is working. In 1980, 43% of adults here had a job, compared with 55% across Jefferson County. In 2020-2024, it was still 43% here and 59% in the county. Among people ages 25 to 54, 64% here had a job, compared with 78% in the county. The chart below shows two measures of work: the share of adults in the labor force, meaning working or looking for work, and the share of adults with a job.
 
 ![Line chart of work in North Birmingham's four census tracts, 1980 to 2020-2024. Share of adults in the labor force: 51% in 1980, 50% in 1990, 46% in 2000, 54% in 2010 and 46% in 2020-2024. Share with a job: 43%, 44%, 40%, 38% and 43%. Jefferson County, share with a job, dashed: 55% in 1980 and 59% in 2020-2024.](images/02c-work.png)
 *Adults are people 16 and over. Census counts before 1980 do not line up closely enough with today's tracts to use.*
 
-In 1980, 43% of adults here had a job, compared with 55% across Jefferson County. In 2020-2024, it was 43% here and 59% in the county. Among people ages 25 to 54, 64% here had a job, compared with 78% in the county. Unemployment here was 17% in 1980 and 29% in 2008-2012. It fell to 6.5% in 2020-2024, but over the same years the share of adults working or looking for work fell from 51% to 46% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B23025)).
+The unemployment rate tells a different story. Unemployment here was 29% in 2008-2012 and fell to 6.5% in 2020-2024. Over the same years, the share of adults working or looking for work fell from 54% to 46% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B23025)). The unemployment rate counts only people who are working or looking for work, so it leaves out people who have stopped looking. In March, we showed why "our over reliance on the unemployment rate could be misleading," comparing Perry County, Ala., with Las Vegas ([Data 4 The People](https://www.data4thepeople.com/p/viral-labor-force-decline)). North Birmingham is another example.
+
+## Flat home values
+
+::: spacer 5px
 
 Homes here have also lost ground. After adjusting for inflation, the typical owner's home was worth about $78,000 in 1980 and about $73,000 in 2020-2024, in today's dollars. Across Jefferson County, the typical home rose from about $149,000 to $240,000. A home here was worth about half the county's typical home in 1980 and less than a third in 2020-2024 ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B25075)).
 
+The chart below shows the typical owner's home value here and across Jefferson County since 1980, in today's dollars.
+
+![Line chart of the typical owner's home value in 2024 dollars, 1980 to 2020-2024. North Birmingham's four census tracts: $78,000 in 1980, $75,000 in 1990, $71,000 in 2000, $74,000 in 2010 and $73,000 in 2020-2024. Jefferson County, dashed: $149,000, $141,000, $165,000, $194,000 and $240,000.](images/05-home-values.png)
+*Values are owners' own estimates, adjusted for inflation with the CPI-U. The 2010 point is from the 2008-2012 survey.*
+
 Studies elsewhere suggest pollution is part of this. A national study of 1,600 toxic plants found that home values within half a mile fell 11% when a plant opened and did not recover when it closed. The authors wrote that "toxic plants continue to negatively affect housing prices after they cease operations" ([Currie, Davis, Greenstone and Walker, 2015](https://doi.org/10.1257/aer.20121656)). The City of Birmingham has written that North Birmingham's abandoned properties, vacant lots, polluting plants and history of soil and air pollution "bring down property values" ([City of Birmingham, 2025, p. 2](https://www.njit.edu/tab/sites/njit.edu.tab/files/FY25%20Assessment%20CW%20-%20City%20of%20Birmingham%2C%20AL.pdf)). ProPublica reported in 2022 that some homes in Collegeville had sold for as little as $1,000 ([ProPublica, 2022](https://www.propublica.org/article/bluestone-jim-justice-north-birmingham)). No study we found measures how much of the gap here comes from pollution and how much from the job losses and other hits in this story.
 
-## Poison in the yards
+## Poisoned yards and a bribery case
 
 ::: spacer 5px
 
@@ -148,18 +159,16 @@ We do not have tract health data from earlier decades. Today, CDC estimates show
 ![Bar chart of the share of adults who have been told they have COPD: North Birmingham 15%, Jefferson County 7%, Alabama 8%, United States 7%.](images/04-copd.png)
 *CDC PLACES model estimates for 2023, weighted by adult population.*
 
-## Food and getting around
+## A common thread: food
 
 ::: spacer 5px
 
-There is one full grocery store inside the four tracts, a Piggly Wiggly on 29th Avenue North that has taken SNAP food benefits since 1994. Two others nearby closed. A Food Fair a block away took SNAP from 1963 to 2005, and the Southern Family Market that replaced it closed in 2007. A Food Fair on Bankhead Highway, just outside the tracts, took SNAP from 1975 to 2009. Today, the other stores inside the tracts that take SNAP are 10 convenience stores and two smaller grocery stores ([USDA SNAP retailer data](https://www.fns.usda.gov/snap/retailer-locator)). In 2019, the USDA counted all four tracts as low income and low access, meaning many people lived far from a supermarket ([USDA Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/)).
+CDC estimates that 54% of adults in North Birmingham were food insecure at some point in the past year, compared with 17% in the 40 states where CDC has this measure ([CDC PLACES](https://www.cdc.gov/places/)). The chart below compares North Birmingham with the other two neighborhoods in this series so far.
 
-Getting to a store or a job is harder without a car. In the four tracts, 28% of households have no vehicle, compared with 7% in Jefferson County and 8% nationwide ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B25044)). CDC estimates that 28% of adults here went without reliable transportation at some point in the past year, and 54% were food insecure, compared with 9% and 17% in the 40 states where CDC has these measures ([CDC PLACES](https://www.cdc.gov/places/)). The chart below puts these side by side.
+![Bar chart of the share of adults who were food insecure at some point in the past year, 2023: North Birmingham 54%, West Baltimore 50%, West Dayton 47%, U.S. 17%.](images/06-food-insecurity.png)
+*CDC PLACES model estimates for 2023, weighted by tract population. U.S. means tracts in the 40 states with this measure.*
 
-![Bar chart comparing North Birmingham's four census tracts with the nation. Households with no vehicle: 28% in North Birmingham, 8% nationwide. Adults without reliable transportation at some point in the past year: 28% and 9%. Adults who were food insecure in the past year: 54% and 17%.](images/05a-transport.png)
-*Vehicles are from the 2020-2024 American Community Survey. Transportation and food insecurity are CDC model estimates for 2023.*
-
-Workers who live here have shorter commutes than most: 21 minutes on average, compared with 24 minutes in the county and 26 nationwide. Only 4% travel 45 minutes or more, compared with 9% in the county ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B08303)). These numbers cover only people who have jobs.
+In all three neighborhoods, about half of adults were food insecure. It is a common thread across every community we have studied so far.
 
 ::: divider
 
@@ -173,7 +182,7 @@ Workers who live here have shorter commutes than most: 21 minutes on average, co
 - **The map.** Grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). The tract shares graded D are our own overlay of that map on 2020 tract lines. The Sloss furnaces, at 20 32nd St. N., fall outside the four tracts by the Census Bureau's geocoder.
 - **Jobs.** Labor force, job and unemployment shares are sums of census tract counts: 1980 by map overlay, 1990 and 2000 by NHGIS crosswalks, and ACS tables B23025 and B23001 for 2008-2012 and 2020-2024. Manufacturing shares use census industry tables (ACS C24050). Jobs located in the tracts and who held them are from the Census Bureau's [LEHD Origin-Destination Employment Statistics](https://lehd.ces.census.gov/data/) (LODES 8) origin-destination files, all jobs, for workers who live in Alabama. Jefferson County figures sum every tract in the county.
 - **Home values.** Medians are estimated from the summed value distributions (1980 STF1, 1990 STF1, 2000 SF3, ACS B25075), the Census Bureau's method for combined areas. Our county figures match the Bureau's published medians. Dollars are adjusted with the CPI-U. Values are owners' own estimates.
-- **Food and getting around.** Stores are from USDA's live SNAP retailer list (pulled November 2026) and its 2005-2025 historical file; a full grocery store is USDA type Supermarket, Super Store or Large Grocery Store. Low-income and low-access flags are from the 2019 Food Access Research Atlas. Vehicles are ACS B25044, commutes ACS B08303 and B08013. Transportation and food insecurity are CDC PLACES 2025 release estimates for 2023, weighted by tract population.
+- **Food insecurity.** [CDC PLACES](https://www.cdc.gov/places/) 2025 release estimates for 2023, weighted by tract population, for the four tracts here and the tracts used in the West Dayton and West Baltimore posts. The U.S. figure covers tracts in the 40 states with this measure.
 - **Photo.** "Day becomes night when industrial smog is heavy in North Birmingham. Adjacent to U.S. Pipe plant," July 1972, by LeRoy Woodson for the EPA's DOCUMERICA project, [National Archives](https://catalog.archives.gov/id/545397) via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:DAY_BECOMES_NIGHT_WHEN_INDUSTRIAL_SMOG_IS_HEAVY_IN_NORTH_BIRMINGHAM._ADJACENT_TO_U.S._PIPE_PLANT._THIS_IS_THE_MOST..._-_NARA_-_545397.jpg). Public domain. Cropped. The U.S. Pipe plant, at 3000 30th Ave. N., is inside one of the four tracts.
 - **Toxic releases.** EPA [Toxics Release Inventory](https://www.epa.gov/toxics-release-inventory-tri-program), air releases as reported by each plant.
 - **COPD.** [CDC PLACES](https://www.cdc.gov/places/) 2025 release tract estimates, for 2023. The county, state and U.S. values are averages of their tracts, weighted by adult population.
