@@ -79,17 +79,16 @@ The coke plants kept running. Both sold coke to other companies rather than only
 
 ::: spacer 5px
 
-The chart below counts the people living inside today's four tract lines in each census since 1980. Earlier counts do not line up well enough with today's tracts to use.
+The chart below shows how many people lived inside today's four tract lines in each census since 1980, and the share of them with low incomes, meaning below 200% of the poverty line. Earlier counts do not line up well enough with today's tracts to use.
 
-![Line chart of the number of people living in North Birmingham's four census tracts: 29,946 in 1980, 21,071 in 1990, 15,545 in 2000, 11,467 in 2010 and 9,820 in 2020-2024.](images/02-population.png)
-*Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
+![Two stacked line charts for North Birmingham's four census tracts. Top, people living there: 29,946 in 1980, 21,071 in 1990, 15,545 in 2000, 11,467 in 2010 and 9,820 in 2020-2024. Bottom, share of people below 200% of the poverty line: 71% in 1990, 66% in 2000, 71% in 2008-2012 and 74% in 2020-2024, compared with about 28% to 34% nationwide, dashed.](images/02-people-income.png)
+*Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate. Income for 2010 is from the 2008-2012 survey.*
 
-In 2010, Mueller Water Products announced that its U.S. Pipe plant in North Birmingham would close by March 31, cutting about 260 jobs ([Mueller Water Products, 2010](https://ir.muellerwaterproducts.com/press-releases/archive/02-03-2010)). The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty over the same decades. About three in four people here have low incomes, compared with 28% nationwide.
-
-![Line chart of three shares for North Birmingham. People below 200% of the poverty line: 71% in 1990, 66% in 2000, 71% in 2008-2012 and 74% in 2020-2024. Homes vacant: 13% in 1990, 15% in 2000, 24% in 2010 and 21% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
-*Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
+The number of people fell 67%, but the share with low incomes stayed near three in four. Nationwide, it is 28%.
 
 Schools closed as the population fell. In the 1986-87 school year, 10 public schools inside the four tracts taught about 4,400 students. In 2023-24, there were three, with about 1,500 students: Carver High, Hudson K-8 and i3 Academy, a charter school that moved here in 2022 ([NCES Common Core of Data](https://nces.ed.gov/ccd/)). The school board closed schools across the city to cut costs. When it closed North Birmingham Elementary in 2012, the superintendent said combining it with Lewis Elementary would save $300,000 ([WBRC](https://www.wbrc.com/story/18899939/birmingham-suprintendent-addresses-consolidation-concerns/)). Lewis closed in 2016. The North Birmingham Elementary building still sat empty in 2025. "We have a vacant building that's been vacant nearly ten years, and no one's been told anything," Sandra Brown, the neighborhood president, told [ABC 33/40](https://abc3340.com/news/abc-3340-news-iteam/north-birmingham-school-elementary-3-million-dollars-federal-funding-2022-congresswoman-terri-sewell-mayor-randall-woodfin-community-development-affordable-housing-update).
+
+In 2010, Mueller Water Products announced that its U.S. Pipe plant in North Birmingham would close by March 31, cutting about 260 jobs ([Mueller Water Products, 2010](https://ir.muellerwaterproducts.com/press-releases/archive/02-03-2010)). Even the jobs that stayed mostly went to people from somewhere else.
 
 ## The jobs next door
 
@@ -97,7 +96,7 @@ Schools closed as the population fell. In the 1986-87 school year, 10 public sch
 
 From the start, the hardest work at the plants fell to Black men. A study of the 1900 city directory found that 437 of the 579 Sloss-Sheffield workers it identified were Black men, and that the company's managers were all white ([Facing South, 1984](https://www.facingsouth.org/1984/11/steel-workers-boom-town)). Racial zoning and redlining later limited where Black workers could live. ProPublica reported that one Sloss-Sheffield worker and three of his brothers moved to Collegeville, "a short walk from the coke plant," because it was one of the few places they could ([ProPublica, 2022](https://www.propublica.org/article/bluestone-jim-justice-north-birmingham)). Inside the tracts, at the American Cast Iron Pipe Co., a federal judge found in 1972 that most Black workers were still in the company's lowest pay groups and that "The defendant has never had a black foreman" ([Pettway v. American Cast Iron Pipe Co., 1972](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/131790.pdf)). We found no source that explains why so few people living here held the jobs next door in later years.
 
-The plants here were big employers, but few of their jobs went to people who lived here. The chart below uses Census Bureau records that match each job's workplace with the worker's home.
+The chart below uses Census Bureau records that match each job's workplace with the worker's home.
 
 ![Bar chart of jobs located inside North Birmingham's four census tracts and how many were held by people living in them: 10,211 and 346 (3.4%) in 2002, 9,943 and 294 (3.0%) in 2008, 7,437 and 188 (2.5%) in 2015, and 6,617 and 128 (1.9%) in 2022.](images/02d-jobs-here.png)
 *Counts are jobs, not people, and include only workers who live in Alabama. These records begin in 2002.*
