@@ -5,11 +5,12 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: spotlight-west-baltimore
-Step: 2f
-Since: 2026-11-24
+Post: spotlight-north-birmingham
+Step: 2b (next city post; pending Eric's pick)
+Since: 2026-11-25
 
-Also waiting: spotlight-west-dayton step 3 (SOCIAL.md and GIF drafted, awaiting Eric).
+Deferred to a later week (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton and spotlight-west-baltimore. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
+
 
 Also paused: income-health-viz at 4a (Eric resumes next week).
 
@@ -85,3 +86,4 @@ None.
 - 2026-11-24 spotlight-west-baltimore: 2c confirmed (overdose chart restored first; Baltimore city is its own county). Now 2d; hero check passes.
 - 2026-11-24 spotlight-west-baltimore: 2d confirmed. 2e applied (Eric accepted all 7): new title and subtitle, meta title, description, keywords, Common questions (4 FAQ entries in schema).
 - 2026-11-24 spotlight-west-baltimore: 2e confirmed. 2f: pushed to Prismic as draft awWE2hEAACcAiv_U in the Migration Release (78 slices, 9 images), tags and author empty.
+- 2026-11-25 spotlight-west-baltimore: 2f confirmed; title changed to "West Baltimore Wasn't Forgotten. It Was Fenced In, Redlined and Bulldozed." Steps 3 and 4 for West Dayton and West Baltimore deferred to a later week.
