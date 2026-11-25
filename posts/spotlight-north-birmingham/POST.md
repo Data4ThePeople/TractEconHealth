@@ -1,6 +1,6 @@
 ---
-title: "North Birmingham Got the Coke Plants' Smoke, but Few of Their Jobs"
-prismic_label: "North Birmingham Got the Coke Plants' Smoke, but Few of Their Jobs"
+title: "North Birmingham Got the Coke Plants' Pollution, but Few of Their Jobs"
+prismic_label: "North Birmingham Got the Coke Plants' Pollution, but Few of Their Jobs"
 subtitle: Convict labor, racial zoning and a redlining map came first. Then the plants kept polluting, poison turned up in hundreds of yards, a bribery scheme fought the cleanup, and the people next door held about 2% of the jobs around them.
 slug: spotlight-north-birmingham
 date: 2026-11-25
