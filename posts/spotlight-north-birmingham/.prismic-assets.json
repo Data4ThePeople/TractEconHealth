@@ -1,0 +1,79 @@
+{
+  "images/00-key-measures.png": {
+    "id": "48SDiDPsdEtVxKbe",
+    "width": 1760,
+    "height": 864,
+    "url": "https://images.prismic.io/data4thepeople/48SDiDPsdEtVxKbe_00-key-measures.png?auto=format,compress",
+    "stamp": "134939:1795122122"
+  },
+  "images/01-map.png": {
+    "id": "dEqXUqrXEagAR2_f",
+    "width": 1600,
+    "height": 1175,
+    "url": "https://images.prismic.io/data4thepeople/dEqXUqrXEagAR2_f_01-map.png?auto=format,compress",
+    "stamp": "248531:1795124479"
+  },
+  "images/02-people-income.png": {
+    "id": "RdTdCfxfawpHLugC",
+    "width": 1600,
+    "height": 1184,
+    "url": "https://images.prismic.io/data4thepeople/RdTdCfxfawpHLugC_02-people-income.png?auto=format,compress",
+    "stamp": "143901:1795610402"
+  },
+  "images/02b-schools.png": {
+    "id": "oER6yrG4fCwvCPe2",
+    "width": 1600,
+    "height": 1152,
+    "url": "https://images.prismic.io/data4thepeople/oER6yrG4fCwvCPe2_02b-schools.png?auto=format,compress",
+    "stamp": "158112:1795611217"
+  },
+  "images/02e-north-birmingham-elementary-2008.jpg": {
+    "id": "2ZmYHhsxzhUUXScU",
+    "width": 1024,
+    "height": 705,
+    "url": "https://images.prismic.io/data4thepeople/2ZmYHhsxzhUUXScU_02e-north-birmingham-elementary-2008.jpg?auto=format,compress",
+    "stamp": "257861:1795613309"
+  },
+  "images/02d-jobs-here.png": {
+    "id": "DInytu5Rr1YydY4S",
+    "width": 1600,
+    "height": 960,
+    "url": "https://images.prismic.io/data4thepeople/DInytu5Rr1YydY4S_02d-jobs-here.png?auto=format,compress",
+    "stamp": "100556:1795608110"
+  },
+  "images/02c-work.png": {
+    "id": "sKKeu9ZoKoQ7PIZz",
+    "width": 1600,
+    "height": 1024,
+    "url": "https://images.prismic.io/data4thepeople/sKKeu9ZoKoQ7PIZz_02c-work.png?auto=format,compress",
+    "stamp": "132820:1795608091"
+  },
+  "images/05-home-values.png": {
+    "id": "W8AYqjMxtpJJEiwe",
+    "width": 1600,
+    "height": 960,
+    "url": "https://images.prismic.io/data4thepeople/W8AYqjMxtpJJEiwe_05-home-values.png?auto=format,compress",
+    "stamp": "114541:1795612729"
+  },
+  "images/04-copd.png": {
+    "id": "-lFYTJ_AFu3IIFJs",
+    "width": 1600,
+    "height": 991,
+    "url": "https://images.prismic.io/data4thepeople/-lFYTJ_AFu3IIFJs_04-copd.png?auto=format,compress",
+    "stamp": "83829:1795124479"
+  },
+  "images/06-food-insecurity.png": {
+    "id": "dfp-FEuOtBGwhrWP",
+    "width": 1600,
+    "height": 896,
+    "url": "https://images.prismic.io/data4thepeople/dfp-FEuOtBGwhrWP_06-food-insecurity.png?auto=format,compress",
+    "stamp": "91580:1795612729"
+  },
+  "images/spotlight-north-birmingham-hero-1680x1080.png": {
+    "id": "pzBOESz_waIm3ZbW",
+    "width": 1680,
+    "height": 1080,
+    "url": "https://images.prismic.io/data4thepeople/pzBOESz_waIm3ZbW_spotlight-north-birmingham-hero-1680x1080.png?auto=format,compress",
+    "stamp": "2201652:1795608514"
+  }
+}

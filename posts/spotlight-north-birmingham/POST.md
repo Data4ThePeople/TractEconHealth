@@ -4,7 +4,7 @@ prismic_label: "North Birmingham Got the Coke Plants' Smoke, but Few of Their Jo
 subtitle: Convict labor, racial zoning and a redlining map came first. Then the plants kept polluting, poison turned up in hundreds of yards, a bribery scheme fought the cleanup, and the people next door held about 2% of the jobs around them.
 slug: spotlight-north-birmingham
 date: 2026-11-25
-time: 09:30:00-06:00
+time: 08:00:00-06:00
 section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-north-birmingham-hero-1680x1080.png
