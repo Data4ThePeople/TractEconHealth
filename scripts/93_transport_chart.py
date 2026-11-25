@@ -14,7 +14,7 @@ from plot_style import use_house_style, titleblock, credit, INK, INK_DIM, GRID, 
 
 use_house_style()
 ROOT = Path(__file__).resolve().parents[1]
-AREAS = {"U047": ("West Dayton", "westdayton", "spotlight-west-dayton", "six"), "U039": ("West Baltimore", "westbaltimore", "spotlight-west-baltimore", "nine"), "U034": ("North Birmingham", "northbirmingham", "spotlight-north-birmingham", "four")}
+AREAS = {"U047": ("West Dayton", "westdayton", "spotlight-west-dayton", "six"), "U039": ("West Baltimore", "westbaltimore", "spotlight-west-baltimore", "nine")}
 NAME, OUTN, SLUG, NT = AREAS[sys.argv[1] if len(sys.argv) > 1 else "U047"]
 d = pd.read_csv(ROOT / f"analysis/spotlight/transport_{OUTN}.csv")
 g = lambda a, m: float(d[(d.area == a) & (d.measure == m)].value.iloc[0])
