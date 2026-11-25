@@ -69,7 +69,7 @@ The map below shows those grades with the four tracts in this story outlined.
 
 ::: spacer 5px
 
-In 1971, the federal government went to court over Birmingham's air. During an air pollution emergency in mid-November 1971, federal Judge Sam Pointer signed an order, at the EPA's request, requiring 23 Birmingham industries to sharply cut their emissions ([Bham Now, 2017](https://bhamnow.com/2017/08/17/smoke-city-birmingham/)). An EPA guidance memo from the early 1980s says it was the only time the agency had asked a court for an emergency order under that section of the Clean Air Act ([EPA](https://www.epa.gov/sites/default/files/documents/guide-sec303-rpt.pdf)).
+In 1971, the federal government went to court over Birmingham's air. During an air pollution emergency in mid-November 1971, federal Judge Sam Pointer signed a 10-day emergency order, at the EPA's request, requiring 23 Birmingham industries to sharply cut their emissions. Two days later, the weather improved and the order was lifted ([Bham Now, 2017](https://bhamnow.com/2017/08/17/smoke-city-birmingham/)). An EPA guidance memo from the early 1980s says it was the only time the agency had asked a court for an emergency order under that section of the Clean Air Act ([EPA](https://www.epa.gov/sites/default/files/documents/guide-sec303-rpt.pdf)).
 
 Jim Walter Corp. bought the Sloss furnace site in 1969, and the furnaces stopped making iron in 1970 or 1971 ([Encyclopedia of Alabama](https://encyclopediaofalabama.org/article/sloss-furnaces-national-historic-landmark/); [Facing South, 1984](https://www.facingsouth.org/1984/11/steel-workers-boom-town)). Those furnaces are near downtown, outside the four tracts.
 
