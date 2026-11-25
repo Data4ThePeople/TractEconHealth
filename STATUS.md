@@ -6,10 +6,10 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-north-birmingham
-Step: 2f (2e confirmed 2026-11-25; draft awbmPhEAACgA_8Jo in the Migration Release; publish 2026-11-25 8:00 a.m. CST)
+Step: published 2026-11-25 8:00 a.m. CST (2f confirmed; draft awbmPhEAACgA_8Jo). Next city post starts 2026-11-26.
 Since: 2026-11-25
 
-Deferred to a later week (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton and spotlight-west-baltimore. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
+Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
 
 
 Also paused: income-health-viz at 4a (Eric resumes next week).
@@ -88,3 +88,4 @@ None.
 - 2026-11-24 spotlight-west-baltimore: 2e confirmed. 2f: pushed to Prismic as draft awWE2hEAACcAiv_U in the Migration Release (78 slices, 9 images), tags and author empty.
 - 2026-11-25 spotlight-west-baltimore: 2f confirmed; title changed to "West Baltimore Wasn't Forgotten. It Was Fenced In, Redlined and Bulldozed." Steps 3 and 4 for West Dayton and West Baltimore deferred to a later week.
 - 2026-11-25 spotlight-north-birmingham: 2b-2e confirmed; publish moved to 8:00 a.m. CST; 2f pushed as draft awbmPhEAACgA_8Jo (Migration Release); title "North Birmingham Got the Coke Plants' Pollution, but Few of Their Jobs". 2g skipped (Friday summary email); steps 3-4 deferred.
+- 2026-11-25 spotlight-north-birmingham: published 8:00 a.m. CST. Steps 3-4 for all published spotlights deferred to mid-December; through Dec. 4, posts go only through publishing. Next city post 2026-11-26.
