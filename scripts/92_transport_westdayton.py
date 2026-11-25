@@ -16,7 +16,8 @@ from d4tp_env import read_env_file
 ROOT = Path(__file__).resolve().parents[1]
 KEY = read_env_file(Path.home() / ".claude/d4tp-process/.env")["CENSUS_API_KEY"]
 AREAS = {"U047": dict(name="West Dayton", st="39", co="113", county="Montgomery County", out="westdayton"),
-         "U039": dict(name="West Baltimore", st="24", co="510", county="Baltimore city", out="westbaltimore")}
+         "U039": dict(name="West Baltimore", st="24", co="510", county="Baltimore city", out="westbaltimore"),
+         "U034": dict(name="North Birmingham", st="01", co="073", county="Jefferson County", out="northbirmingham")}
 A = AREAS[sys.argv[1] if len(sys.argv) > 1 else "U047"]
 T = [t[5:] for t in pd.read_csv(ROOT / "analysis/spotlight/final_sets.csv", dtype={"tracts": str}).set_index("cand_id").loc[[k for k, v in AREAS.items() if v is A][0]].tracts.split(";")]
 V = ["B25044_001E", "B25044_003E", "B25044_010E"]

@@ -90,6 +90,28 @@ In 2010, Mueller Water Products announced that its U.S. Pipe plant in North Birm
 ![Line chart of three shares for North Birmingham. People below 200% of the poverty line: 71% in 1990, 66% in 2000, 71% in 2008-2012 and 74% in 2020-2024. Homes vacant: 13% in 1990, 15% in 2000, 24% in 2010 and 21% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
 *Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
+## The jobs next door
+
+::: spacer 5px
+
+The plants here were big employers, but few of their jobs went to people who lived here. The chart below uses Census Bureau records that match each job's workplace with the worker's home.
+
+![Bar chart of jobs located inside North Birmingham's four census tracts and how many were held by people living in them: 10,211 and 346 (3.4%) in 2002, 9,943 and 294 (3.0%) in 2008, 7,437 and 188 (2.5%) in 2015, and 6,617 and 128 (1.9%) in 2022.](images/02d-jobs-here.png)
+*Counts are jobs, not people, and include only workers who live in Alabama. These records begin in 2002.*
+
+In 2002, the four tracts held about 10,200 jobs. About half were in manufacturing, compared with 9% of jobs across Jefferson County. People living in the four tracts held 346 of those 10,200 jobs, or 3.4%. By 2022, they held 128 of about 6,600, or 1.9%. The records do not say why so few residents held these jobs ([Census Bureau, LODES](https://lehd.ces.census.gov/data/)).
+
+Factory work was also fading for the people who lived here. In 1980, 26% of employed residents worked in manufacturing, compared with 18% across the county. In 2020-2024, it was 10% here and 9% in the county ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.C24050)).
+
+The chart below shows two measures of work: the share of adults in the labor force, meaning working or looking for work, and the share of adults with a job.
+
+![Line chart of work in North Birmingham's four census tracts, 1980 to 2020-2024. Share of adults in the labor force: 51% in 1980, 50% in 1990, 46% in 2000, 54% in 2010 and 46% in 2020-2024. Share with a job: 43%, 44%, 40%, 38% and 43%. Jefferson County, share with a job, dashed: 55% in 1980 and 59% in 2020-2024.](images/02c-work.png)
+*Adults are people 16 and over. Census counts before 1980 do not line up closely enough with today's tracts to use.*
+
+In 1980, 43% of adults here had a job, compared with 55% across Jefferson County. In 2020-2024, it was 43% here and 59% in the county. Among people ages 25 to 54, 64% here had a job, compared with 78% in the county. Unemployment here was 17% in 1980 and 29% in 2008-2012. It fell to 6.5% in 2020-2024, but over the same years the share of adults working or looking for work fell from 51% to 46% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B23025)).
+
+Homes here have also lost ground. After adjusting for inflation, the typical owner's home was worth about $78,000 in 1980 and about $73,000 in 2020-2024, in today's dollars. Across Jefferson County, the typical home rose from about $149,000 to $240,000. A home here was worth about half the county's typical home in 1980 and less than a third in 2020-2024 ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B25075)).
+
 ## Poison in the yards
 
 ::: spacer 5px
@@ -117,6 +139,19 @@ We do not have tract health data from earlier decades. Today, CDC estimates show
 ![Bar chart of the share of adults who have been told they have COPD: North Birmingham 15%, Jefferson County 7%, Alabama 8%, United States 7%.](images/04-copd.png)
 *CDC PLACES model estimates for 2023, weighted by adult population.*
 
+## Food and getting around
+
+::: spacer 5px
+
+There is one full grocery store inside the four tracts, a Piggly Wiggly on 29th Avenue North that has taken SNAP food benefits since 1994. Two others nearby closed. A Food Fair a block away took SNAP from 1963 to 2005, and the Southern Family Market that replaced it closed in 2007. A Food Fair on Bankhead Highway, just outside the tracts, took SNAP from 1975 to 2009. Today, the other stores inside the tracts that take SNAP are 10 convenience stores and two smaller grocery stores ([USDA SNAP retailer data](https://www.fns.usda.gov/snap/retailer-locator)). In 2019, the USDA counted all four tracts as low income and low access, meaning many people lived far from a supermarket ([USDA Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/)).
+
+Getting to a store or a job is harder without a car. In the four tracts, 28% of households have no vehicle, compared with 7% in Jefferson County and 8% nationwide ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B25044)). CDC estimates that 28% of adults here went without reliable transportation at some point in the past year, and 54% were food insecure, compared with 9% and 17% in the 40 states where CDC has these measures ([CDC PLACES](https://www.cdc.gov/places/)). The chart below puts these side by side.
+
+![Bar chart comparing North Birmingham's four census tracts with the nation. Households with no vehicle: 28% in North Birmingham, 8% nationwide. Adults without reliable transportation at some point in the past year: 28% and 9%. Adults who were food insecure in the past year: 54% and 17%.](images/05a-transport.png)
+*Vehicles are from the 2020-2024 American Community Survey. Transportation and food insecurity are CDC model estimates for 2023.*
+
+Workers who live here have shorter commutes than most: 21 minutes on average, compared with 24 minutes in the county and 26 nationwide. Only 4% travel 45 minutes or more, compared with 9% in the county ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B08303)). These numbers cover only people who have jobs.
+
 ::: divider
 
 ## How we built this
@@ -127,5 +162,8 @@ We do not have tract health data from earlier decades. Today, CDC estimates show
 - **Then and now.** Census counts from 1980 to 2010 come from [NHGIS (IPUMS)](https://www.nhgis.org/) and are fitted to today's tract lines. The 1970 counts did not fit today's lines well enough to use. 2020-2024 numbers are from the Census Bureau's [American Community Survey](https://www.census.gov/programs-surveys/acs) five-year estimates.
 - **The table at the top.** Rates are computed from counts summed across the four tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
 - **The map.** Grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). The tract shares graded D are our own overlay of that map on 2020 tract lines. The Sloss furnaces, at 20 32nd St. N., fall outside the four tracts by the Census Bureau's geocoder.
+- **Jobs.** Labor force, job and unemployment shares are sums of census tract counts: 1980 by map overlay, 1990 and 2000 by NHGIS crosswalks, and ACS tables B23025 and B23001 for 2008-2012 and 2020-2024. Manufacturing shares use census industry tables (ACS C24050). Jobs located in the tracts and who held them are from the Census Bureau's [LEHD Origin-Destination Employment Statistics](https://lehd.ces.census.gov/data/) (LODES 8) origin-destination files, all jobs, for workers who live in Alabama. Jefferson County figures sum every tract in the county.
+- **Home values.** Medians are estimated from the summed value distributions (1980 STF1, 1990 STF1, 2000 SF3, ACS B25075), the Census Bureau's method for combined areas. Our county figures match the Bureau's published medians. Dollars are adjusted with the CPI-U. Values are owners' own estimates.
+- **Food and getting around.** Stores are from USDA's live SNAP retailer list (pulled November 2026) and its 2005-2025 historical file; a full grocery store is USDA type Supermarket, Super Store or Large Grocery Store. Low-income and low-access flags are from the 2019 Food Access Research Atlas. Vehicles are ACS B25044, commutes ACS B08303 and B08013. Transportation and food insecurity are CDC PLACES 2025 release estimates for 2023, weighted by tract population.
 - **Toxic releases.** EPA [Toxics Release Inventory](https://www.epa.gov/toxics-release-inventory-tri-program), air releases as reported by each plant.
 - **COPD.** [CDC PLACES](https://www.cdc.gov/places/) 2025 release tract estimates, for 2023. The county, state and U.S. values are averages of their tracts, weighted by adult population.

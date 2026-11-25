@@ -1,0 +1,16 @@
+area,measure,value,n,total,year
+North Birmingham,households_no_vehicle_pct,28.2,1179.0,4181.0,
+Jefferson County,households_no_vehicle_pct,7.0,18843.0,269883.0,
+United States,households_no_vehicle_pct,8.4,10793323.0,129227496.0,
+North Birmingham,FOODINSECU,54.5,4.0,,2023
+tract 000500,FOODINSECU,65.7,,,2023
+tract 005500,FOODINSECU,41.0,,,2023
+tract 000700,FOODINSECU,60.1,,,2023
+tract 000800,FOODINSECU,48.4,,,2023
+North Birmingham,LACKTRPT,27.6,4.0,,2023
+tract 000700,LACKTRPT,31.8,,,2023
+tract 000500,LACKTRPT,34.3,,,2023
+tract 000800,LACKTRPT,23.0,,,2023
+tract 005500,LACKTRPT,19.9,,,2023
+PLACES tracts (40 states),LACKTRPT,9.2,60419.0,,2023
+PLACES tracts (40 states),FOODINSECU,17.2,60419.0,,2023

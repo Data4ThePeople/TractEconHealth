@@ -1,0 +1,81 @@
+year,area,measure,value,num,den,fit,note
+1940,North Birmingham,unemp,16.5,1960,11874,0.483,14+; with a job excludes public emergency work
+1940,North Birmingham,lfp,54.0,11874,22000,0.483,14+
+1940,North Birmingham,epop,41.5,9135,22000,0.483,14+; with a job excludes public emergency work
+1940,North Birmingham,epop_male,64.6,6855,10619,0.483,14+; with a job excludes public emergency work
+1940,North Birmingham,relief_work,3.5,779,22000,0.483,14+; public emergency work
+1940,Jefferson County,unemp,10.9,12649,116365,,14+; with a job excludes public emergency work; tracted part of county only
+1940,Jefferson County,lfp,55.5,116365,209763,,14+
+1940,Jefferson County,epop,46.8,98170,209763,,14+; with a job excludes public emergency work; tracted part of county only
+1940,Jefferson County,epop_male,69.4,68348,98531,,14+; with a job excludes public emergency work; tracted part of county only
+1940,Jefferson County,relief_work,2.6,5546,209763,,14+; public emergency work
+1950,North Birmingham,unemp,7.6,1125,14800,0.695,14+
+1950,North Birmingham,lfp,53.4,14800,27728,0.695,14+
+1950,North Birmingham,epop,49.3,13675,27728,0.695,14+
+1950,North Birmingham,epop_male,73.8,9624,13034,0.695,14+
+1950,Jefferson County,unemp,4.8,6420,134461,,14+; tracted part of county only
+1950,Jefferson County,lfp,55.1,134461,244038,,14+
+1950,Jefferson County,epop,52.5,128041,244038,,14+; tracted part of county only
+1950,Jefferson County,epop_male,76.8,86346,112489,,14+; tracted part of county only
+1960,North Birmingham,unemp,11.7,1640,14045,0.704,14+
+1960,North Birmingham,lfp,52.7,14045,26629,0.704,14+
+1960,North Birmingham,epop,46.6,12405,26629,0.704,14+
+1960,North Birmingham,epop_male,64.7,7979,12337,0.704,14+
+1960,Jefferson County,unemp,6.2,14395,232183,,14+
+1960,Jefferson County,lfp,53.1,232183,437281,,14+
+1960,Jefferson County,epop,49.8,217788,437281,,14+
+1960,Jefferson County,epop_male,71.3,144800,202997,,14+
+1970,North Birmingham,lfp,51.2,11412,22289,0.671,16+
+1970,North Birmingham,epop,47.5,10585,22289,0.671,16+
+1970,North Birmingham,unemp,7.3,827,11392,0.671,16+
+1970,Jefferson County,lfp,55.4,248830,449463,,16+
+1970,Jefferson County,epop,53.0,238404,449463,,16+
+1970,Jefferson County,unemp,4.2,10426,248257,,16+
+1980,North Birmingham,lfp,51.2,10836,21177,0.933,16+
+1980,North Birmingham,epop,42.7,9039,21177,0.933,16+
+1980,North Birmingham,unemp,16.6,1797,10807,0.933,16+
+1980,Jefferson County,lfp,59.0,285919,484678,,16+
+1980,Jefferson County,epop,55.0,266630,484678,,16+
+1980,Jefferson County,unemp,6.8,19289,285502,,16+
+1990,North Birmingham,lfp,50.5,7775,15389,,16+
+1990,North Birmingham,epop,43.9,6749,15389,,16+
+1990,North Birmingham,unemp,13.2,1025,7744,,16+
+1990,Jefferson County,lfp,61.4,311227,506599,,16+
+1990,Jefferson County,epop,57.4,290945,506599,,16+
+1990,Jefferson County,unemp,6.5,20282,310170,,16+
+2000,North Birmingham,lfp,46.5,5320,11447,,16+
+2000,North Birmingham,epop,39.9,4567,11447,,16+
+2000,North Birmingham,unemp,14.2,753,5320,,16+
+2000,Jefferson County,lfp,61.5,317658,516341,,16+
+2000,Jefferson County,epop,57.6,297646,516341,,16+
+2000,Jefferson County,unemp,6.3,20012,317135,,16+
+2008-2012,North Birmingham,unemp,29.3,1462,4992,,16+
+2008-2012,North Birmingham,lfp,53.8,4992,9281,,16+
+2008-2012,North Birmingham,epop,38.0,3530,9281,,16+
+2008-2012,North Birmingham,prime_lfp,72.8,3226,4429,,25-54
+2008-2012,North Birmingham,prime_epop,50.4,2234,4429,,25-54
+2008-2012,North Birmingham,prime_epop_male,47.1,929,1971,,men 25-54
+2008-2012,Jefferson County,unemp,10.0,32564,326518,,16+
+2008-2012,Jefferson County,lfp,62.7,327314,521710,,16+
+2008-2012,Jefferson County,epop,56.5,294750,521710,,16+
+2008-2012,Jefferson County,prime_lfp,81.2,220514,271708,,25-54
+2008-2012,Jefferson County,prime_epop,74.0,201185,271708,,25-54
+2008-2012,Jefferson County,prime_epop_male,78.3,101431,129473,,men 25-54
+2020-2024,North Birmingham,unemp,6.5,206,3184,,16+
+2020-2024,North Birmingham,lfp,46.4,3198,6893,,16+
+2020-2024,North Birmingham,epop,43.4,2992,6893,,16+
+2020-2024,North Birmingham,prime_lfp,68.8,2321,3375,,25-54
+2020-2024,North Birmingham,prime_epop,64.2,2166,3375,,25-54
+2020-2024,North Birmingham,prime_epop_male,70.2,930,1325,,men 25-54
+2020-2024,Jefferson County,unemp,4.7,15431,326550,,16+
+2020-2024,Jefferson County,lfp,61.5,327433,532198,,16+
+2020-2024,Jefferson County,epop,58.6,312002,532198,,16+
+2020-2024,Jefferson County,prime_lfp,81.7,212300,259861,,25-54
+2020-2024,Jefferson County,prime_epop,78.1,202874,259861,,25-54
+2020-2024,Jefferson County,prime_epop_male,81.9,101598,124067,,men 25-54
+2000,North Birmingham,prime_lfp,62.4,3590,5752,,25-54
+2000,North Birmingham,prime_epop,56.0,3219,5752,,25-54
+2000,North Birmingham,prime_epop_male,58.7,1501,2556,,men 25-54
+2000,Jefferson County,prime_lfp,78.0,224497,287739,,25-54
+2000,Jefferson County,prime_epop,74.2,213633,287739,,25-54
+2000,Jefferson County,prime_epop_male,79.7,109634,137562,,men 25-54
