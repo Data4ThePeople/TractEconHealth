@@ -1,8 +1,11 @@
 {
-  "page_title": "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going",
-  "page_subtitle": "How three Black neighborhoods next to Birmingham's coke plants went from company housing and racial zones to an EPA cleanup site and one of the poorest and least healthy places in the country.",
+  "page_title": "North Birmingham Got the Coke Plants' Smoke, but Few of Their Jobs",
+  "page_subtitle": "Convict labor, racial zoning and a redlining map came first. Then the plants kept polluting, poison turned up in hundreds of yards, a bribery scheme fought the cleanup, and the people next door held about 2% of the jobs around them.",
   "published_date": "2026-11-25",
   "updated_date": "2026-11-25",
+  "meta_title": "North Birmingham: Coke Plants, Poisoned Yards, Few Jobs",
+  "meta_description": "How convict labor, racial zoning and two coke plants shaped North Birmingham, Ala., where yards were poisoned and residents held 2% of local jobs.",
+  "meta_keywords": "North Birmingham history, Collegeville Birmingham, 35th Avenue Superfund site, North Birmingham coke plant pollution, Drummond bribery case, Sloss convict leasing, North Birmingham redlining, Bluestone Coke shutdown",
   "make_this_main_post": false,
   "slices": [
     {
@@ -2108,7 +2111,232 @@
           }
         ]
       }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "Common questions",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "5px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "What is the 35th Avenue Superfund site?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "It covers Collegeville, Fairmont and Harriman Park in North Birmingham. The EPA found arsenic, lead and benzo(a)pyrene in yards there and proposed the site for its National Priorities List in 2014, but it was never added. The EPA says it has cleaned more than 650 properties.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Was North Birmingham redlined?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Yes. On the federal Home Owners' Loan Corporation map from the late 1930s, 41% to 64% of each of the four tracts in this post was graded D, the lowest grade. No part got an A or B.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Is the North Birmingham coke plant still open?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "The 35th Avenue plant, last run by Bluestone, stopped production in October 2021, and we found no report it has reopened. ABC Coke, owned by Drummond Co. in nearby Tarrant, is still open and reported to the EPA for 2024.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "What was the Drummond bribery case?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "In 2018, a jury convicted a Drummond Co. vice president and a lawyer at the company's outside law firm of bribing a state legislator to oppose the EPA's plans for the site. An appeals court upheld the convictions in 2021.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Did people in North Birmingham work at the plants?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Few did in recent decades. People living in the four tracts held 3.4% of the jobs located there in 2002 and 1.9% in 2022.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "How many people live in North Birmingham?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "The four tracts held 29,946 people in 1980 and about 9,820 in 2020-2024, 67% fewer.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-11-25T09:30:00-06:00\",\n  \"dateModified\": \"2026-11-25T09:30:00-06:00\",\n  \"articleSection\": \"Stories of a Forgotten American Community\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"isPartOf\": {\n    \"@type\": \"CreativeWorkSeries\",\n    \"name\": \"Stories of a Forgotten American Community\"\n  },\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/spotlight-north-birmingham\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"North Birmingham Got the Coke Plants' Smoke, but Few of Their Jobs\",\n      \"description\": \"How convict labor, racial zoning and two coke plants shaped North Birmingham, Ala., where yards were poisoned and residents held 2% of local jobs.\",\n      \"datePublished\": \"2026-11-25T09:30:00-06:00\",\n      \"dateModified\": \"2026-11-25T09:30:00-06:00\",\n      \"articleSection\": \"Stories of a Forgotten American Community\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"isPartOf\": {\n        \"@type\": \"CreativeWorkSeries\",\n        \"name\": \"Stories of a Forgotten American Community\"\n      },\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"North Birmingham history\",\n        \"Collegeville Birmingham\",\n        \"35th Avenue Superfund site\",\n        \"North Birmingham coke plant pollution\",\n        \"Drummond bribery case\",\n        \"Sloss convict leasing\",\n        \"North Birmingham redlining\",\n        \"Bluestone Coke shutdown\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/spotlight-north-birmingham\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-north-birmingham#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/spotlight-north-birmingham#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is the 35th Avenue Superfund site?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"It covers Collegeville, Fairmont and Harriman Park in North Birmingham. The EPA found arsenic, lead and benzo(a)pyrene in yards there and proposed the site for its National Priorities List in 2014, but it was never added. The EPA says it has cleaned more than 650 properties.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Was North Birmingham redlined?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes. On the federal Home Owners' Loan Corporation map from the late 1930s, 41% to 64% of each of the four tracts in this post was graded D, the lowest grade. No part got an A or B.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is the North Birmingham coke plant still open?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"The 35th Avenue plant, last run by Bluestone, stopped production in October 2021, and we found no report it has reopened. ABC Coke, owned by Drummond Co. in nearby Tarrant, is still open and reported to the EPA for 2024.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What was the Drummond bribery case?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In 2018, a jury convicted a Drummond Co. vice president and a lawyer at the company's outside law firm of bribing a state legislator to oppose the EPA's plans for the site. An appeals court upheld the convictions in 2021.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Did people in North Birmingham work at the plants?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Few did in recent decades. People living in the four tracts held 3.4% of the jobs located there in 2002 and 1.9% in 2022.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How many people live in North Birmingham?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"The four tracts held 29,946 people in 1980 and about 9,820 in 2020-2024, 67% fewer.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
 }

@@ -1,7 +1,7 @@
 ---
-title: "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going"
-prismic_label: "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going"
-subtitle: How three Black neighborhoods next to Birmingham's coke plants went from company housing and racial zones to an EPA cleanup site and one of the poorest and least healthy places in the country.
+title: "North Birmingham Got the Coke Plants' Smoke, but Few of Their Jobs"
+prismic_label: "North Birmingham Got the Coke Plants' Smoke, but Few of Their Jobs"
+subtitle: Convict labor, racial zoning and a redlining map came first. Then the plants kept polluting, poison turned up in hundreds of yards, a bribery scheme fought the cleanup, and the people next door held about 2% of the jobs around them.
 slug: spotlight-north-birmingham
 date: 2026-11-25
 time: 09:30:00-06:00
@@ -9,9 +9,9 @@ section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-north-birmingham-hero-1680x1080.png
 hero_alt: "Families gather on the porches of a row of two-story brick homes in North Birmingham in July 1972. A brown haze of industrial smog fills the air and hides the far end of the street, and the late-day light is dim and orange. Children and women lean on low brick porch walls, and shrubs and a strip of lawn line the walkway in front."
-meta_title:
-description:
-keywords:
+meta_title: "North Birmingham: Coke Plants, Poisoned Yards, Few Jobs"
+description: "How convict labor, racial zoning and two coke plants shaped North Birmingham, Ala., where yards were poisoned and residents held 2% of local jobs."
+keywords: North Birmingham history, Collegeville Birmingham, 35th Avenue Superfund site, North Birmingham coke plant pollution, Drummond bribery case, Sloss convict leasing, North Birmingham redlining, Bluestone Coke shutdown
 drop_cap: false
 heading_spacer: 20px
 ---
@@ -192,3 +192,31 @@ In all three neighborhoods, about half of adults were food insecure. It is a com
 - **School photo.** "North Birmingham School," Feb. 24, 2008, by Dystopos on [Flickr](https://www.flickr.com/photos/96586445@N00/2289432421), [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/). Not altered.
 - **Toxic releases.** EPA [Toxics Release Inventory](https://www.epa.gov/toxics-release-inventory-tri-program), air releases as reported by each plant.
 - **COPD.** [CDC PLACES](https://www.cdc.gov/places/) 2025 release tract estimates, for 2023. The county, state and U.S. values are averages of their tracts, weighted by adult population.
+
+## Common questions
+
+::: spacer 5px
+
+### What is the 35th Avenue Superfund site?
+
+It covers Collegeville, Fairmont and Harriman Park in North Birmingham. The EPA found arsenic, lead and benzo(a)pyrene in yards there and proposed the site for its National Priorities List in 2014, but it was never added. The EPA says it has cleaned more than 650 properties.
+
+### Was North Birmingham redlined?
+
+Yes. On the federal Home Owners' Loan Corporation map from the late 1930s, 41% to 64% of each of the four tracts in this post was graded D, the lowest grade. No part got an A or B.
+
+### Is the North Birmingham coke plant still open?
+
+The 35th Avenue plant, last run by Bluestone, stopped production in October 2021, and we found no report it has reopened. ABC Coke, owned by Drummond Co. in nearby Tarrant, is still open and reported to the EPA for 2024.
+
+### What was the Drummond bribery case?
+
+In 2018, a jury convicted a Drummond Co. vice president and a lawyer at the company's outside law firm of bribing a state legislator to oppose the EPA's plans for the site. An appeals court upheld the convictions in 2021.
+
+### Did people in North Birmingham work at the plants?
+
+Few did in recent decades. People living in the four tracts held 3.4% of the jobs located there in 2002 and 1.9% in 2022.
+
+### How many people live in North Birmingham?
+
+The four tracts held 29,946 people in 1980 and about 9,820 in 2020-2024, 67% fewer.

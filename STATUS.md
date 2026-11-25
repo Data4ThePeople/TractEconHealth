@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-north-birmingham
-Step: 2d (2c confirmed 2026-11-25; publish set 2026-11-25 9:30 a.m. CST)
+Step: 2e (2d confirmed 2026-11-25; publish set 2026-11-25 9:30 a.m. CST)
 Since: 2026-11-25
 
 Deferred to a later week (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton and spotlight-west-baltimore. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
