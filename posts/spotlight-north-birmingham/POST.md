@@ -3,8 +3,8 @@ title: "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still 
 prismic_label: "North Birmingham: Coke Ovens, Racial Zoning and a Cleanup That Is Still Going"
 subtitle: How three Black neighborhoods next to Birmingham's coke plants went from company housing and racial zones to an EPA cleanup site and one of the poorest and least healthy places in the country.
 slug: spotlight-north-birmingham
-date:
-time:
+date: 2026-11-25
+time: 09:30:00-06:00
 section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-north-birmingham-hero-1680x1080.png
