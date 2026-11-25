@@ -115,7 +115,7 @@ In 2002, the four tracts held about 10,200 jobs. About half were in manufacturin
 
 ::: spacer 5px
 
-We are not trying to list every reason the jobs here disappeared. But the damage shows up in who is working. In 1980, 43% of adults here had a job, compared with 55% across Jefferson County. In 2020-2024, it was still 43% here and 59% in the county. Among people ages 25 to 54, 64% here had a job, compared with 78% in the county. The chart below shows two measures of work: the share of adults in the labor force, meaning working or looking for work, and the share of adults with a job.
+We are not trying to list every reason the jobs in North Birmingham disappeared. But the damage shows up in who is working. In 1980, 43% of adults here had a job, compared with 55% across Jefferson County. In 2020-2024, it was still 43% here and 59% in the county. Among people ages 25 to 54, 64% here had a job, compared with 78% in the county. The chart below shows two measures of work: the share of adults in the labor force, meaning working or looking for work, and the share of adults with a job.
 
 ![Line chart of work in North Birmingham's four census tracts, 1980 to 2020-2024. Share of adults in the labor force: 51% in 1980, 50% in 1990, 46% in 2000, 54% in 2010 and 46% in 2020-2024. Share with a job: 43%, 44%, 40%, 38% and 43%. Jefferson County, share with a job, dashed: 55% in 1980 and 59% in 2020-2024.](images/02c-work.png)
 *Adults are people 16 and over. Census counts before 1980 do not line up closely enough with today's tracts to use.*
