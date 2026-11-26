@@ -66,7 +66,7 @@ chk("homes lost 2010s ~2,500", 2500, P[(NF, "homes", "2010")] - P[(NF, "homes", 
 W = pd.read_csv(A / "wards_demolitions_northflint.csv").set_index("key")
 chk("wards 3+4 land 85%", 85, 100 * (W.loc["Ward 3", "share_of_tract_land"] + W.loc["Ward 4", "share_of_tract_land"]), 0.5)
 chk("ward 5 land 11%", 11, 100 * W.loc["Ward 5", "share_of_tract_land"], 0.5)
-chk("demolition permits single family 534", 534, W.loc["2015-2019 single family", "value"], 0)
+chk("demolition parcels single family 519", 519, W.loc["2015-2019 single family parcels", "value"], 0)
 L = pd.read_csv(A / "labor_northflint.csv", dtype={"year": str}).set_index(["year", "area", "measure"])
 chk("working 1990 ~7,000", 7000, L.loc[("1990", NF, "epop"), "num"], 100); chk("working 2020-24 ~3,800", 3800, L.loc[("2020-2024", NF, "epop"), "num"], 100)
 chk("prime epop 56", 56, L.loc[("2020-2024", NF, "prime_epop"), "value"], 0.5); chk("county prime epop 76", 76, L.loc[("2020-2024", "Genesee County", "prime_epop"), "value"], 0.5)

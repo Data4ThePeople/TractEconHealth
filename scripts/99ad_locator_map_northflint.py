@@ -4,8 +4,8 @@ and the former Buick City site, with an inset of Michigan.
 Inputs: 2020 tracts (cb_2020_us_tract_500k); Flint city boundary (cb_2020_26_place_500k); state outlines
 (cb_2020_us_state_500k); TIGER/Line 2024 roads for Genesee County (interstates and U.S. highways, MTFCC S1100/S1200
 with an I- or US prefix); TIGER/Line 2023 area water for Genesee County (Flint River). Points geocoded with the Census
-Bureau geocoder: Flint City Hall, 1101 S. Saginaw St. (43.01073, -83.68591); Buick City site address, 902 E. Hamilton
-Ave. (43.03533, -83.68883), the address RACER Trust lists for the site.
+Bureau geocoder: Flint City Hall, 1101 S. Saginaw St. (43.01073, -83.68591); Buick City site, 1051 E. Hamilton
+Ave. (43.03544, -83.68590), one of the two addresses RACER Trust lists for the site (tract 980100, the plant site).
 Output: posts/spotlight-north-flint/images/00b-locator.png; prints the share of each tract inside the city.
 """
 import sys
@@ -32,7 +32,7 @@ print({g: round(float(geom.intersection(cu).area / geom.area), 3) for g, geom in
 hood = tr.union_all(); c = hood.centroid
 frame = box(c.x - 7500, c.y - 6200, c.x + 7500, c.y + 5200)
 tf = Transformer.from_crs("EPSG:4326", CRS, always_xy=True)
-hall = tf.transform(-83.685913675249, 43.010728093818); buick = tf.transform(-83.688832765638, 43.035325267356)
+hall = tf.transform(-83.685913675249, 43.010728093818); buick = tf.transform(-83.685899176594, 43.035440246763)
 
 fig = plt.figure(figsize=(10, 7.8)); ax = fig.add_axes([0.02, 0.07, 0.96, 0.75])
 gpd.GeoSeries([frame], crs=CRS).plot(ax=ax, color=SURFACE, lw=0)
@@ -52,13 +52,13 @@ ax.annotate("Flint River", (c.x - 6200, c.y - 2100), color=BLUE, fontsize=10)
 i475 = rd[rd.FULLNAME.str.startswith("I- 475") | rd.FULLNAME.str.startswith("I-475")]
 print("I-475 segments:", len(i475))
 ax.annotate("I-475", (c.x - 900, c.y + 3700), color=INK_DIM, fontsize=10, fontweight="bold")
-ax.annotate("City of Flint\n(dashed line)", (fx0 + 2900, fy0 + 1700), color=MUTED, fontsize=9)
+ax.annotate("City of Flint\n(dashed line)", (fx0 + 2600, fy0 + 7700), color=MUTED, fontsize=9)
 ins = fig.add_axes([0.80, 0.60, 0.17, 0.22]); mi = st[st.STUSPS == "MI"]
 mi.plot(ax=ins, color="#2c3033", lw=0); mi.boundary.plot(ax=ins, color=MUTED, lw=0.6)
 ins.plot([c.x], [c.y], marker="o", ms=7, color=MAGENTA, mec=SURFACE); ins.set_axis_off()
 ins.annotate("Michigan", (0.40, 0.08), xycoords="axes fraction", color=INK_DIM, fontsize=9, ha="center")
 titleblock(fig, "North and East Flint, around the old Buick plants",
            "The eight census tracts in this story (pink), on Flint's north and east sides. Gray lines are interstates and U.S.\n"
-           "highways, including I-475. The square marks the address RACER Trust lists for the former Buick City site.")
+           "highways, including I-475. The square marks an address RACER Trust lists for the former Buick City site.")
 credit(fig, "Source: Census Bureau 2020 tracts and places, TIGER/Line roads and water; Census Bureau geocoder.")
 fig.savefig(ROOT / "posts/spotlight-north-flint/images/00b-locator.png"); plt.close(fig)

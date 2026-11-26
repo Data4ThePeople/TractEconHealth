@@ -46,7 +46,7 @@ North and East Flint took a long series of hits over almost a century. This post
 
 The map below shows where the eight tracts are.
 
-![Map of Flint, Michigan, with the eight North and East Flint census tracts shaded pink on the city's north and east sides. Interstate 475 runs north and south through the tracts, and the Flint River winds through the north end and then southwest past City Hall. A square marks the address RACER Trust lists for the former Buick City site, at the western edge of the tracts. An inset shows the location in Michigan's Lower Peninsula.](images/00b-locator.png)
+![Map of Flint, Michigan, with the eight North and East Flint census tracts shaded pink on the city's north and east sides. Interstate 475 runs north and south through the tracts, and the Flint River winds through the north end and then southwest past City Hall. A square marks an address RACER Trust lists for the former Buick City site, just west of the tracts. An inset shows the location in Michigan's Lower Peninsula.](images/00b-locator.png)
 *Tracts, city boundary, freeways and water from the Census Bureau.*
 
 ## The map that came first
@@ -61,7 +61,7 @@ In 1937, the federal Home Owners' Loan Corporation graded Flint's neighborhoods 
 
 The map below shows the 1937 grades with the eight tracts in this story outlined.
 
-![Map of Flint's 1937 Home Owners' Loan Corporation grades, with the eight North and East Flint census tracts outlined in white. Much of the land inside and next to the outline was graded D, shown in red, or was not graded. Areas graded B, in blue, sit mostly south and west of the outline. The I-475 freeway, drawn in gray, runs north through the outline.](images/01-map.png)
+![Map of Flint's 1937 Home Owners' Loan Corporation grades, with the eight North and East Flint census tracts outlined in white. More than half the land inside the outline was not graded. Most of the rest was graded D, shown in red, or C, shown in yellow. Areas graded B, in blue, sit mostly south and west of the outline. The I-475 freeway, drawn in gray, runs north through the outline.](images/01-map.png)
 *The 1937 grades come from Mapping Inequality. Freeways are today's, from the Census Bureau.*
 
 ## A freeway through St. John
@@ -110,7 +110,7 @@ The number of white residents fell first. From 1990 to 2010, the number of white
 ![Line chart of people in the eight tracts by race, 1990 to 2020. White residents: 15,027 in 1990, 11,528 in 2000, 7,913 in 2010 and 4,886 in 2020. Black residents: 7,588, 7,535, 7,266 and 5,476.](images/02c-race.png)
 *Census counts on 2010 tract lines. White and Black alone; other groups are not shown.*
 
-Homes went with the people. The eight tracts had 10,187 homes in 1990 and 5,794 in 2020, 43% fewer. About 2,500 of the homes lost were lost in the 2010s. Over that decade, the number of vacant homes fell from 2,008 to 968. The census counts homes that are standing, so these homes were removed. City records show part of it. Permit records posted on ArcGIS show 534 house demolition permits in the eight tracts from 2015 to 2019 ([Building Permits 2015-2019, ArcGIS](https://www.arcgis.com/home/item.html?id=f61da1745517400c93af76217795f35d)). Earlier in the decade, the Genesee County Land Bank used a federal grant to tear down more than 1,600 vacant houses across Flint by mid-2015 ([City of Flint, 2015](https://www.cityofflint.com/genesee-county-land-bank-wrapping-up-largest-blight-elimination-program-in-flint-history/)). We could not find address-level records for those years. The chart below shows all homes and vacant homes.
+Homes went with the people. The eight tracts had 10,187 homes in 1990 and 5,794 in 2020, 43% fewer. About 2,500 of the homes lost were lost in the 2010s. Over that decade, the number of vacant homes fell from 2,008 to 968. The census counts homes that are standing, so these homes were removed. City records show part of it. Permit records posted on ArcGIS show permits to tear down houses on 519 parcels in the eight tracts from 2015 to 2019 ([Building Permits 2015-2019, ArcGIS](https://www.arcgis.com/home/item.html?id=f61da1745517400c93af76217795f35d)). Earlier in the decade, the Genesee County Land Bank used a federal grant to tear down more than 1,600 vacant houses across Flint by mid-2015 ([City of Flint, 2015](https://www.cityofflint.com/genesee-county-land-bank-wrapping-up-largest-blight-elimination-program-in-flint-history/)). We could not find address-level records for those years. The chart below shows all homes and vacant homes.
 
 ![Two stacked line charts for the eight tracts, 1990 to 2020. All homes: 10,187 in 1990, 9,234 in 2000, 8,297 in 2010 and 5,794 in 2020. Vacant homes: 928, 1,274, 2,008 and 968.](images/02b-homes.png)
 *Census counts on 2010 tract lines.*

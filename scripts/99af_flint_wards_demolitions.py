@@ -35,6 +35,7 @@ p["here"] = p.within(hood)
 for y, g in p.groupby("Year"):
     rows.append(dict(kind="demolition_permits", key=str(y), value=int(g.here.sum()), city_total=len(g)))
 rows.append(dict(kind="demolition_permits", key="2015-2019", value=int(p.here.sum()), city_total=len(p)))
+rows.append(dict(kind="demolition_permits", key="2015-2019 single family parcels", value=int(p[p.here & (p.Category == "Demolition Single Family")].ParcelID.nunique())))
 rows.append(dict(kind="demolition_permits", key="2015-2019 single family", value=int((p.here & (p.Category == "Demolition Single Family")).sum()),
                  city_total=int((p.Category == "Demolition Single Family").sum())))
 out = pd.DataFrame(rows); out.to_csv(ROOT / "analysis/spotlight/wards_demolitions_northflint.csv", index=False)
