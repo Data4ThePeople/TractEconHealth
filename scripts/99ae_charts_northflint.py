@@ -68,7 +68,7 @@ for m, col, lab, dy in (("white", BLUE, "White", -18), ("black", MAGENTA, "Black
     ax.annotate(lab, (xs[-1], ys[-1]), xytext=(16, -12 if m == "white" else 4), textcoords="offset points", color=INK, fontsize=11)
 ax.set_xlim(1985, 2025); ax.set_xticks(xs); ax.set_ylim(0, 17000)
 ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:,.0f}")); style(ax)
-titleblock(fig, "White residents left first. In the 2010s, Black residents left too",
+titleblock(fig, "White residents declined first. In the 2010s, Black residents declined too",
            "People in the eight tracts by race, census counts. White and Black alone; other groups are not shown.")
 credit(fig, "Source: NHGIS (IPUMS) census counts, 1990-2020, standardized to 2010 tracts.")
 fig.savefig(OUT / "02c-race.png"); plt.close(fig)

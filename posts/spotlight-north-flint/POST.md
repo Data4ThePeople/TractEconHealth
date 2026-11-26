@@ -40,9 +40,14 @@ Here is how North and East Flint compares with the country today.
 ::: spacer 20px
 
 ::: dropcap
-North and East Flint is eight census tracts on Flint, Michigan's north and east sides, with about 11,800 people. They wrap around the land where General Motors' Buick City plant once stood and run east along the I-475 freeway toward Davison Road. About 46% of the people who live here are Black, up from 32% in 1990. Median household income is about $25,300, 31% of the U.S. figure. Life expectancy is 69.9 years, 8.8 years shorter than for the country as a whole.
+North and East Flint is eight census tracts on Flint, Michigan's north and east sides. Together they had 11,704 people in the 2020 census. They wrap around the land where General Motors' Buick City plant once stood and run east along the I-475 freeway toward Davison Road. About 46% of the people who live here are Black, up from 32% in 1990. Median household income is about $25,300, 31% of the U.S. figure. Life expectancy is 69.9 years, 8.8 years shorter than for the country as a whole.
 
 North and East Flint took a long series of hits over almost a century. This post walks through them in order, with a link to the source for each one. Our census numbers for these tracts start in 1990, so the early chapters come from historical records, not from our data.
+
+The map below shows where the eight tracts are.
+
+![Map of Flint, Michigan, with the eight North and East Flint census tracts shaded pink on the city's north and east sides. Interstate 475 runs north and south through the tracts, and the Flint River winds through the north end and then southwest past City Hall. A square marks the address RACER Trust lists for the former Buick City site, at the western edge of the tracts. An inset shows the location in Michigan's Lower Peninsula.](images/00b-locator.png)
+*Tracts, city boundary, freeways and water from the Census Bureau.*
 
 ## The map that came first
 
@@ -75,27 +80,55 @@ Most of the cleared St. John land is now highway, industrial land or a neighbori
 
 ::: spacer 5px
 
+![A black-and-white postcard of the Buick Motor Works in Flint from about 1907. A long four-story brick factory with rows of windows stretches into the distance, with an older two-story building with a hipped roof at left. Smoke rises from a tall chimney. A streetcar, an early automobile and railroad tracks cross the dirt yard in front. Printed across the bottom: Buick Motor Works, Flint, Mich.](images/02a-buick-motor-works-1907.jpg)
+*The Buick Motor Works in Flint, about 1907. Postcard, public domain.*
+
 In 1954, GM had nearly 80,000 workers in the Flint area. From 1955 to 1987, it cut 34,000 jobs there ([Highsmith, 2009, pp. 3 and 8](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)). In 1985, GM spent $300 million to turn its North End Buick plants into Buick City, one large complex. Those plants had once employed more than 20,000 local workers ([Highsmith, 2009, pp. 477 and 479](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)).
 
 In November 1997, GM announced that Buick City would close, and it closed in the summer of 1999 ([Highsmith, 2009, p. 479](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)). The 413-acre site was torn down in stages from 2000 to 2012 ([RACER Trust](https://www.racertrust.org/properties/buick-city-site)). GM's workforce in Genesee County fell to 33,000 in 1997 and to 15,000 by 2002 ([Highsmith, 2009, p. 9](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)).
 
-The chart below counts the people living inside today's eight tract lines in each census since 1990.
+![A color satellite image of central Flint in June 2022. Green tree cover and a grid of residential streets fill most of the frame. Downtown and the freeway interchanges sit near the center, the Flint River winds from upper right to the west, and a long pale strip of cleared land runs north from downtown beside the freeway.](images/05a-satellite-2022.jpg)
+*Central Flint from the European Space Agency's Sentinel-2 satellite, June 28, 2022. CC BY-SA 3.0 IGO.*
 
-![Line chart of the number of people living in North and East Flint's eight census tracts: 23,592 in 1990, 20,537 in 2000, 16,483 in 2010 and 11,767 in 2020-2024.](images/02-population.png)
-*Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
+Fewer people who live here have jobs. In 1990, about 7,000 people living in the eight tracts were working. In 2020-2024, about 3,800 were ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B23025)). Among people ages 25 to 54, 56% had a job, compared with 76% across Genesee County ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B23001)). In 1990, 29% of working residents here worked in manufacturing, about the same as the county's 30%.
 
-Over the same years, more people here had low incomes and more homes stood empty. The chart below shows the share of people below 200% of the poverty line, which rose from 60% in 1990 to 73% in 2020-2024, and the share of homes vacant.
+## People leave
+
+::: spacer 5px
+
+The chart below shows how much the number of people changed in each decade since 1990, here, in the rest of Flint and in Genesee County.
+
+![Bar chart of the percent change in the number of people in each decade. North and East Flint: down 13% from 1990 to 2000, down 20% from 2000 to 2010 and down 29% from 2010 to 2020. Rest of Flint: down 11%, 18% and 19%. Genesee County: up 1%, then down 2% and 5%.](images/02-loss-by-decade.png)
+*Census counts on 2010 tract lines. The rest of Flint is the other tracts inside the city.*
+
+The eight tracts lost 13% of their people in the 1990s, 20% in the 2000s and 29% in the 2010s. The census counted 23,592 people here in 1990 and 11,704 in 2020. The rest of Flint lost 19% in the 2010s. That decade included the second state takeover and the water crisis, described below. These counts show when people left, not why.
+
+The numbers of children and adults fell at about the same pace. From 2010 to 2020, the number of children here fell 31% and the number of adults fell 28%. Children were 32% of residents in 2000 and 28% in 2020.
+
+The number of white residents fell first. From 1990 to 2010, the number of white residents fell from 15,027 to 7,913, while the number of Black residents stayed near 7,500. In the 2010s, the number of Black residents fell 25%, to 5,476. The chart below shows both groups.
+
+![Line chart of people in the eight tracts by race, 1990 to 2020. White residents: 15,027 in 1990, 11,528 in 2000, 7,913 in 2010 and 4,886 in 2020. Black residents: 7,588, 7,535, 7,266 and 5,476.](images/02c-race.png)
+*Census counts on 2010 tract lines. White and Black alone; other groups are not shown.*
+
+Homes went with the people. The eight tracts had 10,187 homes in 1990 and 5,794 in 2020, 43% fewer. About 2,500 of the homes lost were lost in the 2010s. Over that decade, the number of vacant homes fell from 2,008 to 968. The census counts homes that are standing, so these homes were removed. That fits the demolition of empty houses, but the census does not record why a home is gone. The chart below shows all homes and vacant homes.
+
+![Two stacked line charts for the eight tracts, 1990 to 2020. All homes: 10,187 in 1990, 9,234 in 2000, 8,297 in 2010 and 5,794 in 2020. Vacant homes: 928, 1,274, 2,008 and 968.](images/02b-homes.png)
+*Census counts on 2010 tract lines.*
+
+The people who stayed had less to live on. The chart below shows the share of people below 200% of the poverty line, which rose from 60% in 1990 to 73% in 2020-2024, and the share of homes vacant.
 
 ![Line chart of three shares for North and East Flint. People below 200% of the poverty line: 60% in 1990, 62% in 2000, 71% in 2008-2012 and 73% in 2020-2024. Homes vacant: 9% in 1990, 14% in 2000, 24% in 2010 and 20% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
 *Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
 
-Vacancy fell after 2010. We think that is mostly because empty houses were torn down, but we have not checked demolition counts by tract. Census and survey vacancy are also measured in different ways.
 
 ## State control and the water
 
 ::: spacer 5px
 
 Flint was run by state-appointed managers twice. An emergency financial manager ran the city from 2002 to 2004. A second state takeover began in December 2011. Four emergency managers served through April 2015, one of them twice ([Flint Water Advisory Task Force, 2016, p. 43](https://www.michigan.gov/-/media/Project/Websites/formergovernors/Folder6/FWATF_FINAL_REPORT_21March2016.pdf)). A state board then oversaw the city until April 10, 2018 ([Associated Press via WKAR, 2018](https://www.wkar.org/community/2018-04-10/city-of-flint-officially-released-from-state-oversight)).
+
+![A close-up of hands holding a black handheld water-testing meter on the edge of a white kitchen sink, with a faucet at upper left and a counter in the foreground.](images/03a-water-testing-2016.jpg)
+*EPA staff test water quality at a sink in Flint, April 2016. Photo: U.S. Environmental Protection Agency, public domain.*
 
 In April 2014, under emergency management, the city began treating and serving Flint River water. State regulators wrongly decided that treatment to control pipe corrosion was not needed right away. The city switched back to Detroit water on Oct. 16, 2015. The governor's task force found that "emergency managers, not locally elected officials, made the decision" ([Flint Water Advisory Task Force, 2016, pp. 20, 25 and 44](https://www.michigan.gov/-/media/Project/Websites/formergovernors/Folder6/FWATF_FINAL_REPORT_21March2016.pdf)).
 
