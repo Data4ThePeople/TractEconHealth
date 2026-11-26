@@ -30,6 +30,7 @@ from d4tp_env import read_env_file
 KEY = read_env_file(Path.home() / ".claude/d4tp-process/.env")["CENSUS_API_KEY"]
 NH = RAW / "nhgis"
 AREAS = {"U034": dict(name="North Birmingham", st="01", co="073", nst="Alabama", nco="Jefferson", cmp="Jefferson County", out="northbirmingham"),
+         "U013": dict(name="North and East Flint", st="26", co="049", nst="Michigan", nco="Genesee", cmp="Genesee County", out="northflint"),
          "U028": dict(name="El Segundo Barrio", st="48", co="141", nst="Texas", nco="El Paso", cmp="El Paso County", out="elsegundo"),
          "U039": dict(name="West Baltimore", st="24", co="510", nst="Maryland", nco="Baltimore City", cmp="Baltimore city", out="westbaltimore")}
 CID = sys.argv[1] if len(sys.argv) > 1 else "U034"; A = AREAS[CID]; NAME, CMP = A["name"], A["cmp"]

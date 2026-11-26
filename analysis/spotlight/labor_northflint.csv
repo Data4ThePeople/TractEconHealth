@@ -1,0 +1,81 @@
+year,area,measure,value,num,den,fit,note
+1940,North and East Flint,unemp,10.5,1552,14849,0.717,14+; with a job excludes public emergency work
+1940,North and East Flint,lfp,54.0,14849,27514,0.717,14+
+1940,North and East Flint,epop,45.5,12516,27514,0.717,14+; with a job excludes public emergency work
+1940,North and East Flint,epop_male,69.7,9806,14061,0.717,14+; with a job excludes public emergency work
+1940,North and East Flint,relief_work,2.8,781,27514,0.717,14+; public emergency work
+1940,Genesee County,unemp,8.1,6612,81641,,14+; with a job excludes public emergency work; tracted part of county only
+1940,Genesee County,lfp,53.4,81641,152805,,14+
+1940,Genesee County,epop,46.9,71729,152805,,14+; with a job excludes public emergency work; tracted part of county only
+1940,Genesee County,epop_male,72.6,56048,77237,,14+; with a job excludes public emergency work; tracted part of county only
+1940,Genesee County,relief_work,2.2,3300,152805,,14+; public emergency work
+1950,North and East Flint,unemp,4.7,792,16750,0.714,14+
+1950,North and East Flint,lfp,59.7,16750,28042,0.714,14+
+1950,North and East Flint,epop,56.9,15958,28042,0.714,14+
+1950,North and East Flint,epop_male,83.8,11954,14273,0.714,14+
+1950,Genesee County,unemp,3.0,3032,102243,,14+; tracted part of county only
+1950,Genesee County,lfp,57.2,102243,178721,,14+
+1950,Genesee County,epop,55.5,99211,178721,,14+; tracted part of county only
+1950,Genesee County,epop_male,83.7,74716,89298,,14+; tracted part of county only
+1960,North and East Flint,unemp,10.0,1432,14319,0.723,14+
+1960,North and East Flint,lfp,56.8,14319,25217,0.723,14+
+1960,North and East Flint,epop,51.1,12887,25217,0.723,14+
+1960,North and East Flint,epop_male,72.8,9107,12515,0.723,14+
+1960,Genesee County,unemp,6.0,8474,140941,,14+
+1960,Genesee County,lfp,57.1,140941,246889,,14+
+1960,Genesee County,epop,53.7,132467,246889,,14+
+1960,Genesee County,epop_male,77.6,94087,121191,,14+
+1970,North and East Flint,lfp,57.9,13344,23063,0.795,16+
+1970,North and East Flint,epop,53.3,12297,23063,0.795,16+
+1970,North and East Flint,unemp,7.9,1047,13333,0.795,16+
+1970,Genesee County,lfp,59.2,168551,284640,,16+
+1970,Genesee County,epop,56.1,159638,284640,,16+
+1970,Genesee County,unemp,5.3,8913,168389,,16+
+1980,North and East Flint,lfp,55.0,11040,20076,0.795,16+
+1980,North and East Flint,epop,44.5,8936,20076,0.795,16+
+1980,North and East Flint,unemp,19.1,2104,11021,0.795,16+
+1980,Genesee County,lfp,61.4,197628,322074,,16+
+1980,Genesee County,epop,52.9,170444,322074,,16+
+1980,Genesee County,unemp,13.8,27184,197506,,16+
+1990,North and East Flint,lfp,53.3,9001,16872,,16+
+1990,North and East Flint,epop,41.5,7005,16872,,16+
+1990,North and East Flint,unemp,22.2,1996,8991,,16+
+1990,Genesee County,lfp,62.3,201366,323396,,16+
+1990,Genesee County,epop,55.5,179428,323396,,16+
+1990,Genesee County,unemp,10.9,21938,201025,,16+
+2000,North and East Flint,lfp,54.6,7971,14593,,16+
+2000,North and East Flint,epop,45.3,6608,14593,,16+
+2000,North and East Flint,unemp,17.1,1363,7971,,16+
+2000,Genesee County,lfp,63.1,207808,329331,,16+
+2000,Genesee County,epop,58.6,193018,329331,,16+
+2000,Genesee County,unemp,7.1,14790,207759,,16+
+2008-2012,North and East Flint,unemp,27.3,1672,6131,,16+
+2008-2012,North and East Flint,lfp,49.2,6131,12465,,16+
+2008-2012,North and East Flint,epop,35.8,4459,12465,,16+
+2008-2012,North and East Flint,prime_lfp,63.7,4562,7161,,25-54
+2008-2012,North and East Flint,prime_epop,47.0,3366,7161,,25-54
+2008-2012,North and East Flint,prime_epop_male,46.6,1641,3523,,men 25-54
+2008-2012,Genesee County,unemp,16.1,30905,192375,,16+
+2008-2012,Genesee County,lfp,58.0,192565,332167,,16+
+2008-2012,Genesee County,epop,48.7,161660,332167,,16+
+2008-2012,Genesee County,prime_lfp,78.3,133008,169836,,25-54
+2008-2012,Genesee County,prime_epop,66.8,113510,169836,,25-54
+2008-2012,Genesee County,prime_epop_male,68.7,56298,81902,,men 25-54
+2020-2024,North and East Flint,unemp,17.5,797,4553,,16+
+2020-2024,North and East Flint,lfp,52.5,4553,8670,,16+
+2020-2024,North and East Flint,epop,43.3,3756,8670,,16+
+2020-2024,North and East Flint,prime_lfp,67.1,3365,5012,,25-54
+2020-2024,North and East Flint,prime_epop,56.4,2825,5012,,25-54
+2020-2024,North and East Flint,prime_epop_male,54.6,1419,2601,,men 25-54
+2020-2024,Genesee County,unemp,8.1,15301,189612,,16+
+2020-2024,Genesee County,lfp,58.5,189680,324071,,16+
+2020-2024,Genesee County,epop,53.8,174379,324071,,16+
+2020-2024,Genesee County,prime_lfp,81.0,120941,149278,,25-54
+2020-2024,Genesee County,prime_epop,75.6,112795,149278,,25-54
+2020-2024,Genesee County,prime_epop_male,79.0,57297,72502,,men 25-54
+2000,North and East Flint,prime_lfp,67.9,5662,8337,,25-54
+2000,North and East Flint,prime_epop,58.2,4856,8337,,25-54
+2000,North and East Flint,prime_epop_male,62.9,2519,4007,,men 25-54
+2000,Genesee County,prime_lfp,79.4,150207,189240,,25-54
+2000,Genesee County,prime_epop,75.0,141868,189240,,25-54
+2000,Genesee County,prime_epop_male,80.9,73571,90947,,men 25-54

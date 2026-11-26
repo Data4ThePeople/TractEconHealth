@@ -1,0 +1,168 @@
+area,year,measure,value
+North and East Flint,1990,people,23592.0
+North and East Flint,1990,white,15027.0
+North and East Flint,1990,black,7588.0
+North and East Flint,1990,occupied_homes,9259.0
+North and East Flint,1990,vacant_homes,928.0
+North and East Flint,1990,homes,10187.0
+Rest of Flint,1990,people,117333.73000000001
+Rest of Flint,1990,white,54771.04
+Rest of Flint,1990,black,60049.09
+Rest of Flint,1990,occupied_homes,44696.259999999995
+Rest of Flint,1990,vacant_homes,3904.71
+Rest of Flint,1990,homes,48600.969999999994
+Genesee County,1990,people,430458.97
+Genesee County,1990,white,336650.99
+Genesee County,1990,black,84257.0
+Genesee County,1990,occupied_homes,161295.99
+Genesee County,1990,vacant_homes,9512.009999999998
+Genesee County,1990,homes,170808.0
+North and East Flint,2000,people,20537.0
+North and East Flint,2000,white,11528.0
+North and East Flint,2000,black,7535.0
+North and East Flint,2000,occupied_homes,7960.0
+North and East Flint,2000,vacant_homes,1274.0
+North and East Flint,2000,homes,9234.0
+Rest of Flint,2000,people,104417.0
+Rest of Flint,2000,white,40189.0
+Rest of Flint,2000,black,59025.0
+Rest of Flint,2000,occupied_homes,40788.0
+Rest of Flint,2000,vacant_homes,5446.0
+Rest of Flint,2000,homes,46234.0
+Genesee County,2000,people,436141.0
+Genesee County,2000,white,328350.0
+Genesee County,2000,black,88843.0
+Genesee County,2000,occupied_homes,169825.0
+Genesee County,2000,vacant_homes,13805.0
+Genesee County,2000,homes,183630.0
+North and East Flint,2010,people,16483.0
+North and East Flint,2010,white,7913.0
+North and East Flint,2010,black,7266.0
+North and East Flint,2010,occupied_homes,6289.0
+North and East Flint,2010,vacant_homes,2008.0
+North and East Flint,2010,homes,8297.0
+Rest of Flint,2010,people,85955.0
+Rest of Flint,2010,white,30419.0
+Rest of Flint,2010,black,50673.0
+Rest of Flint,2010,occupied_homes,34184.0
+Rest of Flint,2010,vacant_homes,8841.0
+Rest of Flint,2010,homes,43025.0
+Genesee County,2010,people,425790.0
+Genesee County,2010,white,317393.0
+Genesee County,2010,black,88127.0
+Genesee County,2010,occupied_homes,169202.0
+Genesee County,2010,vacant_homes,22978.0
+Genesee County,2010,homes,192180.0
+North and East Flint,2020,people,11704.0
+North and East Flint,2020,white,4886.0
+North and East Flint,2020,black,5476.0
+North and East Flint,2020,occupied_homes,4826.0
+North and East Flint,2020,vacant_homes,968.0
+North and East Flint,2020,homes,5794.0
+Rest of Flint,2020,people,69550.20000000001
+Rest of Flint,2020,white,22647.87
+Rest of Flint,2020,black,40237.93
+Rest of Flint,2020,occupied_homes,28733.91
+Rest of Flint,2020,vacant_homes,6050.870000000001
+Rest of Flint,2020,homes,34784.78
+Genesee County,2020,people,406210.93
+Genesee County,2020,white,289254.97
+Genesee County,2020,black,79913.98999999999
+Genesee County,2020,occupied_homes,167117.93
+Genesee County,2020,vacant_homes,15969.0
+Genesee County,2020,homes,183086.93
+North and East Flint,2000,children,6524.2544642807
+North and East Flint,2010,children,4740.0
+North and East Flint,2020,children,3289.4472044953295
+Rest of Flint,2000,children,31716.7455357193
+Rest of Flint,2010,children,23174.0
+Rest of Flint,2020,children,17295.12488093126
+Genesee County,2000,children,119601.0
+Genesee County,2010,children,106579.0
+Genesee County,2020,children,90301.85852144325
+North and East Flint (2020 tracts),2020,children,3289.0
+North and East Flint (2020 tracts),2020,people,11704.0
+North and East Flint,1990-2000,people_change_pct,-12.949304849101395
+North and East Flint,2000-2010,people_change_pct,-19.739981496810632
+North and East Flint,2010-2020,people_change_pct,-28.993508463265183
+North and East Flint,2000-2010,children_change_pct,-27.348020743967318
+North and East Flint,2010-2020,children_change_pct,-30.602379651997268
+North and East Flint,1990-2000,homes_change_pct,-9.355060371061153
+North and East Flint,2000-2010,homes_change_pct,-10.147281784708683
+North and East Flint,2010-2020,homes_change_pct,-30.16753043268652
+North and East Flint,1990-2000,occupied_homes_change_pct,-14.029592828599203
+North and East Flint,2000-2010,occupied_homes_change_pct,-20.99246231155779
+North and East Flint,2010-2020,occupied_homes_change_pct,-23.262839879154072
+North and East Flint,1990-2000,white_change_pct,-23.28475410926998
+North and East Flint,2000-2010,white_change_pct,-31.358431644691187
+North and East Flint,2010-2020,white_change_pct,-38.253506887400476
+North and East Flint,1990-2000,black_change_pct,-0.6984712704269924
+North and East Flint,2000-2010,black_change_pct,-3.5700066357000626
+North and East Flint,2010-2020,black_change_pct,-24.635287641067993
+North and East Flint,1990,black_pct,32.16344523567311
+North and East Flint,1990,vacant_pct,9.109649553352313
+North and East Flint,2000,black_pct,36.689876807712906
+North and East Flint,2000,vacant_pct,13.79683777344596
+North and East Flint,2000,children_pct,31.76829363724351
+North and East Flint,2010,black_pct,44.08178122914518
+North and East Flint,2010,vacant_pct,24.20151862118838
+North and East Flint,2010,children_pct,28.75690104956622
+North and East Flint,2020,black_pct,46.787423103212575
+North and East Flint,2020,vacant_pct,16.70693821194339
+North and East Flint,2020,children_pct,28.105324713733165
+Rest of Flint,1990-2000,people_change_pct,-11.008539488176172
+Rest of Flint,2000-2010,people_change_pct,-17.68102895122442
+Rest of Flint,2010-2020,people_change_pct,-19.085335349892375
+Rest of Flint,2000-2010,children_change_pct,-26.93449593085926
+Rest of Flint,2010-2020,children_change_pct,-25.368409075121857
+Rest of Flint,1990-2000,homes_change_pct,-4.870211438166761
+Rest of Flint,2000-2010,homes_change_pct,-6.9407795129125756
+Rest of Flint,2010-2020,homes_change_pct,-19.15216734456712
+Rest of Flint,1990-2000,occupied_homes_change_pct,-8.744042566425014
+Rest of Flint,2000-2010,occupied_homes_change_pct,-16.191036579386097
+Rest of Flint,2010-2020,occupied_homes_change_pct,-15.943394570559322
+Rest of Flint,1990-2000,white_change_pct,-26.62363175868123
+Rest of Flint,2000-2010,white_change_pct,-24.310134613949085
+Rest of Flint,2010-2020,white_change_pct,-25.546960781090768
+Rest of Flint,1990-2000,black_change_pct,-1.7054213477672997
+Rest of Flint,2000-2010,black_change_pct,-14.14993646759848
+Rest of Flint,2010-2020,black_change_pct,-20.59295877488998
+Rest of Flint,1990,black_pct,51.17802868791438
+Rest of Flint,1990,vacant_pct,8.034222362228574
+Rest of Flint,2000,black_pct,56.528151546204164
+Rest of Flint,2000,vacant_pct,11.779210105117446
+Rest of Flint,2000,children_pct,30.37507832605735
+Rest of Flint,2010,black_pct,58.95294049211797
+Rest of Flint,2010,vacant_pct,20.54851830331203
+Rest of Flint,2010,children_pct,26.960618928509103
+Rest of Flint,2020,black_pct,57.854513718148894
+Rest of Flint,2020,vacant_pct,17.395165356802604
+Rest of Flint,2020,children_pct,24.86711020375392
+Genesee County,1990-2000,people_change_pct,1.3199934014617165
+Genesee County,2000-2010,people_change_pct,-2.3733150517837087
+Genesee County,2010-2020,people_change_pct,-4.59829258554687
+Genesee County,2000-2010,children_change_pct,-10.88786883052817
+Genesee County,2010-2020,children_change_pct,-15.272372116980593
+Genesee County,1990-2000,homes_change_pct,7.506674160460869
+Genesee County,2000-2010,homes_change_pct,4.656101944126778
+Genesee County,2010-2020,homes_change_pct,-4.731538141325842
+Genesee County,1990-2000,occupied_homes_change_pct,5.2878003972696375
+Genesee County,2000-2010,occupied_homes_change_pct,-0.366848226115124
+Genesee County,2010-2020,occupied_homes_change_pct,-1.2317052989917365
+Genesee County,1990-2000,white_change_pct,-2.465755410373216
+Genesee County,2000-2010,white_change_pct,-3.336987970153804
+Genesee County,2010-2020,white_change_pct,-8.865359349450063
+Genesee County,1990-2000,black_change_pct,5.442871215447975
+Genesee County,2000-2010,black_change_pct,-0.8059160541629584
+Genesee County,2010-2020,black_change_pct,-9.319516152824914
+Genesee County,1990,black_pct,19.57375867902114
+Genesee County,1990,vacant_pct,5.568831670647744
+Genesee County,2000,black_pct,20.370247236558818
+Genesee County,2000,vacant_pct,7.517834776452649
+Genesee County,2000,children_pct,27.422553715426893
+Genesee County,2010,black_pct,20.697292092345993
+Genesee County,2010,vacant_pct,11.956499115412633
+Genesee County,2010,children_pct,25.030883768994105
+Genesee County,2020,black_pct,19.6730280005021
+Genesee County,2020,vacant_pct,8.722086278905874
+Genesee County,2020,children_pct,22.230287727965187
