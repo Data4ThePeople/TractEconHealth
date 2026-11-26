@@ -46,6 +46,11 @@ Life expectancy here, 76.7 years, is about two years below the U.S. figure. That
 
 For more than a century, this neighborhood was a first home for families arriving from Mexico. The National Register of Historic Places calls it "a landing place for immigrants" ([National Register nomination, 2021](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)). Over that time it lost land and housing again and again. This post walks through those losses in order, with a link to the source for each one.
 
+The map below shows where the neighborhood sits, just south of downtown El Paso. No part of the six tracts is more than about 1.4 miles from the Rio Grande, the border with Ciudad Juárez, Mexico.
+
+![Map of El Paso and Ciudad Juárez with El Segundo Barrio and Chamizal's six census tracts shaded pink just south of downtown El Paso. The tracts run along the Rio Grande, which forms the U.S.-Mexico border, with Ciudad Juárez directly across the river. An inset shows the location at the far western tip of Texas.](images/00b-locator.png)
+*Census Bureau tract, state and road files. The border follows the river's current channel.*
+
 ## 1916 and 1917
 
 ::: spacer 5px
