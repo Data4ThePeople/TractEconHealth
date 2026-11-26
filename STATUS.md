@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-el-segundo-barrio
-Step: back in Step 1 for an independent tie-out of the story-first analyses (homes, crowding, birthplace, diabetes and age, insurance, maps). 2b edits done; 2c waits on the tie-out. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
+Step: 2b (Eric's full read). Step 1 re-closed by Eric 2026-11-26 after the independent tie-out and re-check. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
 Since: 2026-11-26
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -36,7 +36,7 @@ Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 co
 
 ## Stale
 
-- spotlight-el-segundo-barrio, 2026-11-26: new analyses built during 2b; post back in Step 1 until the independent tie-out is done and resolved.
+None.
 
 ## Log
 
@@ -97,3 +97,4 @@ Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 co
 - 2026-11-26 Story-first method written up in ~/.claude/d4tp-process/STORY_FIRST.md (linked from PROCESS.md). Eric: apply it to the other six spotlights after El Segundo.
 - 2026-11-26 El Segundo back in Step 1: independent tie-out agent launched on the new analyses. Rule added to PROCESS.md: new or changed analysis after Step 1 reopens Step 1.
 - 2026-11-26 El Segundo: independent tie-out findings fixed (36f10e5) and re-checked by a fresh agent, all values match; wording edits 1-2 applied; new title and subtitle. Waiting on Eric to close Step 1.
+- 2026-11-26 spotlight-el-segundo-barrio: Eric closed Step 1 (independent tie-out done, findings fixed, re-check clean). Back to 2b.
