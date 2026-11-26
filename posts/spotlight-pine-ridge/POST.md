@@ -117,7 +117,7 @@ The U.S. Commission on Civil Rights says Native American health care "has been c
 The chart below compares life expectancy in Oglala Lakota County with South Dakota and the country.
 
 ![Bar chart of life expectancy at birth, 2021 to 2023: Oglala Lakota County 58.4 years, South Dakota 77.4 years, United States 77.6 years.](images/04-life-expectancy.png)
-*Life expectancy from [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), based on death records, for the whole county.*
+*Life expectancy from County Health Rankings & Roadmaps, based on death records, for the whole county.*
 
 ## What has changed
 

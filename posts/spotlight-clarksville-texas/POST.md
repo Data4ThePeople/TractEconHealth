@@ -105,7 +105,7 @@ In August 2014, East Texas Medical Center said it would not renew its lease on t
 The chart below compares life expectancy in Red River County with Texas and the country.
 
 ![Bar chart of life expectancy at birth, 2021 to 2023: Red River County 70.6 years, Texas 77.2 years, United States 77.6 years.](images/04-life-expectancy.png)
-*Life expectancy from [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), based on death records, for the whole county, not Clarksville alone.*
+*Life expectancy from County Health Rankings & Roadmaps, based on death records, for the whole county, not Clarksville alone.*
 
 ## What has changed
 

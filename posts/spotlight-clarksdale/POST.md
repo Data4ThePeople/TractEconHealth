@@ -117,7 +117,7 @@ Over the same years, the share of homes standing empty rose. The share of people
 The health numbers in the table at the top are today's. We do not have tract health data from earlier decades, so we cannot show how health here changed over time. For the whole county, we can compare life expectancy with the state and the country. The chart below shows it for 2021 to 2023.
 
 ![Bar chart of life expectancy at birth, 2021 to 2023: Coahoma County 65.3 years, Mississippi 72.5 years, United States 77.6 years.](images/04-life-expectancy.png)
-*Life expectancy from [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation), based on death records.*
+*Life expectancy from County Health Rankings & Roadmaps, based on death records.*
 
 ::: divider
 
