@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-el-segundo-barrio
-Step: 2f (push to Prismic) next. 2b-2e done 2026-11-26; 2f waits on the photo words check. Step 1 re-closed by Eric 2026-11-26 after the independent tie-out and re-check. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
+Step: 2f (push to Prismic) next. 2b-2e done 2026-11-26; Photo words check done. Step 1 re-closed by Eric 2026-11-26 after the independent tie-out and re-check. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
 Since: 2026-11-26
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -102,3 +102,4 @@ None.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2c. 2d started.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2d (hero: Danny Lyon, DOCUMERICA, June 1972, NARA 545350). Five in-post photos added with plain-text captions and linked credits in methods. Importer now also blocks visible words over 30 characters.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2e (meta, keywords, Common questions, links to the three earlier spotlights).
+- 2026-11-26 spotlight-el-segundo-barrio: independent photo words check done; all credits, dates, licenses and places supported; alt-text and credit fixes applied.
