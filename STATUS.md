@@ -103,3 +103,4 @@ None.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2d (hero: Danny Lyon, DOCUMERICA, June 1972, NARA 545350). Five in-post photos added with plain-text captions and linked credits in methods. Importer now also blocks visible words over 30 characters.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2e (meta, keywords, Common questions, links to the three earlier spotlights).
 - 2026-11-26 spotlight-el-segundo-barrio: independent photo words check done; all credits, dates, licenses and places supported; alt-text and credit fixes applied.
+- 2026-11-26 spotlight-el-segundo-barrio: 2f pushed as draft awhAohEAAC4ANVK7 in the Migration Release (103 slices, 17 uploads); publish 2026-11-26 9:00 a.m. CST. Waiting on Eric to confirm 2f.

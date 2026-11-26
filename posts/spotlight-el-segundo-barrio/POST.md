@@ -3,8 +3,8 @@ title: "In El Segundo Barrio, 58% Live in Poverty and 58% of Working-Age Adults 
 prismic_label: "In El Segundo Barrio, 58% Live in Poverty and 58% of Working-Age Adults Have No Health Insurance"
 subtitle: A 1916 cleanup, a border treaty, clearance projects and code sweeps took homes from El Paso's oldest Mexican American neighborhoods, which now have half as many homes as in 1960. People born in the U.S. here are as likely to be poor as immigrants.
 slug: spotlight-el-segundo-barrio
-date:
-time:
+date: 2026-11-26
+time: 09:00:00-06:00
 section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-el-segundo-barrio-hero-1680x1080.png
