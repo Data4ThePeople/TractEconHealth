@@ -8,7 +8,7 @@ time:
 section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-el-segundo-barrio-hero-1680x1080.png
-hero_alt:
+hero_alt: "Three young women talk beside a parked car on a street in El Paso's Second Ward in June 1972. Behind them stands a long two-story red brick tenement with an iron balcony along the upper floor, where laundry hangs from lines. A few men stand by the doorways below, and older cars line the curb in the late-day light."
 meta_title:
 description:
 keywords:
@@ -206,5 +206,6 @@ Federal rules are changing in 2026 and 2027. The Medicaid work requirements in t
 - **Homes, crowding and birthplace.** Census counts from 1960 to 2000 come from [NHGIS (IPUMS)](https://www.nhgis.org/), fitted to today's tract lines; 2010 and 2020 are census counts; 2008-2012 and 2020-2024 are [American Community Survey](https://www.census.gov/programs-surveys/acs) estimates. Census plumbing questions changed over time, so we compare only today's plumbing numbers.
 - **Health insurance.** [American Community Survey](https://www.census.gov/programs-surveys/acs) 2020-2024 tables B27010 (coverage by type and age), C27007 (Medicaid by age) and B27020 (coverage by place of birth and citizenship), summed across the six tracts. Medicaid here includes other means-tested public coverage, such as CHIP.
 - **Diabetes and age.** We applied Texas's 2023 diabetes rates by age group, from CDC's [Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/), to the neighborhood's adults by age from the American Community Survey 2020-2024.
+- **Hero photo.** El Paso's Second Ward, June 1972, by Danny Lyon for the EPA's DOCUMERICA project, [National Archives](https://catalog.archives.gov/id/545350) via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:EL_PASO%27S_SECOND_WARD,_A_CHICANO_NEIGHBORHOOD,_WHICH_IS_LOSING_ITS_ETHNIC_FLAVOR_IN_THE_WAKE_OF_URBAN_RENEWAL_-_NARA_-_545350.jpg). Public domain. Cropped.
 - **River map.** U.S. Geological Survey historical topographic maps, El Paso and Ysleta NW sheets, 1:24,000, 1955 (public domain), from [topoView](https://ngmdb.usgs.gov/topoview/). Today's border is from the Census Bureau's 2020 state boundary file.
 - **Diabetes.** [CDC PLACES](https://www.cdc.gov/places/) 2025 tract estimates. The county, state and U.S. values are averages of their tracts, weighted by adult population.
