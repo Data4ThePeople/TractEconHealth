@@ -1,0 +1,63 @@
+year,area,measure,value,num,den,fit,note
+1960,El Segundo Barrio,unemp,10.6,1658,15620,0.942,14+
+1960,El Segundo Barrio,lfp,52.9,15620,29554,0.942,14+
+1960,El Segundo Barrio,epop,47.2,13962,29554,0.942,14+
+1960,El Segundo Barrio,epop_male,66.7,8945,13404,0.942,14+
+1960,El Paso County,unemp,5.1,6054,117964,,14+
+1960,El Paso County,lfp,58.9,117964,200137,,14+
+1960,El Paso County,epop,55.9,111910,200137,,14+
+1960,El Paso County,epop_male,79.9,80226,100415,,14+
+1970,El Segundo Barrio,lfp,48.7,9857,20245,0.945,16+
+1970,El Segundo Barrio,epop,45.0,9116,20245,0.945,16+
+1970,El Segundo Barrio,unemp,7.6,741,9802,0.945,16+
+1970,El Paso County,lfp,57.2,130614,228308,,16+
+1970,El Paso County,epop,54.6,124708,228308,,16+
+1970,El Paso County,unemp,5.2,5906,112819,,16+
+1980,El Segundo Barrio,lfp,47.6,8300,17455,0.944,16+
+1980,El Segundo Barrio,epop,41.5,7243,17455,0.944,16+
+1980,El Segundo Barrio,unemp,12.7,1057,8293,0.944,16+
+1980,El Paso County,lfp,60.9,197910,325222,,16+
+1980,El Paso County,epop,56.5,183675,325222,,16+
+1980,El Paso County,unemp,8.0,14235,178379,,16+
+1990,El Segundo Barrio,lfp,44.9,7230,16091,,16+
+1990,El Segundo Barrio,epop,36.5,5868,16091,,16+
+1990,El Segundo Barrio,unemp,18.9,1361,7207,,16+
+1990,El Paso County,lfp,61.3,258624,421824,,16+
+1990,El Paso County,epop,55.2,232668,421824,,16+
+1990,El Paso County,unemp,10.7,25956,242746,,16+
+2000,El Segundo Barrio,lfp,41.1,5794,14103,,16+
+2000,El Segundo Barrio,epop,32.1,4532,14103,,16+
+2000,El Segundo Barrio,unemp,21.8,1261,5790,,16+
+2000,El Paso County,lfp,56.5,274811,486398,,16+
+2000,El Paso County,epop,51.3,249582,486398,,16+
+2000,El Paso County,unemp,9.5,25229,265952,,16+
+2008-2012,El Segundo Barrio,unemp,11.0,635,5750,,16+
+2008-2012,El Segundo Barrio,lfp,48.6,5750,11840,,16+
+2008-2012,El Segundo Barrio,epop,43.2,5115,11840,,16+
+2008-2012,El Segundo Barrio,prime_lfp,70.6,3753,5319,,25-54
+2008-2012,El Segundo Barrio,prime_epop,64.4,3424,5319,,25-54
+2008-2012,El Segundo Barrio,prime_epop_male,74.9,1655,2209,,men 25-54
+2008-2012,El Paso County,unemp,8.2,28136,342473,,16+
+2008-2012,El Paso County,lfp,60.7,357931,589554,,16+
+2008-2012,El Paso County,epop,55.9,329795,589554,,16+
+2008-2012,El Paso County,prime_lfp,77.9,244037,313456,,25-54
+2008-2012,El Paso County,prime_epop,73.1,228988,313456,,25-54
+2008-2012,El Paso County,prime_epop_male,82.9,124583,150315,,men 25-54
+2020-2024,El Segundo Barrio,unemp,10.6,507,4798,,16+
+2020-2024,El Segundo Barrio,lfp,43.2,4834,11191,,16+
+2020-2024,El Segundo Barrio,epop,38.7,4327,11191,,16+
+2020-2024,El Segundo Barrio,prime_lfp,66.0,2809,4259,,25-54
+2020-2024,El Segundo Barrio,prime_epop,58.3,2483,4259,,25-54
+2020-2024,El Segundo Barrio,prime_epop_male,67.5,1197,1774,,men 25-54
+2020-2024,El Paso County,unemp,6.0,24022,400191,,16+
+2020-2024,El Paso County,lfp,62.6,419390,670154,,16+
+2020-2024,El Paso County,epop,59.0,395368,670154,,16+
+2020-2024,El Paso County,prime_lfp,79.7,275056,344934,,25-54
+2020-2024,El Paso County,prime_epop,75.9,261926,344934,,25-54
+2020-2024,El Paso County,prime_epop_male,83.1,145959,175655,,men 25-54
+2000,El Segundo Barrio,prime_lfp,59.0,4030,6831,,25-54
+2000,El Segundo Barrio,prime_epop,47.7,3258,6831,,25-54
+2000,El Segundo Barrio,prime_epop_male,59.2,1721,2908,,men 25-54
+2000,El Paso County,prime_lfp,70.1,194372,277294,,25-54
+2000,El Paso County,prime_epop,62.9,174496,277294,,25-54
+2000,El Paso County,prime_epop_male,71.1,93770,131925,,men 25-54

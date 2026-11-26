@@ -10,7 +10,8 @@ import sys
 from pathlib import Path
 import pandas as pd, requests
 ROOT = Path(__file__).resolve().parents[1]; RAW = ROOT / "data/raw/lodes"; RAW.mkdir(parents=True, exist_ok=True)
-AREAS = {"U034": dict(name="North Birmingham", st="al", county="01073", cname="Jefferson County", out="northbirmingham")}
+AREAS = {"U034": dict(name="North Birmingham", st="al", county="01073", cname="Jefferson County", out="northbirmingham"),
+         "U028": dict(name="El Segundo Barrio", st="tx", county="48141", cname="El Paso County", out="elsegundo")}
 CID = sys.argv[1] if len(sys.argv) > 1 else "U034"; A = AREAS[CID]
 T = pd.read_csv(ROOT / "analysis/spotlight/final_sets.csv", dtype={"tracts": str}).set_index("cand_id").loc[CID].tracts.split(";")
 rows = []

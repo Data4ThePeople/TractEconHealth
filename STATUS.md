@@ -5,9 +5,9 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: spotlight-north-birmingham
-Step: published 2026-11-25 8:00 a.m. CST (2f confirmed; draft awbmPhEAACgA_8Jo). Next city post starts 2026-11-26.
-Since: 2026-11-25
+Post: spotlight-el-segundo-barrio
+Step: 2b (Eric's edit, Claude's look-over). North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
+Since: 2026-11-26
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
 
@@ -89,3 +89,4 @@ None.
 - 2026-11-25 spotlight-west-baltimore: 2f confirmed; title changed to "West Baltimore Wasn't Forgotten. It Was Fenced In, Redlined and Bulldozed." Steps 3 and 4 for West Dayton and West Baltimore deferred to a later week.
 - 2026-11-25 spotlight-north-birmingham: 2b-2e confirmed; publish moved to 8:00 a.m. CST; 2f pushed as draft awbmPhEAACgA_8Jo (Migration Release); title "North Birmingham Got the Coke Plants' Pollution, but Few of Their Jobs". 2g skipped (Friday summary email); steps 3-4 deferred.
 - 2026-11-25 spotlight-north-birmingham: published 8:00 a.m. CST. Steps 3-4 for all published spotlights deferred to mid-December; through Dec. 4, posts go only through publishing. Next city post 2026-11-26.
+- 2026-11-26 Moved to spotlight-el-segundo-barrio, 2b. Quotes checked verbatim against the National Register nomination and Dallas Fed 2002 (all match). Labor, industry, home value and LODES pulls run for U028. CDC PLACES has no food insecurity measure for Texas.
