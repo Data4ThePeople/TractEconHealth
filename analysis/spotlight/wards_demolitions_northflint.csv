@@ -1,0 +1,18 @@
+kind,key,share_of_tract_land,water_over15_pct,ebll_pre_pct,ebll_post_pct,value,city_total
+ward,Ward 1,0.0,10.0,0.0,2.8,,
+ward,Ward 2,0.039,25.0,0.0,1.4,,
+ward,Ward 3,0.545,18.0,1.0,4.5,,
+ward,Ward 4,0.306,6.0,3.1,1.7,,
+ward,Ward 5,0.107,32.0,4.9,15.7,,
+ward,Ward 6,0.0,28.0,2.2,9.3,,
+ward,Ward 7,0.0,28.0,5.4,5.9,,
+ward,Ward 8,0.0,20.0,2.7,1.4,,
+ward,Ward 9,0.0,20.0,3.4,1.6,,
+ward,Wards 3-4-5 meeting point inside tracts,,,,,1.0,
+demolition_permits,2015,,,,,31.0,494.0
+demolition_permits,2016,,,,,61.0,558.0
+demolition_permits,2017,,,,,55.0,550.0
+demolition_permits,2018,,,,,107.0,891.0
+demolition_permits,2019,,,,,282.0,787.0
+demolition_permits,2015-2019,,,,,536.0,3280.0
+demolition_permits,2015-2019 single family,,,,,534.0,3241.0
