@@ -127,7 +127,7 @@ Clothing jobs in El Paso County fell from 16,150 in 1990 to 1,310 in 2019, a dro
 
 These are county jobs, and the National Register nomination says many garment workers crossed daily from Juárez. But census counts show how many people living here worked in manufacturing, which includes clothing. In 1970 and 1980, about 30% of working residents in the six tracts had manufacturing jobs, compared with 17% to 19% across El Paso County. By 2020-2024, it was 9%. Over the same years, the number of working residents fell from about 8,300 in 1970 to about 4,300 ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.C24050)).
 
-The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty in the six tracts. About 83% of people here have low incomes, compared with 28% nationwide.
+Incomes here were low before the garment jobs left, and they stayed low after. The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty in the six tracts. About 83% of people here have low incomes, compared with 28% nationwide.
 
 ![Line chart of three shares for six tracts. People below 200% of the poverty line: 90% in 1990, 85% in 2000, 84% in 2008-2012 and 83% in 2020-2024. Homes vacant: 8% in 1990, 8% in 2000, 6% in 2010 and 14% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
 *Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
