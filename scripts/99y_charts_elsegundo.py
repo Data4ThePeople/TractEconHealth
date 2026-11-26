@@ -105,3 +105,18 @@ credit(fig, "Source: CDC PLACES 2025 (2023 model estimates, weighted by adult po
             "Census Bureau, American Community Survey 2020-2024 (adults by age).")
 fig.savefig(OUT / "04b-diabetes-age.png"); plt.close(fig)
 print("homes", homes); print("people per home", {k: round(v, 2) for k, v in pph.items()}); print("crowding", cr); print(pv)
+
+# 07: uninsured working-age adults (analysis/spotlight/insurance_elsegundo.csv from scripts/99z_insurance_elsegundo.py)
+I = pd.read_csv(A / "insurance_elsegundo.csv").set_index(["area", "measure"])
+areas = [(ES, "El Segundo Barrio\nand Chamizal", BLUE), (CO, "El Paso County", INK_DIM), ("Texas", "Texas", INK_DIM), ("United States", "United States", MUTED)]
+fig, ax = plt.subplots(figsize=(10, 5.8)); fig.subplots_adjust(left=0.08, right=0.97, top=0.74, bottom=0.16)
+for i, (a, lab, col) in enumerate(areas):
+    v = I.loc[(a, "uninsured_19_64_pct"), "pct"]
+    ax.bar(i, v, width=0.55, color=col); ax.annotate(f"{v:.0f}%", (i, v), xytext=(0, 6), textcoords="offset points", ha="center", color=INK, fontsize=12)
+ax.set_xticks(range(4)); ax.set_xticklabels([a[1] for a in areas], color=INK, fontsize=10.5); ax.set_ylim(0, 70)
+ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); style(ax)
+m = I.loc[(ES, "uninsured_19_64_pct"), "moe_pts"]
+titleblock(fig, "Most working-age adults here have no health insurance",
+           f"Share of people ages 19 to 64 with no health insurance, 2020-2024. In the six tracts the margin of error is\nabout {m:.0f} points.")
+credit(fig, "Source: Census Bureau, American Community Survey 2020-2024 five-year estimates, table B27010, summed across the six tracts.")
+fig.savefig(OUT / "07-uninsured.png"); plt.close(fig)

@@ -140,6 +140,12 @@ Poverty was already above 50% in 1970, the first year in our data. It peaked in 
 
 In 2006 and 2007, a downtown plan drawn up over two years by a private business group, the Paso del Norte Group, targeted about 325 acres between I-10 and the border, including Segundo Barrio. The Texas Observer reported that nearly 168 acres would probably be bulldozed and 157 acres would become a historic zone, and that the city would not rule out eminent domain ([Texas Observer, 2007](http://web.archive.org/web/20260614071230/https://www.texasobserver.org/2483-eminent-disaster-a-cabal-of-politicians-and-profiteers-targets-an-el-paso-barrio/)). Eminent domain was never used for the project. By the end of the decade, the plan, "at least as initially conceived," had "lost steam," the Texas Tribune later reported. In 2009, Texas voters approved a state constitutional amendment tightening eminent domain rules ([Texas Tribune, 2018](https://www.texastribune.org/2018/09/04/cruz-orourke-el-paso-eminent-domain/)). Historian David Dorado Romo helped form Paso del Sur, a group that opposed the plan. In his view, "We were able to stop the complete destruction of the Segundo Barrio because of the huge recession in 2008" ([Longreads, 2018](https://longreads.com/2018/11/16/the-city-i-love-is-destroying-itself-2/)).
 
+## Recognition
+
+::: spacer 5px
+
+In February 2016, Preservation Texas named Segundo Barrio one of the 14 Most Endangered Places in Texas ([El Paso Inc., 2016](http://web.archive.org/web/20250829103104/https://www.elpasoinc.com/news/local_news/article_31e7c5ca-d990-11e5-be6f-f7d4a2605132.html)). On Nov. 3, 2021, the Segundo Barrio Historic District was listed on the National Register of Historic Places, with 688 contributing buildings and other resources ([National Park Service, 2021](https://www.nps.gov/subjects/nationalregister/weekly-list-2021-11-05.htm); [National Register nomination, p. 12](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)).
+
 ## Stuck, not passing through
 
 ::: spacer 5px
@@ -171,11 +177,20 @@ Part of the reason could be age. Adults here are older than in the county: 29% a
 
 Age alone would put the rate at about 14%, less than half of CDC's estimate of 32% ([CDC BRFSS](https://www.cdc.gov/brfss/)). CDC's estimate is itself a model that uses age, sex, race and ethnicity, so it is not a direct count. Still, age explains only a small part of the gap.
 
-## Recognition
+## Sick and uninsured
 
 ::: spacer 5px
 
-In February 2016, Preservation Texas named Segundo Barrio one of the 14 Most Endangered Places in Texas ([El Paso Inc., 2016](http://web.archive.org/web/20250829103104/https://www.elpasoinc.com/news/local_news/article_31e7c5ca-d990-11e5-be6f-f7d4a2605132.html)). On Nov. 3, 2021, the Segundo Barrio Historic District was listed on the National Register of Historic Places, with 688 contributing buildings and other resources ([National Park Service, 2021](https://www.nps.gov/subjects/nationalregister/weekly-list-2021-11-05.htm); [National Register nomination, p. 12](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)).
+Almost a third of adults here have diabetes, and more than half say their health is fair or poor. Many of them have no health insurance. In 2020-2024, 58% of people ages 19 to 64 in the six tracts had no coverage of any kind, compared with 12% nationwide. The chart below compares the neighborhood with El Paso County, Texas and the country.
+
+![Bar chart of the share of people ages 19 to 64 with no health insurance, 2020-2024: El Segundo Barrio and Chamizal 58%, El Paso County 30%, Texas 23%, United States 12%.](images/07-uninsured.png)
+*The margin of error in the six tracts is about 8 points.*
+
+Children here are in a different position. About 78% of children are covered by Medicaid or the Children's Health Insurance Program, and 16% are uninsured. Among adults ages 19 to 64, only 15% have Medicaid, and 11% have coverage only through an employer, compared with 57% nationwide ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B27010); [table C27007](https://data.census.gov/table/ACSDT5Y2024.C27007)).
+
+Part of the reason is how Texas's Medicaid rules work. Texas did not expand Medicaid under the Affordable Care Act. KFF reports that "Texas has the nation's lowest eligibility threshold for parents at 15% FPL," which bars parents in a family of three earning more than $4,098 a year. In states that did not expand, adults under 65 without dependent children generally cannot get Medicaid at any income, apart from Wisconsin and Georgia ([KFF, 2026](https://www.kff.org/medicaid/issue-brief/the-coverage-gap-uninsured-poor-adults-in-states-that-do-not-expand-medicaid/)). Subsidies for marketplace plans start at the poverty line, so many adults below it fall into a gap between the two. In these six tracts, 58% of people live below the poverty line.
+
+Federal rules are changing in 2026 and 2027. The Medicaid work requirements in the 2025 federal budget law, which start in January 2027, apply to adults covered through the Medicaid expansion ([KFF](https://www.kff.org/medicaid/issue-brief/health-provisions-in-the-2025-federal-budget-reconciliation-law/); [Centers for Medicare & Medicaid Services, 2025](https://www.medicaid.gov/federal-policy-guidance/downloads/cib12082025.pdf)). Because Texas has no expansion group, the adults who would face them in other states are mostly uninsured here already. Changes for immigrants do apply in Texas. Since Oct. 1, 2026, federal Medicaid and CHIP funding for lawfully present immigrants has been limited mostly to green card holders, and on Jan. 1, 2027, marketplace subsidies narrow to the same groups ([Georgetown University Center for Children and Families, 2025](https://ccf.georgetown.edu/2025/10/01/new-immigrant-eligibility-restrictions-coming-to-federally-funded-health-coverage/)). About 36% of people here were born outside the U.S., and 48% of residents who are not citizens are already uninsured. Census data do not show immigration status in enough detail to count how many people here these changes reach.
 
 ::: divider
 
@@ -189,6 +204,7 @@ In February 2016, Preservation Texas named Segundo Barrio one of the 14 Most End
 - **The map.** Grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). The map itself is undated; Mapping Inequality files it under 1936.
 - **Clothing jobs.** Bureau of Labor Statistics [Quarterly Census of Employment and Wages](https://www.bls.gov/cew/), El Paso County, private apparel manufacturing (NAICS 315), annual averages.
 - **Homes, crowding and birthplace.** Census counts from 1960 to 2000 come from [NHGIS (IPUMS)](https://www.nhgis.org/), fitted to today's tract lines; 2010 and 2020 are census counts; 2008-2012 and 2020-2024 are [American Community Survey](https://www.census.gov/programs-surveys/acs) estimates. Census plumbing questions changed over time, so we compare only today's plumbing numbers.
+- **Health insurance.** [American Community Survey](https://www.census.gov/programs-surveys/acs) 2020-2024 tables B27010 (coverage by type and age), C27007 (Medicaid by age) and B27020 (coverage by place of birth and citizenship), summed across the six tracts. Medicaid here includes other means-tested public coverage, such as CHIP.
 - **Diabetes and age.** We applied Texas's 2023 diabetes rates by age group, from CDC's [Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/), to the neighborhood's adults by age from the American Community Survey 2020-2024.
 - **River map.** U.S. Geological Survey historical topographic maps, El Paso and Ysleta NW sheets, 1:24,000, 1955 (public domain), from [topoView](https://ngmdb.usgs.gov/topoview/). Today's border is from the Census Bureau's 2020 state boundary file.
 - **Diabetes.** [CDC PLACES](https://www.cdc.gov/places/) 2025 tract estimates. The county, state and U.S. values are averages of their tracts, weighted by adult population.
