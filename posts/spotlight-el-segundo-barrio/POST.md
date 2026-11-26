@@ -59,6 +59,10 @@ In January 1916, after Pancho Villa's troops killed American mining engineers in
 
 On Jan. 28, 1917, up to 500 women protested at the Santa Fe Street bridge against forced "delousing" baths for people crossing from Ciudad Juárez. The protest, known as the Bath House Riots, was started by 17-year-old Carmelita Torres ([National Register nomination, p. 124](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf); [Handbook of Texas](https://www.tshaonline.org/handbook/entries/el-paso-bath-house-riots-1917)).
 
+![A black-and-white photo from 1917. A long line of men in hats and work clothes waits on a fenced wooden walkway between a brick building and a wooden shed at the U.S. disinfection station by the international bridge in El Paso. Steps lead down to the walkway, and utility poles rise in the hazy background.](images/01a-disinfection-station-1917.jpg)
+*People wait at the U.S. disinfection station at the international bridge in El Paso, 1917. Photo: U.S. Public Health Service, public domain.*
+
+
 ## The 1930s map
 
 ::: spacer 5px
@@ -93,11 +97,19 @@ The map below is a 1955 federal map of the area, made before the river was moved
 ![A 1955 U.S. Geological Survey map of South El Paso with today's six census tracts outlined in pink and today's border drawn as a dashed blue line. In 1955 the Rio Grande ran south of today's border. Streets and buildings shown between the old river and the blue line, west and east of Cordova Island, are now in Mexico. The outline wraps the northern part of Cordova Island, which became U.S. land.](images/01b-river-1955.png)
 *U.S. Geological Survey, El Paso and Ysleta NW map sheets, 1955. The border line is simplified from Census Bureau files.*
 
+![A green overhead highway sign reading Bienvenidos a Mexico hangs over a road at the border crossing next to Chamizal National Memorial. A Mexican flag flies on a tall pole to the left, streetlights rise above the road, and leafy trees and a fence fill the foreground under a partly cloudy sky.](images/01c-chamizal-crossing-2016.jpg)
+*A sign welcoming drivers to Mexico, seen from Chamizal National Memorial, 2016. Photo: Ken Lund, CC BY-SA 2.0.*
+
+
 ## Tenements
 
 ::: spacer 5px
 
 In 1967, the city planning department surveyed 3,494 units in 238 tenement buildings. Only 24 had hot and cold running water, and there were 4.2 units for each toilet, mostly outdoors. That year, a tenement fire at 503 S. Mesa St. killed three children, and about 300 people marched to City Hall. A housing code passed in 1968. That year, 76% of the Second Ward's housing was rated "deteriorating or dilapidated" ([National Register nomination, pp. 143 to 144](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)).
+
+![A sunlit alley in El Paso's Second Ward in June 1972, lined on both sides by two- and three-story brick tenement buildings with small windows. Utility poles and wires run down the alley, and graffiti is painted on the brick wall at right.](images/02a-tenement-alley-1972.jpg)
+*Brick tenements on an alley off Third Avenue, June 1972. Photo: Danny Lyon, EPA DOCUMERICA, public domain.*
+
 
 In 1973 and 1974, a city code enforcement drive called the Tenement Eradication Program removed more housing. Residents formed La Campaña Pro Preservación del Barrio in 1974 ([National Register nomination, p. 146](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)). Counting the Chamizal transfer, a park, the code drive and private land deals, the nomination says that from 1960 to the early 1970s the neighborhood lost about a third of its land and "over half of the housing stock disappeared" ([National Register nomination, p. 143](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)).
 
@@ -146,6 +158,10 @@ In 2006 and 2007, a downtown plan drawn up over two years by a private business 
 
 In February 2016, Preservation Texas named Segundo Barrio one of the 14 Most Endangered Places in Texas ([El Paso Inc., 2016](http://web.archive.org/web/20250829103104/https://www.elpasoinc.com/news/local_news/article_31e7c5ca-d990-11e5-be6f-f7d4a2605132.html)). On Nov. 3, 2021, the Segundo Barrio Historic District was listed on the National Register of Historic Places, with 688 contributing buildings and other resources ([National Park Service, 2021](https://www.nps.gov/subjects/nationalregister/weekly-list-2021-11-05.htm); [National Register nomination, p. 12](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)).
 
+![A one-story brick corner store at Sixth Street and St. Vrain in June 1972. The word Abarrotes, Spanish for groceries, and the street number are painted on the brick above the lower walls, which are whitewashed. A screen door sits in the corner entrance, and the shadow of a utility pole falls across the wall.](images/05a-corner-grocery-1972.jpg)
+*A corner grocery at Sixth Street and St. Vrain, June 1972. Photo: Danny Lyon, EPA DOCUMERICA, public domain.*
+
+
 ## Stuck, not passing through
 
 ::: spacer 5px
@@ -153,6 +169,10 @@ In February 2016, Preservation Texas named Segundo Barrio one of the 14 Most End
 One explanation for poverty here could be that the neighborhood is a first stop. Jaime F. Torres, a writer from Segundo Barrio, described it as "a launching platform from which many Chicano families would choose, or be forced, to move to other locales in farther flung directions" ([National Register nomination, p. 117](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)). If newcomers arrive poor and leave once they get ahead, a neighborhood can stay poor even as the families in it move up.
 
 The census numbers do not fit that explanation well today. In every census from 1960 to 2000, the share of people here living in the same home as five years earlier was as high as or higher than in El Paso County ([NHGIS](https://www.nhgis.org/)). In 2020-2024, 90% of people here lived in the same home a year earlier, compared with 88% in the county. Among immigrants living here, 22% arrived in 2010 or later, about the same as in the county, 23% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B05005)).
+
+![A bicycle cart piled high with flattened cardboard stands at the mouth of a sunny alley in Segundo Barrio in 2016. The alley runs into the distance past utility poles, parked trucks and the walls of low buildings, one painted bright blue.](images/06a-alley-2016.jpg)
+*Cardboard for recycling piled on a bicycle in Segundo Barrio, 2016. Photo: Susan Barnum, CC BY-SA 4.0.*
+
 
 Poverty here is also not limited to newcomers. The chart below compares the poverty rate of people born in the United States with that of people born in another country.
 
@@ -207,5 +227,6 @@ Federal rules are changing in 2026 and 2027. The Medicaid work requirements in t
 - **Health insurance.** [American Community Survey](https://www.census.gov/programs-surveys/acs) 2020-2024 tables B27010 (coverage by type and age), C27007 (Medicaid by age) and B27020 (coverage by place of birth and citizenship), summed across the six tracts. Medicaid here includes other means-tested public coverage, such as CHIP.
 - **Diabetes and age.** We applied Texas's 2023 diabetes rates by age group, from CDC's [Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/), to the neighborhood's adults by age from the American Community Survey 2020-2024.
 - **Hero photo.** El Paso's Second Ward, June 1972, by Danny Lyon for the EPA's DOCUMERICA project, [National Archives](https://catalog.archives.gov/id/545350) via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:EL_PASO%27S_SECOND_WARD,_A_CHICANO_NEIGHBORHOOD,_WHICH_IS_LOSING_ITS_ETHNIC_FLAVOR_IN_THE_WAKE_OF_URBAN_RENEWAL_-_NARA_-_545350.jpg). Public domain. Cropped.
+- **Photos in the post.** Disinfection station, 1917, U.S. Public Health Service, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:El_Paso_Disinfection_station_and_Mexicans_Waiting_to_be_de-loused_at_the_international_bridge.jpg), public domain. Border sign at Chamizal National Memorial, July 10, 2016, by Ken Lund, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Welcome_to_Mexico,_as_seen_from_Chamizal_National_Memorial,_El_Paso,_Texas.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Alley off Third Avenue and Sixth Street and St. Vrain, June 1972, by Danny Lyon for the EPA's DOCUMERICA project, National Archives ([545361](https://catalog.archives.gov/id/545361), [545355](https://catalog.archives.gov/id/545355)), public domain. Segundo Barrio alley, Feb. 24, 2016, by Susan Barnum, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Segundo_Barrio_alleyway.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). All resized, not otherwise altered.
 - **River map.** U.S. Geological Survey historical topographic maps, El Paso and Ysleta NW sheets, 1:24,000, 1955 (public domain), from [topoView](https://ngmdb.usgs.gov/topoview/). Today's border is from the Census Bureau's 2020 state boundary file.
 - **Diabetes.** [CDC PLACES](https://www.cdc.gov/places/) 2025 tract estimates. The county, state and U.S. values are averages of their tracts, weighted by adult population.
