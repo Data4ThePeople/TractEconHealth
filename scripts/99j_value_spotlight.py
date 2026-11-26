@@ -16,8 +16,7 @@ from common import RAW, ROOT
 from d4tp_env import read_env_file
 KEY = read_env_file(Path.home() / ".claude/d4tp-process/.env")["CENSUS_API_KEY"]
 NH = RAW / "nhgis"
-AREAS = {"U034": dict(name="North Birmingham", st="01", co="073", nst="Alabama", nco="Jefferson", cmp="Jefferson County", out="northbirmingham"),
-         "U028": dict(name="El Segundo Barrio", st="48", co="141", nst="Texas", nco="El Paso", cmp="El Paso County", out="elsegundo")}
+AREAS = {"U034": dict(name="North Birmingham", st="01", co="073", nst="Alabama", nco="Jefferson", cmp="Jefferson County", out="northbirmingham")}
 CID = sys.argv[1] if len(sys.argv) > 1 else "U034"; A = AREAS[CID]
 CPI = {"1980": 82.4, "1990": 130.7, "2000": 172.2, "2008-2012": 229.594, "2020-2024": 313.689}
 T20 = pd.read_csv(ROOT / "analysis/spotlight/final_sets.csv", dtype={"tracts": str}).set_index("cand_id").loc[CID].tracts.split(";")

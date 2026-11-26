@@ -1,0 +1,11 @@
+year,area,fit,population,housing_units,occupied_units,people_per_occupied_home,crowded_pct,lacking_plumbing_pct,foreign_born_pct,same_house_5yr_pct,recent_arrivals_pct
+1960,El Segundo Barrio,0.942,50505.0,13251,11486,4.4,54.4,34.2,31.6,41.2,
+1960,El Paso County,,,92417,78270,,25.1,13.0,,31.7,
+1970,El Segundo Barrio,0.945,34834.0,9512,8951,3.87,42.7,43.8,27.8,52.7,
+1970,El Paso County,,359263.0,101224,95843,3.65,18.3,7.9,13.3,47.0,
+1980,El Segundo Barrio,0.944,26639.0,7942,7627,3.45,30.8,22.5,41.2,62.3,
+1980,El Paso County,,469221.0,147964,140806,3.24,13.0,3.2,20.7,50.2,
+1990,El Segundo Barrio,,24154.0,7366,6773,3.54,32.3,6.1,41.6,59.1,40.3
+1990,El Paso County,,591610.0,187473,178366,3.25,15.2,1.7,23.9,52.2,35.6
+2000,El Segundo Barrio,,20401.0,6787,6263,3.23,27.7,3.6,45.8,55.9,33.0
+2000,El Paso County,,679622.0,224447,210022,3.18,14.2,1.1,27.4,55.2,30.6
