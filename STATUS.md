@@ -104,3 +104,4 @@ None.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2e (meta, keywords, Common questions, links to the three earlier spotlights).
 - 2026-11-26 spotlight-el-segundo-barrio: independent photo words check done; all credits, dates, licenses and places supported; alt-text and credit fixes applied.
 - 2026-11-26 spotlight-el-segundo-barrio: 2f pushed as draft awhAohEAAC4ANVK7 in the Migration Release (103 slices, 17 uploads); publish 2026-11-26 9:00 a.m. CST. Waiting on Eric to confirm 2f.
+- 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2f. Published 9 a.m. CST. 2g skipped (Friday five-post email).
