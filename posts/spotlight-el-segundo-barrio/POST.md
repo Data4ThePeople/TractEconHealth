@@ -40,7 +40,7 @@ Here is how El Segundo Barrio and Chamizal compare with the country today.
 ::: spacer 5px
 
 ::: dropcap
-El Segundo Barrio, the old Second Ward, sits along the Rio Grande just south of downtown El Paso, Texas. The Chamizal neighborhood lies to its east. Together, the six census tracts in this story hold about 14,600 people. Median household income is about $18,300, 23% of the U.S. figure. Almost three in five people live below the poverty line. More than half of adults say their health is fair or poor, and almost a third have diabetes.
+El Segundo Barrio, the old Second Ward, sits along the Rio Grande just south of downtown El Paso, Texas. The Chamizal neighborhood lies to its east. Together, the six census tracts in this story had 15,195 people in the 2020 census. Median household income is about $18,300, 23% of the U.S. figure. Almost three in five people live below the poverty line. More than half of adults say their health is fair or poor, and almost a third have diabetes.
 
 Life expectancy here, 76.7 years, is about two years below the U.S. figure. That is much closer to the national number than in the other neighborhoods in this series. The health gap here shows up in chronic illness more than in early death.
 
