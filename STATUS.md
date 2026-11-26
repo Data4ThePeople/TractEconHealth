@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-el-segundo-barrio
-Step: 2b (Eric's edit, Claude's look-over). North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
+Step: back in Step 1 for an independent tie-out of the story-first analyses (homes, crowding, birthplace, diabetes and age, insurance, maps). 2b edits done; 2c waits on the tie-out. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
 Since: 2026-11-26
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -36,7 +36,7 @@ Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 co
 
 ## Stale
 
-None.
+- spotlight-el-segundo-barrio, 2026-11-26: new analyses built during 2b; post back in Step 1 until the independent tie-out is done and resolved.
 
 ## Log
 
@@ -95,3 +95,4 @@ None.
 - 2026-11-26 El Segundo: Eric accepted story-first edits 1-7 (river map, people/homes chart, crowding and plumbing, new section Stuck not passing through, manufacturing share in Garment jobs, diabetes and age, 2006 plan outcome). Text drafted into POST.md; 02-population.png retired for this post.
 - 2026-11-26 El Segundo: Eric added a locator map and a closing section on health insurance (58% of adults 19-64 uninsured; Texas non-expansion; 2026-27 federal changes). Recognition moved up after the 2006 plan so the post ends on insurance.
 - 2026-11-26 Story-first method written up in ~/.claude/d4tp-process/STORY_FIRST.md (linked from PROCESS.md). Eric: apply it to the other six spotlights after El Segundo.
+- 2026-11-26 El Segundo back in Step 1: independent tie-out agent launched on the new analyses. Rule added to PROCESS.md: new or changed analysis after Step 1 reopens Step 1.
