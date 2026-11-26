@@ -83,6 +83,11 @@ Between 1964 and 1967, one third of the Second Ward's land was cleared, includin
 
 The land formally passed to Mexico at 12:01 a.m. on Oct. 28, 1967 ([Chamizal Declaration, 1967](https://presidency.ucsb.edu/documents/text-the-chamizal-declaration-recognizing-the-transfer-lands-between-the-united-states-and)). About 5,600 people were moved out. Neighborhoods including Rio Linda, Cordova Gardens, Cotton Mill and El Jardín were removed, along with the two southernmost blocks of Segundo Barrio ([National Park Service](https://www.nps.gov/cham/learn/historyculture/implementation.htm); [Handbook of Texas](https://www.tshaonline.org/handbook/entries/chamizal-dispute)).
 
+The map below is a 1955 federal map of the area, made before the river was moved. Today's six tracts are outlined in pink, and today's border is the dashed blue line. U.S. land between the 1955 river and the blue line went to Mexico.
+
+![A 1955 U.S. Geological Survey map of South El Paso with today's six census tracts outlined in pink and today's border drawn as a dashed blue line. In 1955 the Rio Grande ran south of today's border. Streets and buildings shown between the old river and the blue line, west and east of Cordova Island, are now in Mexico. The outline wraps the northern part of Cordova Island, which became U.S. land.](images/01b-river-1955.png)
+*U.S. Geological Survey, El Paso and Ysleta NW map sheets, 1955. The border line is simplified from Census Bureau files.*
+
 ## Tenements
 
 ::: spacer 5px
@@ -91,12 +96,21 @@ In 1967, the city planning department surveyed 3,494 units in 238 tenement build
 
 In 1973 and 1974, a city code enforcement drive called the Tenement Eradication Program removed more housing. Residents formed La Campaña Pro Preservación del Barrio in 1974 ([National Register nomination, p. 146](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)). Counting the Chamizal transfer, a park, the code drive and private land deals, the nomination says that from 1960 to the early 1970s the neighborhood lost about a third of its land and "over half of the housing stock disappeared" ([National Register nomination, p. 143](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)).
 
-The chart below counts the people living inside today's six tract lines in each census.
+Crowding has fallen a long way since then. In 1960, 54% of occupied homes here had more than one person per room, compared with 25% across El Paso County. In 2020-2024, it was 9% here and 5% in the county. The chart below shows the change.
 
-![Line chart of the number of people living in the six census tracts: 34,834 in 1970, 26,619 in 1980, 24,218 in 1990, 20,461 in 2000, 18,009 in 2010 and 14,635 in 2020-2024.](images/02-population.png)
-*Earlier counts are fitted to today's tract lines. 2020-2024 is a five-year survey estimate.*
+![Line chart of the share of occupied homes with more than one person per room. El Segundo Barrio and Chamizal: 54% in 1960, 43% in 1970, 31% in 1980, 32% in 1990, 28% in 2000, 14% in 2008-2012 and 9% in 2020-2024. El Paso County, dashed: 25%, 18%, 13%, 15%, 14%, 7% and 5%.](images/03b-crowding.png)
+*Earlier counts are fitted to today's tract lines. 2010 is from the 2008-2012 survey.*
 
-Part of this drop may come from smaller households and from the city's own housing removal, not only from people leaving.
+Some homes still lack basic plumbing. In 2020-2024, about 6.5% of homes here lacked complete plumbing, compared with 1.6% in the county. The margin of error is wide, from about 4% to 9% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B25047)).
+
+The chart below counts the people and homes inside today's six tract lines in each census, and how many people lived in each occupied home.
+
+![Three stacked line charts for the six census tracts, census years 1960 to 2020. People: 50,505, 34,834, 26,619, 24,218, 20,461, 18,009 and 15,195. Homes: 13,251, 9,512, 7,942, 7,366, 6,787, 6,274 and 6,540. People per occupied home: 4.4, 3.9, 3.5, 3.5, 3.2, 3.0 and 2.6. The Chamizal clearance (1964-1967) and the tenement drive (1973-1974) are shaded.](images/02-people-homes.png)
+*Earlier counts are fitted to today's tract lines. 2010 and 2020 are census counts.*
+
+In 1960, about 50,500 people lived here, in about 13,300 homes. By 1970, there were about 34,800 people. By 2020, there were about 6,500 homes, 51% fewer than in 1960. From 1960 to 1980, most of the drop in people came from fewer occupied homes, not from smaller households. Since 2000, it has been the other way around. Households shrank from 3.2 people per home in 2000 to 2.6 in 2020, and the number of homes rose a little after 2010.
+
+The National Register nomination says over half of the Second Ward's housing was gone by the early 1970s. Our six tracts cover a larger area. In them, about 28% of homes were gone by 1970 and 40% by 1980.
 
 ## Garment jobs
 
@@ -106,7 +120,7 @@ In May 1972, about 4,000 workers at Farah Manufacturing, 85% of them women, went
 
 Clothing jobs in El Paso County fell from 16,150 in 1990 to 1,310 in 2019, a drop of 92% ([Bureau of Labor Statistics, 1990](https://data.bls.gov/cew/data/files/1990/csv/1990_annual_by_area.zip); [2019](https://data.bls.gov/cew/data/api/2019/a/area/48141.csv)). The North American Free Trade Agreement took effect in 1994. The Federal Reserve Bank of Dallas wrote that NAFTA "likely accelerated" the move of clothing work to lower-cost countries. By early 2002, VF Jeanswear had laid off about 1,180 workers, and Levi Strauss had announced it would close its last El Paso sewing plant, with 780 workers. A decade earlier, Levi had six plants and about 6,000 workers in El Paso ([Federal Reserve Bank of Dallas, 2002](https://fraser.stlouisfed.org/files/docs/publications/frbdal_bus/frbdal_bus_2002_iss1.pdf); [U.S. Department of Labor, 1999](https://www.govinfo.gov/content/pkg/FR-1999-12-21/html/99-32992.htm)).
 
-These are county jobs. We do not know how many were held by people who lived in these tracts. The National Register nomination says many garment workers crossed daily from Juárez.
+These are county jobs, and the National Register nomination says many garment workers crossed daily from Juárez. But census counts show how many people living here worked in manufacturing, which includes clothing. In 1970 and 1980, about 30% of working residents in the six tracts had manufacturing jobs, compared with 17% to 19% across El Paso County. By 2020-2024, it was 9%. Over the same years, the number of working residents fell from about 8,300 in 1970 to about 4,300 ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.C24050)).
 
 The chart below shows the share of people with low incomes, meaning below 200% of the poverty line, and the share of homes standing empty in the six tracts. About 83% of people here have low incomes, compared with 28% nationwide.
 
@@ -119,7 +133,22 @@ Poverty was already above 50% in 1970, the first year in our data. It peaked in 
 
 ::: spacer 5px
 
-In 2006 and 2007, a downtown plan drawn up over two years by a private business group, the Paso del Norte Group, targeted about 325 acres between I-10 and the border, including Segundo Barrio. The Texas Observer reported that nearly 168 acres would probably be bulldozed and 157 acres would become a historic zone, and that the city would not rule out eminent domain ([Texas Observer, 2007](http://web.archive.org/web/20260614071230/https://www.texasobserver.org/2483-eminent-disaster-a-cabal-of-politicians-and-profiteers-targets-an-el-paso-barrio/)). [Eric: we did not find a source for what happened to the plan. I left the outcome out.]
+In 2006 and 2007, a downtown plan drawn up over two years by a private business group, the Paso del Norte Group, targeted about 325 acres between I-10 and the border, including Segundo Barrio. The Texas Observer reported that nearly 168 acres would probably be bulldozed and 157 acres would become a historic zone, and that the city would not rule out eminent domain ([Texas Observer, 2007](http://web.archive.org/web/20260614071230/https://www.texasobserver.org/2483-eminent-disaster-a-cabal-of-politicians-and-profiteers-targets-an-el-paso-barrio/)). Eminent domain was never used for the project. By the end of the decade, the plan, "at least as initially conceived," had "lost steam," the Texas Tribune later reported. In 2009, Texas voters approved a state constitutional amendment tightening eminent domain rules ([Texas Tribune, 2018](https://www.texastribune.org/2018/09/04/cruz-orourke-el-paso-eminent-domain/)). Historian David Dorado Romo helped form Paso del Sur, a group that opposed the plan. In his view, "We were able to stop the complete destruction of the Segundo Barrio because of the huge recession in 2008" ([Longreads, 2018](https://longreads.com/2018/11/16/the-city-i-love-is-destroying-itself-2/)).
+
+## Stuck, not passing through
+
+::: spacer 5px
+
+One explanation for poverty here could be that the neighborhood is a first stop. Jaime F. Torres, a writer from Segundo Barrio, described it as "a launching platform from which many Chicano families would choose, or be forced, to move to other locales in farther flung directions" ([National Register nomination, p. 117](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)). If newcomers arrive poor and leave once they get ahead, a neighborhood can stay poor even as the families in it move up.
+
+The census numbers do not fit that explanation well today. In every census from 1960 to 2000, the share of people here living in the same home as five years earlier was as high as or higher than in El Paso County ([NHGIS](https://www.nhgis.org/)). In 2020-2024, 90% of people here lived in the same home a year earlier, compared with 88% in the county. Among immigrants living here, 22% arrived in 2010 or later, about the same as in the county, 23% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B05005)).
+
+Poverty here is also not limited to newcomers. The chart below compares the poverty rate of people born in the United States with that of people born in another country.
+
+![Bar chart of the share of people below the poverty line by place of birth, 2020-2024. El Segundo Barrio and Chamizal: born in the U.S. 58%, born outside the U.S. 57%. El Paso County: born in the U.S. 18%, born outside the U.S. 23%.](images/03c-poverty-birthplace.png)
+*In the six tracts, margins of error are about 10 points for people born in the U.S. and 14 points for people born elsewhere.*
+
+About 58% of people born in the U.S. who live here are below the poverty line, compared with 18% in the county ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B17025)). These numbers cannot follow families over time. But they show that poverty here is shared by people born here as much as by people who came from Mexico.
 
 ## Health
 
@@ -129,6 +158,13 @@ The health numbers in the table at the top are today's, and we have no tract hea
 
 ![Bar chart of the share of adults who have been told they have diabetes: El Segundo Barrio and Chamizal 32%, El Paso County 16%, Texas 13%, United States 12%.](images/04-diabetes.png)
 *CDC PLACES model estimates for 2023, weighted by adult population.*
+
+Part of the reason could be age. Adults here are older than in the county: 29% are 65 or older, compared with 18%. To check, we applied Texas's 2023 diabetes rate for each age group to the adults living here. The chart below shows the result.
+
+![Bar chart of the share of adults who have been told they have diabetes. CDC estimate for El Segundo Barrio and Chamizal: 32%. Expected here from age alone, using Texas rates for each age group: 14%. CDC estimate for El Paso County: 16%.](images/04b-diabetes-age.png)
+*Texas rates by age are from CDC's 2023 Behavioral Risk Factor Surveillance System. The rate for ages 18 to 24 is not published, so that group gets the rate for ages 25 to 34.*
+
+Age alone would put the rate at about 14%, less than half of CDC's estimate of 32% ([CDC BRFSS](https://www.cdc.gov/brfss/)). CDC's estimate is itself a model that uses age, sex, race and ethnicity, so it is not a direct count. Still, age explains only a small part of the gap.
 
 ## Recognition
 
@@ -147,4 +183,7 @@ In February 2016, Preservation Texas named Segundo Barrio one of the 14 Most End
 - **The table at the top.** Rates are computed from counts summed across the six tracts. Median household income is estimated from income ranges, the Census Bureau's method for combined areas. Health measures are [CDC PLACES](https://www.cdc.gov/places/) model estimates for adults, weighted by each tract's adult population. Life expectancy is from the [U.S. Small-Area Life Expectancy Estimates Project](https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html), 2010-2015.
 - **The map.** Grades are from [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/). The map itself is undated; Mapping Inequality files it under 1936.
 - **Clothing jobs.** Bureau of Labor Statistics [Quarterly Census of Employment and Wages](https://www.bls.gov/cew/), El Paso County, private apparel manufacturing (NAICS 315), annual averages.
+- **Homes, crowding and birthplace.** Census counts from 1960 to 2000 come from [NHGIS (IPUMS)](https://www.nhgis.org/), fitted to today's tract lines; 2010 and 2020 are census counts; 2008-2012 and 2020-2024 are [American Community Survey](https://www.census.gov/programs-surveys/acs) estimates. Census plumbing questions changed over time, so we compare only today's plumbing numbers.
+- **Diabetes and age.** We applied Texas's 2023 diabetes rates by age group, from CDC's [Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/), to the neighborhood's adults by age from the American Community Survey 2020-2024.
+- **River map.** U.S. Geological Survey historical topographic maps, El Paso and Ysleta NW sheets, 1:24,000, 1955 (public domain), from [topoView](https://ngmdb.usgs.gov/topoview/). Today's border is from the Census Bureau's 2020 state boundary file.
 - **Diabetes.** [CDC PLACES](https://www.cdc.gov/places/) 2025 tract estimates. The county, state and U.S. values are averages of their tracts, weighted by adult population.
