@@ -12,6 +12,8 @@ Since: 2026-11-26
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
 
 
+Queued (Eric, 2026-11-26): after El Segundo Barrio, run the story-first method (~/.claude/d4tp-process/STORY_FIRST.md) on each remaining spotlight before its 2b: North Flint, Clarksdale, Clarksville (Texas), McDowell County, Owsley County, Pine Ridge. Each gets a locator map and a health-coverage check.
+
 Also paused: income-health-viz at 4a (Eric resumes next week).
 
 Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 confirmed 2026-11-19; all 10 drafted. 2026-11-23: Eric is focusing on spotlight-west-dayton to publish today; 2b confirmed 2026-11-23; now 2c. Other 9 wait.
@@ -92,3 +94,4 @@ None.
 - 2026-11-26 Moved to spotlight-el-segundo-barrio, 2b. Quotes checked verbatim against the National Register nomination and Dallas Fed 2002 (all match). Labor, industry, home value and LODES pulls run for U028. CDC PLACES has no food insecurity measure for Texas.
 - 2026-11-26 El Segundo: Eric accepted story-first edits 1-7 (river map, people/homes chart, crowding and plumbing, new section Stuck not passing through, manufacturing share in Garment jobs, diabetes and age, 2006 plan outcome). Text drafted into POST.md; 02-population.png retired for this post.
 - 2026-11-26 El Segundo: Eric added a locator map and a closing section on health insurance (58% of adults 19-64 uninsured; Texas non-expansion; 2026-27 federal changes). Recognition moved up after the 2006 plan so the post ends on insurance.
+- 2026-11-26 Story-first method written up in ~/.claude/d4tp-process/STORY_FIRST.md (linked from PROCESS.md). Eric: apply it to the other six spotlights after El Segundo.
