@@ -1,6 +1,6 @@
 ---
 title: "In El Segundo Barrio, 58% Live in Poverty and 58% of Working-Age Adults Have No Health Insurance"
-prismic_label: "El Segundo Barrio and Chamizal: A Century of Losing Ground on the Border"
+prismic_label: "In El Segundo Barrio, 58% Live in Poverty and 58% of Working-Age Adults Have No Health Insurance"
 subtitle: A 1916 cleanup, a border treaty, clearance projects and code sweeps took homes from El Paso's oldest Mexican American neighborhoods, which now have half as many homes as in 1960. People born in the U.S. here are as likely to be poor as immigrants.
 slug: spotlight-el-segundo-barrio
 date:
@@ -9,9 +9,9 @@ section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-el-segundo-barrio-hero-1680x1080.png
 hero_alt: "Three young women talk beside a parked car on a street in El Paso's Second Ward in June 1972. Behind them stands a long two-story red brick tenement with an iron balcony along the upper floor, where laundry hangs from lines. A few men stand by the doorways below, and older cars line the curb in the late-day light."
-meta_title:
-description:
-keywords:
+meta_title: "El Segundo Barrio, El Paso: History, Poverty and Health"
+description: "A 1916 cleanup, the Chamizal treaty and code sweeps took homes from El Paso's Segundo Barrio, where 58% live in poverty and most adults 19-64 lack insurance."
+keywords: El Segundo Barrio history, Segundo Barrio El Paso, Chamizal neighborhood El Paso, Chamizal Convention 1963, El Paso bath riots 1917, Tenement Eradication Program El Paso, El Paso uninsured rate, Texas Medicaid coverage gap
 drop_cap: false
 heading_spacer: 20px
 ---
