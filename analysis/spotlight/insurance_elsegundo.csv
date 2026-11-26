@@ -1,0 +1,49 @@
+area,measure,num,den,pct,moe_pts
+El Segundo Barrio,medicaid_under19_pct,3584,4602,77.9,6.8
+El Segundo Barrio,medicaid_19_64_pct,1063,7033,15.1,3.7
+El Segundo Barrio,medicaid_65plus_pct,1347,2964,45.4,6.4
+El Segundo Barrio,medicaid_all_pct,5994,14599,41.1,2.6
+El Segundo Barrio,uninsured_under19_pct,732,4602,15.9,6.3
+El Segundo Barrio,uninsured_19_64_pct,4095,7033,58.2,7.6
+El Segundo Barrio,uninsured_65plus_pct,243,2964,8.2,3.9
+El Segundo Barrio,uninsured_all_pct,5070,14599,34.7,3.9
+El Segundo Barrio,employer_only_19_64_pct,755,7033,10.7,2.5
+El Segundo Barrio,uninsured_us_born_pct,2816,9346,30.1,4.3
+El Segundo Barrio,uninsured_naturalized_pct,664,1966,33.8,12.9
+El Segundo Barrio,uninsured_noncitizen_pct,1590,3287,48.4,13.4
+El Paso County,medicaid_under19_pct,110616,240569,46.0,1.2
+El Paso County,medicaid_19_64_pct,48662,491675,9.9,0.4
+El Paso County,medicaid_65plus_pct,30084,112140,26.8,1.1
+El Paso County,medicaid_all_pct,189362,844384,22.4,0.4
+El Paso County,uninsured_under19_pct,30117,240569,12.5,1.1
+El Paso County,uninsured_19_64_pct,149805,491675,30.5,0.7
+El Paso County,uninsured_65plus_pct,2875,112140,2.6,0.4
+El Paso County,uninsured_all_pct,182797,844384,21.6,0.5
+El Paso County,employer_only_19_64_pct,199100,491675,40.5,0.8
+El Paso County,uninsured_us_born_pct,123804,646592,19.1,0.7
+El Paso County,uninsured_naturalized_pct,19377,104979,18.5,1.3
+El Paso County,uninsured_noncitizen_pct,39616,92813,42.7,2.2
+Texas,medicaid_under19_pct,2886614,7962536,36.3,0.2
+Texas,medicaid_19_64_pct,1372896,17771233,7.7,0.1
+Texas,medicaid_65plus_pct,547162,3962992,13.8,0.1
+Texas,medicaid_all_pct,4806672,29696761,16.2,0.1
+Texas,uninsured_under19_pct,953476,7962536,12.0,0.2
+Texas,uninsured_19_64_pct,4059027,17771233,22.8,0.2
+Texas,uninsured_65plus_pct,73285,3962992,1.8,0.1
+Texas,uninsured_all_pct,5085788,29696761,17.1,0.1
+Texas,employer_only_19_64_pct,9539412,17771233,53.7,0.2
+Texas,uninsured_us_born_pct,3315425,24437762,13.6,0.1
+Texas,uninsured_naturalized_pct,343104,2204516,15.6,0.3
+Texas,uninsured_noncitizen_pct,1427259,3054483,46.7,0.6
+United States,medicaid_under19_pct,30004136,77945312,38.5,0.2
+United States,medicaid_19_64_pct,31000039,195795742,15.8,0.1
+United States,medicaid_65plus_pct,7913908,56239699,14.1,0.0
+United States,medicaid_all_pct,68918083,329980753,20.9,0.1
+United States,uninsured_under19_pct,4261298,77945312,5.5,0.0
+United States,uninsured_19_64_pct,22998035,195795742,11.7,0.1
+United States,uninsured_65plus_pct,475578,56239699,0.8,0.0
+United States,uninsured_all_pct,27734911,329980753,8.4,0.0
+United States,employer_only_19_64_pct,112154146,195795742,57.3,0.1
+United States,uninsured_us_born_pct,19045819,282967185,6.7,0.1
+United States,uninsured_naturalized_pct,1836256,24488720,7.5,0.1
+United States,uninsured_noncitizen_pct,6852836,22524848,30.4,0.4
