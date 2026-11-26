@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-el-segundo-barrio
-Step: 2c (slice markup). 2b done 2026-11-26. Step 1 re-closed by Eric 2026-11-26 after the independent tie-out and re-check. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
+Step: 2d (hero). 2b and 2c done 2026-11-26. Step 1 re-closed by Eric 2026-11-26 after the independent tie-out and re-check. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
 Since: 2026-11-26
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -99,3 +99,4 @@ None.
 - 2026-11-26 El Segundo: independent tie-out findings fixed (36f10e5) and re-checked by a fresh agent, all values match; wording edits 1-2 applied; new title and subtitle. Waiting on Eric to close Step 1.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric closed Step 1 (independent tie-out done, findings fixed, re-check clean). Back to 2b.
 - 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2b. 2c started.
+- 2026-11-26 spotlight-el-segundo-barrio: Eric confirmed 2c. 2d started.
