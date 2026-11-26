@@ -1,0 +1,46 @@
+item,post,check,ok
+2020 people: NHGIS vs PL direct,11704.0,11704.0,True
+2020 white: NHGIS vs PL direct,4886.0,4886.0,True
+2020 black: NHGIS vs PL direct,5476.0,5476.0,True
+2020 homes: NHGIS vs PL direct,5794.0,5794.0,True
+2020 vacant_homes: NHGIS vs PL direct,968.0,968.0,True
+2010 people: NHGIS vs PL direct (same tract IDs),16483.0,16483.0,True
+2010 white,7913.0,7913.0,True
+2010 black,7266.0,7266.0,True
+2010 homes,8297.0,8297.0,True
+Medicaid 19-64 % (C27007 male+female 19-64),65.894,65.894,True
+Uninsured 19-64 % (B27010),10.653,10.653,True
+Employer-only 19-64 %,19.497,19.497,True
+people 1990s -13,-13.0,-12.949,True
+2000s -20,-20.0,-19.74,True
+2010s -29,-29.0,-28.994,True
+rest of Flint 2010s -19,-19.0,-19.085,True
+"people 1990 23,592",23592.0,23592.0,True
+"people 2020 11,704",11704.0,11704.0,True
+children 2010s -31,-31.0,-30.602,True
+adults 2010s -28,-28.0,-28.344,True
+children share 2000 32,32.0,31.768,True
+children share 2020 28,28.0,28.105,True
+black 2010s -25,-25.0,-24.635,True
+black share 2020 47,47.0,46.787,True
+black share 1990 32,32.0,32.163,True
+homes -43% since 1990,43.0,43.124,True
+"homes lost 2010s ~2,500",2500.0,2503.0,True
+wards 3+4 land 85%,85.0,85.1,True
+ward 5 land 11%,11.0,10.7,True
+demolition permits single family 534,534.0,534.0,True
+"working 1990 ~7,000",7000.0,7005.0,True
+"working 2020-24 ~3,800",3800.0,3756.0,True
+prime epop 56,56.0,56.4,True
+county prime epop 76,76.0,75.6,True
+Medicaid 19-64 North and East Flint 66,66.0,65.894,True
+Medicaid 19-64 Genesee County 30,30.0,29.94,True
+Medicaid 19-64 Michigan 20,20.0,20.324,True
+Medicaid 19-64 United States 16,16.0,15.833,True
+uninsured 19-64 North and East Flint 11,11.0,10.653,True
+uninsured 19-64 Genesee County 8,8.0,7.747,True
+uninsured 19-64 Michigan 7,7.0,7.088,True
+uninsured 19-64 United States 12,12.0,11.746,True
+children Medicaid 87,87.0,86.5,True
+employer-only 19 vs 57,19.0,19.497,True
+US employer-only 57,57.0,57.281,True
