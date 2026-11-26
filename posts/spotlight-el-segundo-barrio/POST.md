@@ -42,7 +42,7 @@ Here is how El Segundo Barrio and Chamizal compare with the country today.
 ::: dropcap
 El Segundo Barrio, the old Second Ward, sits along the Rio Grande just south of downtown El Paso, Texas. The Chamizal neighborhood lies to its east. Together, the six census tracts in this story had 15,195 people in the 2020 census. Median household income is about $18,300, 23% of the U.S. figure. Almost three in five people live below the poverty line. More than half of adults say their health is fair or poor, and almost a third have diabetes.
 
-Life expectancy here, 76.7 years, is about two years below the U.S. figure. That is much closer to the national number than in the other neighborhoods in this series. The health gap here shows up in chronic illness more than in early death.
+Life expectancy here, 76.7 years, is about two years below the U.S. figure. That is much closer to the national number than in the other neighborhoods in this series, such as [West Dayton](https://www.data4thepeople.com/p/spotlight-west-dayton), [West Baltimore](https://www.data4thepeople.com/p/spotlight-west-baltimore) and [North Birmingham](https://www.data4thepeople.com/p/spotlight-north-birmingham). The health gap here shows up in chronic illness more than in early death.
 
 For more than a century, this neighborhood was a first home for families arriving from Mexico. The National Register of Historic Places calls it "a landing place for immigrants" ([National Register nomination, 2021](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf)). Over that time it lost land and housing again and again. This post walks through those losses in order, with a link to the source for each one.
 
@@ -230,3 +230,31 @@ Federal rules are changing in 2026 and 2027. The Medicaid work requirements in t
 - **Photos in the post.** Disinfection station, 1917, U.S. Public Health Service, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:El_Paso_Disinfection_station_and_Mexicans_Waiting_to_be_de-loused_at_the_international_bridge.jpg), public domain. Border sign at Chamizal National Memorial, July 10, 2016, by Ken Lund, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Welcome_to_Mexico,_as_seen_from_Chamizal_National_Memorial,_El_Paso,_Texas.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Alley off Third Avenue and Sixth Street and St. Vrain, June 1972, by Danny Lyon for the EPA's DOCUMERICA project, National Archives ([545361](https://catalog.archives.gov/id/545361), [545355](https://catalog.archives.gov/id/545355)), public domain. Segundo Barrio alley, Feb. 24, 2016, by Susan Barnum, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Segundo_Barrio_alleyway.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). All resized, not otherwise altered.
 - **River map.** U.S. Geological Survey historical topographic maps, El Paso and Ysleta NW sheets, 1:24,000, 1955 (public domain), from [topoView](https://ngmdb.usgs.gov/topoview/). Today's border is from the Census Bureau's 2020 state boundary file.
 - **Diabetes.** [CDC PLACES](https://www.cdc.gov/places/) 2025 tract estimates. The county, state and U.S. values are averages of their tracts, weighted by adult population.
+
+## Common questions
+
+::: spacer 5px
+
+### What is El Segundo Barrio?
+
+It is the old Second Ward, a neighborhood along the Rio Grande just south of downtown El Paso. On Nov. 3, 2021, it was listed on the National Register of Historic Places as the Segundo Barrio Historic District.
+
+### What was the Chamizal Convention?
+
+It was a 1963 treaty that settled a long border dispute between the United States and Mexico. About 630 acres went to Mexico and 193 acres to the United States, and the Rio Grande was moved into a new concrete channel. The land passed to Mexico on Oct. 28, 1967, and about 5,600 people were moved out.
+
+### What were the 1917 bath riots?
+
+On Jan. 28, 1917, up to 500 women protested at the Santa Fe Street bridge against forced delousing baths for people crossing from Ciudad Juárez. The protest was started by 17-year-old Carmelita Torres.
+
+### How many people live in El Segundo Barrio?
+
+The six census tracts in this post had 15,195 people in the 2020 census. In 1960, the tracts covering the area held about 50,500 people, a count that may include land that went to Mexico in 1967.
+
+### How many people in El Segundo Barrio have health insurance?
+
+In 2020-2024, 58% of people ages 19 to 64 in the six tracts had no health insurance, compared with 30% in El Paso County and 12% nationwide. About 78% of children were covered by Medicaid or the Children's Health Insurance Program.
+
+### Is poverty in El Segundo Barrio limited to immigrants?
+
+No. In 2020-2024, 59% of people born in the U.S. who live here were below the poverty line, compared with 57% of people born in another country.
