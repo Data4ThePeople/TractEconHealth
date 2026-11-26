@@ -96,3 +96,4 @@ Also open: community spotlight series (10 posts, `posts/spotlight-*`). Step 1 co
 - 2026-11-26 El Segundo: Eric added a locator map and a closing section on health insurance (58% of adults 19-64 uninsured; Texas non-expansion; 2026-27 federal changes). Recognition moved up after the 2006 plan so the post ends on insurance.
 - 2026-11-26 Story-first method written up in ~/.claude/d4tp-process/STORY_FIRST.md (linked from PROCESS.md). Eric: apply it to the other six spotlights after El Segundo.
 - 2026-11-26 El Segundo back in Step 1: independent tie-out agent launched on the new analyses. Rule added to PROCESS.md: new or changed analysis after Step 1 reopens Step 1.
+- 2026-11-26 El Segundo: independent tie-out findings fixed (36f10e5) and re-checked by a fresh agent, all values match; wording edits 1-2 applied; new title and subtitle. Waiting on Eric to close Step 1.

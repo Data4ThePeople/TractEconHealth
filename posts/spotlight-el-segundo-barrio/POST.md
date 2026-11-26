@@ -1,7 +1,7 @@
 ---
 title: "In El Segundo Barrio, 58% Live in Poverty and 58% of Working-Age Adults Have No Health Insurance"
 prismic_label: "El Segundo Barrio and Chamizal: A Century of Losing Ground on the Border"
-subtitle: How El Paso's oldest Mexican American neighborhoods lost homes and land to a 1916 cleanup, a road widening, an international treaty and code sweeps, while the city's garment jobs disappeared.
+subtitle: A 1916 cleanup, a border treaty, clearance projects and code sweeps took homes from El Paso's oldest Mexican American neighborhoods, which now have half as many homes as in 1960. People born in the U.S. here are as likely to be poor as immigrants.
 slug: spotlight-el-segundo-barrio
 date:
 time:
@@ -74,7 +74,7 @@ The map below shows those grades with the six tracts in this story outlined.
 
 ::: spacer 5px
 
-El Paso's first public housing went up near the barrio. The Alamito project opened in 1940 with 349 units, just outside the historic district. The Tays project, in Chamizal, opened in 1941 with 359 units and is the city's oldest public housing ([National Register nomination, p. 136](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf); [City of El Paso, Chamizal plan, 2008, p. 21](https://www.elpasotexas.gov/assets/Documents/CoEP/Community-Development/Neighborhood-Associations/Neighborhood-Revitalization/CHAMIZAL-NRS.pdf)).
+El Paso's first public housing went up near the barrio. The Alamito project opened in 1940 with 349 units, just outside the historic district. The Tays project, in Chamizal, opened in 1941 with 359 units ([National Register nomination, p. 136](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf); [City of El Paso, Chamizal plan, 2008, p. 21](https://www.elpasotexas.gov/assets/Documents/CoEP/Community-Development/Neighborhood-Associations/Neighborhood-Revitalization/CHAMIZAL-NRS.pdf)).
 
 In 1946 and 1947, the city widened Paisano Drive, part of U.S. 80. The widening destroyed nearby properties and moved out as many as 6,000 residents. The National Register nomination says this led to more shacks being built elsewhere in the barrio. By the 1950s, Paisano was a fast road that was dangerous to cross on foot ([National Register nomination, p. 122](https://atlas.thc.texas.gov/NR/pdfs/100006994/100006994.pdf); [City of El Paso, Chamizal plan, 2008, p. 6](https://www.elpasotexas.gov/assets/Documents/CoEP/Community-Development/Neighborhood-Associations/Neighborhood-Revitalization/CHAMIZAL-NRS.pdf)).
 
@@ -108,7 +108,7 @@ Crowding has fallen a long way since then. In 1960, 54% of occupied homes here h
 
 Some homes still lack basic plumbing. In 2020-2024, about 6.5% of homes here lacked complete plumbing, compared with 1.6% in the county. The margin of error is wide, from about 4% to 9% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B25047)).
 
-The chart below counts the people and homes in the census tracts covering this area in each census, and how many people lived in each occupied home. The 1960 tract lines are drawn to today's border, so the 1960 counts may include homes on land that went to Mexico in 1967.
+The chart below counts the people and homes in the census tracts covering this area in each census, and how many people lived in each occupied home. The 1960 counts are fitted to today's tract lines, so they may include homes on land that went to Mexico in 1967.
 
 ![Three stacked line charts for the six census tracts, census years 1960 to 2020. People: 50,505, 34,834, 26,619, 24,218, 20,461, 18,009 and 15,195. Homes: 13,251, 9,512, 7,942, 7,366, 6,787, 6,274 and 6,540. People per occupied home: 4.4, 3.9, 3.5, 3.5, 3.2, 3.0 and 2.6. The Chamizal clearance (1964-1967) and the tenement drive (1973-1974) are shaded. The 1960 counts may include homes on land that went to Mexico in 1967.](images/02-people-homes.png)
 *Earlier counts are fitted to today's tract lines. 2010 and 2020 are census counts.*
