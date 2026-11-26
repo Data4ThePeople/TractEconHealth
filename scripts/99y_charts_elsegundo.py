@@ -46,8 +46,8 @@ axs[0].annotate("Tenement\ndrive", (1974.6, 62000 * 0.97), ha="left", va="top", 
 axs[2].set_xlim(1955, 2025); axs[2].set_xticks([1960, 1970, 1980, 1990, 2000, 2010, 2020])
 ch_h = 100 * (1 - homes[2020] / homes[1960])
 titleblock(fig, f"{ch_h:.0f}% fewer homes than in 1960, and fewer people in each",
-           "People, homes and people per occupied home inside today's six tract lines, census years 1960 to 2020. Shaded: the\n"
-           "Chamizal clearance (1964-1967) and the Tenement Eradication Program (1973-1974). 1960 counts all people per home.")
+           "People, homes and people per occupied home in the census tracts covering this area, 1960 to 2020. The 1960 counts may\n"
+           "include homes on land that went to Mexico in 1967. Shaded: the Chamizal clearance (1964-1967) and the tenement drive (1973-1974).")
 credit(fig, "Source: NHGIS (IPUMS) decennial census tract counts, 1960-2000, fitted to today's tracts; Census Bureau 2010 and 2020 censuses.")
 fig.savefig(OUT / "02-people-homes.png"); plt.close(fig)
 
@@ -71,7 +71,8 @@ credit(fig, "Source: NHGIS (IPUMS) decennial census tract counts, 1960-2000, fit
 fig.savefig(OUT / "03b-crowding.png"); plt.close(fig)
 
 # 03c: poverty by birthplace
-pv = R[(R.period == "2020-2024") & R.measure.isin(["poverty_us_born_pct", "poverty_foreign_born_pct"])].set_index(["area", "measure"]).value
+pvr = R[(R.period == "2020-2024") & R.measure.isin(["poverty_us_born_pct", "poverty_foreign_born_pct"])].set_index(["area", "measure"])
+pv, pm = pvr.value, pvr.moe_pts
 fig, ax = plt.subplots(figsize=(10, 5.6)); fig.subplots_adjust(left=0.08, right=0.97, top=0.74, bottom=0.14)
 grp = [(ES, "El Segundo Barrio and Chamizal"), (CO, "El Paso County")]; w = 0.36
 for i, (area, lab) in enumerate(grp):
@@ -84,7 +85,7 @@ ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%")); style
 ax.legend(loc="upper right", frameon=False, labelcolor=INK, fontsize=10)
 titleblock(fig, "People born in the U.S. here are as likely to be poor as immigrants",
            "Share of people below the poverty line, by place of birth, 2020-2024. In the six tracts, the margins of error\n"
-           "are about 10 points (U.S.-born) and 14 points (born outside the U.S.).")
+           f"are about {pm[(ES, 'poverty_us_born_pct')]:.0f} points (U.S.-born) and {pm[(ES, 'poverty_foreign_born_pct')]:.0f} points (born outside the U.S.).")
 credit(fig, "Source: Census Bureau, American Community Survey 2020-2024 five-year estimates, table B17025, summed across the six tracts.")
 fig.savefig(OUT / "03c-poverty-birthplace.png"); plt.close(fig)
 
