@@ -48,18 +48,18 @@
     "url": "https://images.prismic.io/data4thepeople/l8u1zpBqBUhpuImZ_05-food-map.png?auto=format,compress",
     "stamp": "251446:1795439278"
   },
-  "images/05a-transport.png": {
-    "id": "pDnLInyIt5EjkHuu",
-    "width": 1600,
-    "height": 992,
-    "url": "https://images.prismic.io/data4thepeople/pDnLInyIt5EjkHuu_05a-transport.png?auto=format,compress",
-    "stamp": "120534:1795439355"
-  },
   "images/spotlight-west-dayton-hero-1680x1080.png": {
     "id": "agYoxNSk6g64AADY",
     "width": 1680,
     "height": 1080,
     "url": "https://images.prismic.io/data4thepeople/agYoxNSk6g64AADY_spotlight-west-dayton-hero-1680x1080.png?auto=format,compress",
     "stamp": "2728758:1795441422"
+  },
+  "images/05a-transport.png": {
+    "id": "fsOFGSe5JlX5Z6sZ",
+    "width": 1600,
+    "height": 992,
+    "url": "https://images.prismic.io/data4thepeople/fsOFGSe5JlX5Z6sZ_05a-transport.png?auto=format,compress",
+    "stamp": "120534:1795473823"
   }
 }
