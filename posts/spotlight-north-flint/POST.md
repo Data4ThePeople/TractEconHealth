@@ -3,8 +3,8 @@ title: "Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting
 prismic_label: "Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting It for Another Year."
 subtitle: How the neighborhoods around Flint's old Buick plants went from the edge of a booming car town to one of the poorest and least healthy places in the country.
 slug: spotlight-north-flint
-date:
-time:
+date: 2026-11-27
+time: 07:30:00-06:00
 section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-north-flint-hero-1680x1080.png
@@ -162,7 +162,7 @@ The chart below compares the shares on Medicaid and with no insurance.
 ![Bar chart of people ages 19 to 64 in 2020-2024. With Medicaid: 66% in North and East Flint, 30% in Genesee County, 20% in Michigan and 16% in the United States. With no health insurance: 11%, 8%, 7% and 12%.](images/07-medicaid.png)
 *Medicaid here includes other public coverage based on income. The margins of error for the eight tracts are about 5 points (Medicaid) and 3 points (uninsured).*
 
-Michigan is one of the states that expanded Medicaid to more low-income adults under the Affordable Care Act. Alabama and Texas have not ([KFF](https://www.kff.org/medicaid/issue-brief/status-of-state-medicaid-expansion-decisions/)). Among the five neighborhoods in this series, the three in expansion states had higher shares with Medicaid and lower shares with no insurance. In those three, in Ohio, Maryland and Michigan, 50% to 66% of working-age adults had Medicaid, and 7% to 15% had no health insurance. In North Birmingham, Alabama, 37% had Medicaid and 28% had no insurance. In El Segundo Barrio, Texas, 15% had Medicaid and 58% had no insurance. These are five neighborhoods, not a study, and they differ in other ways too, such as how many residents are immigrants ([El Segundo Barrio](https://www.data4thepeople.com/p/spotlight-el-segundo-barrio)). The chart below compares them.
+Michigan is one of the states that expanded Medicaid to more low-income adults under the Affordable Care Act. Alabama and Texas have not ([KFF](https://www.kff.org/medicaid/issue-brief/status-of-state-medicaid-expansion-decisions/)). Among the five neighborhoods in this series, the three in expansion states had higher shares with Medicaid and lower shares with no insurance. In those three, [West Dayton](https://www.data4thepeople.com/p/spotlight-west-dayton), Ohio, [West Baltimore](https://www.data4thepeople.com/p/spotlight-west-baltimore), Maryland, and North and East Flint, Michigan, 50% to 66% of working-age adults had Medicaid, and 7% to 15% had no health insurance. In [North Birmingham](https://www.data4thepeople.com/p/spotlight-north-birmingham), Alabama, 37% had Medicaid and 28% had no insurance. In El Segundo Barrio, Texas, 15% had Medicaid and 58% had no insurance. These are five neighborhoods, not a study, and they differ in other ways too, such as how many residents are immigrants ([El Segundo Barrio](https://www.data4thepeople.com/p/spotlight-el-segundo-barrio)). The chart below compares them.
 
 ![Bar chart of the shares of people ages 19 to 64 with Medicaid and with no health insurance in 2020-2024 in the five neighborhoods in this series. In states that expanded Medicaid: West Dayton, Ohio, 50% with Medicaid and 15% uninsured; West Baltimore, Maryland, 55% and 7%; North and East Flint, Michigan, 66% and 11%. In states that did not: North Birmingham, Alabama, 37% and 28%; El Segundo Barrio, Texas, 15% and 58%.](images/07b-expansion.png)
 *Census Bureau, American Community Survey 2020-2024, tables C27007 and B27010, summed across each neighborhood's tracts. Margins of error run from about 2 to 8 points.*

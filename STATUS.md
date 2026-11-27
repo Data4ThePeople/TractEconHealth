@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-north-flint
-Step: 2e (SEO). 2b, 2c and 2d done 2026-11-27. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
+Step: 2f (push to Prismic). 2b-2e done 2026-11-27. Publish 2026-11-27 7:30 a.m. CST. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
 Since: 2026-11-27
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -116,3 +116,5 @@ None.
 - 2026-11-27 spotlight-north-flint: 2b done (Eric). Look-over edits 1-5 accepted. Eric raised a water-led title; open.
 - 2026-11-27 spotlight-north-flint: title changed to "Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting It for Another Year." (Eric). 2c done (Eric). 2d started; hero check passes.
 - 2026-11-27 spotlight-north-flint: 2d done (Eric). 2e started: meta title, description and keywords drafted.
+- 2026-11-27 spotlight-north-flint: 2e done (Eric); series links added in the expansion paragraph; publish set for 2026-11-27 7:30 a.m. CST. 2f started.
+- 2026-11-27 spotlight-north-flint: 2f pushed: Prismic draft awl9PxEAACkAZv2F in the Migration Release (69 slices, 13 images). Awaiting Eric's confirmation and scheduling for 7:30 a.m. CST.
