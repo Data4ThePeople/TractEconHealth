@@ -43,7 +43,7 @@ In all five communities, a loan map came first. In the 1930s, a federal agency g
 
 Then homes were taken. Freeways cut through West Dayton, West Baltimore and North and East Flint. In El Segundo Barrio, clearance projects and code sweeps took homes, and the neighborhood now has half as many homes as in 1960.
 
-Then the jobs left, or never came. West Baltimore and North and East Flint lost the jobs their neighborhoods were built around. In North Birmingham, the people next door held about 2% of the jobs around them.
+Then the jobs left, or never came. West Baltimore and North and East Flint lost the jobs their neighborhoods were built around. In North Birmingham, the people within the community held only about 2% of the jobs around them.
 
 Today, median household income in these neighborhoods runs from 23% to 37% of the U.S. figure. In four of the five, life expectancy is between 67.5 and 69.9 years, about nine to 11 years shorter than for the country as a whole.
 
