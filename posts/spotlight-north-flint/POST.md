@@ -1,6 +1,6 @@
 ---
-title: "North and East Flint Lost Half Its People Since 1990. Two in Three Working-Age Adults Now Have Medicaid."
-prismic_label: "North and East Flint Lost Half Its People Since 1990. Two in Three Working-Age Adults Now Have Medicaid."
+title: "Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting It for Another Year."
+prismic_label: "Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting It for Another Year."
 subtitle: How the neighborhoods around Flint's old Buick plants went from the edge of a booming car town to one of the poorest and least healthy places in the country.
 slug: spotlight-north-flint
 date:
