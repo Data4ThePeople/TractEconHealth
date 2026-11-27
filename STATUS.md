@@ -5,9 +5,9 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: spotlight-el-segundo-barrio
-Step: 2f (push to Prismic) next. 2b-2e done 2026-11-26; Photo words check done. Step 1 re-closed by Eric 2026-11-26 after the independent tie-out and re-check. North Birmingham published 2026-11-25 8:00 a.m. CST (draft awbmPhEAACgA_8Jo).
-Since: 2026-11-26
+Post: spotlight-north-flint
+Step: 2b (Eric's edit, Claude's look-over), going section by section. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
+Since: 2026-11-27
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
 
@@ -111,3 +111,4 @@ None.
 - 2026-11-26: spotlight-north-flint: overdose chart replaced with tract food measures (PLACES food insecurity, food stamps, transportation; USDA Atlas; SNAP store records) and two water paragraphs (Edwards on chloride and lead pipes; GM engine plant off city water fall 2014). Claude's tie-out 65/65, independent tie-out and words check done, fixes applied. Step 1 for Flint closes when Eric confirms; Eric confirmed the Richfield Rd Kroger and Royal Fresh are open.
 - 2026-11-26: spotlight-north-flint: added GM share of Genesee County jobs in 1997 (about 19%, QCEW) and tie to the Lexington post (27%), at Eric's suggestion. Claude's tie-out 66/66, independent tie-out and words check done, fixes applied. Ready for Eric's review; Step 1 closes when Eric confirms.
 - 2026-11-27: spotlight-north-flint: title set to Eric's choice. Added the Medicaid expansion comparison across the five city neighborhoods (chart 07b) and a section, What could happen after March 1 (who decides eligibility in Michigan, staffing and budget, timeliness vs Ohio, Arkansas 2018, Michigan 2020, the 2023-24 renewals, projections, the court ruling and CMS option). Claude's tie-out 81/81, independent tie-out and words check done, fixes applied. Subtitle: Eric accepted dropping "one cut at a time" (2026-11-27). Ready for Eric's review; Step 1 closes when Eric confirms.
+- 2026-11-27 spotlight-north-flint: Eric closed Step 1 (all tie-outs and words checks done) and opened 2b, editing section by section.
