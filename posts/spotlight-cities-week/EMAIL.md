@@ -76,7 +76,7 @@ Link: https://www.data4thepeople.com/p/spotlight-el-segundo-barrio
 
 **North and East Flint**
 ```
-[Flint title, once Eric confirms it.] A loan map, a freeway through the St. John neighborhood, and the closing of Buick City. The eight tracts lost 29% of their people in the 2010s and have 43% fewer homes than in 1990. Today, two in three working-age adults here have Medicaid, just as new federal work rules begin in 2027.
+North and East Flint Lost Half Its People Since 1990. Two in Three Working-Age Adults Now Have Medicaid. A loan map, a freeway through the St. John neighborhood, and the closing of Buick City. The eight tracts lost 29% of their people in the 2010s and have 43% fewer homes than in 1990. Today, two in three working-age adults here have Medicaid, just as new federal work rules begin in 2027.
 ```
 Link: https://www.data4thepeople.com/p/spotlight-north-flint
 

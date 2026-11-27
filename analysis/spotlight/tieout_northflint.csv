@@ -65,3 +65,18 @@ other grocers at 1916 Davison after Kroger (records),1.0,1.0,True
 Davison Rd Kroger just outside tracts (under 0.01 mile),0.0,0.0,True
 "Richfield Rd Kroger inside tracts, authorized 1991, no end date",1.0,1.0,True
 "GM 33,000 / QCEW 1997 Genesee jobs = 19%",19.0,18.831,True
+West Dayton Medicaid 19-64 50,50.0,50.22,True
+West Dayton uninsured 19-64 15,15.0,14.574,True
+West Baltimore Medicaid 19-64 55,55.0,55.165,True
+West Baltimore uninsured 19-64 7,7.0,7.426,True
+North and East Flint Medicaid 19-64 66,66.0,65.894,True
+North and East Flint uninsured 19-64 11,11.0,10.653,True
+North Birmingham Medicaid 19-64 37,37.0,37.378,True
+North Birmingham uninsured 19-64 28,28.0,27.658,True
+El Segundo Barrio Medicaid 19-64 15,15.0,15.114,True
+El Segundo Barrio uninsured 19-64 58,58.0,58.226,True
+five-city Flint matches 99ac Medicaid,65.894,65.894,True
+MI unwinding disenrolled ~1.1 million,1.1,1.1,True
+MI procedural 80%,80.0,80.431,True
+MI over-45-day median ~3%,3.0,2.66,True
+OH over-45-day median ~15%,15.0,15.25,True

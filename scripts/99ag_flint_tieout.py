@@ -103,5 +103,18 @@ qn = [n for n in zq.namelist() if "26049 (Genesee County, Michigan)" in n][0]
 q = pd.read_csv(io.BytesIO(zq.read(qn)), dtype=str)
 q = q[(q.own_title == "Total Covered") & (q.industry_title == "All Industries")]
 chk("GM 33,000 / QCEW 1997 Genesee jobs = 19%", 19, 100 * 33000 / float(q.annual_avg_emplvl.iloc[0]), 0.5)
+# expansion comparison and Michigan operations (2026-11-27)
+F5 = pd.read_csv(A / "insurance_five_cities.csv").set_index(["area", "measure"]).pct
+for h, med, un in (("West Dayton", 50, 15), ("West Baltimore", 55, 7), ("North and East Flint", 66, 11), ("North Birmingham", 37, 28), ("El Segundo Barrio", 15, 58)):
+    chk(f"{h} Medicaid 19-64 {med}", med, F5[(h, "medicaid_19_64_pct")], 0.5); chk(f"{h} uninsured 19-64 {un}", un, F5[(h, "uninsured_19_64_pct")], 0.5)
+chk("five-city Flint matches 99ac Medicaid", I.loc[(NF, "medicaid_19_64_pct"), "pct"], F5[(NF, "medicaid_19_64_pct")], 0.01)
+rn = pd.read_csv(ROOT / "data/raw/cms/renewal-dataset-october-2026-release.csv", low_memory=False)
+rn = rn[(rn["State Abbreviation"] == "MI") & rn["Reporting Period"].between(202306, 202405)]
+rn = rn.assign(o=(rn["Original or Updated"] != "U").astype(int)).sort_values("o").drop_duplicates("Reporting Period")
+g = lambda c: pd.to_numeric(rn[c].astype(str).str.replace(",", ""), errors="coerce").sum()
+dis, proc = g("Beneficiaries Disenrolled at Renewal (Total)"), g("Beneficiaries Disenrolled for Procedural Reasons at Renewal")
+chk("MI unwinding disenrolled ~1.1 million", 1.1, dis / 1e6, 0.05); chk("MI procedural 80%", 80, 100 * proc / dis, 0.5)
+MA = pd.read_csv(A / "mi_medicaid_admin.csv").set_index(["area", "measure"]).value
+chk("MI over-45-day median ~3%", 3, MA[("MI", "over45_median")], 0.5); chk("OH over-45-day median ~15%", 15, MA[("OH", "over45_median")], 0.5)
 out = pd.DataFrame(rows); out.to_csv(A / "tieout_northflint.csv", index=False)
 print(out.to_string()); print("FAILS:", (~out.ok).sum())

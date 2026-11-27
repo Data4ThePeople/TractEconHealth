@@ -1,0 +1,21 @@
+area,kind,state,expansion,measure,num,den,pct,moe_pts
+West Dayton,neighborhood,Ohio,True,medicaid_19_64_pct,3532,7033,50.22,6.6
+West Dayton,neighborhood,Ohio,True,uninsured_19_64_pct,1025,7033,14.574,4.6
+Ohio,state,Ohio,True,medicaid_19_64_pct,1219756,6805799,17.922,0.15
+Ohio,state,Ohio,True,uninsured_19_64_pct,600601,6805799,8.825,0.12
+West Baltimore,neighborhood,Maryland,True,medicaid_19_64_pct,6270,11366,55.165,4.54
+West Baltimore,neighborhood,Maryland,True,uninsured_19_64_pct,844,11366,7.426,2.16
+Maryland,state,Maryland,True,medicaid_19_64_pct,557452,3643214,15.301,0.19
+Maryland,state,Maryland,True,uninsured_19_64_pct,307474,3643214,8.44,0.16
+North and East Flint,neighborhood,Michigan,True,medicaid_19_64_pct,4664,7078,65.894,4.69
+North and East Flint,neighborhood,Michigan,True,uninsured_19_64_pct,754,7078,10.653,2.75
+Michigan,state,Michigan,True,medicaid_19_64_pct,1192197,5865933,20.324,0.16
+Michigan,state,Michigan,True,uninsured_19_64_pct,415774,5865933,7.088,0.11
+North Birmingham,neighborhood,Alabama,False,medicaid_19_64_pct,1842,4928,37.378,6.11
+North Birmingham,neighborhood,Alabama,False,uninsured_19_64_pct,1363,4928,27.658,6.08
+Alabama,state,Alabama,False,medicaid_19_64_pct,334433,2919639,11.455,0.16
+Alabama,state,Alabama,False,uninsured_19_64_pct,411744,2919639,14.103,0.23
+El Segundo Barrio,neighborhood,Texas,False,medicaid_19_64_pct,1063,7033,15.114,3.75
+El Segundo Barrio,neighborhood,Texas,False,uninsured_19_64_pct,4095,7033,58.226,7.64
+Texas,state,Texas,False,medicaid_19_64_pct,1372896,17771233,7.725,0.06
+Texas,state,Texas,False,uninsured_19_64_pct,4059027,17771233,22.84,0.17
