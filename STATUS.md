@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-north-flint
-Step: 2c (slice markup) next. 2b done 2026-11-27. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
+Step: 2d (hero). 2b and 2c done 2026-11-27. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
 Since: 2026-11-27
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -114,3 +114,4 @@ None.
 - 2026-11-27 spotlight-north-flint: Eric closed Step 1 (all tie-outs and words checks done) and opened 2b, editing section by section.
 - 2026-11-27 spotlight-north-flint 2b: Eric's read-through edits applied: heading "Another city gets redlined"; 1934 survey quote dropped (paraphrased, source kept); satellite image removed; vacant-homes sentence clarified with occupied-home counts (6,289 to 4,826); chart 03 rebuilt without the vacancy line (03-low-income.png). Tie-out 93/93.
 - 2026-11-27 spotlight-north-flint: 2b done (Eric). Look-over edits 1-5 accepted. Eric raised a water-led title; open.
+- 2026-11-27 spotlight-north-flint: title changed to "Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting It for Another Year." (Eric). 2c done (Eric). 2d started; hero check passes.
