@@ -10,7 +10,7 @@ Post URLs:
 - https://www.data4thepeople.com/p/spotlight-north-flint (publishes Nov. 27, 7:30 a.m. CST)
 
 ```
-Subject:  Five neighborhoods, one pattern
+Subject:  Five urban neighborhoods, one pattern
 Preview:  Dayton, Baltimore, Birmingham, El Paso and Flint, and the decisions that shaped them
 ```
 
