@@ -9,9 +9,9 @@ section: Stories of a Forgotten American Community
 series: Stories of a Forgotten American Community
 hero: images/spotlight-north-flint-hero-1680x1080.png
 hero_alt: The white water tower at Flint's water treatment plant, with the words Flint Water Plant printed across its tank, against a cloudy gray sky.
-meta_title:
-description:
-keywords:
+meta_title: "North Flint: The Water Crisis, Buick City and Medicaid"
+description: "GM took its engine plant off Flint's water in 2014. Homes got it a year longer. North and East Flint lost half its people; 2 in 3 adults 19-64 have Medicaid."
+keywords: Flint water crisis, North Flint history, Buick City Flint, St. John neighborhood Flint, I-475 Flint freeway, Flint redlining, Healthy Michigan Plan work requirements, Michigan Medicaid work requirements 2027
 drop_cap: false
 heading_spacer: 20px
 ---
