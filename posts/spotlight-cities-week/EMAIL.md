@@ -7,7 +7,7 @@ Post URLs:
 - https://www.data4thepeople.com/p/spotlight-west-baltimore
 - https://www.data4thepeople.com/p/spotlight-north-birmingham
 - https://www.data4thepeople.com/p/spotlight-el-segundo-barrio
-- https://www.data4thepeople.com/p/spotlight-north-flint (publishes after Eric's review)
+- https://www.data4thepeople.com/p/spotlight-north-flint (publishes Nov. 27, 7:30 a.m. CST)
 
 ```
 Subject:  Five neighborhoods, one pattern
@@ -16,7 +16,7 @@ Preview:  Dayton, Baltimore, Birmingham, El Paso and Flint, and the decisions th
 
 ## 1. Hero
 
-`posts/spotlight-north-flint/images/spotlight-north-flint-hero-1680x1080.png`, linked to the series. Email export: `images/spotlight-cities-week-hero-email.jpg` (JPG under 300KB, to be made when the hero is confirmed).
+`posts/spotlight-north-flint/images/spotlight-north-flint-hero-1680x1080.png`, linked to the series. Email export: `images/spotlight-cities-week-hero-email.jpg` (JPG, under 300KB).
 Alt:
 ```
 The white water tower at Flint's water treatment plant, with the words Flint Water Plant across its tank, against a cloudy gray sky.
@@ -46,6 +46,16 @@ Then homes were taken. Freeways cut through West Dayton, West Baltimore and Nort
 Then the jobs left, or never came. West Baltimore and North and East Flint lost the jobs their neighborhoods were built around. In North Birmingham, the people next door held about 2% of the jobs around them.
 
 Today, median household income in these neighborhoods runs from 23% to 37% of the U.S. figure. In four of the five, life expectancy is between 67.5 and 69.9 years, about nine to 11 years shorter than for the country as a whole.
+
+Health coverage splits along state lines. In the three neighborhoods in states that expanded Medicaid, 7% to 15% of working-age adults had no health insurance. In North Birmingham, Alabama, it was 28%. In El Segundo Barrio, Texas, it was 58%.
+```
+
+## 4b. Chart
+
+`images/07b-expansion.png` (from the Flint post), linked to the Flint post.
+Alt:
+```
+Bar chart of the shares of people ages 19 to 64 with Medicaid and with no health insurance in 2020-2024 in the five neighborhoods in this series. In states that expanded Medicaid: West Dayton, Ohio, 50% with Medicaid and 15% uninsured; West Baltimore, Maryland, 55% and 7%; North and East Flint, Michigan, 66% and 11%. In states that did not: North Birmingham, Alabama, 37% and 28%; El Segundo Barrio, Texas, 15% and 58%.
 ```
 
 ## 5. The five stories
@@ -76,14 +86,14 @@ Link: https://www.data4thepeople.com/p/spotlight-el-segundo-barrio
 
 **North and East Flint**
 ```
-Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting It for Another Year. A loan map, a freeway through the St. John neighborhood, and the closing of Buick City. The eight tracts lost 29% of their people in the 2010s and have 43% fewer homes than in 1990. Today, two in three working-age adults here have Medicaid, just as new federal work rules begin in 2027.
+Flint's Water Was Too Corrosive for GM's Engines. Residents Kept Getting It for Another Year. A loan map, a freeway through the St. John neighborhood, and the closing of Buick City. The eight tracts lost 29% of their people in the 2010s and have 43% fewer homes than in 1990. Today, two in three working-age adults here have Medicaid, and Michigan's new work rules start with renewals in March 2027.
 ```
 Link: https://www.data4thepeople.com/p/spotlight-north-flint
 
 ## 6. Body, part two
 
 ```
-[Eric: confirm timing for the rural posts.] Next, the series moves to five rural places, from the Mississippi Delta to coal country and Pine Ridge.
+We are taking next week off. The series picks up the week of Dec. 7 with five rural places, from the Mississippi Delta to coal country and Pine Ridge.
 
 As you read, try the question we ask at the top of each story: What would your life be like if you had grown up here?
 ```

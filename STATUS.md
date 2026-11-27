@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-north-flint
-Step: 2f (push to Prismic). 2b-2e done 2026-11-27. Publish 2026-11-27 7:30 a.m. CST. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
+Step: 2g (one email for all five city posts). 2b-2f done 2026-11-27; draft awl9PxEAACkAZv2F, publish 2026-11-27 7:30 a.m. CST. Eric is off the week of Nov. 30; the rural posts start the week of Dec. 7. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
 Since: 2026-11-27
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -118,3 +118,4 @@ None.
 - 2026-11-27 spotlight-north-flint: 2d done (Eric). 2e started: meta title, description and keywords drafted.
 - 2026-11-27 spotlight-north-flint: 2e done (Eric); series links added in the expansion paragraph; publish set for 2026-11-27 7:30 a.m. CST. 2f started.
 - 2026-11-27 spotlight-north-flint: 2f pushed: Prismic draft awl9PxEAACkAZv2F in the Migration Release (69 slices, 13 images). Awaiting Eric's confirmation and scheduling for 7:30 a.m. CST.
+- 2026-11-27 spotlight-north-flint: 2f done (Eric). 2g: five-post email updated (expansion thread and chart 07b, Flint blurb, week-off note with rural posts the week of Dec. 7), email hero JPG 233KB.
