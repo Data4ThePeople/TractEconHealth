@@ -74,5 +74,28 @@ for a, v in ((NF, 66), ("Genesee County", 30), ("Michigan", 20), ("United States
 for a, v in ((NF, 11), ("Genesee County", 8), ("Michigan", 7), ("United States", 12)): chk(f"uninsured 19-64 {a} {v}", v, I.loc[(a, "uninsured_19_64_pct"), "pct"], 0.5)
 chk("children Medicaid 87", 87, I.loc[(NF, "medicaid_under19_pct"), "pct"], 0.5)
 chk("employer-only 19 vs 57", 19, I.loc[(NF, "employer_only_19_64_pct"), "pct"], 0.5); chk("US employer-only 57", 57, I.loc[("United States", "employer_only_19_64_pct"), "pct"], 0.5)
+# food (2026-11-26): PLACES re-read straight from the parquet, not from food_northflint.csv
+pl = pd.read_parquet(ROOT / "data/raw/places/places_tract_2025.parquet")
+pl = pl[pl.measureid.isin(["FOODINSECU", "FOODSTAMP", "LACKTRPT"])].copy()
+pl["v"] = pd.to_numeric(pl.data_value); pl["w"] = pd.to_numeric(pl.totalpop18plus)
+def wavg(d): return (d.v * d.w).sum() / d.w.sum()
+for m, vals in (("FOODINSECU", (47, 21, 17, 17)), ("FOODSTAMP", (54, 21, 16, 14)), ("LACKTRPT", (25, 11, 9, 9))):
+    d = pl[pl.measureid == m]
+    for lab, sel, v in zip(("here", "Genesee", "MI", "US"), (d.locationname.astype(str).isin(T20), d.countyfips.astype(str) == "26049", d.stateabbr == "MI", d.v.notna()), vals):
+        chk(f"{m} {lab} {v}", v, wavg(d[sel]), 0.5)
+fi = pl[(pl.measureid == "FOODINSECU") & pl.locationname.astype(str).isin(T20)]
+chk("food insecurity tract range low 34", 34, fi.v.min(), 0.5); chk("food insecurity tract range high 63", 63, fi.v.max(), 0.5); chk("food insecurity tracts = 8", 8, len(fi), 0)
+fa = pd.read_csv(ROOT / "data/raw/usda_fara/Food Access Research Atlas.csv", dtype={"CensusTract": str})
+fa = fa[fa.CensusTract.isin(T20)]
+chk("LILA half mile all 8", 8, fa.LILATracts_halfAnd10.sum(), 0); chk("LILA 1 mile 4", 4, fa.LILATracts_1And10.sum(), 0)
+import zipfile
+z = zipfile.ZipFile(ROOT / "data/raw/snap/snap-retailer-locator-data2005-2025.zip")
+sn = pd.read_csv(z.open(z.namelist()[0]), dtype=str, encoding="latin-1")
+dav = sn[(sn.State == "MI") & sn["Street Name"].str.strip().str.upper().eq("DAVISON RD") & sn["Street Number"].str.strip().eq("1916")]
+later = dav[~dav["Store Name"].str.contains("Kroger", case=False)]
+chk("other grocers at 1916 Davison after Kroger (records)", 1, int(len(later) > 0), 0)
+chk("Davison Rd Kroger just outside tracts (under 0.01 mile)", 0, pd.read_csv(A / "grocers_northflint.csv").query("`Store Name` == 'Kroger 112'").miles_from_tracts.iloc[0], 0.01)
+k115 = pd.read_csv(A / "grocers_northflint.csv").query("`Store Name` == 'Kroger 115'")
+chk("Richfield Rd Kroger inside tracts, authorized 1991, no end date", 1, int(k115.miles_from_tracts.iloc[0] == 0 and k115["Authorization Date"].iloc[0].endswith("1991") and str(k115["End Date"].iloc[0]).strip() in ("", "nan")), 0)
 out = pd.DataFrame(rows); out.to_csv(A / "tieout_northflint.csv", index=False)
 print(out.to_string()); print("FAILS:", (~out.ok).sum())

@@ -1,0 +1,25 @@
+area,measure,value,n_tracts
+North and East Flint,FOODINSECU,47.46,8
+Genesee County,FOODINSECU,20.87,132
+Michigan,FOODINSECU,16.77,2904
+United States,FOODINSECU,16.98,60419
+North and East Flint,FOODINSECU_min,33.6,8
+North and East Flint,FOODINSECU_max,63.3,8
+North and East Flint,FOODINSECU_median_tract_us_pctile,98.1,60419
+North and East Flint,FOODSTAMP,54.03,8
+Genesee County,FOODSTAMP,21.28,132
+Michigan,FOODSTAMP,16.14,2904
+United States,FOODSTAMP,14.18,60419
+North and East Flint,FOODSTAMP_min,36.5,8
+North and East Flint,FOODSTAMP_max,72.4,8
+North and East Flint,FOODSTAMP_median_tract_us_pctile,99.0,60419
+North and East Flint,LACKTRPT,24.6,8
+Genesee County,LACKTRPT,11.05,132
+Michigan,LACKTRPT,9.08,2904
+United States,LACKTRPT,9.1,60419
+North and East Flint,LACKTRPT_min,16.6,8
+North and East Flint,LACKTRPT_max,36.5,8
+North and East Flint,LACKTRPT_median_tract_us_pctile,98.4,60419
+North and East Flint,lila_half_tracts,8.0,8
+North and East Flint,lila_1mile_tracts,4.0,8
+North and East Flint,tracts_novehicle_far_over20pct,3.0,8

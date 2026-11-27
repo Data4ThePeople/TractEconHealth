@@ -44,3 +44,23 @@ uninsured 19-64 United States 12,12.0,11.746,True
 children Medicaid 87,87.0,86.5,True
 employer-only 19 vs 57,19.0,19.497,True
 US employer-only 57,57.0,57.281,True
+FOODINSECU here 47,47.0,47.461,True
+FOODINSECU Genesee 21,21.0,20.868,True
+FOODINSECU MI 17,17.0,16.765,True
+FOODINSECU US 17,17.0,16.979,True
+FOODSTAMP here 54,54.0,54.027,True
+FOODSTAMP Genesee 21,21.0,21.276,True
+FOODSTAMP MI 16,16.0,16.141,True
+FOODSTAMP US 14,14.0,14.183,True
+LACKTRPT here 25,25.0,24.598,True
+LACKTRPT Genesee 11,11.0,11.05,True
+LACKTRPT MI 9,9.0,9.076,True
+LACKTRPT US 9,9.0,9.095,True
+food insecurity tract range low 34,34.0,33.6,True
+food insecurity tract range high 63,63.0,63.3,True
+food insecurity tracts = 8,8.0,8.0,True
+LILA half mile all 8,8.0,8.0,True
+LILA 1 mile 4,4.0,4.0,True
+other grocers at 1916 Davison after Kroger (records),1.0,1.0,True
+Davison Rd Kroger just outside tracts (under 0.01 mile),0.0,0.0,True
+"Richfield Rd Kroger inside tracts, authorized 1991, no end date",1.0,1.0,True
