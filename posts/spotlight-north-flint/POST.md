@@ -1,7 +1,7 @@
 ---
 title: "North and East Flint Lost Half Its People Since 1990. Two in Three Working-Age Adults Now Have Medicaid."
 prismic_label: "North and East Flint Lost Half Its People Since 1990. Two in Three Working-Age Adults Now Have Medicaid."
-subtitle: How the neighborhoods around Flint's old Buick plants went from the edge of a booming car town to one of the poorest and least healthy places in the country, one cut at a time.
+subtitle: How the neighborhoods around Flint's old Buick plants went from the edge of a booming car town to one of the poorest and least healthy places in the country.
 slug: spotlight-north-flint
 date:
 time:
