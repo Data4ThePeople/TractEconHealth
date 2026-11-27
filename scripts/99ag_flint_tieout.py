@@ -97,5 +97,11 @@ chk("other grocers at 1916 Davison after Kroger (records)", 1, int(len(later) > 
 chk("Davison Rd Kroger just outside tracts (under 0.01 mile)", 0, pd.read_csv(A / "grocers_northflint.csv").query("`Store Name` == 'Kroger 112'").miles_from_tracts.iloc[0], 0.01)
 k115 = pd.read_csv(A / "grocers_northflint.csv").query("`Store Name` == 'Kroger 115'")
 chk("Richfield Rd Kroger inside tracts, authorized 1991, no end date", 1, int(k115.miles_from_tracts.iloc[0] == 0 and k115["Authorization Date"].iloc[0].endswith("1991") and str(k115["End Date"].iloc[0]).strip() in ("", "nan")), 0)
+import io
+zq = zipfile.ZipFile(ROOT / "data/raw/qcew/sic_1997_annual_by_area.zip")
+qn = [n for n in zq.namelist() if "26049 (Genesee County, Michigan)" in n][0]
+q = pd.read_csv(io.BytesIO(zq.read(qn)), dtype=str)
+q = q[(q.own_title == "Total Covered") & (q.industry_title == "All Industries")]
+chk("GM 33,000 / QCEW 1997 Genesee jobs = 19%", 19, 100 * 33000 / float(q.annual_avg_emplvl.iloc[0]), 0.5)
 out = pd.DataFrame(rows); out.to_csv(A / "tieout_northflint.csv", index=False)
 print(out.to_string()); print("FAILS:", (~out.ok).sum())
