@@ -39,7 +39,7 @@ Each one goes back about a century and follows the decisions that shaped the nei
 ## 4. Common threads
 
 ```
-A loan map came first. In the 1930s, a federal agency graded city neighborhoods for mortgage risk. In all five places, land in the neighborhoods we studied was graded D, labeled "hazardous."
+In all five communities, a loan map came first. In the 1930s, a federal agency graded city neighborhoods for mortgage risk, and in each place, land in the neighborhoods we studied was graded D, labeled "hazardous." This was the birth of the modern home loan. Before it, building wealth through home equity was much harder in America. These five communities were largely shut out of that, and of the wealth it could compound over generations, because of racist lines drawn around communities of color.
 
 Then homes were taken. Freeways cut through West Dayton, West Baltimore and North and East Flint. In El Segundo Barrio, clearance projects and code sweeps took homes, and the neighborhood now has half as many homes as in 1960.
 
