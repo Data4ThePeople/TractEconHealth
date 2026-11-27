@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: spotlight-north-flint
-Step: 2b (Eric's edit, Claude's look-over), going section by section. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
+Step: 2c (slice markup) next. 2b done 2026-11-27. Step 1 closed by Eric 2026-11-27; 2a is Claude's story-first draft. El Segundo Barrio published 2026-11-26 9 a.m. CST (draft awhAohEAAC4ANVK7).
 Since: 2026-11-27
 
 Deferred to mid-December (Eric's call 2026-11-25): steps 3 and 4 for spotlight-west-dayton, spotlight-west-baltimore and spotlight-north-birmingham, and for each city post published before then. Through Dec. 4, only take posts through publishing. West Baltimore 2f done (draft awWE2hEAACcAiv_U, Migration Release); 2g skipped (Friday summary email).
@@ -113,3 +113,4 @@ None.
 - 2026-11-27: spotlight-north-flint: title set to Eric's choice. Added the Medicaid expansion comparison across the five city neighborhoods (chart 07b) and a section, What could happen after March 1 (who decides eligibility in Michigan, staffing and budget, timeliness vs Ohio, Arkansas 2018, Michigan 2020, the 2023-24 renewals, projections, the court ruling and CMS option). Claude's tie-out 81/81, independent tie-out and words check done, fixes applied. Subtitle: Eric accepted dropping "one cut at a time" (2026-11-27). Ready for Eric's review; Step 1 closes when Eric confirms.
 - 2026-11-27 spotlight-north-flint: Eric closed Step 1 (all tie-outs and words checks done) and opened 2b, editing section by section.
 - 2026-11-27 spotlight-north-flint 2b: Eric's read-through edits applied: heading "Another city gets redlined"; 1934 survey quote dropped (paraphrased, source kept); satellite image removed; vacant-homes sentence clarified with occupied-home counts (6,289 to 4,826); chart 03 rebuilt without the vacancy line (03-low-income.png). Tie-out 93/93.
+- 2026-11-27 spotlight-north-flint: 2b done (Eric). Look-over edits 1-5 accepted. Eric raised a water-led title; open.
