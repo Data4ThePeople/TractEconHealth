@@ -80,3 +80,15 @@ MI unwinding disenrolled ~1.1 million,1.1,1.1,True
 MI procedural 80%,80.0,80.431,True
 MI over-45-day median ~3%,3.0,2.66,True
 OH over-45-day median ~15%,15.0,15.25,True
+"occupied homes 2010 6,289",6289.0,6289.0,True
+"occupied homes 2020 4,826",4826.0,4826.0,True
+"vacant 2010 2,008",2008.0,2008.0,True
+vacant 2020 968,968.0,968.0,True
+below 200% U013 1990 60,60.0,59.51,True
+below 200% U013 2000 62,62.0,62.06,True
+below 200% U013 2008-2012 71,71.0,70.59,True
+below 200% U013 2020-2024 73,73.0,72.7,True
+below 200% US 1990 31,31.0,30.96,True
+below 200% US 2000 30,30.0,29.65,True
+below 200% US 2008-2012 34,34.0,33.56,True
+below 200% US 2020-2024 28,28.0,28.25,True

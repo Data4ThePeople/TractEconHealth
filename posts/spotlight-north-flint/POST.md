@@ -40,7 +40,7 @@ Here is how North and East Flint compares with the country today.
 ::: spacer 20px
 
 ::: dropcap
-North and East Flint is eight census tracts on Flint, Michigan's north and east sides. Together they had 11,704 people in the 2020 census. They wrap around the land where General Motors' Buick City plant once stood and run east along the I-475 freeway toward Davison Road. In the 2020 census, 47% of the people here were Black, up from 32% in 1990. Median household income is about $25,300, 31% of the U.S. figure. Life expectancy is 69.9 years, 8.8 years shorter than for the country as a whole.
+North and East Flint is eight census tracts on Flint, Michigan's north and east sides. Together they had 11,704 people in the 2020 census. That is about half the 23,592 counted in 1990. They wrap around the land where General Motors' Buick City plant once stood and run east along the I-475 freeway toward Davison Road. In the 2020 census, 47% of the people here were Black, up from 32% in 1990. Median household income is about $25,300, 31% of the U.S. figure. Life expectancy is 69.9 years, 8.8 years shorter than for the country as a whole. Today about two in three working-age adults here have Medicaid.
 
 North and East Flint took a long series of hits over almost a century. This post walks through them in order, with a link to the source for each one. Our census numbers for these tracts start in 1990, so the early chapters come from historical records, not from our data.
 
@@ -49,15 +49,15 @@ The map below shows where the eight tracts are.
 ![Map of Flint, Michigan, with the eight North and East Flint census tracts shaded pink on the city's north and east sides. Interstate 475 runs north and south through the tracts, and the Flint River winds through the north end and then southwest past City Hall. A square marks an address RACER Trust lists for the former Buick City site, just west of the tracts. An inset shows the location in Michigan's Lower Peninsula.](images/00b-locator.png)
 *Tracts, city boundary, freeways and water from the Census Bureau.*
 
-## The map that came first
+## Another city gets redlined
 
 ::: spacer 5px
 
 From 1919 to 1933, GM's housing company built nearly 3,000 homes for its workers in Flint. All of those sales carried racial covenants, deed rules that kept Black families from buying. Into the 1940s, almost all new homes built in Flint carried them too ([Michigan Civil Rights Commission, 2017, pp. 26 to 27](https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf)).
 
-That left Black families in two inner-city neighborhoods, St. John and Floral Park, which held almost all of Flint's 6,000 Black residents in the 1930s ([Highsmith, 2009, p. 54](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)). During the Depression, more than 85% of Black residents there were on public aid ([Michigan Civil Rights Commission, 2017, pp. 30 to 32](https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf)). St. John sat on the near north side, next to the Buick factories. A 1934 federal housing survey called it "a deteriorated residence section, more than a third negro, adjoining and partly enclosing a part of the Buick factories" ([Highsmith, 2009, pp. 53 to 54](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)).
+Most Black families lived in two inner-city neighborhoods, St. John and Floral Park, which held almost all of Flint's 6,000 Black residents in the 1930s ([Highsmith, 2009, p. 54](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)). During the Depression, more than 85% of Black residents there were on public aid ([Michigan Civil Rights Commission, 2017, pp. 30 to 32](https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf)). St. John sat on the near north side, next to the Buick factories. A 1934 federal housing survey described it as a run-down area next to, and partly surrounding, the Buick factories ([Highsmith, 2009, pp. 53 to 54](http://web.archive.org/web/20241101133630/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/62230/ahighsmi_1.pdf)).
 
-In 1937, the federal Home Owners' Loan Corporation graded Flint's neighborhoods for mortgage risk. Black residents were limited to 3 of greater Flint's 50 districts, and all 3 were graded D, the lowest grade ([Michigan Civil Rights Commission, 2017, p. 36](https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf)). Inside today's tracts, our overlay finds tract 20 is 82% graded D and tract 136 is 59% D ([Mapping Inequality, University of Richmond](https://dsl.richmond.edu/panorama/redlining/map/MI/Flint)).
+In 1937, the federal Home Owners' Loan Corporation graded Flint's neighborhoods for mortgage risk. Black residents were limited to 3 of greater Flint's 50 districts, and all 3 were graded D, the lowest grade ([Michigan Civil Rights Commission, 2017, p. 36](https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf)). Inside today's tracts, our overlay finds that the tract along the west side of the old Buick City site is 82% graded D, and the tract just southwest of the site is 59% D ([Mapping Inequality, University of Richmond](https://dsl.richmond.edu/panorama/redlining/map/MI/Flint)).
 
 The map below shows the 1937 grades with the eight tracts in this story outlined.
 
@@ -91,9 +91,6 @@ Even after decades of cuts, one employer still had a large share of the county's
 
 In 2023, RACER Trust sold most of the site, in two phases, to a developer, Ashley Capital ([Flint Beat, 2023](https://www.flintbeat.com/economy/racer-trust-ashley-capital-complete-sale-of-former-buick-city-site-in-flint-790b63c0)). By April 2025, its first new building there, 330,000 square feet, was fully leased ([City of Flint, 2025](https://www.cityofflint.com/flint-commerce-center-building-fully-leased-marking-major-milestone-at-former-buick-city-site/)).
 
-![A color satellite image of central Flint in June 2022. Green tree cover and a grid of residential streets fill most of the frame. Downtown and the freeway interchanges sit near the center, the Flint River winds from upper right to the west, and a long pale strip of cleared land runs north from downtown beside the freeway.](images/05a-satellite-2022.jpg)
-*Central Flint, June 28, 2022. Copernicus Sentinel-2 image, ESA. CC BY-SA 3.0 IGO.*
-
 Fewer people who live here have jobs. In 1990, about 7,000 people living in the eight tracts were working. In 2020-2024, about 3,800 were ([NHGIS](https://www.nhgis.org/); [Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B23025)). Among people ages 25 to 54, 56% had a job, compared with 76% across Genesee County ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B23001)). In 1990, 29% of working residents here worked in manufacturing, about the same as the county's 30%.
 
 ## People leave
@@ -114,16 +111,15 @@ The number of white residents fell first. From 1990 to 2010, the number of white
 ![Line chart of people in the eight tracts by race, 1990 to 2020. White residents: 15,027 in 1990, 11,528 in 2000, 7,913 in 2010 and 4,886 in 2020. Black residents: 7,588, 7,535, 7,266 and 5,476.](images/02c-race.png)
 *Census counts on 2010 tract lines. White and Black alone; other groups are not shown.*
 
-Homes went with the people. The eight tracts had 10,187 homes in 1990 and 5,794 in 2020, 43% fewer. About 2,500 of the homes lost were lost in the 2010s. Over that decade, the number of vacant homes fell from 2,008 to 968. The census counts homes that are standing, so these homes were removed. City records show part of it. Permit records posted on ArcGIS show permits to tear down houses on 519 parcels in the eight tracts from 2015 to 2019 ([Building Permits 2015-2019, ArcGIS](https://www.arcgis.com/home/item.html?id=f61da1745517400c93af76217795f35d)). Earlier in the decade, the Genesee County Land Bank used a federal grant to tear down more than 1,600 vacant houses across Flint by mid-2015 ([City of Flint, 2015](https://www.cityofflint.com/genesee-county-land-bank-wrapping-up-largest-blight-elimination-program-in-flint-history/)). We could not find address-level records for those years. The chart below shows all homes and vacant homes.
+Homes went with the people. The eight tracts had 10,187 homes in 1990 and 5,794 in 2020, 43% fewer. About 2,500 of the homes lost were lost in the 2010s. Over that decade, the number of vacant homes fell from 2,008 to 968. That was not because people moved into them. The number of homes with people living in them also fell, from 6,289 to 4,826. The vacant homes went down because homes were removed. City records show part of it. Permit records posted on ArcGIS show permits to tear down houses on 519 parcels in the eight tracts from 2015 to 2019 ([Building Permits 2015-2019, ArcGIS](https://www.arcgis.com/home/item.html?id=f61da1745517400c93af76217795f35d)). Earlier in the decade, the Genesee County Land Bank used a federal grant to tear down more than 1,600 vacant houses across Flint by mid-2015 ([City of Flint, 2015](https://www.cityofflint.com/genesee-county-land-bank-wrapping-up-largest-blight-elimination-program-in-flint-history/)). We could not find address-level records for those years. The chart below shows all homes and vacant homes.
 
 ![Two stacked line charts for the eight tracts, 1990 to 2020. All homes: 10,187 in 1990, 9,234 in 2000, 8,297 in 2010 and 5,794 in 2020. Vacant homes: 928, 1,274, 2,008 and 968.](images/02b-homes.png)
 *Census counts on 2010 tract lines.*
 
-The people who stayed had less to live on. The chart below shows the share of people below 200% of the poverty line, which rose from 60% in 1990 to 73% in 2020-2024, and the share of homes vacant.
+The people who stayed had less to live on. The chart below shows the share of people below 200% of the poverty line, which rose from 60% in 1990 to 73% in 2020-2024.
 
-![Line chart of three shares for North and East Flint. People below 200% of the poverty line: 60% in 1990, 62% in 2000, 71% in 2008-2012 and 73% in 2020-2024. Homes vacant: 9% in 1990, 14% in 2000, 24% in 2010 and 20% in 2020-2024. U.S. share below 200%, dashed: 31% in 1990 and 28% in 2020-2024.](images/03-low-income-vacancy.png)
+![Line chart of the share of people below 200% of the poverty line. North and East Flint: 60% in 1990, 62% in 2000, 71% in 2008-2012 and 73% in 2020-2024. United States, dashed: 31%, 30%, 34% and 28%.](images/03-low-income.png)
 *Low income here means below 200% of the federal poverty line. Income for 2010 is from the 2008-2012 survey.*
-
 
 ## State control and the water
 
@@ -159,7 +155,7 @@ Reaching a full grocery store is also harder here. The U.S. Department of Agricu
 
 ::: spacer 5px
 
-Most people here get health coverage through Medicaid. In 2020-2024, 66% of people ages 19 to 64 in the eight tracts had Medicaid or other public coverage based on income. That compares with 30% in Genesee County, 20% in Michigan and 16% in the U.S. Among children under 19 here, 87% had it ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.C27007)). Only 19% of working-age adults here had coverage through an employer alone, compared with 57% nationwide. About 11% had no health insurance, close to the U.S. rate of 12% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B27010)).
+Most people in North and East Flint get health coverage through Medicaid. In 2020-2024, 66% of people ages 19 to 64 in the eight tracts had Medicaid or other public coverage based on income. That compares with 30% in Genesee County, 20% in Michigan and 16% in the U.S. Among children under 19 here, 87% had it ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.C27007)). Only 19% of working-age adults here had coverage through an employer alone, compared with 57% nationwide. About 11% had no health insurance, close to the U.S. rate of 12% ([Census Bureau, American Community Survey 2020-2024](https://data.census.gov/table/ACSDT5Y2024.B27010)).
 
 The chart below compares the shares on Medicaid and with no insurance.
 
@@ -212,6 +208,6 @@ Two federal decisions could change the timing. In a ruling announced Nov. 2, 202
 - **Expansion comparison.** The same Census tables as above, summed across each neighborhood's tracts. Expansion status is from KFF.
 - **Michigan Medicaid operations.** Renewal outcomes (June 2023 to May 2024) and the share of eligibility decisions taking more than 45 days (January 2023 to July 2026, monthly median) are our calculations from CMS's October 2026 Medicaid and CHIP renewal and performance indicator files, using CMS's updated figures where available (July 2026 is preliminary).
 - **Health insurance.** American Community Survey 2020-2024, tables C27007 and B27010, summed across the eight tracts.
-- **Photos.** Hero: Flint water plant tower, U.S. Environmental Protection Agency, April 2016, public domain (Wikimedia Commons). Buick Motor Works postcard, about 1907, public domain. EPA water testing, April 2016, public domain. Satellite image: Copernicus Sentinel-2, ESA, CC BY-SA 3.0 IGO.
+- **Photos.** Hero: Flint water plant tower, U.S. Environmental Protection Agency, April 2016, public domain (Wikimedia Commons). Buick Motor Works postcard, about 1907, public domain. EPA water testing, April 2016, public domain.
 - **Wards and demolitions.** We overlaid Flint's 2012 ward lines, in use in 2015, on the eight tracts by land area. Demolition permits come from a 2015-2019 building permit layer posted on ArcGIS for Genesee County, placed by their map coordinates. The point where Wards 3, 4 and 5 meet, and the land shares, are our own overlay.
 - **Highsmith, 2009** is Andrew Highsmith's University of Michigan dissertation, the basis for his 2015 book *Demolition Means Progress*.

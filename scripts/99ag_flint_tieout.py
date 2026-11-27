@@ -116,5 +116,10 @@ dis, proc = g("Beneficiaries Disenrolled at Renewal (Total)"), g("Beneficiaries 
 chk("MI unwinding disenrolled ~1.1 million", 1.1, dis / 1e6, 0.05); chk("MI procedural 80%", 80, 100 * proc / dis, 0.5)
 MA = pd.read_csv(A / "mi_medicaid_admin.csv").set_index(["area", "measure"]).value
 chk("MI over-45-day median ~3%", 3, MA[("MI", "over45_median")], 0.5); chk("OH over-45-day median ~15%", 15, MA[("OH", "over45_median")], 0.5)
+chk("occupied homes 2010 6,289", 6289, P[(NF, "occupied_homes", "2010")], 0.5); chk("occupied homes 2020 4,826", 4826, P[(NF, "occupied_homes", "2020")], 0.5)
+chk("vacant 2010 2,008", 2008, P[(NF, "vacant_homes", "2010")], 0.5); chk("vacant 2020 968", 968, P[(NF, "vacant_homes", "2020")], 0.5)
+B2 = pd.read_csv(A / "below200.csv", dtype={"area": str}).set_index(["area", "year"]).value
+for a_, y, v in (("U013", "1990", 60), ("U013", "2000", 62), ("U013", "2008-2012", 71), ("U013", "2020-2024", 73), ("US", "1990", 31), ("US", "2000", 30), ("US", "2008-2012", 34), ("US", "2020-2024", 28)):
+    chk(f"below 200% {a_} {y} {v}", v, B2[(a_, y)], 0.5)
 out = pd.DataFrame(rows); out.to_csv(A / "tieout_northflint.csv", index=False)
 print(out.to_string()); print("FAILS:", (~out.ok).sum())
